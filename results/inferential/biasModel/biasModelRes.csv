@@ -1,0 +1,9 @@
+"","Estimate","Std. Error","t value","Pr(>|t|)"
+"(Intercept)",-0.4,0.78,-0.52,0.61
+"iconicYes",-0.12,0.11,-1.13,0.26
+"log(averageLength_week_1 + 1)",0.06,0.07,0.85,0.4
+"inventedByIndonesia",0.21,0.12,1.71,0.09
+"inventedByJordan",0.36,0.13,2.67,0.01
+"inventedByNepal",0.24,0.14,1.71,0.09
+"log(averageTrialLength_week_1 + 1)",-0.07,0.05,-1.28,0.2
+"log(freq_week_1 + 1)",0.7,0.09,7.99,0

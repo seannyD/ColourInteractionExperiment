@@ -3,6 +3,14 @@ setwd("~/Documents/MPI/KangSukColours/ColourExperiment/analysis/")
 
 d = read.csv("../data/processedData/variants_processed.csv", stringsAsFactors = F)
 
+d = d[d$sign_value!='SAME',]
+d = d[d$sign_value!='',]
+d = d[d$sign_value!='?',]
+
+d[d$sign_value=="FOLWER",]$sign_value = "FLOWER"
+d[d$sign_value=="BIGHT",]$sign_value = "BRIGHT"
+d[d$sign_value=="SIGINING",]$sign_value = "SIGNING"
+
 colourNumbers = c("1","5","7","14",'18','24')
 colourNames = c("red",'brown','black','green','yellow','pink')
 names(colourNames) = colourNumbers
@@ -44,9 +52,26 @@ text(c(2.5,7.5),c(65,65), c("Week 1", "Week 4"))
 legend(5,50, c("Iconic","Non-iconic"), col=2:1, pch=15)
 dev.off()
 
+
+inventedBy = tapply(d$sign_value,d$inventedBy, function(X){length(unique(X))})
 pdf("../results/descriptive/graphs/NumVarByFreq.pdf")
-plot(as.vector(table(inventedBy)), as.vector(table(d$inventedBy)), xlab='Number of variants innovated', ylab="Frequency of variants", col='white')
-text(as.vector(table(inventedBy)), as.vector(table(d$inventedBy)), names(table(inventedBy)))
+plot(
+    as.vector(inventedBy), 
+    as.vector(table(d$inventedBy)), 
+    xlab='Number of variants innovated', ylab="Frequency of variants", col=1, ylim=c(50,100))
+text(as.vector(inventedBy), as.vector(table(d$inventedBy)), names((inventedBy)),pos=3)
+dev.off()
+
+# number of variants adopted
+adopted = sapply(sort(unique(d$speakerName)), function(X){
+  x = d[d$speakerName==X,]$inventedBy
+  x2 = tapply(d[d$speakerName==X,]$sign_value, d[d$speakerName==X,]$inventedBy, function(z){length(unique(z))})
+  sum(x2[names(x2)!=X])
+})
+pdf("../results/descriptive/graphs/AdoptedVsInvented.pdf")
+plot(inventedBy,adopted, ylim=c(0,35), xlim=c(0,35), xlab="Number of variants invented", ylab="Number of variants adopted")
+abline(0,1, col='gray')
+text(inventedBy,adopted,names(inventedBy), pos=3)
 dev.off()
 
 pdf("../results/descriptive/graphs/NumVariants.pdf", width=8, height=5)
@@ -149,15 +174,18 @@ plotmeans(sign_length~trialColourName,  d[d$director==d$speaker & d$week==4,], c
 
 variants = data.frame()
 for(colourID in colourNumbers){
-  d2 =d[d$trial_value==colourID,]
+  d2 =d[d$trial_value==colourID & nchar(d2[d2$week==1,]$sign_value)>0,]
   
-  v = data.frame(colour=colourID, colourName = colourNames[which(colourNumbers==colourID)],sign=unique(d2[d2$week==1,]$sign_value[nchar(d2[d2$week==1,]$sign_value)>0]), stringsAsFactors = F)
+  v = data.frame(colour=colourID, colourName = colourNames[which(colourNumbers==colourID)],sign=unique(d2[d2$week==1,]$sign_value), stringsAsFactors = F)
   
   v$freq_week_1 = table(d2[d2$week==1,]$sign_value)[v$sign]
   v$freq_week_4 = table(d2[d2$week==4,]$sign_value)[v$sign]
   v$iconic = tapply(d2$iconic, d2$sign_value, head,n=1)[v$sign]
   v$check = tapply(d2[d2$week==1,]$T0Check,d2[d2$week==1,]$sign_value,function(X){sum(X,na.rm=T)>0})[v$sign]
   v$inventedBy= tapply(d2$inventedBy, d2$sign_value, head, n=1)[v$sign]
+  v$averageLength_week_1 = tapply(d2[d2$week==1,]$sign_length, d2[d2$week==1,]$sign_value, mean)
+  
+  v$averageTrialLength_week_1 = tapply(d2[d2$week==1,]$trial_length, d2[d2$week==1,]$sign_value, mean)
   
   variants = rbind(variants,v)
   
@@ -167,8 +195,20 @@ variants$iconic[is.na(variants$iconic)] = "No"
 variants$freq_week_4[is.na(variants$freq_week_4)] = 0
 
 
-summary(lm(log(1 + freq_week_4) ~ log(freq_week_1+1) + iconic + check + inventedBy, data=variants))
+biasModel = lm(log(1 + freq_week_4) ~ + iconic + log(averageLength_week_1+1) + inventedBy + log(averageTrialLength_week_1+1) +  log(freq_week_1+1), data=variants)
 
+biasModelRes = summary(biasModel)$coef
+biasModelRes[,1:3] = round(biasModelRes[,1:3],2)
+biasModelRes[,4] = round(biasModelRes[,4],2)
+write.csv(biasModelRes,"../results/inferential/biasModel/biasModelRes.csv", row.names = T)
+
+biasModel2 = lm(log(1 + freq_week_4) ~ + iconic + log(averageLength_week_1+1) + inventedBy + log(averageTrialLength_week_1+1) +  log(freq_week_1+1), data=variants[variants$colourName %in% c('black'),])
+
+summary(biasModel2)
+
+pdf("../results/descriptive/graphs/FreqWeek1_vs_FreqWeek2.pdf", width=5, height=5)
+plot(variants$freq_week_1, jitter(variants$freq_week_4), pch=16, col=rgb(0,0,0,0.2), ylab='Frequency in week 4', xlab='Frequency in week 1')
+dev.off()
 
 week1 = tapply(d[d$trial_value %in% colourNumbers & d$week==1,]$sign_value, d[d$trial_value %in% colourNumbers & d$week==1,]$trial_value, function(X){length(unique(X,na.rm=T))})
 week4 = tapply(d[d$trial_value %in% colourNumbers & d$week==4,]$sign_value, d[d$trial_value %in% colourNumbers & d$week==4,]$trial_value, function(X){length(unique(X,na.rm=T))})
@@ -198,6 +238,7 @@ for(i in c('iconic','speakerName','inventedBy')){
 }
 
 summary(lm(log(1 + freq_week_4) ~ iconic + T0Check + inventedBy, data=d3))
+
 
 
 
