@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-06-10T14:51:23+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-06-10T20:33:08+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
         <MEDIA_DESCRIPTOR MEDIA_URL="file:///K:/07ERC 프로젝트연구/03ELAN 작업/2014년 Lucknow대학/Colour_game- 주석할 것/04_After_three_weeks_18122014/04_After_three_weeks_18122014_04Colour_game_Nepal-India.mpeg" MIME_TYPE="video/mpeg" RELATIVE_MEDIA_URL="./04_After_three_weeks_18122014_04Colour_game_Nepal-India.mpeg"/>
         <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:32b02be7-0620-43c0-8c8a-3053b849fab5</PROPERTY>
-        <PROPERTY NAME="lastUsedAnnotationId">220</PROPERTY>
+        <PROPERTY NAME="lastUsedAnnotationId">221</PROPERTY>
     </HEADER>
     <TIME_ORDER>
         <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="4155"/>
@@ -639,7 +639,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a104" TIME_SLOT_REF1="ts20" TIME_SLOT_REF2="ts22">
-                <ANNOTATION_VALUE>OS:BLACK</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>OS:BLACK(NSL)</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -711,7 +711,7 @@
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="default-lt" TIER_ID="Formal Category/ SIGN(RH)_2">
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a106" TIME_SLOT_REF1="ts30" TIME_SLOT_REF2="ts32">
-                <ANNOTATION_VALUE>OS:BLACK</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>OS:BLACK(ISL)</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -721,7 +721,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a107" TIME_SLOT_REF1="ts91" TIME_SLOT_REF2="ts94">
-                <ANNOTATION_VALUE>OS:YELLOW</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>OS:YELLOW(ISL)</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -761,7 +761,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a113" TIME_SLOT_REF1="ts110" TIME_SLOT_REF2="ts111">
-                <ANNOTATION_VALUE>OS:YELLOW</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>OS:YELLOW(ISL)</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -791,7 +791,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a114" TIME_SLOT_REF1="ts200" TIME_SLOT_REF2="ts202">
-                <ANNOTATION_VALUE>OS:GREEN</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>OS:GREEN(ISL)</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -850,8 +850,8 @@
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a190" ANNOTATION_REF="a104">
-                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            <REF_ANNOTATION ANNOTATION_ID="a190" ANNOTATION_REF="a104" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>NSL</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -995,6 +995,11 @@
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a221" ANNOTATION_REF="a202" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a197" ANNOTATION_REF="a113" CVE_REF="cveid1">
                 <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
             </REF_ANNOTATION>
@@ -1113,6 +1118,12 @@
         </CV_ENTRY_ML>
         <CV_ENTRY_ML CVE_ID="cveid5">
             <CVE_VALUE DESCRIPTION="" LANG_REF="und">IS</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid6">
+            <CVE_VALUE DESCRIPTION="" LANG_REF="und">INSL+JSL</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid7">
+            <CVE_VALUE DESCRIPTION="" LANG_REF="und">ISL+NSL</CVE_VALUE>
         </CV_ENTRY_ML>
     </CONTROLLED_VOCABULARY>
     <CONTROLLED_VOCABULARY CV_ID="사용빈도">

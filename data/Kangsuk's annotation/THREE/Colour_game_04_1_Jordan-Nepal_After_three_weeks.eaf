@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-06-10T14:48:07+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-06-10T20:27:55+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
         <MEDIA_DESCRIPTOR MEDIA_URL="file:///K:/07ERC 프로젝트연구/03ELAN 작업/2014년 Lucknow대학/Colour_game- 주석할 것/04_After_three_weeks_18122014/04_After_three_weeks_18122014_04Colour_game_Jordan-Nepal.mpeg" MIME_TYPE="video/mpeg" RELATIVE_MEDIA_URL="./04_After_three_weeks_18122014_04Colour_game_Jordan-Nepal.mpeg"/>
         <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:9987cb59-8d53-434c-96d0-0cb3d3577299</PROPERTY>
-        <PROPERTY NAME="lastUsedAnnotationId">256</PROPERTY>
+        <PROPERTY NAME="lastUsedAnnotationId">259</PROPERTY>
     </HEADER>
     <TIME_ORDER>
         <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="12426"/>
@@ -651,7 +651,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a128" TIME_SLOT_REF1="ts27" TIME_SLOT_REF2="ts28">
-                <ANNOTATION_VALUE>OS:GREEN</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>OS:GREEN(ISL)</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -738,7 +738,7 @@
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="default-lt" TIER_ID="Formal Category/ SIGN(RH)_2">
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a209" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts6">
-                <ANNOTATION_VALUE>OS:RED</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>OS:RED(INSL+JSL)</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -753,12 +753,12 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a140" TIME_SLOT_REF1="ts79" TIME_SLOT_REF2="ts80">
-                <ANNOTATION_VALUE>IX:손등</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>OS:BROWN(ISL+NSL)</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a141" TIME_SLOT_REF1="ts89" TIME_SLOT_REF2="ts90">
-                <ANNOTATION_VALUE>BLACK</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>OS:BLACK(NSL)</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -768,7 +768,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a143" TIME_SLOT_REF1="ts140" TIME_SLOT_REF2="ts141">
-                <ANNOTATION_VALUE>OS:YELLOW</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>OS:YELLOW(ISL)</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -931,8 +931,18 @@
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal Category/ SIGN(RH)_1" TIER_ID="바르게/흐르게_1"/>
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="Formal Category/ SIGN(RH)_2" TIER_ID="Sign_Origin_2">
         <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a237" ANNOTATION_REF="a209" CVE_REF="cveid0">
-                <ANNOTATION_VALUE>JSL</ANNOTATION_VALUE>
+            <REF_ANNOTATION ANNOTATION_ID="a237" ANNOTATION_REF="a209" CVE_REF="cveid6">
+                <ANNOTATION_VALUE>INSL+JSL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a257" ANNOTATION_REF="a140" CVE_REF="cveid7">
+                <ANNOTATION_VALUE>ISL+NSL</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a258" ANNOTATION_REF="a141" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>NSL</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -969,6 +979,11 @@
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal Category/ SIGN(RH)_2" TIER_ID="Iconicity_2">
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a210" ANNOTATION_REF="a209" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a259" ANNOTATION_REF="a140" CVE_REF="cveid0">
                 <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
@@ -1086,6 +1101,12 @@
         </CV_ENTRY_ML>
         <CV_ENTRY_ML CVE_ID="cveid5">
             <CVE_VALUE DESCRIPTION="" LANG_REF="und">IS</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid6">
+            <CVE_VALUE DESCRIPTION="" LANG_REF="und">INSL+JSL</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid7">
+            <CVE_VALUE DESCRIPTION="" LANG_REF="und">ISL+NSL</CVE_VALUE>
         </CV_ENTRY_ML>
     </CONTROLLED_VOCABULARY>
     <CONTROLLED_VOCABULARY CV_ID="사용빈도">

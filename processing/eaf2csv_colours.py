@@ -24,6 +24,8 @@ ignoreCheck = ["Colour_game_04_1_Indonesia-India_After_three_week.eaf"]
 eaffolder = "../data/Kangsuk's annotation/"
 resultsfolder = '../data/processedData/'
 
+foldersToProcess = ["one/","three/"]
+
 
 def processFile(eafpath):
 
@@ -214,7 +216,7 @@ def list2csv(list):
 
 res = getVariantHeader()
 
-for folder in ["ONE/","THREE/"]:
+for folder in foldersToProcess:
 	files = glob.glob(eaffolder+folder+'*.eaf')
 	print(folder,files)
 	for eafpath in files:
