@@ -104,6 +104,8 @@ def getVariants(eaffile,filename):
 		
 		colourTierNames = ["Color_"+director+"(자원)","COLOR_"+director+"(자원)","Simulus_"+director,"Stimulus_"+director, "Color(Stimulus)_"+director]
 		
+		
+		
 		colourTierName = [x for x in colourTierNames if x in eaffile.get_tier_names()][0]	
 		
 		trials = eaffile.get_annotation_data_for_tier(colourTierName)
@@ -212,7 +214,7 @@ def list2csv(list):
 
 res = getVariantHeader()
 
-for folder in ["1WEEK/","AFTER3WEEKS/"]:
+for folder in ["ONE/","THREE/"]:
 	files = glob.glob(eaffolder+folder+'*.eaf')
 	print(folder,files)
 	for eafpath in files:

@@ -12,6 +12,7 @@ checkIconicity = function(x){
     return(names(tx)[1])
   } else{
     print(paste("Warning: different iconicity values for sign"))
+    print(tx)
     return(names(sort(tx,decreasing = T))[1])
   }
 }
@@ -32,9 +33,16 @@ d$week = as.numeric(d$week)
 d = d[order(d$week,d$session,d$sign_start),]
 
 # make sure that all iconicity ratings are the same
+d$iconic[d$iconic==""] = NA
+ndiff = tapply(d$iconic, d$sign_value, function(x){(length(unique(x[!is.na(x)])))})
+names(ndiff) = tapply(d$sign_value, d$sign_value, function(x){head(x,1)})
+ndiff[ndiff>1]
+
 iconicityMeasures = tapply(d$iconic, d$sign_value, checkIconicity)
 d$iconic = iconicityMeasures[d$sign_value]
 
+
+# trial lengths
 trialLengths = tapply(d$trial_length,d$trial_start,head,n=1)/1000
 trialStart = tapply(d$trial_start,d$trial_start,head,n=1)/1000
 
@@ -44,19 +52,17 @@ plot(d$sign_length~d$sign_start)
 
 #boxplot(d$sign_length~d$iconic, ylab='Sign duration', xlab='Iconic')
 
-sel = d$trial_value=='19' & !d$T0Check & nchar(d$sign_value)>0
-signs  = unique(d[sel,]$sign_value)
+d2 = d[order(d$week,d$session, d$sign_start),]
+sel = d2$trial_value=='19' & !d2$T0Check & nchar(d2$sign_value)>0
+signs  = unique(d2[sel,]$sign_value)
 set.seed(1211)
 cols = sample(rainbow(length(signs)))
 names(cols) = signs
-
-plot(d[sel,]$sign_start, col=cols[d[sel,]$sign_value], pch=16)
+plot(rank(d2[sel,]$sign_start),rep(1,sum(sel)), col=cols[d2[sel,]$sign_value], pch=16)
 
 tapply(d$sign_value, d$week, function(X){length(unique(X))})
 
-cols = rainbow(2)
-barplot(matrix(tapply(d$sign_value, paste(d$speakerName,d$week), function(X){length(unique(X))}), nrow=2), beside = T, names.arg = sort(unique(d$speakerName)), col=cols, main='Number of variants used')
-legend(9,80,c("Week 1","Week 4"), col=cols, pch=15)
+
 
 d$speakerName = sapply(1:nrow(d),function(X){
   d[X,c("part1","part2")][,d$speaker[X]]
@@ -65,8 +71,7 @@ d$speakerName = sapply(1:nrow(d),function(X){
 inventedBy = tapply( d$speakerName, d$sign_value, head,n=1)  
 d$inventedBy = inventedBy[d$sign_value]  
 
-plot(as.vector(table(inventedBy)), as.vector(table(d$inventedBy)), xlab='Number of variants innovated', ylab="Frequency of variants", col='white')
-text(as.vector(table(inventedBy)), as.vector(table(d$inventedBy)), names(table(inventedBy)))
+
 
 
 d$IX = grepl("IX",d$sign_notes)
@@ -96,30 +101,12 @@ for(colourID in c("18","19")){
 variants$iconic[is.na(variants$iconic)] = "No"
 variants$freq_week_4[is.na(variants$freq_week_4)] = 0
 
-summary(lm(log(1 + freq_week_4) ~ log(freq_week_1+1) + iconic + check + inventedBy, data=variants))
+colourNumbers = c("1","5","7","14",'18','24')
 
+allTargetVars = sort(unique(d[d$trial_value %in% colourNumbers,]$sign_value))
 
-library(party)
-
-variants$iconic = as.factor(variants$iconic)
-variants$inventedBy = as.factor(variants$inventedBy)
-f = ctree(freq_week_4 ~ freq_week_1 + iconic + check + inventedBy, data=variants, control=ctree_control(mincriterion = 0.5))
-plot(f)
-
-
-d3 = d
-d3$iconic[is.na(d3$iconic)] = "No"
-d3$freq_week_4[is.na(d3$freq_week_4)] = 0
-
-for(i in c('iconic','speakerName','inventedBy')){
-  d3[,i] = as.factor(d3[,i])
-}
-
-summary(lm(log(1 + freq_week_4) ~ iconic + T0Check + inventedBy, data=d3))
-
-
-
-f2 = ctree(freq_week_4 ~ iconic + T0Check + speakerName + sign_length+ inventedBy, data=d3, control=ctree_control(mincriterion = 0.95))
-plot(f2, inner_panel=node_inner(f2,id=F),terminal_panel=node_barplot)
+cat(
+  paste(paste('"',allTargetVars,'"',sep=''),collapse='\n'),
+  file="../processing/ListOfVariants.txt")
 
 write.csv(d, file="../data/processedData/variants_processed.csv")
