@@ -3,13 +3,7 @@ setwd("~/Documents/MPI/KangSukColours/ColourExperiment/analysis/")
 
 d = read.csv("../data/processedData/variants_processed.csv", stringsAsFactors = F)
 
-d = d[d$sign_value!='SAME',]
-d = d[d$sign_value!='',]
-d = d[d$sign_value!='?',]
 
-d[d$sign_value=="FOLWER",]$sign_value = "FLOWER"
-d[d$sign_value=="BIGHT",]$sign_value = "BRIGHT"
-d[d$sign_value=="SIGINING",]$sign_value = "SIGNING"
 
 colourNumbers = c("1","5","7","14",'18','24')
 colourNames = c("red",'brown','black','green','yellow','pink')
@@ -30,6 +24,17 @@ legend(1,20,legend=c("SUN","GREEN1-1"), col=1:2, pch=15)
 
 pdf("../results/descriptive/graphs/IconicityByWeek.pdf")
 barplot(table(d$iconic,d$week), col=1:2, xlab='Week')
+legend(1.5,150,legend=c("Iconic","Not iconic"), col=2:1, pch=15)
+dev.off()
+
+w1 = table(d[d$week==1,]$iconic, d[d$week==1,]$trialColourName)
+w4 = table(d[d$week==4,]$iconic, d[d$week==4,]$trialColourName)
+
+
+pdf("../results/descriptive/graphs/IconicityByWeekByColour.pdf")
+barplot(cbind(w1,c(NA,NA),w4), col=1:2, las=2)
+abline(v=7.9)
+axis(1,line=2.5,at=c(4,12), labels=c("Week 1","Week 3"), tick=F, lwd=0)
 legend(1.5,150,legend=c("Iconic","Not iconic"), col=2:1, pch=15)
 dev.off()
 
@@ -60,6 +65,16 @@ plot(
     as.vector(table(d$inventedBy)), 
     xlab='Number of variants innovated', ylab="Frequency of variants", col=1, ylim=c(50,100))
 text(as.vector(inventedBy), as.vector(table(d$inventedBy)), names((inventedBy)),pos=3)
+dev.off()
+
+freqWithinVarByInventor = tapply(variants$freq_week_4_withinColour, variants$inventedBy, mean)
+
+pdf("../results/descriptive/graphs/NumVarByFreq_withinColour.pdf")
+plot(
+  as.vector(inventedBy), 
+  as.vector(freqWithinVarByInventor), 
+  xlab='Number of variants innovated', ylab="Mean fitness of variants", col=1, ylim=c(0,0.15))
+text(as.vector(inventedBy), as.vector(freqWithinVarByInventor), names((inventedBy)),pos=3)
 dev.off()
 
 # number of variants adopted
@@ -170,44 +185,40 @@ plotmeans(sign_length~trialColourName,  d[d$director==d$speaker & d$week==4,], c
 
 ###########
 
+variants = read.csv('../data/processedData/variants_summary.csv', stringsAsFactors = F)
 
+d$BodyAnchor = variants[match(d$sign_value, variants$sign),]$BodyAnchor
 
-variants = data.frame()
-for(colourID in colourNumbers){
-  d2 =d[d$trial_value==colourID & nchar(d2[d2$week==1,]$sign_value)>0,]
-  
-  v = data.frame(colour=colourID, colourName = colourNames[which(colourNumbers==colourID)],sign=unique(d2[d2$week==1,]$sign_value), stringsAsFactors = F)
-  
-  v$freq_week_1 = table(d2[d2$week==1,]$sign_value)[v$sign]
-  v$freq_week_4 = table(d2[d2$week==4,]$sign_value)[v$sign]
-  v$iconic = tapply(d2$iconic, d2$sign_value, head,n=1)[v$sign]
-  v$check = tapply(d2[d2$week==1,]$T0Check,d2[d2$week==1,]$sign_value,function(X){sum(X,na.rm=T)>0})[v$sign]
-  v$inventedBy= tapply(d2$inventedBy, d2$sign_value, head, n=1)[v$sign]
-  v$averageLength_week_1 = tapply(d2[d2$week==1,]$sign_length, d2[d2$week==1,]$sign_value, mean)
-  
-  v$averageTrialLength_week_1 = tapply(d2[d2$week==1,]$trial_length, d2[d2$week==1,]$sign_value, mean)
-  
-  variants = rbind(variants,v)
-  
-}
+w1 = table(d[d$week==1,]$BodyAnchor,d[d$week==1,]$trialColourName)
+w1 = w1[,c("red",'black','brown','green','yellow','pink')]
+w3 = table(d[d$week==4,]$BodyAnchor,d[d$week==4,]$trialColourName)
+w3 = w3[,c("red",'black','brown','green','yellow','pink')]
 
-variants$iconic[is.na(variants$iconic)] = "No"
-variants$freq_week_4[is.na(variants$freq_week_4)] = 0
+xtab = cbind(w1,c(NA,NA), w3)
 
+pdf("../results/descriptive/graphs/BodyAnchoredByColourByWeek.pdf", width=6, height = 5)
+barplot(xtab, col=3:4, las=2)
+legend(8,100,c("Body Anchored",'Other'), col=4:3, pch=15)
+axis(1,line=2.5,at=c(4,12), labels=c("Week 1","Week 3"), tick=F, lwd=0)
+dev.off()
 
-biasModel = lm(log(1 + freq_week_4) ~ + iconic + log(averageLength_week_1+1) + inventedBy + log(averageTrialLength_week_1+1) +  log(freq_week_1+1), data=variants)
+biasModel = lm(log(1 + freq_week_4_withinColour) ~ + iconic + log(averageLength_week_1+1) + inventedBy + log(averageTrialLength_week_1+1) +  log(freq_week_1_withinColour+1), data=variants)
 
 biasModelRes = summary(biasModel)$coef
 biasModelRes[,1:3] = round(biasModelRes[,1:3],2)
 biasModelRes[,4] = round(biasModelRes[,4],2)
 write.csv(biasModelRes,"../results/inferential/biasModel/biasModelRes.csv", row.names = T)
 
-biasModel2 = lm(log(1 + freq_week_4) ~ + iconic + log(averageLength_week_1+1) + inventedBy + log(averageTrialLength_week_1+1) +  log(freq_week_1+1), data=variants[variants$colourName %in% c('black'),])
+biasModel2 = lm(log(1 + freq_week_4_withinColour) ~ + iconic + log(averageLength_week_1+1) + inventedBy + log(averageTrialLength_week_1+1) +  log(freq_week_1+1), data=variants[variants$colourName %in% c('pink'),])
 
 summary(biasModel2)
 
 pdf("../results/descriptive/graphs/FreqWeek1_vs_FreqWeek2.pdf", width=5, height=5)
 plot(variants$freq_week_1, jitter(variants$freq_week_4), pch=16, col=rgb(0,0,0,0.2), ylab='Frequency in week 4', xlab='Frequency in week 1')
+dev.off()
+
+pdf("../results/descriptive/graphs/FreqWeek1_vs_FreqWeek2_withinColour.pdf", width=5, height=5)
+plot(variants$freq_week_1_withinColour, jitter(variants$freq_week_4_withinColour), pch=16, col=variants$colourName, ylab='Frequency in week 4', xlab='Frequency in week 1')
 dev.off()
 
 week1 = tapply(d[d$trial_value %in% colourNumbers & d$week==1,]$sign_value, d[d$trial_value %in% colourNumbers & d$week==1,]$trial_value, function(X){length(unique(X,na.rm=T))})
@@ -225,7 +236,7 @@ library(party)
 
 variants$iconic = as.factor(variants$iconic)
 variants$inventedBy = as.factor(variants$inventedBy)
-f = ctree(freq_week_4 ~ freq_week_1 + iconic + check + inventedBy, data=variants, control=ctree_control(mincriterion = 0.5))
+f = ctree(freq_week_4_withinColour ~ freq_week_1 + iconic + check + inventedBy + factor(colourName), data=variants, control=ctree_control(mincriterion = 0.5))
 plot(f)
 
 

@@ -14,17 +14,25 @@
         <String>Easily-articulated_1</String>
         <String>Frequency_1</String>
         <String>바르게/흐르게_1</String>
+        <String>Indexical_1</String>
+        <String>SI/CG_1</String>
+        <String>Metonymy/metaphor_1</String>
         <String>Formal Category/ SIGN(LH)_1</String>
         <String>NH_Sign_Orign_1</String>
-        <String>T0_2</String>
-        <String>T0_2_Origin</String>
-        <String>T0_2_Iconicity</String>
-        <String>NMS_1</String>
         <String>Coordination-bias_1</String>
         <String>How Sign_1</String>
         <String>Teach Sign_1</String>
         <String>Try-marker_1</String>
         <String>Repair_1</String>
+        <String>T0/Check_2</String>
+        <String>T0_2_Origin</String>
+        <String>T0_2_Iconicity</String>
+        <String>T0_indixical_2</String>
+        <String>candidate(understand) of T0_2</String>
+        <String>T0_Metonymy/metaphor_2</String>
+        <String>Teach Sign by 2</String>
+        <String>How Sign by 2</String>
+        <String>NMS_1</String>
         <String>Modification_1</String>
         <String>Egocentric bias_1</String>
         <String>아우라 성향_1</String>
@@ -38,11 +46,19 @@
         <String>Easily-articulated_2</String>
         <String>Frequency_2</String>
         <String>바르게/흐르게_2</String>
+        <String>Indexical_2</String>
+        <String>SI/CG_2</String>
+        <String>Metonymy/metaphor_2</String>
         <String>Formal Category/ SIGN(LH)_2</String>
         <String>NH_Sign_Origin_2</String>
-        <String>T0_1</String>
+        <String>T0/Check_1</String>
         <String>T0_1_Origin</String>
         <String>T0_1_Iconicity</String>
+        <String>T0_indixical_1</String>
+        <String>candidate(understand) of T0_1</String>
+        <String>T0_Metonymy/metaphor_1</String>
+        <String>Teach Sign by 1</String>
+        <String>How Sign by 1</String>
         <String>NMS_2</String>
         <String>Modification_2</String>
         <String>Coordination-bias_2</String>
@@ -120,7 +136,7 @@
         <Int>1</Int>
     </pref>
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>217.0</Float>
+        <Float>38.0</Float>
     </pref>
     <pref key="LayoutManager.SelectedTabIndex">
         <Int>0</Int>
@@ -153,12 +169,6 @@
         <pref key="Color_1#2">
             <Object class="java.awt.Color">0,0,90</Object>
         </pref>
-        <pref key="T0_1">
-            <Object class="java.awt.Color">90,0,160</Object>
-        </pref>
-        <pref key="T0_2">
-            <Object class="java.awt.Color">90,160,160</Object>
-        </pref>
         <pref key="Color(Stimulus)_1">
             <Object class="java.awt.Color">90,0,0</Object>
         </pref>
@@ -168,11 +178,11 @@
         <pref key="Egocentric bias_1">
             <Object class="java.awt.Color">160,90,90</Object>
         </pref>
-        <pref key="default">
-            <Object class="java.awt.Color">160,0,90</Object>
-        </pref>
         <pref key="Egocentric bias_2">
             <Object class="java.awt.Color">90,160,0</Object>
+        </pref>
+        <pref key="default">
+            <Object class="java.awt.Color">160,0,90</Object>
         </pref>
         <pref key="Coordination-bias_2">
             <Object class="java.awt.Color">160,160,0</Object>
@@ -186,6 +196,12 @@
         <pref key="Coordination-bias_1">
             <Object class="java.awt.Color">160,160,90</Object>
         </pref>
+        <pref key="T0/Check_1">
+            <Object class="java.awt.Color">90,0,160</Object>
+        </pref>
+        <pref key="T0/Check_2">
+            <Object class="java.awt.Color">90,160,160</Object>
+        </pref>
         <pref key="NMS_1">
             <Object class="java.awt.Color">0,0,0</Object>
         </pref>
@@ -196,19 +212,19 @@
     <prefGroup key="TierFonts"/>
     <prefList key="CommentViewer.Columns.Hidden"/>
     <pref key="FrameLocation">
-        <Object class="java.awt.Point">0,0</Object>
+        <Object class="java.awt.Point">-1,0</Object>
     </pref>
     <pref key="GridViewer.TierName">
         <String>Color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>623935</Long>
+        <Long>547190</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>627730</Long>
+        <Long>547190</Long>
     </pref>
     <pref key="MultiTierViewer.TierSortingMode">
         <Int>1</Int>
@@ -270,7 +286,7 @@
         <Int>236</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>621283</Long>
+        <Long>526521</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>Easily-articulated_1</String>
@@ -287,6 +303,6 @@
         <String>BAS - WebMAUS Basic</String>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>626201</Long>
+        <Long>549088</Long>
     </pref>
 </preferences>

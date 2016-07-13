@@ -11,12 +11,20 @@
         <String>Easily-articulated_1</String>
         <String>Frequency_1</String>
         <String>바르게/흐르게_1</String>
+        <String>Indexical_1</String>
+        <String>SI/CG_1</String>
+        <String>Metonymy/metaphor_1</String>
         <String>Formal Category/ SIGN(LH)_1</String>
         <String>NH_Sign_Orign_1</String>
         <String>NMS_1</String>
-        <String>Repair initiation_2</String>
+        <String>T0/Check_2</String>
         <String>T0_2_Origin</String>
         <String>T0_2_Iconicity</String>
+        <String>T0_indixical_2</String>
+        <String>candidate(understand) of T0_2</String>
+        <String>T0_Metonymy/metaphor_2</String>
+        <String>Teach Sign by 2</String>
+        <String>How Sign by 2</String>
         <String>Coordination-bias_1</String>
         <String>How Sign_1</String>
         <String>Teach Sign_1</String>
@@ -35,11 +43,19 @@
         <String>Easily-articulated_2</String>
         <String>Frequency_2</String>
         <String>바르게/흐르게_2</String>
+        <String>Indexical_2</String>
+        <String>SI/CG_2</String>
+        <String>Metonymy/metaphor_2</String>
         <String>Formal Category/ SIGN(LH)_2</String>
         <String>NH_Sign_Origin_2</String>
-        <String>Repair initiation_1</String>
+        <String>T0/Check_1</String>
         <String>T0_1_Origin</String>
         <String>T0_1_Iconicity</String>
+        <String>T0_indixical_1</String>
+        <String>candidate(understand) of T0_1</String>
+        <String>T0_Metonymy/metaphor_1</String>
+        <String>Teach Sign by 1</String>
+        <String>How Sign by 1</String>
         <String>NMS_2</String>
         <String>Coordination-bias_2</String>
         <String>How Sign_2</String>
@@ -126,14 +142,14 @@
         <Int>0</Int>
     </pref>
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>499.0</Float>
+        <Float>62.0</Float>
     </pref>
     <prefGroup key="TierColors">
-        <pref key="Formal Category/ SIGN(RH)_2">
-            <Object class="java.awt.Color">160,0,0</Object>
-        </pref>
         <pref key="Formal Category/ SIGN(LH)_1">
             <Object class="java.awt.Color">0,90,90</Object>
+        </pref>
+        <pref key="Formal Category/ SIGN(RH)_2">
+            <Object class="java.awt.Color">160,0,0</Object>
         </pref>
         <pref key="Formal Category/ SIGN(RH)_1">
             <Object class="java.awt.Color">0,160,0</Object>
@@ -155,12 +171,6 @@
         </pref>
         <pref key="Color_1#2">
             <Object class="java.awt.Color">160,90,90</Object>
-        </pref>
-        <pref key="Repair initiation_2">
-            <Object class="java.awt.Color">204,0,204</Object>
-        </pref>
-        <pref key="Repair initiation_1">
-            <Object class="java.awt.Color">0,160,160</Object>
         </pref>
         <pref key="Color(Stimulus)_1">
             <Object class="java.awt.Color">160,160,0</Object>
@@ -186,11 +196,17 @@
         <pref key="Comment_1">
             <Object class="java.awt.Color">160,90,0</Object>
         </pref>
+        <pref key="T0/Check_1">
+            <Object class="java.awt.Color">0,160,160</Object>
+        </pref>
         <pref key="Coordination-bias_1">
             <Object class="java.awt.Color">0,160,90</Object>
         </pref>
         <pref key="NMS_1">
             <Object class="java.awt.Color">90,0,160</Object>
+        </pref>
+        <pref key="T0/Check_2">
+            <Object class="java.awt.Color">204,0,204</Object>
         </pref>
         <pref key="NMS_2">
             <Object class="java.awt.Color">90,160,90</Object>
@@ -205,13 +221,13 @@
         <String>Color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>651745</Long>
+        <Long>670923</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>653498</Long>
+        <Long>674130</Long>
     </pref>
     <prefGroup key="TierHighlightColors"/>
     <pref key="MultiTierViewer.TierSortingMode">
@@ -273,7 +289,7 @@
         <Int>297</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>651007</Long>
+        <Long>658919</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>Easily-articulated_1</String>
@@ -290,6 +306,6 @@
         <Int>549</Int>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>653440</Long>
+        <Long>672462</Long>
     </pref>
 </preferences>

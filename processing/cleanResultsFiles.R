@@ -1,6 +1,11 @@
 setwd("~/Documents/MPI/KangSukColours/ColourExperiment/processing/")
 
 
+colourNumbers = c("1","5","7","14",'18','24')
+colourNames = c("red",'brown','black','green','yellow','pink')
+names(colourNames) = colourNumbers
+colourNamesDark = c("dark red", 'orange', 'gray', 'dark green','gold', 'purple')
+
 checkIconicity = function(x){
   tx = table(x[x!=''])
   
@@ -31,6 +36,19 @@ d[,c("week",'session','part1','part2')] = t(sapply(d$filename,getDetails))
 d$week = as.numeric(d$week)
 
 d = d[order(d$week,d$session,d$sign_start),]
+
+
+#d = d[d$sign_value!='SAME',]
+d = d[d$sign_value!='',]
+d = d[d$sign_value!='?',]
+
+d[d$sign_value=="FOLWER",]$sign_value = "FLOWER"
+d[d$sign_value=="BIGHT",]$sign_value = "BRIGHT"
+d[d$sign_value=="SIGINING",]$sign_value = "SIGNING"
+d$sign_value = gsub("^ ","", d$sign_value)
+d$sign_value = gsub(" $","", d$sign_value)
+d$sign_value = toupper(d$sign_value)
+
 
 # make sure that all iconicity ratings are the same
 d$iconic[d$iconic==""] = NA
@@ -79,29 +97,74 @@ d$OS = grepl("OS",d$sign_notes)
 d$LW = grepl("LW",d$sign_notes)
 d$SE = grepl("SE",d$sign_notes)
 
-
+# absolute frequency
 d$freq_week_4 = tapply(d[d$week==4,]$sign_value,d[d$week==4,]$sign_value, length)[d$sign_value]
 
+# relative frequency, compared to other competitiors for the same colour
+d$freq_week4_withinColour = NA
+
+for(colx in colourNumbers){
+  d$freq_week4_withinColour[d$trial_value==colx] = 0
+  dx = d[d$trial_value==colx & d$week==4, ]
+  tx = table(dx$sign_value)
+  tx = tx / sum(tx)
+  d[d$trial_value==colx & d$week==4,]$freq_week4_withinColour = tx[d[d$trial_value==colx & d$week==4,]$sign_value]
+}
+
+
+
 variants = data.frame()
-for(colourID in c("18","19")){
-  d2 =d[d$trial_value==colourID,]
+for(colourID in colourNumbers){
+  d2 =d[d$trial_value==colourID & nchar(d2[d2$week==1,]$sign_value)>0,]
   
-  v = data.frame(colour=colourID,sign=unique(d2[d2$week==1,]$sign_value[nchar(d2[d2$week==1,]$sign_value)>0]), stringsAsFactors = F)
+  v = data.frame(colour=colourID, colourName = colourNames[which(colourNumbers==colourID)],sign=unique(d2[d2$week==1,]$sign_value), stringsAsFactors = F)
   
   v$freq_week_1 = table(d2[d2$week==1,]$sign_value)[v$sign]
   v$freq_week_4 = table(d2[d2$week==4,]$sign_value)[v$sign]
+  
+  
+  v$freq_week_1_withinColour = 0
+  v$freq_week_4_withinColour = 0
+  
+  signCounts = table(d2[d2$week==1,]$sign_value)
+  signCounts = signCounts / sum(signCounts)
+    
+  v[v$sign %in% names(signCounts),]$freq_week_1_withinColour = signCounts[v[v$sign %in% names(signCounts),]$sign]
+  
+  signCounts = table(d2[d2$week==4,]$sign_value)
+  signCounts = signCounts / sum(signCounts)
+  
+  v[v$sign %in% names(signCounts),]$freq_week_4_withinColour = signCounts[v[v$sign %in% names(signCounts),]$sign]
+  
+  
+  
+  
   v$iconic = tapply(d2$iconic, d2$sign_value, head,n=1)[v$sign]
   v$check = tapply(d2[d2$week==1,]$T0Check,d2[d2$week==1,]$sign_value,function(X){sum(X,na.rm=T)>0})[v$sign]
   v$inventedBy= tapply(d2$inventedBy, d2$sign_value, head, n=1)[v$sign]
+  v$averageLength_week_1 = tapply(d2[d2$week==1,]$sign_length, d2[d2$week==1,]$sign_value, mean)
+  
+  v$averageTrialLength_week_1 = tapply(d2[d2$week==1,]$trial_length, d2[d2$week==1,]$sign_value, mean)
   
   variants = rbind(variants,v)
-
+  
 }
 
 variants$iconic[is.na(variants$iconic)] = "No"
 variants$freq_week_4[is.na(variants$freq_week_4)] = 0
 
-colourNumbers = c("1","5","7","14",'18','24')
+b = read.delim("../data/otherData/SignProperties.tab", sep='\t', encoding = 'utf-8', stringsAsFactors = F)
+
+b[b$Sign=="FOLWER",]$Sign = "FLOWER"
+b[b$Sign=="BIGHT",]$Sign = "BRIGHT"
+b[b$Sign=="SIGINING",]$Sign = "SIGNING"
+b$Sign = gsub("^ ","", b$Sign)
+b$Sign = gsub(" $","", b$Sign)
+b$Sign = toupper(b$Sign)
+
+variants$BodyAnchor = b[match(variants$sign, b$Sign),]$Body.Anchor
+
+write.csv(variants,file='../data/processedData/variants_summary.csv')
 
 allTargetVars = sort(unique(d[d$trial_value %in% colourNumbers,]$sign_value))
 

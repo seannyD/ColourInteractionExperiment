@@ -2,7 +2,7 @@
 <preferences version="1.1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>60.0</Float>
+        <Float>67.0</Float>
     </pref>
     <prefGroup key="TierColors">
         <pref key="Formal category/Sign_1">
@@ -44,11 +44,11 @@
         <pref key="color_1#2">
             <Object class="java.awt.Color">90,160,0</Object>
         </pref>
-        <pref key="NH_Sign_Origin_1n">
-            <Object class="java.awt.Color">0,0,0</Object>
-        </pref>
         <pref key="Formal category/Sign_2">
             <Object class="java.awt.Color">0,204,51</Object>
+        </pref>
+        <pref key="NH_Sign_Origin_1n">
+            <Object class="java.awt.Color">0,0,0</Object>
         </pref>
         <pref key="COLOR_1(자원)">
             <Object class="java.awt.Color">0,0,90</Object>
@@ -74,10 +74,10 @@
         <pref key="Coordination-bias_1">
             <Object class="java.awt.Color">90,160,90</Object>
         </pref>
-        <pref key="NMS_1">
+        <pref key="LH_ID_Gloss_2">
             <Object class="java.awt.Color">0,0,0</Object>
         </pref>
-        <pref key="LH_ID_Gloss_2">
+        <pref key="NMS_1">
             <Object class="java.awt.Color">0,0,0</Object>
         </pref>
         <pref key="NMS of T0_1">
@@ -257,10 +257,10 @@
         </pref>
     </prefGroup>
     <pref key="GridViewer.TierName">
-        <String>color_1#2</String>
+        <String>Iconicity_2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>1930800</Long>
+        <Long>1766678</Long>
     </pref>
     <prefList key="Interlinear.TierOrder">
         <String>default</String>
@@ -334,7 +334,7 @@
         <String>Language Tool_1</String>
     </prefList>
     <pref key="SelectionEndTime">
-        <Long>1938300</Long>
+        <Long>1767090</Long>
     </pref>
     <prefList key="ExportSmilDialog.HiddenTiers"/>
     <prefList key="MultiTierViewer.TierOrder">
@@ -349,9 +349,17 @@
         <String>Iconicity_1</String>
         <String>Frequency_1</String>
         <String>바르게/흐르게_1</String>
+        <String>Indexical_1</String>
+        <String>SI/CG_1</String>
+        <String>Metonymy/metaphor_1</String>
         <String>T0/Check_2</String>
         <String>T0_2_Origin</String>
         <String>T0_2_iconicity</String>
+        <String>T0_indixical_2</String>
+        <String>candidate(understand) of T0_2</String>
+        <String>T0_Metonymy/metaphor_2</String>
+        <String>Teach Sign by 2_1</String>
+        <String>How Sign by 2_1</String>
         <String>Formal Category/ SIGN(LH)_1</String>
         <String>NH_Sign_Orign_1</String>
         <String>NH_Sign_Origin_1n</String>
@@ -375,19 +383,27 @@
         <String>Iconicity_2</String>
         <String>바르게/흐르게_2</String>
         <String>Frequency_2</String>
-        <String>T0/Check_1</String>
-        <String>T0_1_Origin</String>
-        <String>T0_1_iconicity</String>
-        <String>NMS of T0_1</String>
-        <String>Formal Category/ SIGN(LH)_2</String>
-        <String>NH_Sign_Origin_2</String>
-        <String>LH_ID_Gloss_2</String>
-        <String>NMS_2</String>
+        <String>Indexical_2</String>
+        <String>SI/CG_2</String>
+        <String>Metonymy/metaphor_2</String>
         <String>Coordination-bias_2</String>
         <String>Teach Sign_2</String>
         <String>How Sign_2</String>
         <String>Repair_2</String>
         <String>Try-marker_2</String>
+        <String>T0/Check_1</String>
+        <String>T0_1_Origin</String>
+        <String>T0_1_iconicity</String>
+        <String>T0_indixical_1</String>
+        <String>candidate(understand) of T0_1</String>
+        <String>T0_Metonymy/metaphor_1</String>
+        <String>How Sign by 1_2</String>
+        <String>Teach Sign by 1_2</String>
+        <String>NMS of T0_1</String>
+        <String>Formal Category/ SIGN(LH)_2</String>
+        <String>NH_Sign_Origin_2</String>
+        <String>LH_ID_Gloss_2</String>
+        <String>NMS_2</String>
         <String>Language Tool_2</String>
         <String>Egocentric bias_2</String>
         <String>아우라 성향_2</String>
@@ -511,7 +527,7 @@
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>1930800</Long>
+        <Long>1766678</Long>
     </pref>
     <pref key="TimeLineViewer.TimeRulerVisible">
         <Boolean>true</Boolean>
@@ -607,7 +623,7 @@
         <Boolean>true</Boolean>
     </pref>
     <pref key="MultiTierViewer.ActiveTierName">
-        <String>Formal category/Sign_1</String>
+        <String>Teach Sign by 1_2</String>
     </pref>
     <prefGroup key="CommentViewer.Columns">
         <pref key="종료 시간">
@@ -645,7 +661,7 @@
         <String>RH_ID_Gloss_1</String>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>1920684</Long>
+        <Long>1754467</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>RH_ID_Gloss_1</String>

@@ -11,11 +11,19 @@
         <String>Easily-articulated_1</String>
         <String>Frequency_1</String>
         <String>바르게/흐르게_1</String>
+        <String>indexical_1</String>
+        <String>SI/CG_1</String>
+        <String>Metonymy/metaphor_1</String>
         <String>Formal Category/ SIGN(LH)_1</String>
         <String>NH_Sign_Orign_1</String>
         <String>T0_2</String>
         <String>T0_2_Origin</String>
         <String>T0_2_Iconicity</String>
+        <String>T0_indixical_2</String>
+        <String>candidate(understand) of T0_2</String>
+        <String>T0_Metonymy/metaphor_2</String>
+        <String>Teach Sign by 2</String>
+        <String>How Sign by 2</String>
         <String>NMS_1</String>
         <String>Coordination-bias_1</String>
         <String>How Sign_1</String>
@@ -35,11 +43,19 @@
         <String>Easily-articulated_2</String>
         <String>Frequency_2</String>
         <String>바르게/흐르게_2</String>
+        <String>indexical_2</String>
+        <String>SI/CG_2</String>
+        <String>Metonymy/metaphor_2</String>
         <String>Formal Category/ SIGN(LH)_2</String>
         <String>NH_Sign_Origin_2</String>
         <String>T0_1</String>
         <String>T0_1_Origin</String>
         <String>T0_1_Iconicity</String>
+        <String>T0_indixical_1</String>
+        <String>candidate(understand) of T0_1</String>
+        <String>T0_Metonymy/metaphor_1</String>
+        <String>Teach Sign by 1</String>
+        <String>How Sign by 1</String>
         <String>NMS_2</String>
         <String>Coordination-bias_2</String>
         <String>How Sign_2</String>
@@ -120,7 +136,7 @@
         <Int>1</Int>
     </pref>
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>89.0</Float>
+        <Float>48.0</Float>
     </pref>
     <pref key="LayoutManager.SelectedTabIndex">
         <Int>0</Int>
@@ -132,11 +148,11 @@
         <pref key="Formal Category/ SIGN(LH)_1">
             <Object class="java.awt.Color">90,0,90</Object>
         </pref>
-        <pref key="Formal Category/ SIGN(RH)_1">
-            <Object class="java.awt.Color">0,0,90</Object>
-        </pref>
         <pref key="Formal Category/ SIGN(LH)_2">
             <Object class="java.awt.Color">0,0,160</Object>
+        </pref>
+        <pref key="Formal Category/ SIGN(RH)_1">
+            <Object class="java.awt.Color">0,0,90</Object>
         </pref>
         <pref key="Modification_1">
             <Object class="java.awt.Color">90,160,160</Object>
@@ -168,11 +184,11 @@
         <pref key="Egocentric bias_1">
             <Object class="java.awt.Color">0,90,160</Object>
         </pref>
-        <pref key="Egocentric bias_2">
-            <Object class="java.awt.Color">160,160,90</Object>
-        </pref>
         <pref key="default">
             <Object class="java.awt.Color">90,160,90</Object>
+        </pref>
+        <pref key="Egocentric bias_2">
+            <Object class="java.awt.Color">160,160,90</Object>
         </pref>
         <pref key="Coordination-bias_2">
             <Object class="java.awt.Color">0,90,0</Object>
@@ -202,13 +218,13 @@
         <String>Color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>413918</Long>
+        <Long>258202</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>413918</Long>
+        <Long>258202</Long>
     </pref>
     <pref key="MultiTierViewer.TierSortingMode">
         <Int>1</Int>
@@ -229,7 +245,7 @@
         </pref>
     </prefGroup>
     <pref key="MultiTierViewer.ActiveTierName">
-        <String>Color_1#2</String>
+        <String>Formal Category/ SIGN(RH)_1</String>
     </pref>
     <prefGroup key="CommentViewer.Columns">
         <pref key="종료 시간">
@@ -270,7 +286,7 @@
         <Int>266</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>408528</Long>
+        <Long>241784</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>Easily-articulated_1</String>
@@ -287,6 +303,6 @@
         <String>BAS - WebMAUS Basic</String>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>421276</Long>
+        <Long>258971</Long>
     </pref>
 </preferences>

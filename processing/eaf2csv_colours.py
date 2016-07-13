@@ -134,6 +134,18 @@ def getVariants(eaffile,filename):
 					
 					signOrigin = getChildTiersBetweenTimes(eaffile, signOriginTierName, sign_start, sign_end)
 					
+					# try marker tiers can cover more than one sign
+					tryMarkerTierName = "Try-marker_"+speaker
+					tryCandidates = eaffile.get_annotation_data_between_times(
+						tryMarkerTierName, 
+						trial_start-turnmargin,
+						trial_end+turnmargin)
+					tryCandidates = [x for x in tryCandidates if (x[0]-turnmargin) < sign_start and (x[1]+turnmargin) > sign_end]
+					if(len(tryCandidates)>0):
+						tryMarker = tryCandidates[0][2]
+					else:
+						tryMarker = "No"
+					
 					sign_value, sign_notes = getSignBits(sign_value)
 					
 					out.append([
