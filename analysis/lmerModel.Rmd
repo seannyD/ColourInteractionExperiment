@@ -56,8 +56,15 @@ variants = read.csv('../data/processedData/variants_summary.csv', stringsAsFacto
 
 ```
 
+```{r}
+
+variants$Teach = variants$Teach >1
+variants$TryMarked = variants$TryMarked > 1
+```
+
+
 # LMER models
-```{r modelBits, cache=T}
+```{r modelBits}
 m0 = lmer(log(1 + freq_week_4_withinColour) ~ 
             1
           + (1 | colourName), 
@@ -80,13 +87,13 @@ m3 = lmer(log(1 + freq_week_4_withinColour) ~
 
 m4 = lmer(log(1 + freq_week_4_withinColour) ~ 
             (indexical) + 
-            (Teach) * (TryMarked) 
+            Teach * TryMarked
           + (1 | colourName), 
           data=variants)
 
 m5 = lmer(log(1 + freq_week_4_withinColour) ~ 
             (indexical) + 
-            (Teach) * (TryMarked) +
+            (Teach * TryMarked) +
             log(freq_week_1+1)
           + (1 | colourName), 
           data=variants)
@@ -99,7 +106,7 @@ m5 = lmer(log(1 + freq_week_4_withinColour) ~
 anova(m0,m1,m2,m3,m4,m5)
 ```
 
-`r getMEText(anova(m2,m3), "main effect of try marking",summary(m5)$coef['TryMarked',])`
+`r getMEText(anova(m2,m3), "main effect of try marking",summary(m5)$coef['TryMarkedTRUE',])`
 
 `r getMEText(anova(m4,m5), "main effect of frequency in week 1",summary(m5)$coef['log(freq_week_1 + 1)',])`
 
@@ -107,6 +114,6 @@ anova(m0,m1,m2,m3,m4,m5)
 
 
 ```{r}
-sjp.lmer(m5,'fe')
+#sjp.lmer(m5,'fe')
 ```
 

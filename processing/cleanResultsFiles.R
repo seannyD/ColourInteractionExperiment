@@ -77,6 +77,9 @@ for(i in 1:length(signChanges)){
       & !is.na(d$sign_value),]$sign_value = signChanges[[i]][2]
   }
 }
+
+d = d[!is.na(d$sign_value),]
+
 d$sign_value = gsub("^ ","", d$sign_value)
 d$sign_value = gsub(" $","", d$sign_value)
 d$sign_value = gsub("[!\\?\t]","", d$sign_value)
