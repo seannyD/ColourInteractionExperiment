@@ -28,6 +28,28 @@ getDetails = function(x){
   return(c(week=as.numeric(x[3]), session=as.numeric(x[4]),y[1],y[2]))
 }
 
+findOverlaps = function(rangesA){
+  
+  overlaps = sapply(1:nrow(rangesA), function(i){
+    # if start or end is within range, then findInterval returns 1,
+    # so multiplying should only return 1 if BOTH are
+    startO= findInterval(rangesA[,1], c(rangesA[i,1],rangesA[i,2])) 
+    endO = findInterval(rangesA[,2], c(rangesA[i,1],rangesA[i,2]))
+    (startO==1) | (endO==1)
+  })
+  ret = data.frame(which(overlaps==1, arr.ind = T))
+  ret = ret[ret[,1]!=ret[,2],]
+  if(nrow(ret)==0){
+    return(NA)
+  }
+  ret = data.frame(t(apply(ret, 1, function(X){
+    c(rangesA[X[1],], rangesA[X[2],])
+  })))
+  ret = ret[(ret[,2] - ret[,3]) != 0,]
+  names(ret) = c("TrialA_start","TrialA_end","TrialB_start","TrialB_end")
+  return(ret)
+}
+
   
 d = read.csv("../data/processedData/variants.csv", stringsAsFactors = F, quote='')
 
@@ -49,6 +71,15 @@ d$sign_value = gsub("^ ","", d$sign_value)
 d$sign_value = gsub(" $","", d$sign_value)
 d$sign_value = toupper(d$sign_value)
 
+#####
+# Find any trials that are overlapping
+overlaps = sapply(unique(d$filename),function(X){
+  dx = d[d$filename==X,]
+  dx = dx[!duplicated(dx$trial_start),]
+  findOverlaps(cbind(dx$trial_start,dx$trial_end))
+})
+
+overlaps[!is.na(overlaps)]
 
 # make sure that all iconicity ratings are the same
 d$iconic[d$iconic==""] = NA
@@ -59,6 +90,11 @@ ndiff[ndiff>1]
 iconicityMeasures = tapply(d$iconic, d$sign_value, checkIconicity)
 d$iconic = iconicityMeasures[d$sign_value]
 
+# Check indexicality
+
+d$Indexicality[d$Indexicality=="(-1"] = "No"
+# One case:
+d$Indexicality[d$Indexicality==""] = "Yes"
 
 # trial lengths
 trialLengths = tapply(d$trial_length,d$trial_start,head,n=1)/1000
@@ -80,7 +116,7 @@ plot(rank(d2[sel,]$sign_start),rep(1,sum(sel)), col=cols[d2[sel,]$sign_value], p
 
 tapply(d$sign_value, d$week, function(X){length(unique(X))})
 
-
+d$speaker = as.numeric(d$speaker)
 
 d$speakerName = sapply(1:nrow(d),function(X){
   d[X,c("part1","part2")][,d$speaker[X]]
@@ -173,3 +209,4 @@ cat(
   file="../processing/ListOfVariants.txt")
 
 write.csv(d, file="../data/processedData/variants_processed.csv")
+

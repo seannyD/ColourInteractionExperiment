@@ -7,21 +7,20 @@
         <String>2_Selected stimulus</String>
         <String>Formal Category/ SIGN(RH)_1</String>
         <String>Sign_Orign_1</String>
-        <String>Iconicity_1</String>
+        <String>motivation(also indexical)_1</String>
+        <String>motivation(but no indexical)_1</String>
         <String>Easily-articulated_1</String>
         <String>Frequency_1</String>
         <String>바르게/흐르게_1</String>
         <String>indexical_1</String>
-        <String>SI/CG_1</String>
-        <String>Metonymy/metaphor_1</String>
         <String>Formal Category/ SIGN(LH)_1</String>
         <String>NH_Sign_Orign_1</String>
         <String>T0_2</String>
         <String>T0_2_Origin</String>
-        <String>T0_2_Iconicity</String>
-        <String>T0_indixical_2</String>
         <String>candidate(understand) of T0_2</String>
-        <String>T0_Metonymy/metaphor_2</String>
+        <String>T0_2_motivation(also indexical)</String>
+        <String>T0_2_motivation(but no indexical)</String>
+        <String>T0_indixical_2</String>
         <String>Teach Sign by 2</String>
         <String>How Sign by 2</String>
         <String>NMS_1</String>
@@ -39,21 +38,20 @@
         <String>1_Selected stimulus</String>
         <String>Formal Category/ SIGN(RH)_2</String>
         <String>Sign_Origin_2</String>
-        <String>Iconicity_2</String>
+        <String>motivation(also indexical)_2</String>
+        <String>motivation(but no indexical)_2</String>
         <String>Easily-articulated_2</String>
         <String>Frequency_2</String>
         <String>바르게/흐르게_2</String>
         <String>indexical_2</String>
-        <String>SI/CG_2</String>
-        <String>Metonymy/metaphor_2</String>
         <String>Formal Category/ SIGN(LH)_2</String>
         <String>NH_Sign_Origin_2</String>
         <String>T0_1</String>
         <String>T0_1_Origin</String>
-        <String>T0_1_Iconicity</String>
-        <String>T0_indixical_1</String>
         <String>candidate(understand) of T0_1</String>
-        <String>T0_Metonymy/metaphor_1</String>
+        <String>T0_1_motivation(also indexical)</String>
+        <String>T0_1_motivation(but no indexical)</String>
+        <String>T0_indixical_1</String>
         <String>Teach Sign by 1</String>
         <String>How Sign by 1</String>
         <String>NMS_2</String>
@@ -136,7 +134,7 @@
         <Int>1</Int>
     </pref>
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>48.0</Float>
+        <Float>178.0</Float>
     </pref>
     <pref key="LayoutManager.SelectedTabIndex">
         <Int>0</Int>
@@ -184,11 +182,11 @@
         <pref key="Egocentric bias_1">
             <Object class="java.awt.Color">0,90,160</Object>
         </pref>
-        <pref key="default">
-            <Object class="java.awt.Color">90,160,90</Object>
-        </pref>
         <pref key="Egocentric bias_2">
             <Object class="java.awt.Color">160,160,90</Object>
+        </pref>
+        <pref key="default">
+            <Object class="java.awt.Color">90,160,90</Object>
         </pref>
         <pref key="Coordination-bias_2">
             <Object class="java.awt.Color">0,90,0</Object>
@@ -218,13 +216,13 @@
         <String>Color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>258202</Long>
+        <Long>248871</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>258202</Long>
+        <Long>249501</Long>
     </pref>
     <pref key="MultiTierViewer.TierSortingMode">
         <Int>1</Int>
@@ -286,7 +284,7 @@
         <Int>266</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>241784</Long>
+        <Long>244663</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>Easily-articulated_1</String>
@@ -303,6 +301,6 @@
         <String>BAS - WebMAUS Basic</String>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>258971</Long>
+        <Long>249516</Long>
     </pref>
 </preferences>

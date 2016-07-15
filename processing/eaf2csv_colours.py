@@ -14,12 +14,13 @@ import sys
 
 turnmargin = 50
 trialmargin = 100
+teachmargin = 200
 
 
 
 ignoreIconicityFiles= ["Colour_game_01_1_Jordan-India_After_one_week.eaf","Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf","Colour_game_01_3_Indonesia-India_After_one_week.eaf","Colour_game_01_3_Jordan-Nepal_After_one_week.eaf","Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf", "Colour_game_04_2_Nepal-India_After_three_weeks.eaf","Colour_game_04_3_Jordan-India_After_three_weeks.eaf"]
 
-ignoreCheck = ["Colour_game_04_1_Indonesia-India_After_three_week.eaf"]
+ignoreCheck = []#["Colour_game_04_1_Indonesia-India_After_three_week.eaf"]
 
 eaffolder = "../data/Kangsuk's annotation/"
 resultsfolder = '../data/processedData/'
@@ -76,6 +77,7 @@ def getVariantHeader():
 
 	return( [[
 		"filename",
+		"trialID",
 		"director",
 		"speaker",
 		"trial_value",
@@ -89,7 +91,10 @@ def getVariantHeader():
 		"sign_notes",
 		"iconic",
 		"signOrigin",
-		"T0Check"
+		"T0Check",
+		"TryMarked",
+		"Indexicality",
+		"Teach"
 		]])
 		
 def getTierNames(eaffile):
@@ -100,6 +105,7 @@ def getTierNames(eaffile):
 
 def getVariants(eaffile,filename):
 	out = []
+	trialID = 0
 	for director in ["1","2"]:
 		
 		director_name = director
@@ -113,8 +119,11 @@ def getVariants(eaffile,filename):
 		trials = eaffile.get_annotation_data_for_tier(colourTierName)
 		
 		for trial_start, trial_end, trial_value in trials:
-			
+			trialID += 1
 			for speaker in ["1","2"]:
+				listener = "1"
+				if speaker == "1":
+					listener = "2"
 				
 				speaker_name = speaker
 				
@@ -125,7 +134,12 @@ def getVariants(eaffile,filename):
 		
 				for sign_start, sign_end, sign_value in signs:
 					
+					###########
+					# Iconicity
 					iconic = getChildTiersBetweenTimes(eaffile, "Iconicity_"+speaker, sign_start, sign_end)
+					
+					###########
+					# Sign origin
 					signOriginTierNames = ["Sign_Orign_"+speaker,"Sign(RH)_Origin_"+speaker,"Sign_Orign_"+speaker+speaker, "Sign_Orign("+{"2":"LH","1":"RH"}[speaker]+")_"+speaker,"Sign_Orign("+{"2":"LH","1":"RH"}[speaker]+")_1","Sign_Orign(RH)_2","Sign_Origin_"+speaker]
 					
 
@@ -133,8 +147,9 @@ def getVariants(eaffile,filename):
 					signOriginTierName = [x for x in signOriginTierNames if x in eaffile.get_tier_names()][0]	
 					
 					signOrigin = getChildTiersBetweenTimes(eaffile, signOriginTierName, sign_start, sign_end)
-					
-					# try marker tiers can cover more than one sign
+					###########
+					# Try Markers					
+					# try marker annotations can cover more than one sign
 					tryMarkerTierName = "Try-marker_"+speaker
 					tryCandidates = eaffile.get_annotation_data_between_times(
 						tryMarkerTierName, 
@@ -143,13 +158,42 @@ def getVariants(eaffile,filename):
 					tryCandidates = [x for x in tryCandidates if (x[0]-turnmargin) < sign_start and (x[1]+turnmargin) > sign_end]
 					if(len(tryCandidates)>0):
 						tryMarker = tryCandidates[0][2]
+						if tryMarker == "":
+							tryMarker = "Yes"
 					else:
 						tryMarker = "No"
+					
+					
+					###########
+					# Indexicality
+					
+					indexicalityTierNames = ["Indexical_"+speaker, "indexical_"+speaker]
+					indexicalityTierName = [x for x in indexicalityTierNames if x in eaffile.get_tier_names()][0]
+					indexicality = getChildTiersBetweenTimes(eaffile, indexicalityTierName, sign_start, sign_end)
+
+					###########
+					# Teaching
+					# teach annotations can cover more than one sign
+					
+					teachMarkerTierName = "Teach Sign_"+speaker
+					teachCandidates = eaffile.get_annotation_data_between_times(
+						teachMarkerTierName, 
+						trial_start-trialmargin,
+						trial_end+trialmargin)
+					teachCandidates = [x for x in teachCandidates if (x[0]-teachmargin) < sign_start and (x[1]+teachmargin) > sign_end]
+					if(len(teachCandidates)>0):
+						teach = teachCandidates[0][2]
+						if teach == "":
+							teach = "Yes"
+					else:
+						teach = "No"
+
 					
 					sign_value, sign_notes = getSignBits(sign_value)
 					
 					out.append([
 						filename,
+						trialID,
 						director_name,
 						speaker_name,
 						trial_value,
@@ -163,8 +207,15 @@ def getVariants(eaffile,filename):
 						sign_notes,
 						iconic[2],
 						signOrigin[2],
-						"FALSE"
+						"FALSE",
+						tryMarker,
+						indexicality[2],
+						teach
 					])
+				
+				
+				# Check tiers (OIRs etc.) from other player are on a different tier
+				# can be independent from colour signs, so list them as separate cases
 				
 				checkTierNames = ["T0/Check_"+speaker, "repair initiation_"+speaker,"Repair initiation_"+speaker,"T0/check_"+speaker]
 				
@@ -177,13 +228,53 @@ def getVariants(eaffile,filename):
 					
 						iconic = [-1,-1,"NA",""]
 						print (filename)
+						for x in sorted(eaffile.get_tier_names()):
+							print(x)
+						iconicityTierNames = ["T0_"+listener+"_iconicity","Iconicity of T0_"+listener,"T0_"+listener+"_Iconicity"]
+						iconicityTierName = [x for x in iconicityTierNames if x in eaffile.get_tier_names()][0]
+						
+						
 						if not filename in ignoreIconicityFiles:
-							iconic = getChildTiersBetweenTimes(eaffile, "Iconicity of T0_"+speaker, check_start, check_end)
+							iconic = getChildTiersBetweenTimes(eaffile, iconicityTierName, check_start, check_end)
+						
+						### get origin of check
+						
+						checkOriginTierName = ["T0_"+listener+"_Origin"]
+						checkOriginTierName = checkOriginTierName[0]
+						checkOrigin = getChildTiersBetweenTimes(eaffile, checkOriginTierName, check_start, check_end)
+						
+						
+						# this is wrong - we don't want the sign origin, but the origin of
+						# the sign used in the repair
+						#print(signOriginTierNames)
+						#signOriginTierName = [x for x in signOriginTierNames if x in eaffile.get_tier_names()][0]	
+						#signOrigin = getChildTiersBetweenTimes(eaffile, signOriginTierName, sign_start, sign_end)
 					
+						# Indexicality names"T0_indixical_1"
+						check_indexicalityTierNames = ["T0_Indexical_"+listener, "T0_indexical_"+listener,"T0_indixical_"+listener]
+						check_indexicalityTierName = [x for x in check_indexicalityTierNames if x in eaffile.get_tier_names()][0]
+						check_indexicality = getChildTiersBetweenTimes(eaffile, check_indexicalityTierName, check_start, check_end)
+					
+					
+						check_teachMarkerTierName = "Teach Sign_"+listener
+						check_teachCandidates = eaffile.get_annotation_data_between_times(
+							check_teachMarkerTierName, 
+							trial_start-trialmargin,
+							trial_end+trialmargin)
+						check_teachCandidates = [x for x in check_teachCandidates if (x[0]-teachmargin) < check_start and (x[1]+teachmargin) > check_end]
+						if(len(check_teachCandidates)>0):
+							check_teach = check_teachCandidates[0][2]
+							if check_teach == "":
+								check_teach = "Yes"
+						else:
+							check_teach = "No"
+					
+						###
 						check_value, check_notes = getSignBits(check_value)
 					
 						out.append([
 							filename,
+							trialID,
 							director_name,
 							speaker_name,
 							trial_value,
@@ -196,8 +287,11 @@ def getVariants(eaffile,filename):
 							check_value,
 							check_notes,
 							iconic[2],
-							"NA",
-							"TRUE"
+							checkOrigin[2],  # sign origin
+							"TRUE",
+							"NA",  # try marker
+							check_indexicality,
+							check_teach
 						])
 		
 	return(out)
@@ -214,7 +308,7 @@ def getChildTiersBetweenTimes(eaffile, tier, sign_start, sign_end):
 	for a in anx:
 		if a[0] > (sign_start-turnmargin) and a[1] < (sign_end+turnmargin):
 			return a
-	return (-1,-1,"","")
+	return (-1,-1,"NA","")
 
 def writeData(list,filename):
 	list2 = list2csv(list)

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-07-12T13:50:13+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-07-14T20:03:58+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
         <MEDIA_DESCRIPTOR MEDIA_URL="file:///K:/07ERC 프로젝트연구/03ELAN 작업/2014년 Lucknow대학/Colour_game- 주석할 것/02_After_one_week_05122014/02_After_one_week_05122014_04Colour_game_03_Jordan-Nepal_After_one_week_03.mpeg" MIME_TYPE="video/mpeg"/>
         <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:422213e3-b67e-4b9e-bc94-43607b51d9d6</PROPERTY>
-        <PROPERTY NAME="lastUsedAnnotationId">273</PROPERTY>
+        <PROPERTY NAME="lastUsedAnnotationId">314</PROPERTY>
     </HEADER>
     <TIME_ORDER>
         <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="23221"/>
@@ -502,7 +502,7 @@
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
     </TIER>
-    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_1" TIER_ID="Iconicity_1">
+    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_1" TIER_ID="motivation(also indexical)_1">
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a193" ANNOTATION_REF="a74" CVE_REF="cveid1">
                 <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
@@ -514,8 +514,8 @@
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a189" ANNOTATION_REF="a188">
-                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            <REF_ANNOTATION ANNOTATION_ID="a189" ANNOTATION_REF="a188" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -527,15 +527,70 @@
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="easily-articulated" PARENT_REF="Formal category/Sign_1" TIER_ID="Easily-articulated_1"/>
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="Frequency" PARENT_REF="Formal category/Sign_1" TIER_ID="Frequency_1"/>
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="바르게/흐르게" PARENT_REF="Formal category/Sign_1" TIER_ID="바르게/흐르게_1"/>
-    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_2" TIER_ID="Iconicity_2">
+    <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_2" TIER_ID="motivation(also indexical)_2">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a282" ANNOTATION_REF="a160" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a284" ANNOTATION_REF="a83" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a274" ANNOTATION_REF="a84" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a275" ANNOTATION_REF="a228" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a276" ANNOTATION_REF="a229" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a298" ANNOTATION_REF="a185" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a299" ANNOTATION_REF="a223" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a305" ANNOTATION_REF="a190" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a306" ANNOTATION_REF="a251" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a233" ANNOTATION_REF="a230" CVE_REF="cveid0">
                 <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a235" ANNOTATION_REF="a232">
-                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            <REF_ANNOTATION ANNOTATION_ID="a235" ANNOTATION_REF="a232" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a277" ANNOTATION_REF="a167" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a307" ANNOTATION_REF="a108" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
     </TIER>
@@ -621,7 +676,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a131" TIME_SLOT_REF1="ts89" TIME_SLOT_REF2="ts90">
-                <ANNOTATION_VALUE>20   빨강</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>20   </ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -910,6 +965,11 @@
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a300" ANNOTATION_REF="a188">
+                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a239" ANNOTATION_REF="a237" CVE_REF="cveid1">
                 <ANNOTATION_VALUE>NSL</ANNOTATION_VALUE>
             </REF_ANNOTATION>
@@ -969,14 +1029,20 @@
         </ANNOTATION>
     </TIER>
     <TIER LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="T0/check_1" TIER_ID="T0_1_Origin"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_2" TIER_ID="T0_2_Iconicity">
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_2" TIER_ID="T0_2_motivation(also indexical)">
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a197" ANNOTATION_REF="a195" CVE_REF="cveid1">
                 <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
     </TIER>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_1" TIER_ID="T0_1_Iconicity"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_1" TIER_ID="T0_1_motivation(also indexical)">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a285" ANNOTATION_REF="a164" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
     <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_2" TIER_ID="candidate(understand) of T0_2">
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a213" ANNOTATION_REF="a195" CVE_REF="cveid0">
@@ -991,7 +1057,23 @@
             </REF_ANNOTATION>
         </ANNOTATION>
     </TIER>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_1" TIER_ID="indexical_1"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_1" TIER_ID="indexical_1">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a286" ANNOTATION_REF="a74" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a287" ANNOTATION_REF="a75" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a301" ANNOTATION_REF="a188" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
     <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_2" TIER_ID="indexical_2">
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a245" ANNOTATION_REF="a160" CVE_REF="cveid2">
@@ -1004,6 +1086,21 @@
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a288" ANNOTATION_REF="a84" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a289" ANNOTATION_REF="a228" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a290" ANNOTATION_REF="a229" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a253" ANNOTATION_REF="a185" CVE_REF="cveid2">
                 <ANNOTATION_VALUE>Yes-body</ANNOTATION_VALUE>
             </REF_ANNOTATION>
@@ -1013,32 +1110,90 @@
                 <ANNOTATION_VALUE>Yes-body</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a308" ANNOTATION_REF="a190" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a309" ANNOTATION_REF="a251" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a310" ANNOTATION_REF="a230" CVE_REF="cveid2">
+                <ANNOTATION_VALUE>Yes-body</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a311" ANNOTATION_REF="a232" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a312" ANNOTATION_REF="a167" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a313" ANNOTATION_REF="a108" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
     </TIER>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_1" TIER_ID="SI/CG_1"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_2" TIER_ID="SI/CG_2">
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_1" TIER_ID="motivation(but no indexical)_1">
         <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a247" ANNOTATION_REF="a84" CVE_REF="cveid0">
-                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            <REF_ANNOTATION ANNOTATION_ID="a291" ANNOTATION_REF="a74" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a248" ANNOTATION_REF="a228" CVE_REF="cveid0">
-                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            <REF_ANNOTATION ANNOTATION_ID="a292" ANNOTATION_REF="a75" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a249" ANNOTATION_REF="a229" CVE_REF="cveid0">
-                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
-            </REF_ANNOTATION>
-        </ANNOTATION>
-        <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a273" ANNOTATION_REF="a167" CVE_REF="cveid0">
+            <REF_ANNOTATION ANNOTATION_ID="a302" ANNOTATION_REF="a188" CVE_REF="cveid0">
                 <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
     </TIER>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_1" TIER_ID="Metonymy/metaphor_1"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_2" TIER_ID="Metonymy/metaphor_2">
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal category/Sign_2" TIER_ID="motivation(but no indexical)_2">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a283" ANNOTATION_REF="a160" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a293" ANNOTATION_REF="a83" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a278" ANNOTATION_REF="a84" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a279" ANNOTATION_REF="a228" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a280" ANNOTATION_REF="a229" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a303" ANNOTATION_REF="a185" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a304" ANNOTATION_REF="a223" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a255" ANNOTATION_REF="a190" CVE_REF="cveid0">
                 <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
@@ -1050,7 +1205,17 @@
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a314" ANNOTATION_REF="a230" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a269" ANNOTATION_REF="a232" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a281" ANNOTATION_REF="a167" CVE_REF="cveid0">
                 <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
@@ -1060,8 +1225,20 @@
             </REF_ANNOTATION>
         </ANNOTATION>
     </TIER>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_2" TIER_ID="T0_Metonymy/metaphor_2"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_1" TIER_ID="T0_Metonymy/metaphor_1"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_2" TIER_ID="T0_2_motivation(but no indexical)">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a294" ANNOTATION_REF="a195" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_1" TIER_ID="T0_1_motivation(but no indexical)">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a295" ANNOTATION_REF="a164" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
     <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_1" TIER_ID="T0_indixical_1">
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a250" ANNOTATION_REF="a164" CVE_REF="cveid0">
@@ -1069,8 +1246,20 @@
             </REF_ANNOTATION>
         </ANNOTATION>
     </TIER>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_2" TIER_ID="T0_indixical_2"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_2" TIER_ID="Teach Sign by 2"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_2" TIER_ID="T0_indixical_2">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a296" ANNOTATION_REF="a195" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_2" TIER_ID="Teach Sign by 2">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a297" ANNOTATION_REF="a195">
+                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
     <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_1" TIER_ID="Teach Sign by 1"/>
     <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_2" TIER_ID="How Sign by 2"/>
     <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/check_1" TIER_ID="How Sign by 1"/>

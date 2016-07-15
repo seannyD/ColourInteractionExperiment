@@ -10,13 +10,12 @@
         <String>2_Selected stimulus</String>
         <String>Formal category/Sign_1</String>
         <String>Sign_Orign(RH)_1</String>
-        <String>Iconicity_1</String>
+        <String>motivation(also indexical)_1</String>
+        <String>motivation(but no indexical)_1</String>
         <String>Easily-articulated_1</String>
         <String>Frequency_1</String>
         <String>바르게/흐르게_1</String>
         <String>indexical_1</String>
-        <String>SI/CG_1</String>
-        <String>Metonymy/metaphor_1</String>
         <String>Formal Category/ SIGN(LH)_1</String>
         <String>NH_Sign_Orign_1</String>
         <String>NMS_1</String>
@@ -27,9 +26,9 @@
         <String>Repair_1</String>
         <String>T0/check_2</String>
         <String>T0_2_Origin</String>
-        <String>T0_2_Iconicity</String>
         <String>candidate(understand) of T0_2</String>
-        <String>T0_Metonymy/metaphor_2</String>
+        <String>T0_2_motivation(also indexical)</String>
+        <String>T0_2_motivation(but no indexical)</String>
         <String>T0_indixical_2</String>
         <String>Teach Sign by 2</String>
         <String>How Sign by 2</String>
@@ -42,13 +41,12 @@
         <String>1_Selected stimulus1</String>
         <String>Formal category/Sign_2</String>
         <String>Sign_Orign(RH)_2</String>
-        <String>Iconicity_2</String>
+        <String>motivation(also indexical)_2</String>
+        <String>motivation(but no indexical)_2</String>
         <String>Easily-articulated_2</String>
         <String>Frequency_2</String>
         <String>바르게/흐르게_2</String>
         <String>indexical_2</String>
-        <String>SI/CG_2</String>
-        <String>Metonymy/metaphor_2</String>
         <String>Formal Category/ SIGN(LH)_2</String>
         <String>NH_Sign_Origin_2</String>
         <String>NMS_2</String>
@@ -59,10 +57,10 @@
         <String>Try-marker_2</String>
         <String>T0/check_1</String>
         <String>T0_1_Origin</String>
-        <String>T0_1_Iconicity</String>
-        <String>T0_indixical_1</String>
         <String>candidate(understand) of T0_1</String>
-        <String>T0_Metonymy/metaphor_1</String>
+        <String>T0_1_motivation(also indexical)</String>
+        <String>T0_1_motivation(but no indexical)</String>
+        <String>T0_indixical_1</String>
         <String>Teach Sign by 1</String>
         <String>How Sign by 1</String>
         <String>Modification_2</String>
@@ -142,17 +140,17 @@
         <Int>0</Int>
     </pref>
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>109.0</Float>
+        <Float>89.0</Float>
     </pref>
     <prefGroup key="TierColors">
         <pref key="Formal Category/ SIGN(LH)_1">
             <Object class="java.awt.Color">0,90,0</Object>
         </pref>
-        <pref key="Formal Category/ SIGN(LH)_2">
-            <Object class="java.awt.Color">160,0,90</Object>
-        </pref>
         <pref key="Formal category/Sign_1">
             <Object class="java.awt.Color">0,160,90</Object>
+        </pref>
+        <pref key="Formal Category/ SIGN(LH)_2">
+            <Object class="java.awt.Color">160,0,90</Object>
         </pref>
         <pref key="Modification_1">
             <Object class="java.awt.Color">0,90,160</Object>
@@ -175,17 +173,17 @@
         <pref key="Stimulus_2">
             <Object class="java.awt.Color">0,0,160</Object>
         </pref>
-        <pref key="Egocentric bias_1">
-            <Object class="java.awt.Color">90,0,160</Object>
-        </pref>
         <pref key="T0/check_1">
             <Object class="java.awt.Color">90,0,90</Object>
         </pref>
-        <pref key="Egocentric bias_2">
-            <Object class="java.awt.Color">160,0,160</Object>
+        <pref key="Egocentric bias_1">
+            <Object class="java.awt.Color">90,0,160</Object>
         </pref>
         <pref key="default">
             <Object class="java.awt.Color">90,160,0</Object>
+        </pref>
+        <pref key="Egocentric bias_2">
+            <Object class="java.awt.Color">160,0,160</Object>
         </pref>
         <pref key="Coordination-bias_2">
             <Object class="java.awt.Color">0,0,90</Object>
@@ -221,13 +219,13 @@
         <String>Color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>183526</Long>
+        <Long>1038974</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>183526</Long>
+        <Long>1039321</Long>
     </pref>
     <prefGroup key="TierHighlightColors"/>
     <pref key="MultiTierViewer.TierSortingMode">
@@ -286,10 +284,10 @@
         </pref>
     </prefGroup>
     <pref key="LayoutManager.ControlPanelWidth">
-        <Int>221</Int>
+        <Int>265</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>178154</Long>
+        <Long>1030591</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>Easily-articulated_1</String>
@@ -306,6 +304,6 @@
         <Int>492</Int>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>187992</Long>
+        <Long>1040342</Long>
     </pref>
 </preferences>
