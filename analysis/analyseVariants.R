@@ -27,21 +27,21 @@ yellow = table(d[d$sign_value=="GREEN1-1",]$week)
 barplot(rbind(sun,yellow), beside=T, xlab='week', ylab='frequency', ylim=c(0,20),col=1:2)
 legend(1,20,legend=c("SUN","GREEN1-1"), col=1:2, pch=15)
 
-pdf("../results/descriptive/graphs/IconicityByWeek.pdf")
-barplot(table(d$iconic,d$week), col=1:2, xlab='Week')
-legend(1.5,150,legend=c("Iconic","Not iconic"), col=2:1, pch=15)
-dev.off()
+# pdf("../results/descriptive/graphs/IconicityByWeek.pdf")
+# barplot(table(d$iconic,d$week), col=1:2, xlab='Week')
+# legend(1.5,150,legend=c("Iconic","Not iconic"), col=2:1, pch=15)
+# dev.off()
 
-w1 = table(d[d$week==1,]$iconic, d[d$week==1,]$trialColourName)
-w4 = table(d[d$week==4,]$iconic, d[d$week==4,]$trialColourName)
-
-
-pdf("../results/descriptive/graphs/IconicityByWeekByColour.pdf")
-barplot(cbind(w1,c(NA,NA),w4), col=1:2, las=2)
-abline(v=7.9)
-axis(1,line=2.5,at=c(4,12), labels=c("Week 1","Week 3"), tick=F, lwd=0)
-legend(1.5,150,legend=c("Iconic","Not iconic"), col=2:1, pch=15)
-dev.off()
+# w1 = table(d[d$week==1,]$iconic, d[d$week==1,]$trialColourName)
+# w4 = table(d[d$week==4,]$iconic, d[d$week==4,]$trialColourName)
+# 
+# 
+# pdf("../results/descriptive/graphs/IconicityByWeekByColour.pdf")
+# barplot(cbind(w1,c(NA,NA),w4), col=1:2, las=2)
+# abline(v=7.9)
+# axis(1,line=2.5,at=c(4,12), labels=c("Week 1","Week 3"), tick=F, lwd=0)
+# legend(1.5,150,legend=c("Iconic","Not iconic"), col=2:1, pch=15)
+# dev.off()
 
 
 library(gplots)
@@ -53,14 +53,14 @@ pdf("../results/descriptive/graphs/LengthByWeek.pdf")
 plotmeans(d$sign_length~d$week, xlab='Week', ylab="Length (ms)", main='Length of signs')
 dev.off()
 
-pdf("../results/descriptive/graphs/IconicByWeekByPart.pdf", width=8, height=5)
-partIconic = table(d$iconic,d$speakerName,d$week)
-cbind(partIconic[,,1],partIconic[,,2])
-barplot(cbind(partIconic[,,1],partIconic[,,2]), col=1:2)
-abline(v=4.9)
-text(c(2.5,7.5),c(65,65), c("Week 1", "Week 4"))
-legend(5,50, c("Iconic","Non-iconic"), col=2:1, pch=15)
-dev.off()
+# pdf("../results/descriptive/graphs/IconicByWeekByPart.pdf", width=8, height=5)
+# partIconic = table(d$iconic,d$speakerName,d$week)
+# cbind(partIconic[,,1],partIconic[,,2])
+# barplot(cbind(partIconic[,,1],partIconic[,,2]), col=1:2)
+# abline(v=4.9)
+# text(c(2.5,7.5),c(65,65), c("Week 1", "Week 4"))
+# legend(5,50, c("Iconic","Non-iconic"), col=2:1, pch=15)
+# dev.off()
 
 
 inventedBy = tapply(d$sign_value,d$inventedBy, function(X){length(unique(X))})

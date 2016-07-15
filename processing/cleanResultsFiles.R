@@ -85,6 +85,14 @@ d$sign_value = gsub(" $","", d$sign_value)
 d$sign_value = gsub("[!\\?\t]","", d$sign_value)
 d$sign_value = toupper(d$sign_value)
 
+
+# Edit colour trial names
+
+d$trial_value = gsub("[^0-9]+"," ",d$trial_value)
+d$trial_value = sapply(d$trial_value, function(X){
+  strsplit(X," ")[[1]][1]
+})
+
 #####
 # Find any trials that are overlapping
 overlaps = sapply(unique(d$filename),function(X){
