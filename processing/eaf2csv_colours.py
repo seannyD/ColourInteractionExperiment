@@ -17,8 +17,8 @@ trialmargin = 100
 teachmargin = 200
 
 
-
-ignoreIconicityFiles= ["Colour_game_01_1_Jordan-India_After_one_week.eaf","Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf","Colour_game_01_3_Indonesia-India_After_one_week.eaf","Colour_game_01_3_Jordan-Nepal_After_one_week.eaf","Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf", "Colour_game_04_2_Nepal-India_After_three_weeks.eaf","Colour_game_04_3_Jordan-India_After_three_weeks.eaf"]
+ignoreIconicity = True
+#ignoreIconicityFiles= ["Colour_game_01_1_Jordan-India_After_one_week.eaf","Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf","Colour_game_01_3_Indonesia-India_After_one_week.eaf","Colour_game_01_3_Jordan-Nepal_After_one_week.eaf","Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf", "Colour_game_04_2_Nepal-India_After_three_weeks.eaf","Colour_game_04_3_Jordan-India_After_three_weeks.eaf"]
 
 ignoreCheck = []#["Colour_game_04_1_Indonesia-India_After_three_week.eaf"]
 
@@ -136,7 +136,10 @@ def getVariants(eaffile,filename):
 					
 					###########
 					# Iconicity
-					iconic = getChildTiersBetweenTimes(eaffile, "Iconicity_"+speaker, sign_start, sign_end)
+					if not ignoreIconicity:
+						iconic = getChildTiersBetweenTimes(eaffile, "Iconicity_"+speaker, sign_start, sign_end)
+					else:
+						iconic = [-1,-1,"NA"]
 					
 					###########
 					# Sign origin
@@ -227,14 +230,15 @@ def getVariants(eaffile,filename):
 					for check_start, check_end, check_value in checks:
 					
 						iconic = [-1,-1,"NA",""]
-						print (filename)
-						for x in sorted(eaffile.get_tier_names()):
-							print(x)
-						iconicityTierNames = ["T0_"+listener+"_iconicity","Iconicity of T0_"+listener,"T0_"+listener+"_Iconicity"]
-						iconicityTierName = [x for x in iconicityTierNames if x in eaffile.get_tier_names()][0]
 						
 						
-						if not filename in ignoreIconicityFiles:
+						#if not filename in ignoreIconicityFiles:
+						if not ignoreIconicity:
+							print (filename)
+							for x in sorted(eaffile.get_tier_names()):
+								print(x)
+							iconicityTierNames = ["T0_"+listener+"_iconicity","Iconicity of T0_"+listener,"T0_"+listener+"_Iconicity"]
+							iconicityTierName = [x for x in iconicityTierNames if x in eaffile.get_tier_names()][0]
 							iconic = getChildTiersBetweenTimes(eaffile, iconicityTierName, check_start, check_end)
 						
 						### get origin of check
