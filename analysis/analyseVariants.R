@@ -58,7 +58,7 @@ dev.off()
 # cbind(partIconic[,,1],partIconic[,,2])
 # barplot(cbind(partIconic[,,1],partIconic[,,2]), col=1:2)
 # abline(v=4.9)
-# text(c(2.5,7.5),c(65,65), c("Week 1", "Week 4"))
+# text(c(2.5,7.5),c(65,65), c("Week 1", "week 3"))
 # legend(5,50, c("Iconic","Non-iconic"), col=2:1, pch=15)
 # dev.off()
 
@@ -68,7 +68,7 @@ pdf("../results/descriptive/graphs/NumVarByFreq.pdf")
 plot(
     as.vector(inventedBy), 
     as.vector(table(d$inventedBy)), 
-    xlab='Number of variants innovated', ylab="Frequency of variants", col=1, ylim=c(50,100))
+    xlab='Number of variants innovated', ylab="Frequency of variants", col=1, ylim=c(75,130))
 text(as.vector(inventedBy), as.vector(table(d$inventedBy)), names((inventedBy)),pos=3)
 dev.off()
 
@@ -97,7 +97,7 @@ dev.off()
 pdf("../results/descriptive/graphs/NumVariants.pdf", width=8, height=5)
 cols = rainbow(2)
 barplot(matrix(tapply(d$sign_value, paste(d$speakerName,d$week), function(X){length(unique(X))}), nrow=2), beside = T, names.arg = sort(unique(d$speakerName)), col=cols, main='Number of variants used')
-legend(9,80,c("Week 1","Week 4"), col=cols, pch=15)
+legend(9,80,c("Week 1","week 3"), col=cols, pch=15)
 dev.off()
 
 week1L = tapply(d[d$director==d$speaker & d$week==1,]$sign_length, d[d$director==d$speaker & d$week==1,]$trialColourName, mean)
@@ -106,7 +106,7 @@ week4L = tapply(d[d$director==d$speaker & d$week==4,]$sign_length, d[d$director=
 
 pdf("../results/descriptive/graphs/LengthOfSignsByColour.pdf")
 plot(c(0.5,2.5),range(week1L), type='n', ylab='Sign length (ms)', xlab='Week', xaxt="n")
-axis(1,at=1:2, c("Week 1", "Week 4"))
+axis(1,at=1:2, c("Week 1", "week 3"))
 points(rep(1,length(week1L)), week1L, col=colourNames, pch=16)
 points(rep(2,length(week4L)), week4L, col=colourNames, pch=16)
 for(i in 1:length(week1L)){
@@ -176,7 +176,7 @@ dev.off()
 
 pdf("../results/descriptive/graphs/LengthOfTrialsByColour.pdf")
 plot(c(0.5,2.5),range(c(week1L.trial,week4L.trial)), type='n', ylab='Trial length (ms)', xlab='Week', xaxt="n")
-axis(1,at=1:2, c("Week 1", "Week 4"))
+axis(1,at=1:2, c("Week 1", "week 3"))
 points(rep(1,length(week1L.trial)), week1L.trial, col=colourNames, pch=16)
 points(rep(2,length(week4L.trial)), week4L.trial, col=colourNames, pch=16)
 for(i in 1:length(week1L)){
@@ -194,9 +194,9 @@ variants = read.csv('../data/processedData/variants_summary.csv', stringsAsFacto
 
 d$BodyAnchor = variants[match(d$sign_value, variants$sign),]$BodyAnchor
 
-w1 = table(d[d$week==1,]$BodyAnchor,d[d$week==1,]$trialColourName)
+w1 = table(d[d$week==1,]$Indexicality,d[d$week==1,]$trialColourName)
 w1 = w1[,c("red",'black','brown','green','yellow','pink')]
-w3 = table(d[d$week==4,]$BodyAnchor,d[d$week==4,]$trialColourName)
+w3 = table(d[d$week==4,]$Indexicality,d[d$week==4,]$trialColourName)
 w3 = w3[,c("red",'black','brown','green','yellow','pink')]
 
 xtab = cbind(w1,c(NA,NA), w3)
@@ -212,11 +212,11 @@ dev.off()
 
 
 pdf("../results/descriptive/graphs/FreqWeek1_vs_FreqWeek2.pdf", width=5, height=5)
-plot(variants$freq_week_1, jitter(variants$freq_week_4), pch=16, col=rgb(0,0,0,0.2), ylab='Frequency in week 4', xlab='Frequency in week 1')
+plot(variants$freq_week_1, jitter(variants$freq_week_4), pch=16, col=rgb(0,0,0,0.2), ylab='Frequency in week 3', xlab='Frequency in week 1')
 dev.off()
 
 pdf("../results/descriptive/graphs/FreqWeek1_vs_FreqWeek2_withinColour.pdf", width=5, height=5)
-plot(variants$freq_week_1_withinColour, jitter(variants$freq_week_4_withinColour), pch=16, col=variants$colourName, ylab='Frequency in week 4', xlab='Frequency in week 1')
+plot(variants$freq_week_1_withinColour, jitter(variants$freq_week_4_withinColour), pch=16, col=variants$colourName, ylab='Frequency in week 3', xlab='Frequency in week 1')
 dev.off()
 
 week1 = tapply(d[d$trial_value %in% colourNumbers & d$week==1,]$sign_value, d[d$trial_value %in% colourNumbers & d$week==1,]$trial_value, function(X){length(unique(X,na.rm=T))})
