@@ -63,12 +63,23 @@ d = d[order(d$week,d$session,d$sign_start),]
 #d = d[d$sign_value!='SAME',]
 d = d[d$sign_value!='',]
 d = d[d$sign_value!='?',]
-
-d[d$sign_value=="FOLWER",]$sign_value = "FLOWER"
-d[d$sign_value=="BIGHT",]$sign_value = "BRIGHT"
-d[d$sign_value=="SIGINING",]$sign_value = "SIGNING"
 d$sign_value = gsub("^ ","", d$sign_value)
 d$sign_value = gsub(" $","", d$sign_value)
+d$sign_value = gsub("[!\\?\t]","", d$sign_value)
+d$sign_value = toupper(d$sign_value)
+
+# Edit signs
+source("signChanges.R")
+
+for(i in 1:length(signChanges)){
+ if(signChanges[[i]][1] %in% d$sign_value){
+    d[d$sign_value==signChanges[[i]][1]
+      & !is.na(d$sign_value),]$sign_value = signChanges[[i]][2]
+  }
+}
+d$sign_value = gsub("^ ","", d$sign_value)
+d$sign_value = gsub(" $","", d$sign_value)
+d$sign_value = gsub("[!\\?\t]","", d$sign_value)
 d$sign_value = toupper(d$sign_value)
 
 #####

@@ -1,4 +1,5 @@
 library(ggplot2)
+library(lme4)
 setwd("~/Documents/MPI/KangSukColours/ColourExperiment/analysis/")
 
 d = read.csv("../data/processedData/variants_processed.csv", stringsAsFactors = F)
@@ -206,18 +207,7 @@ legend(8,100,c("Body Anchored",'Other'), col=4:3, pch=15)
 axis(1,line=2.5,at=c(4,12), labels=c("Week 1","Week 3"), tick=F, lwd=0)
 dev.off()
 
-biasModel = lm(log(1 + freq_week_4_withinColour) ~ 
-                 indexical + 
-                 (Teach>1) * (TryMarked>1) +
-                 log(averageLength_week_1+1) + 
-                 log(averageTrialLength_week_1+1) +  
-                 log(freq_week_1_withinColour+1), 
-               data=variants)
 
-biasModelRes = summary(biasModel)$coef
-biasModelRes[,1:3] = round(biasModelRes[,1:3],2)
-biasModelRes[,4] = round(biasModelRes[,4],2)
-write.csv(biasModelRes,"../results/inferential/biasModel/biasModelRes.csv", row.names = T)
 
 
 
@@ -244,6 +234,16 @@ dev.off()
 
 variants$check.any = variants$check >0
 
+plotmeans(freq_week_4_withinColour ~
+            paste(TryMarked>1,Teach>1),
+          data = variants[!(!(variants$TryMarked>1) & (variants$Teach>1)),],
+          legends = c("No Try Mark","Try Marking","Try Marking & Teaching"),
+          xlab="", ylab='Fitness of variants')
+
+plotmeans(variants$freq_week_4_withinColour~
+            paste(variants$colourName,variants$TryMarked>1),
+          col = rep(colourNamesDark,each=2), pch=c(16,15))
+
 plotmeans(variants$freq_week_4_withinColour ~ 
             paste(variants$colourName,variants$check.any),
           col = rep(colourNamesDark,each=2), pch=c(16,15))
@@ -256,24 +256,38 @@ library(party)
 
 variants$iconic = as.factor(variants$iconic)
 variants$inventedBy = as.factor(variants$inventedBy)
-f = ctree(freq_week_4_withinColour ~ freq_week_1 + iconic + check + inventedBy + factor(colourName), data=variants, control=ctree_control(mincriterion = 0.5))
-plot(f)
+variants$indexical = as.factor(variants$indexical)
+variants$TeachT = as.factor(variants$Teach>1)
+variants$TryMarkedT = as.factor(variants$TryMarked>1)
+f = ctree(freq_week_4_withinColour ~ 
+            freq_week_1 + 
+            indexical + 
+            TeachT +
+            TryMarkedT+
+            check + 
+            inventedBy + 
+            factor(colourName), data=variants, control=ctree_control(mincriterion = 0.5))
+plot(f, terminal_panel=node_barplot)
 
 
 d3 = d
-d3$iconic[is.na(d3$iconic)] = "No"
 d3$freq_week_4[is.na(d3$freq_week_4)] = 0
+d3$freq_week4_withinColour[is.na(d3$freq_week4_withinColour)] = 0
 
-for(i in c('iconic','speakerName','inventedBy')){
+d3 = d3[d3$freq_week4_withinColour>0,]
+
+for(i in c('Indexicality','speakerName')){
   d3[,i] = as.factor(d3[,i])
 }
 
-summary(lm(log(1 + freq_week_4) ~ iconic + T0Check + inventedBy, data=d3))
-
-
-
-
-f2 = ctree(freq_week_4 ~ iconic + T0Check + speakerName + sign_length+ inventedBy, data=d3, control=ctree_control(mincriterion = 0.95))
+f2 = ctree(freq_week4_withinColour ~ 
+             Indexicality + 
+             T0Check + 
+             speakerName + 
+             Teach + 
+             TryMarked, 
+           data=d3, 
+           control=ctree_control(mincriterion = 0.75))
 plot(f2, inner_panel=node_inner(f2,id=F),terminal_panel=node_barplot)
 
 
