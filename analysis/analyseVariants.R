@@ -16,6 +16,10 @@ d = d[d$trial_value %in% colourNumbers,]
 d$trialColourName = colourNames[d$trial_value]
 d$trialColourName = factor(d$trialColourName, levels = colourNames)
 
+
+
+
+###########
 sun = table(d[d$sign_value=="SUN",]$week)
 yellow = table(d[d$sign_value=="GREEN1-1",]$week)
 
@@ -202,16 +206,20 @@ legend(8,100,c("Body Anchored",'Other'), col=4:3, pch=15)
 axis(1,line=2.5,at=c(4,12), labels=c("Week 1","Week 3"), tick=F, lwd=0)
 dev.off()
 
-biasModel = lm(log(1 + freq_week_4_withinColour) ~ + iconic + log(averageLength_week_1+1) + inventedBy + log(averageTrialLength_week_1+1) +  log(freq_week_1_withinColour+1), data=variants)
+biasModel = lm(log(1 + freq_week_4_withinColour) ~ 
+                 indexical + 
+                 (Teach>1) * (TryMarked>1) +
+                 log(averageLength_week_1+1) + 
+                 log(averageTrialLength_week_1+1) +  
+                 log(freq_week_1_withinColour+1), 
+               data=variants)
 
 biasModelRes = summary(biasModel)$coef
 biasModelRes[,1:3] = round(biasModelRes[,1:3],2)
 biasModelRes[,4] = round(biasModelRes[,4],2)
 write.csv(biasModelRes,"../results/inferential/biasModel/biasModelRes.csv", row.names = T)
 
-biasModel2 = lm(log(1 + freq_week_4_withinColour) ~ + iconic + log(averageLength_week_1+1) + inventedBy + log(averageTrialLength_week_1+1) +  log(freq_week_1+1), data=variants[variants$colourName %in% c('pink'),])
 
-summary(biasModel2)
 
 pdf("../results/descriptive/graphs/FreqWeek1_vs_FreqWeek2.pdf", width=5, height=5)
 plot(variants$freq_week_1, jitter(variants$freq_week_4), pch=16, col=rgb(0,0,0,0.2), ylab='Frequency in week 4', xlab='Frequency in week 1')
@@ -229,6 +237,18 @@ xtab = cbind(week1,week4)
 pdf("../results/descriptive/graphs/NumberOfVariantsByColourByWeek.pdf", width=8, height=5)
 barplot(xtab,beside=T, col=colourNames[rownames(xtab)], main='Number of Variants')
 dev.off()
+
+
+####
+# Try marking
+
+variants$check.any = variants$check >0
+
+plotmeans(variants$freq_week_4_withinColour ~ 
+            paste(variants$colourName,variants$check.any),
+          col = rep(colourNamesDark,each=2), pch=c(16,15))
+
+
 
 #######
 

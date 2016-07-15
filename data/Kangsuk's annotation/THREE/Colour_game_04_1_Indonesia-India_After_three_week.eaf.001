@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-07-15T09:30:22+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-07-15T13:35:06+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
         <MEDIA_DESCRIPTOR MEDIA_URL="file:///K:/07ERC 프로젝트연구/03ELAN 작업/2014년 Lucknow대학/Colour_game- 주석할 것/04_After_three_weeks_18122014/04_After_three_weeks_18122014_04Colour_game_Indonesia-India.mpeg" MIME_TYPE="video/mpeg"/>
         <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:ed4af99b-eb09-4181-8ae5-aecc83fe0acb</PROPERTY>
-        <PROPERTY NAME="lastUsedAnnotationId">267</PROPERTY>
+        <PROPERTY NAME="lastUsedAnnotationId">269</PROPERTY>
     </HEADER>
     <TIME_ORDER>
         <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="7625"/>
@@ -217,7 +217,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a58" TIME_SLOT_REF1="ts94" TIME_SLOT_REF2="ts96">
-                <ANNOTATION_VALUE>OS:BLACK(ISL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>BLACK</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -528,7 +528,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a156" TIME_SLOT_REF1="ts145" TIME_SLOT_REF2="ts146">
-                <ANNOTATION_VALUE>3   빨강</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>3  </ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -590,12 +590,12 @@
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="default-lt" TIER_ID="Formal Category/ SIGN(RH)_1">
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a183" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
-                <ANNOTATION_VALUE>OS:RED(INSL+JSL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>RED</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a119" TIME_SLOT_REF1="ts15" TIME_SLOT_REF2="ts16">
-                <ANNOTATION_VALUE>OS:GREEN(ISL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>GREEN-chest</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -662,7 +662,7 @@
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="default-lt" TIER_ID="Formal Category/ SIGN(RH)_2">
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a229" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
-                <ANNOTATION_VALUE>OS:RED(INSL+JSL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>RED</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -677,7 +677,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a143" TIME_SLOT_REF1="ts93" TIME_SLOT_REF2="ts95">
-                <ANNOTATION_VALUE>OS:BLACK(ISL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>BLACK</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -714,11 +714,6 @@
     </TIER>
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="Formal Category/ SIGN(RH)_1" PARTICIPANT="Bahaa" TIER_ID="Sign_Orign_1">
         <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a203" ANNOTATION_REF="a183" CVE_REF="cveid6">
-                <ANNOTATION_VALUE>INSL+JSL</ANNOTATION_VALUE>
-            </REF_ANNOTATION>
-        </ANNOTATION>
-        <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a220" ANNOTATION_REF="a119" CVE_REF="cveid3">
                 <ANNOTATION_VALUE>ISL</ANNOTATION_VALUE>
             </REF_ANNOTATION>
@@ -750,21 +745,16 @@
                 <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a268" ANNOTATION_REF="a133" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
     </TIER>
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal Category/ SIGN(RH)_1" TIER_ID="Easily-articulated_1"/>
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="사용빈도" PARENT_REF="Formal Category/ SIGN(RH)_1" TIER_ID="Frequency_1"/>
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal Category/ SIGN(RH)_1" TIER_ID="바르게/흐르게_1"/>
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="Formal Category/ SIGN(RH)_2" TIER_ID="Sign_Origin_2">
-        <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a230" ANNOTATION_REF="a229" CVE_REF="cveid6">
-                <ANNOTATION_VALUE>INSL+JSL</ANNOTATION_VALUE>
-            </REF_ANNOTATION>
-        </ANNOTATION>
-        <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a210" ANNOTATION_REF="a143" CVE_REF="cveid3">
-                <ANNOTATION_VALUE>ISL</ANNOTATION_VALUE>
-            </REF_ANNOTATION>
-        </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a232" ANNOTATION_REF="a144" CVE_REF="cveid7">
                 <ANNOTATION_VALUE>ISL+NSL</ANNOTATION_VALUE>
@@ -827,11 +817,6 @@
     </TIER>
     <TIER LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="T0/Check_2" TIER_ID="T0_2_Origin"/>
     <TIER LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="T0/Check_1" TIER_ID="T0_1_Origin">
-        <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a212" ANNOTATION_REF="a58" CVE_REF="cveid3">
-                <ANNOTATION_VALUE>ISL</ANNOTATION_VALUE>
-            </REF_ANNOTATION>
-        </ANNOTATION>
         <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a214" ANNOTATION_REF="a60" CVE_REF="cveid3">
                 <ANNOTATION_VALUE>ISL</ANNOTATION_VALUE>
@@ -924,6 +909,11 @@
                 <ANNOTATION_VALUE>Yes</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a269" ANNOTATION_REF="a133" CVE_REF="cveid1">
+                <ANNOTATION_VALUE>No</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
     </TIER>
     <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal Category/ SIGN(RH)_2" TIER_ID="motivation(but no indexical)_2">
         <ANNOTATION>
@@ -975,7 +965,6 @@
     <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" CONTROLLED_VOCABULARY_REF="YES/NO" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Yes/No 구분" TIME_ALIGNABLE="false"/>
     <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" CONTROLLED_VOCABULARY_REF="사용빈도" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="사용빈도" TIME_ALIGNABLE="false"/>
     <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="특정 타입이 없는 것" TIME_ALIGNABLE="false"/>
-    <LOCALE LANGUAGE_CODE="en"/>
     <LOCALE COUNTRY_CODE="US" LANGUAGE_CODE="en"/>
     <LANGUAGE LANG_DEF="http://cdb.iso.org/lg/CDB-00130975-001" LANG_ID="und" LANG_LABEL="undetermined (und)"/>
     <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>

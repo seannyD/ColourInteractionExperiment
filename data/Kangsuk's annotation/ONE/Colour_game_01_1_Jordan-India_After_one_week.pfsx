@@ -2,7 +2,7 @@
 <preferences version="1.1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>116.0</Float>
+        <Float>188.0</Float>
     </pref>
     <prefGroup key="TierColors">
         <pref key="Formal category/Sign_1">
@@ -11,11 +11,11 @@
         <pref key="COLOR_2(자원)">
             <Object class="java.awt.Color">0,0,160</Object>
         </pref>
-        <pref key="RH_ID_Gloss_2">
-            <Object class="java.awt.Color">0,0,0</Object>
-        </pref>
         <pref key="아우라 성향_2">
             <Object class="java.awt.Color">160,0,0</Object>
+        </pref>
+        <pref key="RH_ID_Gloss_2">
+            <Object class="java.awt.Color">0,0,0</Object>
         </pref>
         <pref key="아우라 성향_1">
             <Object class="java.awt.Color">160,160,90</Object>
@@ -47,11 +47,11 @@
         <pref key="COLOR_1(자원)">
             <Object class="java.awt.Color">0,0,90</Object>
         </pref>
-        <pref key="NH_Sign_Origin_1n">
-            <Object class="java.awt.Color">0,0,0</Object>
-        </pref>
         <pref key="Formal category/Sign_2">
             <Object class="java.awt.Color">0,204,51</Object>
+        </pref>
+        <pref key="NH_Sign_Origin_1n">
+            <Object class="java.awt.Color">0,0,0</Object>
         </pref>
         <pref key="Formal Category/ SIGN(LH)_1">
             <Object class="java.awt.Color">90,0,90</Object>
@@ -80,11 +80,11 @@
         <pref key="NMS_1">
             <Object class="java.awt.Color">0,0,0</Object>
         </pref>
-        <pref key="NMS of T0_1">
-            <Object class="java.awt.Color">204,0,204</Object>
-        </pref>
         <pref key="NMS_2">
             <Object class="java.awt.Color">0,0,0</Object>
+        </pref>
+        <pref key="NMS of T0_1">
+            <Object class="java.awt.Color">204,0,204</Object>
         </pref>
         <pref key="LH_ID_Gloss_1">
             <Object class="java.awt.Color">0,0,0</Object>
@@ -147,19 +147,19 @@
         <pref key="RH_ID_Gloss_2">
             <Int>10</Int>
         </pref>
-        <pref key="2이 선택한 Color's number">
+        <pref key="RH_ID_Gloss_1">
             <Int>10</Int>
         </pref>
-        <pref key="RH_ID_Gloss_1">
+        <pref key="2이 선택한 Color's number">
             <Int>10</Int>
         </pref>
         <pref key="Repair initiation_2">
             <Int>10</Int>
         </pref>
-        <pref key="Repair initiation_1">
+        <pref key="OIR_2">
             <Int>10</Int>
         </pref>
-        <pref key="OIR_2">
+        <pref key="Repair initiation_1">
             <Int>10</Int>
         </pref>
         <pref key="OIR_1">
@@ -207,16 +207,16 @@
         <pref key="OIR_1(sequences)-TC">
             <Int>10</Int>
         </pref>
-        <pref key="RH_ID_Gloss_1-TC">
-            <Int>10</Int>
-        </pref>
         <pref key="Language Tool_1">
             <Int>10</Int>
         </pref>
-        <pref key="Teach_Sign_2">
+        <pref key="RH_ID_Gloss_1-TC">
             <Int>10</Int>
         </pref>
         <pref key="Language Tool_2">
+            <Int>10</Int>
+        </pref>
+        <pref key="Teach_Sign_2">
             <Int>10</Int>
         </pref>
         <pref key="default">
@@ -225,34 +225,34 @@
         <pref key="OIR_2(sequences)">
             <Int>10</Int>
         </pref>
-        <pref key="Language Tool_1-SD">
+        <pref key="NMS_1">
             <Int>10</Int>
         </pref>
         <pref key="LH_ID_Gloss_2">
             <Int>10</Int>
         </pref>
-        <pref key="NMS_1">
-            <Int>10</Int>
-        </pref>
-        <pref key="RH_ID_Gloss_1-SD">
+        <pref key="Language Tool_1-SD">
             <Int>10</Int>
         </pref>
         <pref key="NMS_2">
             <Int>10</Int>
         </pref>
-        <pref key="Color를 표시한 Sign_2">
+        <pref key="RH_ID_Gloss_1-SD">
             <Int>10</Int>
         </pref>
-        <pref key="Color를 표시한 Sign_1">
+        <pref key="Color를 표시한 Sign_2">
             <Int>10</Int>
         </pref>
         <pref key="1이 선택한 Color's number">
             <Int>10</Int>
         </pref>
-        <pref key="Trouble source_2">
+        <pref key="Color를 표시한 Sign_1">
             <Int>10</Int>
         </pref>
         <pref key="LH_ID_Gloss_1">
+            <Int>10</Int>
+        </pref>
+        <pref key="Trouble source_2">
             <Int>10</Int>
         </pref>
     </prefGroup>
@@ -260,7 +260,7 @@
         <String>color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>2036509</Long>
+        <Long>2036378</Long>
     </pref>
     <prefList key="Interlinear.TierOrder">
         <String>default</String>
@@ -307,7 +307,7 @@
         <String>RH_ID_Gloss_2</String>
     </pref>
     <pref key="FrameSize">
-        <Object class="java.awt.Dimension">1920,1160</Object>
+        <Object class="java.awt.Dimension">1920,1161</Object>
     </pref>
     <pref key="SubTitleViewer.TierName-1">
         <String>RH_ID_Gloss_1</String>
@@ -322,7 +322,7 @@
         <Int>215</Int>
     </pref>
     <pref key="LayoutManager.MediaAreaHeight">
-        <Int>347</Int>
+        <Int>276</Int>
     </pref>
     <pref key="ActiveAudioRecognizerName">
         <String>BAS - WebMAUS Basic</String>
@@ -334,7 +334,7 @@
         <String>Language Tool_1</String>
     </prefList>
     <pref key="SelectionEndTime">
-        <Long>2038636</Long>
+        <Long>2038598</Long>
     </pref>
     <prefList key="ExportSmilDialog.HiddenTiers"/>
     <prefList key="MultiTierViewer.TierOrder">
@@ -419,13 +419,13 @@
         </pref>
     </prefGroup>
     <prefGroup key="BAS - WebMAUS Basic">
-        <prefGroup key="TierUrl"/>
-        <pref key="LANGUAGE">
-            <String>deu</String>
-        </pref>
         <pref key="ServiceName">
             <String>runMAUSBasic</String>
         </pref>
+        <pref key="LANGUAGE">
+            <String>deu</String>
+        </pref>
+        <prefGroup key="TierUrl"/>
         <pref key="SignalParamName">
             <String>SIGNAL</String>
         </pref>
@@ -446,11 +446,11 @@
         <String>수정 날짜</String>
     </prefList>
     <prefGroup key="Human motion analysis and annotation">
-        <pref key="background_image">
-            <String>false</String>
-        </pref>
         <pref key="output_video_resolution">
             <String>half</String>
+        </pref>
+        <pref key="background_image">
+            <String>false</String>
         </pref>
         <pref key="use_single_cluster">
             <String>false</String>
@@ -465,11 +465,11 @@
             <String>normal</String>
         </pref>
         <prefGroup key="input_xml"/>
-        <pref key="change_threshold">
-            <Float>30.0</Float>
-        </pref>
         <pref key="use_rest_position">
             <String>false</String>
+        </pref>
+        <pref key="change_threshold">
+            <Float>30.0</Float>
         </pref>
     </prefGroup>
     <prefList key="ExportSmilDialog.TierOrder">
@@ -525,7 +525,7 @@
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>2036853</Long>
+        <Long>2038824</Long>
     </pref>
     <pref key="TimeLineViewer.TimeRulerVisible">
         <Boolean>true</Boolean>
@@ -567,22 +567,22 @@
         <pref key="Pointing(T+1/-1)_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
-        <pref key="Language Tool_1">
+        <pref key="Repair initiation_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
         <pref key="OIR_2">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
-        <pref key="Repair initiation_1">
+        <pref key="Language Tool_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
-        <pref key="Language Tool_2">
+        <pref key="OIR_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
         <pref key="Teach_Sign_2">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
-        <pref key="OIR_1">
+        <pref key="Language Tool_2">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
         <pref key="Trouble Source_1">
@@ -591,10 +591,10 @@
         <pref key="OIR_2(sequences)">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
-        <pref key="NMS of T0_1">
+        <pref key="How Sign_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
-        <pref key="How Sign_1">
+        <pref key="NMS of T0_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
         <pref key="NMS of T0_2">
@@ -659,7 +659,7 @@
         <String>RH_ID_Gloss_1</String>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>2030400</Long>
+        <Long>2034322</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>RH_ID_Gloss_1</String>

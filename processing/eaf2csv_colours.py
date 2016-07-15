@@ -65,9 +65,9 @@ def getSignBits(sign_value):
 	sign_bits = sign_value.split(":")
 	if len(sign_bits)==2:
 		val,notes =  (sign_bits[1],sign_bits[0])
-		if val.count("(") > 0:
-			notes += "#" +val[val.index("(")+1:].replace(")","")
-			val = val[:val.index("(")]
+		#if val.count("(") > 0:
+		#	notes += "#" +val[val.index("(")+1:].replace(")","")
+		#	val = val[:val.index("(")]
 		return (val,notes)
 	else:
 		return (sign_value,"NA")
@@ -294,7 +294,7 @@ def getVariants(eaffile,filename):
 							checkOrigin[2],  # sign origin
 							"TRUE",
 							"NA",  # try marker
-							check_indexicality,
+							check_indexicality[2],
 							check_teach
 						])
 		
@@ -312,7 +312,7 @@ def getChildTiersBetweenTimes(eaffile, tier, sign_start, sign_end):
 	for a in anx:
 		if a[0] > (sign_start-turnmargin) and a[1] < (sign_end+turnmargin):
 			return a
-	return (-1,-1,"NA","")
+	return [-1,-1,"NA",""]
 
 def writeData(list,filename):
 	list2 = list2csv(list)

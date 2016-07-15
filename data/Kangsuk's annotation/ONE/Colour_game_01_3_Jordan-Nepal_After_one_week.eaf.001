@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-07-14T20:03:58+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-07-15T13:29:22+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
         <MEDIA_DESCRIPTOR MEDIA_URL="file:///K:/07ERC 프로젝트연구/03ELAN 작업/2014년 Lucknow대학/Colour_game- 주석할 것/02_After_one_week_05122014/02_After_one_week_05122014_04Colour_game_03_Jordan-Nepal_After_one_week_03.mpeg" MIME_TYPE="video/mpeg"/>
         <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:422213e3-b67e-4b9e-bc94-43607b51d9d6</PROPERTY>
@@ -391,12 +391,12 @@
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="default-lt" TIER_ID="Formal category/Sign_1">
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a74" TIME_SLOT_REF1="ts32" TIME_SLOT_REF2="ts34">
-                <ANNOTATION_VALUE>OS:GREEN(ISL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>GREEN-chest</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a75" TIME_SLOT_REF1="ts37" TIME_SLOT_REF2="ts39">
-                <ANNOTATION_VALUE>OS:GREEN(NSL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>GREEN-NSL	</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -418,7 +418,7 @@
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="default-lt" TIER_ID="Formal category/Sign_2">
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a160" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
-                <ANNOTATION_VALUE>OS:RED(NSL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>RED-brow</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -453,12 +453,12 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a185" TIME_SLOT_REF1="ts105" TIME_SLOT_REF2="ts107">
-                <ANNOTATION_VALUE>OS:BLACK(NSL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>BLACK</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a223" TIME_SLOT_REF1="ts112" TIME_SLOT_REF2="ts115">
-                <ANNOTATION_VALUE>OS:Red(NSL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>RED- brow</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -473,7 +473,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a230" TIME_SLOT_REF1="ts126" TIME_SLOT_REF2="ts127">
-                <ANNOTATION_VALUE>OS:RED(NSL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>RED- brow</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -498,7 +498,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a108" TIME_SLOT_REF1="ts188" TIME_SLOT_REF2="ts194">
-                <ANNOTATION_VALUE>OS:YELLOW(NSL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>YELLOW-chest+bright</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
     </TIER>
@@ -987,11 +987,6 @@
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a187" ANNOTATION_REF="a185" CVE_REF="cveid1">
-                <ANNOTATION_VALUE>NSL</ANNOTATION_VALUE>
-            </REF_ANNOTATION>
-        </ANNOTATION>
-        <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a225" ANNOTATION_REF="a223" CVE_REF="cveid1">
                 <ANNOTATION_VALUE>NSL</ANNOTATION_VALUE>
             </REF_ANNOTATION>
@@ -1010,7 +1005,7 @@
     <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="T0/check_2">
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a195" TIME_SLOT_REF1="ts33" TIME_SLOT_REF2="ts38">
-                <ANNOTATION_VALUE>OS:GREEN(NSL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>GREEN-NSL	</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
     </TIER>

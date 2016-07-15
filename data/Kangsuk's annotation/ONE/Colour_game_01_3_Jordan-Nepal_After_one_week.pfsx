@@ -140,17 +140,17 @@
         <Int>0</Int>
     </pref>
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>89.0</Float>
+        <Float>69.0</Float>
     </pref>
     <prefGroup key="TierColors">
         <pref key="Formal Category/ SIGN(LH)_1">
             <Object class="java.awt.Color">0,90,0</Object>
         </pref>
-        <pref key="Formal category/Sign_1">
-            <Object class="java.awt.Color">0,160,90</Object>
-        </pref>
         <pref key="Formal Category/ SIGN(LH)_2">
             <Object class="java.awt.Color">160,0,90</Object>
+        </pref>
+        <pref key="Formal category/Sign_1">
+            <Object class="java.awt.Color">0,160,90</Object>
         </pref>
         <pref key="Modification_1">
             <Object class="java.awt.Color">0,90,160</Object>
@@ -164,11 +164,11 @@
         <pref key="아우라 성향_1">
             <Object class="java.awt.Color">0,90,90</Object>
         </pref>
-        <pref key="Stimulus_1">
-            <Object class="java.awt.Color">160,160,90</Object>
-        </pref>
         <pref key="Color_1#2">
             <Object class="java.awt.Color">0,160,160</Object>
+        </pref>
+        <pref key="Stimulus_1">
+            <Object class="java.awt.Color">160,160,90</Object>
         </pref>
         <pref key="Stimulus_2">
             <Object class="java.awt.Color">0,0,160</Object>
@@ -219,13 +219,13 @@
         <String>Color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>1038974</Long>
+        <Long>388459</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>1039321</Long>
+        <Long>393069</Long>
     </pref>
     <prefGroup key="TierHighlightColors"/>
     <pref key="MultiTierViewer.TierSortingMode">
@@ -287,7 +287,7 @@
         <Int>265</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>1030591</Long>
+        <Long>377712</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>Easily-articulated_1</String>
@@ -304,6 +304,6 @@
         <Int>492</Int>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>1040342</Long>
+        <Long>390355</Long>
     </pref>
 </preferences>

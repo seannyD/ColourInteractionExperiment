@@ -135,17 +135,17 @@
         <Int>0</Int>
     </pref>
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>70.0</Float>
+        <Float>57.0</Float>
     </pref>
     <prefGroup key="TierColors">
         <pref key="Formal Category/ SIGN(LH)_1">
             <Object class="java.awt.Color">90,160,90</Object>
         </pref>
-        <pref key="Formal Category/ SIGN(LH)_2">
-            <Object class="java.awt.Color">0,160,90</Object>
-        </pref>
         <pref key="Formal category/Sign_1">
             <Object class="java.awt.Color">0,204,0</Object>
+        </pref>
+        <pref key="Formal Category/ SIGN(LH)_2">
+            <Object class="java.awt.Color">0,160,90</Object>
         </pref>
         <pref key="Modification_1">
             <Object class="java.awt.Color">90,0,160</Object>
@@ -165,11 +165,11 @@
         <pref key="Egocentric bias_1">
             <Object class="java.awt.Color">0,0,90</Object>
         </pref>
-        <pref key="default">
-            <Object class="java.awt.Color">160,90,0</Object>
-        </pref>
         <pref key="Egocentric bias_2">
             <Object class="java.awt.Color">160,160,0</Object>
+        </pref>
+        <pref key="default">
+            <Object class="java.awt.Color">160,90,0</Object>
         </pref>
         <pref key="Coordination-bias_2">
             <Object class="java.awt.Color">90,160,0</Object>
@@ -177,11 +177,11 @@
         <pref key="Coordination-bias_1">
             <Object class="java.awt.Color">160,90,160</Object>
         </pref>
-        <pref key="NMS_1">
-            <Object class="java.awt.Color">90,160,160</Object>
-        </pref>
         <pref key="T0/candidate_1">
             <Object class="java.awt.Color">204,0,204</Object>
+        </pref>
+        <pref key="NMS_1">
+            <Object class="java.awt.Color">90,160,160</Object>
         </pref>
         <pref key="T0/candidate_2">
             <Object class="java.awt.Color">204,0,204</Object>
@@ -192,11 +192,11 @@
         <pref key="Simulus_2">
             <Object class="java.awt.Color">0,204,204</Object>
         </pref>
-        <pref key="Simulus_1">
-            <Object class="java.awt.Color">0,204,204</Object>
-        </pref>
         <pref key="Formal category/Sign_2">
             <Object class="java.awt.Color">0,204,0</Object>
+        </pref>
+        <pref key="Simulus_1">
+            <Object class="java.awt.Color">0,204,204</Object>
         </pref>
     </prefGroup>
     <prefList key="CommentViewer.Columns.Hidden"/>
@@ -208,13 +208,13 @@
         <String>Color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>761882</Long>
+        <Long>603477</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>762625</Long>
+        <Long>604679</Long>
     </pref>
     <prefGroup key="TierHighlightColors"/>
     <pref key="MultiTierViewer.TierSortingMode">
@@ -276,7 +276,7 @@
         <Int>252</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>750997</Long>
+        <Long>589780</Long>
     </pref>
     <pref key="ActiveAudioRecognizerName">
         <String>BAS - WebMAUS Basic</String>
@@ -293,6 +293,6 @@
         <String>바르게/흐르게_2</String>
     </prefList>
     <pref key="SelectionEndTime">
-        <Long>763355</Long>
+        <Long>604626</Long>
     </pref>
 </preferences>

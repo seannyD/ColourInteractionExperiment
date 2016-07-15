@@ -91,10 +91,17 @@ iconicityMeasures = tapply(d$iconic, d$sign_value, checkIconicity)
 d$iconic = iconicityMeasures[d$sign_value]
 
 # Check indexicality
-
-d$Indexicality[d$Indexicality=="(-1"] = "No"
 # One case:
 d$Indexicality[d$Indexicality==""] = "Yes"
+
+#  Try marking
+
+d$TryMarked = d$TryMarked=="Yes"
+d$TryMarked[is.na(d$TryMarked)] = F
+
+# Teaching
+d$Teach = d$Teach == "Yes"
+d$Teach[is.na(d$Teach)] = F
 
 # trial lengths
 trialLengths = tapply(d$trial_length,d$trial_start,head,n=1)/1000
@@ -176,9 +183,25 @@ for(colourID in colourNumbers){
   
   
   v$iconic = tapply(d2$iconic, d2$sign_value, head,n=1)[v$sign]
-  v$check = tapply(d2[d2$week==1,]$T0Check,d2[d2$week==1,]$sign_value,function(X){sum(X,na.rm=T)>0})[v$sign]
+  #v$check = tapply(d2[d2$week==1,]$T0Check,d2[d2$week==1,]$sign_value,function(X){sum(X,na.rm=T)>0})[v$sign]
+  v$check = tapply(d2[d2$week==1,]$T0Check,d2[d2$week==1,]$sign_value,sum, na.rm=T)[v$sign]
+  indexical = tapply(d2$Indexicality,d2$sign_value,function(X){
+      x = table(X)
+      names(x)[which(x==max(x))[1]]
+    })
+  #indexical[is.null(indexical)] = "No"
+  v$indexical = unlist(indexical)[v$sign]
+  v$indexical[is.na(v$indexical)] = "No"
+  
+  
   v$inventedBy= tapply(d2$inventedBy, d2$sign_value, head, n=1)[v$sign]
+  v$TryMarked = tapply(d2$TryMarked, d2$sign_value, sum, na.rm=T, n=1)[v$sign]
+  v$TryMarked = tapply(d2$TryMarked, d2$sign_value, sum, na.rm=T, n=1)[v$sign]
+  v$Teach = tapply(d2$Teach, d2$sign_value, sum, na.rm=T, n=1)[v$sign]
+  
   v$averageLength_week_1 = tapply(d2[d2$week==1,]$sign_length, d2[d2$week==1,]$sign_value, mean)
+  
+  
   
   v$averageTrialLength_week_1 = tapply(d2[d2$week==1,]$trial_length, d2[d2$week==1,]$sign_value, mean)
   

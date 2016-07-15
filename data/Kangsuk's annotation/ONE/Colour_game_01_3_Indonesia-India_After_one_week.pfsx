@@ -134,7 +134,7 @@
         <Int>1</Int>
     </pref>
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>208.0</Float>
+        <Float>108.0</Float>
     </pref>
     <pref key="LayoutManager.SelectedTabIndex">
         <Int>0</Int>
@@ -143,11 +143,11 @@
         <pref key="Formal Category/ SIGN(LH)_1">
             <Object class="java.awt.Color">90,160,90</Object>
         </pref>
-        <pref key="Formal Category/ SIGN(LH)_2">
-            <Object class="java.awt.Color">0,0,160</Object>
-        </pref>
         <pref key="Formal category/Sign_1">
             <Object class="java.awt.Color">90,0,90</Object>
+        </pref>
+        <pref key="Formal Category/ SIGN(LH)_2">
+            <Object class="java.awt.Color">0,0,160</Object>
         </pref>
         <pref key="Modification_1">
             <Object class="java.awt.Color">0,90,90</Object>
@@ -161,11 +161,11 @@
         <pref key="아우라 성향_1">
             <Object class="java.awt.Color">90,0,90</Object>
         </pref>
-        <pref key="Stimulus_1">
-            <Object class="java.awt.Color">160,90,90</Object>
-        </pref>
         <pref key="Color_1#2">
             <Object class="java.awt.Color">160,0,160</Object>
+        </pref>
+        <pref key="Stimulus_1">
+            <Object class="java.awt.Color">160,90,90</Object>
         </pref>
         <pref key="Stimulus_2">
             <Object class="java.awt.Color">90,90,160</Object>
@@ -173,11 +173,11 @@
         <pref key="Egocentric bias_1">
             <Object class="java.awt.Color">160,160,0</Object>
         </pref>
-        <pref key="default">
-            <Object class="java.awt.Color">160,0,90</Object>
-        </pref>
         <pref key="Egocentric bias_2">
             <Object class="java.awt.Color">0,160,0</Object>
+        </pref>
+        <pref key="default">
+            <Object class="java.awt.Color">160,0,90</Object>
         </pref>
         <pref key="Coordination-bias_2">
             <Object class="java.awt.Color">90,160,160</Object>
@@ -191,17 +191,17 @@
         <pref key="Coordination-bias_1">
             <Object class="java.awt.Color">90,90,0</Object>
         </pref>
-        <pref key="NMS_1">
-            <Object class="java.awt.Color">90,0,0</Object>
-        </pref>
         <pref key="T0/candidate_1">
             <Object class="java.awt.Color">204,0,204</Object>
         </pref>
-        <pref key="T0/candidate_2">
-            <Object class="java.awt.Color">204,0,204</Object>
+        <pref key="NMS_1">
+            <Object class="java.awt.Color">90,0,0</Object>
         </pref>
         <pref key="NMS_2">
             <Object class="java.awt.Color">0,160,160</Object>
+        </pref>
+        <pref key="T0/candidate_2">
+            <Object class="java.awt.Color">204,0,204</Object>
         </pref>
         <pref key="Formal category/Sign_2">
             <Object class="java.awt.Color">0,90,160</Object>
@@ -216,13 +216,13 @@
         <String>Color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>1008884</Long>
+        <Long>692150</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>1009568</Long>
+        <Long>692150</Long>
     </pref>
     <pref key="MultiTierViewer.TierSortingMode">
         <Int>1</Int>
@@ -284,7 +284,7 @@
         <Int>216</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>1005540</Long>
+        <Long>686573</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>Easily-articulated_1</String>
@@ -301,6 +301,6 @@
         <String>BAS - WebMAUS Basic</String>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>1010190</Long>
+        <Long>696400</Long>
     </pref>
 </preferences>

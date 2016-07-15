@@ -137,7 +137,7 @@
         <Int>0</Int>
     </pref>
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>97.0</Float>
+        <Float>299.0</Float>
     </pref>
     <prefGroup key="TierColors">
         <pref key="Formal Category/ SIGN(LH)_1">
@@ -173,11 +173,11 @@
         <pref key="Egocentric bias_1">
             <Object class="java.awt.Color">0,160,160</Object>
         </pref>
-        <pref key="Egocentric bias_2">
-            <Object class="java.awt.Color">160,160,0</Object>
-        </pref>
         <pref key="default">
             <Object class="java.awt.Color">160,90,90</Object>
+        </pref>
+        <pref key="Egocentric bias_2">
+            <Object class="java.awt.Color">160,160,0</Object>
         </pref>
         <pref key="Coordination-bias_2">
             <Object class="java.awt.Color">160,160,90</Object>
@@ -185,17 +185,17 @@
         <pref key="Color_1(자원)">
             <Object class="java.awt.Color">90,160,160</Object>
         </pref>
-        <pref key="Coordination-bias_1">
-            <Object class="java.awt.Color">0,160,90</Object>
-        </pref>
         <pref key="T0/Check_1">
             <Object class="java.awt.Color">90,90,160</Object>
         </pref>
-        <pref key="T0/Check_2">
-            <Object class="java.awt.Color">90,160,90</Object>
+        <pref key="Coordination-bias_1">
+            <Object class="java.awt.Color">0,160,90</Object>
         </pref>
         <pref key="NMS_1">
             <Object class="java.awt.Color">0,160,160</Object>
+        </pref>
+        <pref key="T0/Check_2">
+            <Object class="java.awt.Color">90,160,90</Object>
         </pref>
         <pref key="NMS_2">
             <Object class="java.awt.Color">90,160,0</Object>
@@ -213,13 +213,13 @@
         <String>Color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>1023532</Long>
+        <Long>1019932</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>1023689</Long>
+        <Long>1019932</Long>
     </pref>
     <prefGroup key="TierHighlightColors"/>
     <pref key="MultiTierViewer.TierSortingMode">
@@ -281,7 +281,7 @@
         <Int>233</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>1015257</Long>
+        <Long>1019695</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>Easily-articulated_1</String>
@@ -309,6 +309,6 @@
         <String>BAS - WebMAUS Basic</String>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>1023962</Long>
+        <Long>1024966</Long>
     </pref>
 </preferences>
