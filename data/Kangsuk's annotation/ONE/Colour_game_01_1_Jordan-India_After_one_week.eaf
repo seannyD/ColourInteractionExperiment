@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-07-15T13:28:42+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-07-15T17:26:36+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
         <MEDIA_DESCRIPTOR MEDIA_URL="file:///K:/07ERC 프로젝트연구/03ELAN 작업/2014년 Lucknow대학/Colour_game- 주석할 것/02_After_one_week_05122014/02_After_one_week_05122014_04Colour_game_01_Jordan-India_After_one_week_01.mpeg" MIME_TYPE="video/mpeg"/>
         <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:37524d04-565c-4b8e-9b9d-e24070774123</PROPERTY>
@@ -6202,7 +6202,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1019" TIME_SLOT_REF1="ts1601" TIME_SLOT_REF2="ts1613">
-                <ANNOTATION_VALUE>20</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>1</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -6380,8 +6380,8 @@
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a1022" ANNOTATION_REF="a1019">
-                <ANNOTATION_VALUE>20</ANNOTATION_VALUE>
+            <REF_ANNOTATION ANNOTATION_ID="a1022" ANNOTATION_REF="a1019" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>1</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -6442,8 +6442,8 @@
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
-            <REF_ANNOTATION ANNOTATION_ID="a1026" ANNOTATION_REF="a1019">
-                <ANNOTATION_VALUE>20</ANNOTATION_VALUE>
+            <REF_ANNOTATION ANNOTATION_ID="a1026" ANNOTATION_REF="a1019" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>1</ANNOTATION_VALUE>
             </REF_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -7018,7 +7018,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1115" TIME_SLOT_REF1="ts1603" TIME_SLOT_REF2="ts1614">
-                <ANNOTATION_VALUE>20   빨강</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>1</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -7980,10 +7980,10 @@
     <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
     <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
     <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
-    <CONTROLLED_VOCABULARY CV_ID="color-cp1">
+    <CONTROLLED_VOCABULARY CV_ID="YES/NO">
         <DESCRIPTION LANG_REF="und"/>
     </CONTROLLED_VOCABULARY>
-    <CONTROLLED_VOCABULARY CV_ID="YES/NO">
+    <CONTROLLED_VOCABULARY CV_ID="color-cp1">
         <DESCRIPTION LANG_REF="und"/>
     </CONTROLLED_VOCABULARY>
     <CONTROLLED_VOCABULARY CV_ID="Sign-Language">
