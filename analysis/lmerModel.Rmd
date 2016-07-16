@@ -2,7 +2,13 @@
 title: "Colour experiment"
 output: pdf_document
 ---
+# Introduction
 
+This analysis looks at the sign variants used in a colour naming game between signers of different sign languages meeting after 1 week of interaction and after 3 weeks of interaction.  The data was collected by Kang Suk Byun (Kang-Suk.Byun@mpi.nl).
+
+The analysis tries to predict the relative frequency of each variant within a colour category in week 3, based on measures from week 1.
+
+# Load libraries
 ```{r}
 
 library(ggplot2)
@@ -147,7 +153,7 @@ summary(m7)
 
 ## Summary
 
-`r #getMEText(anova(m2,m3), "main effect of try marking",summary(m7)$coef['TryMarked.cat',])`
+`r getMEText(anova(m2,m3), "main effect of try marking",summary(m7)$coef['TryMarked.catHigh',])`
 
 `r getMEText(anova(m4,m5), "main effect of frequency in week 1",summary(m7)$coef['freq_week_1.logcenter',])`
 
@@ -156,7 +162,5 @@ summary(m7)
 `r getMEText(anova(m5,m6), "main effect of sign length",summary(m7)$coef['averageLength_week_1.logcenter',])`
 
 
-```{r}
-#sjp.lmer(m5,'fe')
-```
+
 
