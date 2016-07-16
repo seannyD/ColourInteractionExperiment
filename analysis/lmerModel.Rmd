@@ -56,45 +56,80 @@ variants = read.csv('../data/processedData/variants_summary.csv', stringsAsFacto
 
 ```
 
+Transform some variables.
+
 ```{r}
 
-variants$Teach = variants$Teach >1
-variants$TryMarked = variants$TryMarked > 1
+variants$Teach = variants$Teach >0
+
+variants$check.any = variants$check>0
+
+variants$freq_week_1.logcenter = log(variants$freq_week_1 + 1)
+variants$freq_week_1.logcenter = 
+  variants$freq_week_1.logcenter - mean(variants$freq_week_1.logcenter)
+
+# cut TryMarking into two categories
+variants$TryMarked.cat = cut(variants$TryMarked, 
+                             c(-Inf,3,Inf), 
+                             labels = c("Low",'High')) 
+
+variants$averageLength_week_1.logcenter = log(variants$averageLength_week_1)
+variants$averageLength_week_1.logcenter = 
+  variants$averageLength_week_1.logcenter -
+    mean(variants$averageLength_week_1.logcenter)
+
 ```
 
 
 # LMER models
 ```{r modelBits}
-m0 = lmer(log(1 + freq_week_4_withinColour) ~ 
+m0 = lmer(freq_week_4_withinColour ~ 
             1
           + (1 | colourName), 
           data=variants)
-m1 = lmer(log(1 + freq_week_4_withinColour) ~ 
+m1 = lmer(freq_week_4_withinColour ~ 
             (indexical) + 
             + (1 | colourName), 
           data=variants)
-m2 = lmer(log(1 + freq_week_4_withinColour) ~ 
+m2 = lmer(freq_week_4_withinColour ~ 
             (indexical) + 
             (Teach) 
           + (1 | colourName), 
           data=variants)
 
-m3 = lmer(log(1 + freq_week_4_withinColour) ~ 
+m3 = lmer(freq_week_4_withinColour ~ 
             (indexical) + 
-            (Teach) + (TryMarked) 
+            (Teach) + (TryMarked.cat) 
           + (1 | colourName), 
           data=variants)
 
-m4 = lmer(log(1 + freq_week_4_withinColour) ~ 
+m4 = lmer(freq_week_4_withinColour ~ 
             (indexical) + 
-            Teach * TryMarked
+            Teach * TryMarked.cat
           + (1 | colourName), 
           data=variants)
 
-m5 = lmer(log(1 + freq_week_4_withinColour) ~ 
+m5 = lmer(freq_week_4_withinColour ~ 
             (indexical) + 
-            (Teach * TryMarked) +
-            log(freq_week_1+1)
+            (Teach * TryMarked.cat) +
+            freq_week_1.logcenter
+          + (1 | colourName), 
+          data=variants)
+
+m6 = lmer(freq_week_4_withinColour ~ 
+            (indexical) + 
+            (Teach * TryMarked.cat) +
+            freq_week_1.logcenter +
+            averageLength_week_1.logcenter
+          + (1 | colourName), 
+          data=variants)
+
+m7 = lmer(freq_week_4_withinColour ~ 
+            (indexical) + 
+            (Teach * TryMarked.cat) +
+            freq_week_1.logcenter +
+            averageLength_week_1.logcenter+
+            check.any 
           + (1 | colourName), 
           data=variants)
 
@@ -103,14 +138,22 @@ m5 = lmer(log(1 + freq_week_4_withinColour) ~
 # Results
 
 ```{r}
-anova(m0,m1,m2,m3,m4,m5)
+anova(m0,m1,m2,m3,m4,m5, m6,m7)
 ```
 
-`r getMEText(anova(m2,m3), "main effect of try marking",summary(m5)$coef['TryMarkedTRUE',])`
+```{r}
+summary(m7)
+```
 
-`r getMEText(anova(m4,m5), "main effect of frequency in week 1",summary(m5)$coef['log(freq_week_1 + 1)',])`
+## Summary
 
-`r getMEText(anova(m0,m1), "main effect of indexicality",summary(m5)$coef['indexicalYes',])`
+`r #getMEText(anova(m2,m3), "main effect of try marking",summary(m7)$coef['TryMarked.cat',])`
+
+`r getMEText(anova(m4,m5), "main effect of frequency in week 1",summary(m7)$coef['freq_week_1.logcenter',])`
+
+`r getMEText(anova(m0,m1), "main effect of indexicality",summary(m7)$coef['indexicalYes',])`
+
+`r getMEText(anova(m5,m6), "main effect of sign length",summary(m7)$coef['averageLength_week_1.logcenter',])`
 
 
 ```{r}

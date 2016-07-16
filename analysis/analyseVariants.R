@@ -235,20 +235,22 @@ dev.off()
 variants$check.any = variants$check >0
 
 plotmeans(freq_week_4_withinColour ~
-            paste(TryMarked>1,Teach>1),
-          data = variants[!(!(variants$TryMarked>1) & (variants$Teach>1)),],
+            paste(TryMarked>0,Teach>0),
+          data = variants[!(!(variants$TryMarked>0) & (variants$Teach>0)),],
           legends = c("No Try Mark","Try Marking","Try Marking & Teaching"),
           xlab="", ylab='Fitness of variants')
 
 plotmeans(variants$freq_week_4_withinColour~
-            paste(variants$colourName,variants$TryMarked>1),
+            paste(variants$colourName,variants$TryMarked>0),
           col = rep(colourNamesDark,each=2), pch=c(16,15))
 
 plotmeans(variants$freq_week_4_withinColour ~ 
             paste(variants$colourName,variants$check.any),
           col = rep(colourNamesDark,each=2), pch=c(16,15))
 
+### sign origin
 
+plotmeans(freq_week_4_withinColour~ origin, data=variants[variants$origin %in% c("ISL","JSL","NSL"),])
 
 #######
 
@@ -257,16 +259,17 @@ library(party)
 variants$iconic = as.factor(variants$iconic)
 variants$inventedBy = as.factor(variants$inventedBy)
 variants$indexical = as.factor(variants$indexical)
-variants$TeachT = as.factor(variants$Teach>1)
-variants$TryMarkedT = as.factor(variants$TryMarked>1)
+variants$TeachT = as.factor(variants$Teach>0)
+variants$TryMarkedT = as.factor(variants$TryMarked>0)
 f = ctree(freq_week_4_withinColour ~ 
-            freq_week_1 + 
-            indexical + 
-            TeachT +
-            TryMarkedT+
-            check + 
-            inventedBy + 
-            factor(colourName), data=variants, control=ctree_control(mincriterion = 0.5))
+       #     freq_week_1 + 
+        #    indexical + 
+         #   TeachT +
+            TryMarked,
+          #  check + 
+           # inventedBy + 
+       #     factor(colourName), 
+       data=variants, control=ctree_control(mincriterion = 0.1))
 plot(f, terminal_panel=node_barplot)
 
 

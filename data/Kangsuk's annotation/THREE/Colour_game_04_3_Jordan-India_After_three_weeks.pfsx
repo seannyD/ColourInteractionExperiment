@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <preferences version="1.1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
-    <pref key="ActiveVideoRecognizerName">
-        <String>Human motion analysis and annotation</String>
-    </pref>
     <prefList key="MultiTierViewer.TierOrder">
         <String>default</String>
         <String>Color(Stimulus)_1</String>
@@ -74,47 +71,23 @@
         <String>아우라 성향_2</String>
         <String>Comment_2</String>
     </prefList>
-    <pref key="LayoutManager.VisibleMultiTierViewer">
-        <String>mpi.eudico.client.annotator.viewer.TimeLineViewer</String>
+    <pref key="ActiveVideoRecognizerName">
+        <String>Human motion analysis and annotation</String>
     </pref>
     <prefGroup key="Text-to-Speech alignment">
         <pref key="model">
             <String>English</String>
         </pref>
     </prefGroup>
-    <prefGroup key="BAS - WebMAUS Basic">
-        <prefGroup key="TierUrl"/>
-        <pref key="LANGUAGE">
-            <String>deu</String>
-        </pref>
-        <pref key="ServiceName">
-            <String>runMAUSBasic</String>
-        </pref>
-        <pref key="SignalParamName">
-            <String>SIGNAL</String>
-        </pref>
-        <pref key="TextParamName">
-            <String>TEXT</String>
-        </pref>
-    </prefGroup>
-    <prefList key="CommentViewer.Columns.Order">
-        <String>시작 시간</String>
-        <String>종료 시간</String>
-        <String>층렬</String>
-        <String>이니셜</String>
-        <String>코멘트</String>
-        <String>스레드</String>
-        <String>보내는 사람</String>
-        <String>받는 사람</String>
-        <String>만든 날짜</String>
-        <String>수정 날짜</String>
-    </prefList>
+    <pref key="LayoutManager.VisibleMultiTierViewer">
+        <String>mpi.eudico.client.annotator.viewer.TimeLineViewer</String>
+    </pref>
     <prefGroup key="Human motion analysis and annotation">
-        <pref key="background_image">
-            <String>false</String>
-        </pref>
         <pref key="output_video_resolution">
             <String>half</String>
+        </pref>
+        <pref key="background_image">
+            <String>false</String>
         </pref>
         <pref key="use_single_cluster">
             <String>false</String>
@@ -129,31 +102,58 @@
             <String>normal</String>
         </pref>
         <prefGroup key="input_xml"/>
-        <pref key="change_threshold">
-            <Float>30.0</Float>
-        </pref>
         <pref key="use_rest_position">
             <String>false</String>
         </pref>
+        <pref key="change_threshold">
+            <Float>30.0</Float>
+        </pref>
+    </prefGroup>
+    <prefList key="CommentViewer.Columns.Order">
+        <String>Start Time</String>
+        <String>End Time</String>
+        <String>Tier</String>
+        <String>Initials</String>
+        <String>Comment</String>
+        <String>Thread</String>
+        <String>Sender</String>
+        <String>Recipient</String>
+        <String>Creation Date</String>
+        <String>Modification Date</String>
+    </prefList>
+    <prefGroup key="BAS - WebMAUS Basic">
+        <pref key="ServiceName">
+            <String>runMAUSBasic</String>
+        </pref>
+        <pref key="LANGUAGE">
+            <String>deu</String>
+        </pref>
+        <prefGroup key="TierUrl"/>
+        <pref key="SignalParamName">
+            <String>SIGNAL</String>
+        </pref>
+        <pref key="TextParamName">
+            <String>TEXT</String>
+        </pref>
     </prefGroup>
     <pref key="LayoutManager.SplitPaneDividerLocation">
-        <Int>1</Int>
+        <Int>2</Int>
     </pref>
     <pref key="TimeLineViewer.ActiveAnnotationBold">
         <Boolean>true</Boolean>
     </pref>
-    <pref key="TimeLineViewer.ZoomLevel">
-        <Float>137.0</Float>
-    </pref>
     <pref key="LayoutManager.SelectedTabIndex">
         <Int>0</Int>
     </pref>
+    <pref key="TimeLineViewer.ZoomLevel">
+        <Float>137.0</Float>
+    </pref>
     <prefGroup key="TierColors">
-        <pref key="RH_ID_Gloss_2">
-            <Object class="java.awt.Color">0,160,160</Object>
-        </pref>
         <pref key="아우라 성향_2">
             <Object class="java.awt.Color">160,90,90</Object>
+        </pref>
+        <pref key="RH_ID_Gloss_2">
+            <Object class="java.awt.Color">0,160,160</Object>
         </pref>
         <pref key="아우라 성향_1">
             <Object class="java.awt.Color">0,90,160</Object>
@@ -182,11 +182,11 @@
         <pref key="T0/check_2">
             <Object class="java.awt.Color">90,90,160</Object>
         </pref>
-        <pref key="Formal Category/ SIGN(LH)_1">
-            <Object class="java.awt.Color">0,0,90</Object>
-        </pref>
         <pref key="Formal Category/ SIGN(RH)_2">
             <Object class="java.awt.Color">90,160,90</Object>
+        </pref>
+        <pref key="Formal Category/ SIGN(LH)_1">
+            <Object class="java.awt.Color">0,0,90</Object>
         </pref>
         <pref key="Formal Category/ SIGN(RH)_1">
             <Object class="java.awt.Color">0,90,0</Object>
@@ -229,11 +229,11 @@
         </pref>
     </prefGroup>
     <prefList key="CommentViewer.Columns.Hidden"/>
-    <pref key="FrameLocation">
-        <Object class="java.awt.Point">0,0</Object>
-    </pref>
     <pref key="TimeLineViewer.HorizontalScrollBarVisible">
         <Boolean>true</Boolean>
+    </pref>
+    <pref key="FrameLocation">
+        <Object class="java.awt.Point">0,23</Object>
     </pref>
     <pref key="GridViewer.TierName">
         <String>Color_1#2</String>
@@ -250,11 +250,11 @@
     <pref key="MultiTierViewer.TierSortingMode">
         <Int>1</Int>
     </pref>
-    <pref key="MediaControlRate">
-        <Float>1.0</Float>
-    </pref>
     <pref key="TimeLineViewer.ReducedTierHeight">
         <Boolean>true</Boolean>
+    </pref>
+    <pref key="MediaControlRate">
+        <Float>1.0</Float>
     </pref>
     <prefGroup key="IndividualPlayerVolumes">
         <pref key="04_After_three_weeks_18122014_04Colour_game_Jordan-India.mpeg">
@@ -269,58 +269,52 @@
             <String>http://lux17.mpi.nl/aamlr/</String>
         </pref>
     </prefGroup>
-    <pref key="ActiveRecognizerName">
-        <String>AAM-LR Phone level audio segmentation</String>
+    <prefGroup key="CommentViewer.Columns">
+        <pref key="Modification Date">
+            <Int>75</Int>
+        </pref>
+        <pref key="Sender">
+            <Int>75</Int>
+        </pref>
+        <pref key="Tier">
+            <Int>75</Int>
+        </pref>
+        <pref key="Creation Date">
+            <Int>75</Int>
+        </pref>
+        <pref key="Initials">
+            <Int>75</Int>
+        </pref>
+        <pref key="Comment">
+            <Int>75</Int>
+        </pref>
+        <pref key="End Time">
+            <Int>75</Int>
+        </pref>
+        <pref key="Start Time">
+            <Int>75</Int>
+        </pref>
+        <pref key="Recipient">
+            <Int>75</Int>
+        </pref>
+        <pref key="Thread">
+            <Int>75</Int>
+        </pref>
+    </prefGroup>
+    <pref key="TimeLineViewer.TimeScaleConnected">
+        <Boolean>true</Boolean>
     </pref>
     <pref key="MultiTierViewer.ActiveTierName">
         <String>Formal Category/ SIGN(RH)_1</String>
     </pref>
-    <pref key="TimeLineViewer.TimeScaleConnected">
-        <Boolean>true</Boolean>
+    <pref key="ActiveRecognizerName">
+        <String>AAM-LR Phone level audio segmentation</String>
     </pref>
-    <prefGroup key="CommentViewer.Columns">
-        <pref key="종료 시간">
-            <Int>75</Int>
-        </pref>
-        <pref key="수정 날짜">
-            <Int>75</Int>
-        </pref>
-        <pref key="스레드">
-            <Int>75</Int>
-        </pref>
-        <pref key="받는 사람">
-            <Int>75</Int>
-        </pref>
-        <pref key="코멘트">
-            <Int>75</Int>
-        </pref>
-        <pref key="만든 날짜">
-            <Int>75</Int>
-        </pref>
-        <pref key="시작 시간">
-            <Int>75</Int>
-        </pref>
-        <pref key="이니셜">
-            <Int>75</Int>
-        </pref>
-        <pref key="보내는 사람">
-            <Int>75</Int>
-        </pref>
-        <pref key="층렬">
-            <Int>75</Int>
-        </pref>
-    </prefGroup>
     <pref key="LayoutManager.ControlPanelWidth">
         <Int>289</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
         <Long>489985</Long>
-    </pref>
-    <pref key="ActiveAudioRecognizerName">
-        <String>BAS - WebMAUS Basic</String>
-    </pref>
-    <pref key="LayoutManager.MediaAreaHeight">
-        <Int>359</Int>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>RH_ID_Gloss_1</String>
@@ -344,6 +338,12 @@
         <String>Egocentric bias_2</String>
         <String>아우라 성향_2</String>
     </prefList>
+    <pref key="LayoutManager.MediaAreaHeight">
+        <Int>359</Int>
+    </pref>
+    <pref key="ActiveAudioRecognizerName">
+        <String>BAS - WebMAUS Basic</String>
+    </pref>
     <pref key="SelectionEndTime">
         <Long>497580</Long>
     </pref>

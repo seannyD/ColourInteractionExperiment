@@ -201,7 +201,17 @@ for(colourID in colourNumbers){
   
   v[v$sign %in% names(signCounts),]$freq_week_4_withinColour = signCounts[v[v$sign %in% names(signCounts),]$sign]
   
-  
+  v$origin = tapply(d2$signOrigin, d2$sign_value, function(X){
+    X= X[!is.na(X)]
+    X = X[X!=""]
+    if(length(X)==0){
+      return("None")
+    }
+    if(length(unique(X))>1){
+      return("Mixed")
+    }
+    return(X[1])
+  })[v$sign]
   
   
   v$iconic = tapply(d2$iconic, d2$sign_value, head,n=1)[v$sign]
@@ -217,9 +227,9 @@ for(colourID in colourNumbers){
   
   
   v$inventedBy= tapply(d2$inventedBy, d2$sign_value, head, n=1)[v$sign]
-  v$TryMarked = tapply(d2$TryMarked, d2$sign_value, sum, na.rm=T, n=1)[v$sign]
-  v$TryMarked = tapply(d2$TryMarked, d2$sign_value, sum, na.rm=T, n=1)[v$sign]
-  v$Teach = tapply(d2$Teach, d2$sign_value, sum, na.rm=T, n=1)[v$sign]
+  v$TryMarked = tapply(d2$TryMarked, d2$sign_value, sum, na.rm=T)[v$sign]
+  v$TryMarked = tapply(d2$TryMarked, d2$sign_value, sum, na.rm=T)[v$sign]
+  v$Teach = tapply(d2$Teach, d2$sign_value, sum, na.rm=T)[v$sign]
   
   v$averageLength_week_1 = tapply(d2[d2$week==1,]$sign_length, d2[d2$week==1,]$sign_value, mean)
   
@@ -236,12 +246,16 @@ variants$freq_week_4[is.na(variants$freq_week_4)] = 0
 
 b = read.delim("../data/otherData/SignProperties.tab", sep='\t', encoding = 'utf-8', stringsAsFactors = F)
 
-b[b$Sign=="FOLWER",]$Sign = "FLOWER"
-b[b$Sign=="BIGHT",]$Sign = "BRIGHT"
-b[b$Sign=="SIGINING",]$Sign = "SIGNING"
 b$Sign = gsub("^ ","", b$Sign)
 b$Sign = gsub(" $","", b$Sign)
 b$Sign = toupper(b$Sign)
+
+for(i in 1:length(signChanges)){
+  if(signChanges[[i]][1] %in% b$Sign){
+    b[b$Sign==signChanges[[i]][1]
+      & !is.na(b$Sign),]$Sign = signChanges[[i]][2]
+  }
+}
 
 variants$BodyAnchor = b[match(variants$sign, b$Sign),]$Body.Anchor
 
