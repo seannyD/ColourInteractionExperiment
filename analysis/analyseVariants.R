@@ -5,16 +5,16 @@ setwd("~/Documents/MPI/KangSukColours/ColourExperiment/analysis/")
 d = read.csv("../data/processedData/variants_processed.csv", stringsAsFactors = F)
 
 
-
-colourNumbers = c("1","5","7","14",'18','24')
-colourNames = c("red",'brown','black','green','yellow','pink')
+d$trial_value = as.character(d$trial_value)  # legacy compatibility
+colourNumbers = c("1","5",'6',"7","14",'18','24')
+colourNames = c("red",'brown','white','black','green','yellow','pink')
 names(colourNames) = colourNumbers
-colourNamesDark = c("dark red", 'orange', 'gray', 'dark green','gold', 'purple')
+colourNamesDark = c("dark red", 'orange','gray', 'dark gray', 'dark green','gold', 'purple')
 
 
 d = d[d$trial_value %in% colourNumbers,]
 
-d$trialColourName = colourNames[d$trial_value]
+d$trialColourName = colourNames[as.character(d$trial_value)]
 d$trialColourName = factor(d$trialColourName, levels = colourNames)
 
 
@@ -100,12 +100,12 @@ barplot(matrix(tapply(d$sign_value, paste(d$speakerName,d$week), function(X){len
 legend(9,80,c("Week 1","week 3"), col=cols, pch=15)
 dev.off()
 
-week1L = tapply(d[d$director==d$speaker & d$week==1,]$sign_length, d[d$director==d$speaker & d$week==1,]$trialColourName, mean)
-week4L = tapply(d[d$director==d$speaker & d$week==4,]$sign_length, d[d$director==d$speaker & d$week==4,]$trialColourName, mean)
+week1L = tapply(d[d$director==d$speaker & d$week==1,]$sign_length, d[d$director==d$speaker & d$week==1,]$trialColourName, mean,na.rm=T)
+week4L = tapply(d[d$director==d$speaker & d$week==4,]$sign_length, d[d$director==d$speaker & d$week==4,]$trialColourName, mean,na.rm=T)
 
 
 pdf("../results/descriptive/graphs/LengthOfSignsByColour.pdf")
-plot(c(0.5,2.5),range(week1L), type='n', ylab='Sign length (ms)', xlab='Week', xaxt="n")
+plot(c(0.5,2.5),range(week1L,na.rm=T), type='n', ylab='Sign length (ms)', xlab='Week', xaxt="n")
 axis(1,at=1:2, c("Week 1", "week 3"))
 points(rep(1,length(week1L)), week1L, col=colourNames, pch=16)
 points(rep(2,length(week4L)), week4L, col=colourNames, pch=16)
@@ -195,15 +195,15 @@ variants = read.csv('../data/processedData/variants_summary.csv', stringsAsFacto
 d$BodyAnchor = variants[match(d$sign_value, variants$sign),]$BodyAnchor
 
 w1 = table(d[d$week==1,]$Indexicality,d[d$week==1,]$trialColourName)
-w1 = w1[,c("red",'black','brown','green','yellow','pink')]
+w1 = w1[,c("red",'black','white','brown','green','yellow','pink')]
 w3 = table(d[d$week==4,]$Indexicality,d[d$week==4,]$trialColourName)
-w3 = w3[,c("red",'black','brown','green','yellow','pink')]
+w3 = w3[,c("red",'black','white','brown','green','yellow','pink')]
 
-xtab = cbind(w1,c(NA,NA), w3)
+xtab = cbind(w1,c(NA,NA,NA), w3)
 
 pdf("../results/descriptive/graphs/BodyAnchoredByColourByWeek.pdf", width=6, height = 5)
-barplot(xtab, col=3:4, las=2)
-legend(8,100,c("Body Anchored",'Other'), col=4:3, pch=15)
+barplot(xtab, col=3:5, las=2)
+legend(12,30,c('No','Yes',"Yes, Body Anchored"), col=3:5, pch=15)
 axis(1,line=2.5,at=c(4,12), labels=c("Week 1","Week 3"), tick=F, lwd=0)
 dev.off()
 

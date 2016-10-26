@@ -1,10 +1,10 @@
 setwd("~/Documents/MPI/KangSukColours/ColourExperiment/processing/")
 
 
-colourNumbers = c("1","5","7","14",'18','24')
-colourNames = c("red",'brown','black','green','yellow','pink')
+colourNumbers = c("1","5","7","14",'18','24','6')
+colourNames = c("red",'brown','black','green','yellow','pink','white')
 names(colourNames) = colourNumbers
-colourNamesDark = c("dark red", 'orange', 'gray', 'dark green','gold', 'purple')
+colourNamesDark = c("dark red", 'orange', 'dark gray', 'dark green','gold', 'purple','gray')
 
 checkIconicity = function(x){
   tx = table(x[x!=''])
@@ -115,6 +115,9 @@ d$iconic = iconicityMeasures[d$sign_value]
 # Check indexicality
 # One case:
 d$Indexicality[d$Indexicality==""] = "Yes"
+d$Indexicality[d$Indexicality=="yes"] = "Yes"
+d$Indexicality[d$Indexicality=="no"] = "No"
+d$Indexicality[d$Indexicality=="yes-body"] = "Yes-body"
 
 #  Try marking
 

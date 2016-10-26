@@ -9,10 +9,11 @@ This analysis looks at the sign variants used in a colour naming game between si
 The analysis tries to predict the relative frequency of each variant within a colour category in week 3, based on measures from week 1.
 
 # Load libraries
-```{r}
+```{r warning=F, message=F}
 
 library(ggplot2)
 library(lme4)
+library(party)
 ```
 
 ```{r echo=F}
@@ -59,8 +60,14 @@ getMEText = function(r,ef, wald=NULL){
 
 ```{r}
 variants = read.csv('../data/processedData/variants_summary.csv', stringsAsFactors = F)
-
 ```
+
+There were only 2 variants for `white', and one of those only appeared once.  Therefore, we remove it from this statistical analysis.
+
+```{r}
+variants = variants[variants$colourName!='white',]
+```
+
 
 Transform some variables.
 
@@ -85,6 +92,19 @@ variants$averageLength_week_1.logcenter =
     mean(variants$averageLength_week_1.logcenter)
 
 ```
+
+# Ctree
+
+```{r}
+ct =  ctree(freq_week_4_withinColour ~ 
+            factor(indexical) + 
+            (factor(Teach) +factor(TryMarked.cat)) +
+            freq_week_1.logcenter +
+            averageLength_week_1.logcenter+
+            factor(check.any), data=variants)
+plot(ct)
+```
+
 
 
 # LMER models
@@ -139,12 +159,21 @@ m7 = lmer(freq_week_4_withinColour ~
           + (1 | colourName), 
           data=variants)
 
+m8 = lmer(freq_week_4_withinColour ~ 
+            (indexical) + 
+            (Teach * TryMarked.cat) +
+            freq_week_1.logcenter +
+            averageLength_week_1.logcenter+
+            check.any + inventedBy
+          + (1 | colourName), 
+          data=variants)
+
 ```
 
 # Results
 
 ```{r}
-anova(m0,m1,m2,m3,m4,m5, m6,m7)
+anova(m0,m1,m2,m3,m4,m5, m6,m7,m8)
 ```
 
 ```{r}
@@ -154,6 +183,8 @@ summary(m7)
 ## Summary
 
 `r getMEText(anova(m2,m3), "main effect of try marking",summary(m7)$coef['TryMarked.catHigh',])`
+
+`r getMEText(anova(m3,m4), "interaction between try marking and teaching",summary(m7)$coef['TeachTRUE:TryMarked.catHigh',])`
 
 `r getMEText(anova(m4,m5), "main effect of frequency in week 1",summary(m7)$coef['freq_week_1.logcenter',])`
 
