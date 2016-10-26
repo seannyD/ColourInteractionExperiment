@@ -17,10 +17,10 @@ d[d$sign_value=="FOLWER",]$sign_value = "FLOWER"
 d[d$sign_value=="BIGHT",]$sign_value = "BRIGHT"
 d[d$sign_value=="SIGINING",]$sign_value = "SIGNING"
 
-colourNumbers = c("1","5","7","14",'18','24')
-colourNames = c("red",'brown','black','green','yellow','pink')
+colourNumbers = c("1","5",'6',"7","14",'18','24')
+colourNames = c("red",'brown','white','black','green','yellow','pink')
 names(colourNames) = colourNumbers
-colourNamesDark = c("dark red", 'orange', 'gray', 'dark green','gold', 'purple')
+colourNamesDark = c("dark red", 'orange','gray', 'dark gray', 'dark green','gold', 'purple')
 
 
 d = d[d$trial_value %in% colourNumbers,]

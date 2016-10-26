@@ -9,7 +9,7 @@ d$trial_value = as.character(d$trial_value)  # legacy compatibility
 colourNumbers = c("1","5",'6',"7","14",'18','24')
 colourNames = c("red",'brown','white','black','green','yellow','pink')
 names(colourNames) = colourNumbers
-colourNamesDark = c("dark red", 'orange','gray', 'dark gray', 'dark green','gold', 'purple')
+colourNamesDark = c("dark red", 'orange','gray', 'black', 'dark green','gold', 'pink')
 
 
 d = d[d$trial_value %in% colourNumbers,]
@@ -105,17 +105,17 @@ week4L = tapply(d[d$director==d$speaker & d$week==4,]$sign_length, d[d$director=
 
 
 pdf("../results/descriptive/graphs/LengthOfSignsByColour.pdf")
-plot(c(0.5,2.5),range(week1L,na.rm=T), type='n', ylab='Sign length (ms)', xlab='Week', xaxt="n")
+plot(c(0.5,2.5),range(c(week1L,week4L),na.rm=T), type='n', ylab='Sign length (ms)', xlab='Week', xaxt="n")
 axis(1,at=1:2, c("Week 1", "week 3"))
-points(rep(1,length(week1L)), week1L, col=colourNames, pch=16)
-points(rep(2,length(week4L)), week4L, col=colourNames, pch=16)
+points(rep(1,length(week1L)), week1L, col=colourNamesDark, pch=16)
+points(rep(2,length(week4L)), week4L, col=colourNamesDark, pch=16)
 for(i in 1:length(week1L)){
-  lines(c(1,2),c(week1L[i],week4L[i]), col=colourNames[i])
+  lines(c(1,2),c(week1L[i],week4L[i]), col=colourNamesDark[i])
 }
 dev.off()
 
 for(i in 1:length(colourNames)){
- plotmeans(sign_length~week, data = d[d$director==d$speaker & d$trialColourName==colourNames[i], ], add=i!=1, col=colourNames[i])
+ plotmeans(sign_length~week, data = d[d$director==d$speaker & d$trialColourName==colourNames[i], ], add=i!=1, col=colourNamesDark[i])
 }
 
 week1L.trial = tapply(d[d$director==d$speaker & d$week==1,]$trial_length, d[d$director==d$speaker & d$week==1,]$trialColourName, mean)
