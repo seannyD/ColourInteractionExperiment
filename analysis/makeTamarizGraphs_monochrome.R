@@ -64,7 +64,7 @@ makeTamatizPlot = function(res,pairs,monochrome=T){
   col = matrix(col, ncol=4)
   
   # note that we're plotting upside down!
-  plot(c(5,1),c(7,1),type='n',xaxt='n',yaxt='n',xlab='',ylab='', bty='n',ylim=c(7,0.9),xlim=c(0.5,5.2))
+  plot(c(5,1),c(7,1),type='n',xaxt='n',yaxt='n',xlab='',ylab='', bty='n',ylim=c(7,0.9),xlim=c(-0.3,5.2))
   for(j in 1:6){
     for(i in 1:4){
     
@@ -74,9 +74,9 @@ makeTamatizPlot = function(res,pairs,monochrome=T){
     }
   }
   text((1:4)+0.5,rep(0.8,4),individuals)
-  text(rep(0.8,6),(1:6)+0.5,paste("S",rep(1:3,2),sep=''))
-  #text(rep(0.8,6),(1:6)+0.5,paste("S",rep(1:3,2),sep=''))
-  text(rep(0.6,2),c(2.5,5.5),c("Week1","Week4") ,srt=90)
+  text(rep(0.4,6),(1:6)+0.5,paste("Round",rep(1:3,2),sep=''))
+  
+  text(rep(-0.2,2),c(2,5)+0.5,c("Week 1","Week 3") ,srt=90)
   abline(h=3.95)
   
   letters = getLetters(pairs)
@@ -167,7 +167,7 @@ for(colourID in colourNumbers){
   
   pdf(filename, width=6,height=6)
   
-  plot(c(0,7),c(0,5), ylim=c(6.5,0),xlim=c(0,5), type='n',xlab='',ylab='', xaxt='n',yaxt='n',bty ='n')
+  plot(c(0,7),c(0,5), ylim=c(6.5,0),xlim=c(-1,5), type='n',xlab='',ylab='', xaxt='n',yaxt='n',bty ='n')
   title(colourNames[colourID])
   
   pairs = d[,c("part1","part2","week","session")]
@@ -180,9 +180,9 @@ for(colourID in colourNumbers){
   }
   
   text((1:4)+0.5,rep(0,4),individuals)
-  text(rep(0.6,6),(1:6),paste("S",rep(1:3,2),sep=''))
+  text(rep(0.3,6),(1:6),paste("Round",rep(1:3,2),sep=''))
   
-  text(rep(0.2,2),c(2,5),c("Week1","Week4") ,srt=90)
+  text(rep(-0.6,2),c(2,5),c("Week 1","Week 3") ,srt=90)
   abline(h=3.5)
   
   rowTracker = 1
