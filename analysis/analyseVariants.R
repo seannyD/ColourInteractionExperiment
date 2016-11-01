@@ -9,7 +9,7 @@ d$trial_value = as.character(d$trial_value)  # legacy compatibility
 colourNumbers = c("1","5",'6',"7","14",'18','24')
 colourNames = c("red",'brown','white','black','green','yellow','pink')
 names(colourNames) = colourNumbers
-colourNamesDark = c("dark red", 'orange','gray', 'black', 'dark green','gold', 'pink')
+colourNamesDark = c("red", 'orange','gray', 'black', 'dark green','gold', 'pink')
 
 
 d = d[d$trial_value %in% colourNumbers,]
@@ -177,10 +177,10 @@ dev.off()
 pdf("../results/descriptive/graphs/LengthOfTrialsByColour.pdf")
 plot(c(0.5,2.5),range(c(week1L.trial,week4L.trial)), type='n', ylab='Trial length (ms)', xlab='Week', xaxt="n")
 axis(1,at=1:2, c("Week 1", "week 3"))
-points(rep(1,length(week1L.trial)), week1L.trial, col=colourNames, pch=16)
-points(rep(2,length(week4L.trial)), week4L.trial, col=colourNames, pch=16)
+points(rep(1,length(week1L.trial)), week1L.trial, col=colourNamesDark, pch=16)
+points(rep(2,length(week4L.trial)), week4L.trial, col=colourNamesDark, pch=16)
 for(i in 1:length(week1L)){
-  lines(c(1,2),c(week1L.trial[i],week4L.trial[i]), col=colourNames[i])
+  lines(c(1,2),c(week1L.trial[i],week4L.trial[i]), col=colourNamesDark[i])
 }
 dev.off()
 
