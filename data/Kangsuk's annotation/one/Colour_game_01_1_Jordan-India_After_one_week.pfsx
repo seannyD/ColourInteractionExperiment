@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences version="1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
+    <prefGroup key="TierColors">
+        <pref key="Formal category/Sign_1">
+            <Object class="java.awt.Color">90,90,160</Object>
+        </pref>
+        <pref key="COLOR_2(자원)">
+            <Object class="java.awt.Color">160,0,160</Object>
+        </pref>
+        <pref key="RH_ID_Gloss_2">
+            <Object class="java.awt.Color">160,90,0</Object>
+        </pref>
+        <pref key="아우라 성향_2">
+            <Object class="java.awt.Color">0,0,90</Object>
+        </pref>
+        <pref key="아우라 성향_1">
+            <Object class="java.awt.Color">0,90,90</Object>
+        </pref>
+        <pref key="RH_ID_Gloss_1">
+            <Object class="java.awt.Color">90,160,0</Object>
+        </pref>
+        <pref key="Egocentric bias_1">
+            <Object class="java.awt.Color">90,0,90</Object>
+        </pref>
+        <pref key="Egocentric bias_2">
+            <Object class="java.awt.Color">160,160,90</Object>
+        </pref>
+        <pref key="Comment_2">
+            <Object class="java.awt.Color">0,160,0</Object>
+        </pref>
+        <pref key="Comment_1">
+            <Object class="java.awt.Color">160,90,160</Object>
+        </pref>
+        <pref key="T0/Check_1">
+            <Object class="java.awt.Color">90,0,90</Object>
+        </pref>
+        <pref key="T0/Check_2">
+            <Object class="java.awt.Color">160,90,0</Object>
+        </pref>
+        <pref key="color_1#2">
+            <Object class="java.awt.Color">90,0,90</Object>
+        </pref>
+        <pref key="NH_Sign_Origin_1n">
+            <Object class="java.awt.Color">160,0,90</Object>
+        </pref>
+        <pref key="Formal category/Sign_2">
+            <Object class="java.awt.Color">0,0,160</Object>
+        </pref>
+        <pref key="COLOR_1(자원)">
+            <Object class="java.awt.Color">90,160,160</Object>
+        </pref>
+        <pref key="Formal Category/ SIGN(LH)_1">
+            <Object class="java.awt.Color">0,90,160</Object>
+        </pref>
+        <pref key="Formal Category/ SIGN(LH)_2">
+            <Object class="java.awt.Color">0,0,90</Object>
+        </pref>
+        <pref key="Language Tool_1">
+            <Object class="java.awt.Color">0,160,90</Object>
+        </pref>
+        <pref key="Language Tool_2">
+            <Object class="java.awt.Color">90,0,160</Object>
+        </pref>
+        <pref key="default">
+            <Object class="java.awt.Color">90,90,0</Object>
+        </pref>
+        <pref key="Coordination-bias_2">
+            <Object class="java.awt.Color">160,160,0</Object>
+        </pref>
+        <pref key="Coordination-bias_1">
+            <Object class="java.awt.Color">90,160,90</Object>
+        </pref>
+        <pref key="NMS_1">
+            <Object class="java.awt.Color">160,0,0</Object>
+        </pref>
+        <pref key="LH_ID_Gloss_2">
+            <Object class="java.awt.Color">0,160,160</Object>
+        </pref>
+        <pref key="NMS_2">
+            <Object class="java.awt.Color">0,90,0</Object>
+        </pref>
+        <pref key="NMS of T0_1">
+            <Object class="java.awt.Color">160,90,90</Object>
+        </pref>
+        <pref key="LH_ID_Gloss_1">
+            <Object class="java.awt.Color">90,0,0</Object>
+        </pref>
+    </prefGroup>
+</preferences>

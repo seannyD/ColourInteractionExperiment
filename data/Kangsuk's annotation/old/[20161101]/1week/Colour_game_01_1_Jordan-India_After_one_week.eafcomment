@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ColTimeList xmlns="http://mpi.nl/tools/coltime"
+    xmlns:NS1="http://www.w3.org/2001/XMLSchema-instance" NS1:schemaLocation="http://mpi.nl/tools/coltime http://www.mpi.nl/tools/coltime/schema.xsd">
+    <ColTime ColTimeMessageID="8995d8da-7f51-4d46-94e9-b0b8ede0c11f" URL="">
+        <Metadata>
+            <Initials/>
+            <ThreadID/>
+            <Sender/>
+            <Recipient/>
+            <CreationDate>2015-04-30T13:29:51.030Z</CreationDate>
+            <ModificationDate>2015-04-30T13:29:51.030Z</ModificationDate>
+            <Category>unknown</Category>
+            <Status>unknown</Status>
+        </Metadata>
+        <AnnotationFile URL="" type="EAF">urn:nl-mpi-tools-elan-eaf:37524d04-565c-4b8e-9b9d-e24070774123#t=110.279;tier=default</AnnotationFile>
+        <Message/>
+    </ColTime>
+</ColTimeList>

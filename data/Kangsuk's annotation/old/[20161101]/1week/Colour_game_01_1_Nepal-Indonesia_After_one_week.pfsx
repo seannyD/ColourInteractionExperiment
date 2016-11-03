@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<preferences version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
+<preferences version="1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
     <pref key="ActiveVideoRecognizerName">
         <String>Human motion analysis and annotation</String>
     </pref>
     <prefList key="MultiTierViewer.TierOrder">
         <String>default</String>
-        <String>Color(Stimulus)_1</String>
-        <String>2_Selected stimulus</String>
-        <String>Formal Category/ SIGN(RH)_1</String>
+        <String>Color_1(자원)</String>
+        <String>Stimulus_11</String>
+        <String>2_Selected stimulus2</String>
+        <String>Formal category/Sign_1</String>
         <String>Sign_Orign_1</String>
         <String>motivation_1</String>
         <String>Easily-articulated_1</String>
@@ -18,29 +20,30 @@
         <String>Metonymy/metaphor_1</String>
         <String>Formal Category/ SIGN(LH)_1</String>
         <String>NH_Sign_Orign_1</String>
-        <String>T0_2</String>
-        <String>T0_2_Origin</String>
-        <String>T0_2_motivation</String>
-        <String>T0_indixical_2</String>
-        <String>candidate(understand) of T0_2</String>
-        <String>T0_Metonymy/metaphor_2</String>
-        <String>Teach Sign by 2</String>
-        <String>How Sign by 2</String>
         <String>NMS_1</String>
         <String>Coordination-bias_1</String>
-        <String>How Sign_1</String>
         <String>Teach Sign_1</String>
+        <String>How Sign_1</String>
         <String>Try-marker_1</String>
         <String>Repair_1</String>
+        <String>T0/Check_2</String>
+        <String>T0_2_Origin</String>
+        <String>candidate(understand) of T0_2</String>
+        <String>T0_Metonymy/metaphor_2</String>
+        <String>motivation of T0_2</String>
+        <String>T0_indixical_2</String>
+        <String>Teach Sign by 2</String>
+        <String>How Sign by 2</String>
         <String>Modification_1</String>
         <String>Egocentric bias_1</String>
         <String>아우라 성향_1</String>
-        <String>Comment_1</String>
+        <String>Meta Comment_1</String>
         <String>Color_1#2</String>
-        <String>Color(Stimulus)_2</String>
-        <String>1_Selected stimulus</String>
-        <String>Formal Category/ SIGN(RH)_2</String>
-        <String>Sign_Origin_2</String>
+        <String>Color_2(자원)</String>
+        <String>Stimulus_22</String>
+        <String>1_Selected stimulus1</String>
+        <String>Formal category/Sign_2</String>
+        <String>Sign_Orign_2</String>
         <String>motivation_2</String>
         <String>Easily-articulated_2</String>
         <String>Frequency_2</String>
@@ -48,26 +51,24 @@
         <String>indexical_2</String>
         <String>SI/CG_2</String>
         <String>Metonymy/metaphor_2</String>
-        <String>Formal Category/ SIGN(LH)_2</String>
-        <String>NH_Sign_Origin_2</String>
-        <String>T0_1</String>
+        <String>Coordination-bias_2</String>
+        <String>Teach Sign_2</String>
+        <String>How Sign_2</String>
+        <String>Try-marker_2</String>
+        <String>Repair_2</String>
+        <String>T0/Check_1</String>
         <String>T0_1_Origin</String>
-        <String>T0_1_motivation</String>
-        <String>T0_indixical_1</String>
+        <String>motivation of T0_1</String>
         <String>candidate(understand) of T0_1</String>
+        <String>T0_indixical_1</String>
         <String>T0_Metonymy/metaphor_1</String>
         <String>Teach Sign by 1</String>
         <String>How Sign by 1</String>
         <String>NMS_2</String>
-        <String>Coordination-bias_2</String>
-        <String>How Sign_2</String>
-        <String>Teach Sign_2</String>
-        <String>Repair_2</String>
-        <String>Try-marker_2</String>
         <String>Modification_2</String>
         <String>Egocentric bias_2</String>
         <String>아우라 성향_2</String>
-        <String>Comment_2</String>
+        <String>Meta Comment_2</String>
     </prefList>
     <prefGroup key="Text-to-Speech alignment">
         <pref key="model">
@@ -78,11 +79,11 @@
         <String>mpi.eudico.client.annotator.viewer.TimeLineViewer</String>
     </pref>
     <prefGroup key="Human motion analysis and annotation">
-        <pref key="background_image">
-            <String>false</String>
-        </pref>
         <pref key="output_video_resolution">
             <String>half</String>
+        </pref>
+        <pref key="background_image">
+            <String>false</String>
         </pref>
         <pref key="use_single_cluster">
             <String>false</String>
@@ -91,17 +92,17 @@
             <String>normal</String>
         </pref>
         <pref key="input_video">
-            <String>///K:/07ERC 프로젝트연구/03ELAN 작업/2014년 Lucknow대학/Colour_game- 주석할 것/04_After_three_weeks_18122014/04_After_three_weeks_18122014_04Colour_game_Nepal-Indonesia.mpeg</String>
+            <String>///K:/07ERC 프로젝트연구/03ELAN 작업/2014년 Lucknow대학/Colour_game- 주석할 것/02_After_one_week_05122014/02_After_one_week_05122014_04Colour_game_01_Nepal-Indonesia_After_one_week_01.mpeg</String>
         </pref>
         <pref key="logging_level">
             <String>normal</String>
         </pref>
         <prefGroup key="input_xml"/>
-        <pref key="change_threshold">
-            <Float>30.0</Float>
-        </pref>
         <pref key="use_rest_position">
             <String>false</String>
+        </pref>
+        <pref key="change_threshold">
+            <Float>30.0</Float>
         </pref>
     </prefGroup>
     <prefList key="CommentViewer.Columns.Order">
@@ -117,13 +118,13 @@
         <String>수정 날짜</String>
     </prefList>
     <prefGroup key="BAS - WebMAUS Basic">
-        <prefGroup key="TierUrl"/>
-        <pref key="LANGUAGE">
-            <String>deu</String>
-        </pref>
         <pref key="ServiceName">
             <String>runMAUSBasic</String>
         </pref>
+        <pref key="LANGUAGE">
+            <String>deu</String>
+        </pref>
+        <prefGroup key="TierUrl"/>
         <pref key="SignalParamName">
             <String>SIGNAL</String>
         </pref>
@@ -138,74 +139,71 @@
         <Int>0</Int>
     </pref>
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>158.0</Float>
+        <Float>128.0</Float>
     </pref>
     <prefGroup key="TierColors">
-        <pref key="Formal Category/ SIGN(RH)_2">
-            <Object class="java.awt.Color">0,160,0</Object>
-        </pref>
         <pref key="Formal Category/ SIGN(LH)_1">
-            <Object class="java.awt.Color">90,0,90</Object>
-        </pref>
-        <pref key="Formal Category/ SIGN(RH)_1">
-            <Object class="java.awt.Color">0,0,90</Object>
-        </pref>
-        <pref key="Formal Category/ SIGN(LH)_2">
-            <Object class="java.awt.Color">0,0,160</Object>
-        </pref>
-        <pref key="Modification_1">
-            <Object class="java.awt.Color">90,160,160</Object>
-        </pref>
-        <pref key="Modification_2">
-            <Object class="java.awt.Color">160,90,160</Object>
-        </pref>
-        <pref key="아우라 성향_2">
             <Object class="java.awt.Color">160,0,0</Object>
         </pref>
-        <pref key="아우라 성향_1">
-            <Object class="java.awt.Color">90,0,0</Object>
-        </pref>
-        <pref key="Color_1#2">
-            <Object class="java.awt.Color">0,160,160</Object>
-        </pref>
-        <pref key="T0_1">
-            <Object class="java.awt.Color">160,90,0</Object>
-        </pref>
-        <pref key="T0_2">
-            <Object class="java.awt.Color">90,160,0</Object>
-        </pref>
-        <pref key="Color(Stimulus)_1">
-            <Object class="java.awt.Color">0,90,90</Object>
-        </pref>
-        <pref key="Color(Stimulus)_2">
-            <Object class="java.awt.Color">90,0,160</Object>
-        </pref>
-        <pref key="Egocentric bias_1">
-            <Object class="java.awt.Color">0,90,160</Object>
-        </pref>
-        <pref key="default">
-            <Object class="java.awt.Color">90,160,90</Object>
-        </pref>
-        <pref key="Egocentric bias_2">
-            <Object class="java.awt.Color">160,160,90</Object>
-        </pref>
-        <pref key="Coordination-bias_2">
-            <Object class="java.awt.Color">0,90,0</Object>
-        </pref>
-        <pref key="Comment_2">
+        <pref key="Formal category/Sign_1">
             <Object class="java.awt.Color">160,0,90</Object>
         </pref>
-        <pref key="Comment_1">
-            <Object class="java.awt.Color">160,160,0</Object>
+        <pref key="Modification_1">
+            <Object class="java.awt.Color">160,0,90</Object>
         </pref>
-        <pref key="Coordination-bias_1">
-            <Object class="java.awt.Color">90,90,160</Object>
+        <pref key="Modification_2">
+            <Object class="java.awt.Color">0,90,160</Object>
         </pref>
-        <pref key="NMS_1">
+        <pref key="아우라 성향_2">
+            <Object class="java.awt.Color">90,160,160</Object>
+        </pref>
+        <pref key="아우라 성향_1">
+            <Object class="java.awt.Color">90,0,90</Object>
+        </pref>
+        <pref key="Color_1#2">
+            <Object class="java.awt.Color">160,160,90</Object>
+        </pref>
+        <pref key="Meta Comment_1">
+            <Object class="java.awt.Color">0,90,90</Object>
+        </pref>
+        <pref key="Meta Comment_2">
+            <Object class="java.awt.Color">160,90,160</Object>
+        </pref>
+        <pref key="Color_2(자원)">
+            <Object class="java.awt.Color">0,160,90</Object>
+        </pref>
+        <pref key="Egocentric bias_1">
+            <Object class="java.awt.Color">0,160,160</Object>
+        </pref>
+        <pref key="default">
             <Object class="java.awt.Color">160,90,90</Object>
         </pref>
-        <pref key="NMS_2">
+        <pref key="Egocentric bias_2">
+            <Object class="java.awt.Color">160,160,0</Object>
+        </pref>
+        <pref key="Coordination-bias_2">
+            <Object class="java.awt.Color">160,160,90</Object>
+        </pref>
+        <pref key="Color_1(자원)">
+            <Object class="java.awt.Color">90,160,160</Object>
+        </pref>
+        <pref key="Coordination-bias_1">
             <Object class="java.awt.Color">0,160,90</Object>
+        </pref>
+        <pref key="T0/Check_1">
+            <Object class="java.awt.Color">90,90,160</Object>
+        </pref>
+        <pref key="T0/Check_2">
+            <Object class="java.awt.Color">90,160,90</Object>
+        </pref>
+        <pref key="NMS_1">
+            <Object class="java.awt.Color">0,160,160</Object>
+        </pref>
+        <pref key="NMS_2">
+            <Object class="java.awt.Color">90,160,0</Object>
+        </pref>
+        <pref key="Formal category/Sign_2">
+            <Object class="java.awt.Color">160,0,0</Object>
         </pref>
     </prefGroup>
     <prefList key="CommentViewer.Columns.Hidden"/>
@@ -217,20 +215,20 @@
         <String>Color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>212872</Long>
+        <Long>1019816</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>212872</Long>
+        <Long>1020852</Long>
     </pref>
     <prefGroup key="TierHighlightColors"/>
     <pref key="MultiTierViewer.TierSortingMode">
         <Int>1</Int>
     </pref>
     <pref key="MediaControlRate">
-        <Float>1.0</Float>
+        <Float>1.5</Float>
     </pref>
     <pref key="TimeLineViewer.ReducedTierHeight">
         <Boolean>true</Boolean>
@@ -243,6 +241,9 @@
             <String>http://lux17.mpi.nl/aamlr/</String>
         </pref>
     </prefGroup>
+    <pref key="MultiTierViewer.ActiveTierName">
+        <String>Stimulus_11</String>
+    </pref>
     <pref key="ActiveRecognizerName">
         <String>AAM-LR Phone level audio segmentation</String>
     </pref>
@@ -256,10 +257,10 @@
         <pref key="스레드">
             <Int>75</Int>
         </pref>
-        <pref key="코멘트">
+        <pref key="받는 사람">
             <Int>75</Int>
         </pref>
-        <pref key="받는 사람">
+        <pref key="코멘트">
             <Int>75</Int>
         </pref>
         <pref key="만든 날짜">
@@ -271,37 +272,45 @@
         <pref key="이니셜">
             <Int>75</Int>
         </pref>
-        <pref key="층렬">
-            <Int>75</Int>
-        </pref>
         <pref key="보내는 사람">
             <Int>75</Int>
         </pref>
+        <pref key="층렬">
+            <Int>75</Int>
+        </pref>
     </prefGroup>
-    <pref key="MultiTierViewer.ActiveTierName">
-        <String>Formal Category/ SIGN(RH)_1</String>
-    </pref>
     <pref key="LayoutManager.ControlPanelWidth">
-        <Int>266</Int>
+        <Int>233</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>209997</Long>
-    </pref>
-    <pref key="ActiveAudioRecognizerName">
-        <String>BAS - WebMAUS Basic</String>
-    </pref>
-    <pref key="LayoutManager.MediaAreaHeight">
-        <Int>322</Int>
+        <Long>1016103</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>Easily-articulated_1</String>
         <String>Frequency_1</String>
         <String>바르게/흐르게_1</String>
+        <String>Formal Category/ SIGN(LH)_1</String>
+        <String>NMS_1</String>
+        <String>Modification_1</String>
+        <String>Egocentric bias_1</String>
+        <String>아우라 성향_1</String>
+        <String>Meta Comment_1</String>
         <String>Easily-articulated_2</String>
         <String>Frequency_2</String>
         <String>바르게/흐르게_2</String>
+        <String>NMS_2</String>
+        <String>Modification_2</String>
+        <String>Egocentric bias_2</String>
+        <String>아우라 성향_2</String>
+        <String>Meta Comment_2</String>
     </prefList>
+    <pref key="LayoutManager.MediaAreaHeight">
+        <Int>626</Int>
+    </pref>
+    <pref key="ActiveAudioRecognizerName">
+        <String>BAS - WebMAUS Basic</String>
+    </pref>
     <pref key="SelectionEndTime">
-        <Long>217331</Long>
+        <Long>1025249</Long>
     </pref>
 </preferences>
