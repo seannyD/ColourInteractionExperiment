@@ -50,7 +50,7 @@ plotmeans(d[d$sign_value=="YELLOW",]$sign_length~d[d$sign_value=="YELLOW",]$week
 dev.off()
 
 pdf("../results/descriptive/graphs/LengthByWeek.pdf")
-plotmeans(d$sign_length~d$week, xlab='Week', ylab="Length (ms)", main='Length of signs')
+plotmeans(d$sign_length~d$week, xlab='', ylab="Length (ms)", main='Length of signs', legends = c("Week 1","Week 3"))
 dev.off()
 
 # pdf("../results/descriptive/graphs/IconicByWeekByPart.pdf", width=8, height=5)

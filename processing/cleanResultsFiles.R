@@ -114,6 +114,9 @@ d$iconic = iconicityMeasures[d$sign_value]
 
 # Check indexicality
 # One case:
+
+d[d$sign_value=="WHITE",]$Indexicality = "Yes-body"
+
 d$Indexicality[d$Indexicality==""] = "Yes"
 d$Indexicality[d$Indexicality=="yes"] = "Yes"
 d$Indexicality[d$Indexicality=="no"] = "No"

@@ -112,17 +112,6 @@ summary(m1)
 ```
 
 
-# Ctree
-
-```{r}
-ct =  ctree(freq_week_4_withinColour ~ 
-            factor(indexical) + 
-            (factor(Teach) +factor(TryMarked.cat)) +
-            averageLength_week_1.logcenter+
-            factor(check.any) + factor(inventedBy), data=variants)
-plot(ct)
-```
-
 
 
 # LMER models
@@ -195,22 +184,115 @@ anova(m0,m1,m2,m3,m4,m5, m6,m7,m8)
 ```
 
 ```{r}
-summary(m8)
+summary(m7)
 ```
 
-## Summary
 
-`r getMEText(anova(m2,m3), "main effect of try marking",summary(m8)$coef['TryMarked.catHigh',])`
+## Random slopes
 
-`r getMEText(anova(m3,m4), "interaction between try marking and teaching",summary(m8)$coef['TeachTRUE:TryMarked.catHigh',])`
+For each of the predictors, we see if random slopes help improve the model.  Random slopes allow the strenght of the effect of a factor to be different for each colour concept.
 
-`r getMEText(anova(m4,m5), "main effect of frequency in week 1",summary(m8)$coef['freq_week_1.logcenter',])`
+```{r}
 
-`r getMEText(anova(m0,m1), "main effect of indexicality",summary(m8)$coef['indexicalYes',])`
+m7R = lmer(freq_week_4_withinColour ~ 
+            (indexical) + 
+            (Teach * TryMarked.cat) +
+            freq_week_1.logcenter +
+            averageLength_week_1.logcenter+
+            check.any 
+          + (1 | colourName), 
+          data=variants)
+          
+m7R.indexical = lmer(freq_week_4_withinColour ~ 
+            (indexical) + 
+            (Teach * TryMarked.cat) +
+            freq_week_1.logcenter +
+            averageLength_week_1.logcenter+
+            check.any 
+          + (1 + indexical | colourName), 
+          data=variants)
 
-`r getMEText(anova(m5,m6), "main effect of sign length",summary(m8)$coef['averageLength_week_1.logcenter',])`
+anova(m7R,m7R.indexical)
 
-`r getMEText(anova(m6,m7), "main effect of checking",summary(m8)$coef['check.anyTRUE',])`
+m7R.Teach = lmer(freq_week_4_withinColour ~ 
+            (indexical) + 
+            (Teach * TryMarked.cat) +
+            freq_week_1.logcenter +
+            averageLength_week_1.logcenter+
+            check.any 
+          + (1 + Teach| colourName), 
+          data=variants)
+anova(m7R,m7R.Teach)
+
+m7R.TryMark = lmer(freq_week_4_withinColour ~ 
+            (indexical) + 
+            (Teach * TryMarked.cat) +
+            freq_week_1.logcenter +
+            averageLength_week_1.logcenter+
+            check.any 
+          + (1 + TryMarked.cat| colourName), 
+          data=variants)
+anova(m7R,m7R.TryMark)
+
+m7R.Freq = lmer(freq_week_4_withinColour ~ 
+            (indexical) + 
+            (Teach * TryMarked.cat) +
+            freq_week_1.logcenter +
+            averageLength_week_1.logcenter+
+            check.any 
+          + (1 + averageLength_week_1.logcenter| colourName), 
+          data=variants)
+anova(m7R,m7R.Freq)
+
+m7R.Length = lmer(freq_week_4_withinColour ~ 
+            (indexical) + 
+            (Teach * TryMarked.cat) +
+            freq_week_1.logcenter +
+            averageLength_week_1.logcenter+
+            check.any 
+          + (1 + averageLength_week_1.logcenter| colourName), 
+          data=variants)
+anova(m7R,m7R.Length)
+
+m7R.Check = lmer(freq_week_4_withinColour ~ 
+            (indexical) + 
+            (Teach * TryMarked.cat) +
+            freq_week_1.logcenter +
+            averageLength_week_1.logcenter+
+            check.any 
+          + (1 + check.any| colourName), 
+          data=variants)
+anova(m7R,m7R.Check)
+```
+
+We see that only indexicality improves the model as a random slope.  This means that for some colours, indexicality matters more than for others.  We can plot the random slopes below:
+
+```{r}
+dotplot(ranef(m7R.indexical))
+```
+
+We see that indexicality is a better predictor of selection for black and red, but is a very weak predictor for pink and green.
+
+
+# Summary
+
+Choose a final model for the beta values:
+
+```{r}
+finalModel = m7R.indexical
+```
+
+`r getMEText(anova(m2,m3), "main effect of try marking",summary(finalModel)$coef['TryMarked.catHigh',])`
+
+`r getMEText(anova(m3,m4), "interaction between try marking and teaching",summary(finalModel)$coef['TeachTRUE:TryMarked.catHigh',])`
+
+`r getMEText(anova(m4,m5), "main effect of frequency in week 1",summary(finalModel)$coef['freq_week_1.logcenter',])`
+
+`r getMEText(anova(m0,m1), "main effect of indexicality",summary(finalModel)$coef['indexicalYes',])`
+
+`r getMEText(anova(m5,m6), "main effect of sign length",summary(finalModel)$coef['averageLength_week_1.logcenter',])`
+
+`r getMEText(anova(m6,m7), "main effect of checking",summary(finalModel)$coef['check.anyTRUE',])`
 
 `r getMEText(anova(m7,m8), "main effect of first user (inventedBy)")`
 

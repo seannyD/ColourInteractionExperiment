@@ -3,41 +3,33 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
     <prefList key="MultiTierViewer.TierOrder">
         <String>default</String>
-        <String>RH_ID_Gloss_1</String>
-        <String>Language Tool_1</String>
-        <String>Language Tool_2</String>
-        <String>Comment_2</String>
-        <String>RH_ID_Gloss_2</String>
-        <String>LH_ID_Gloss_1</String>
-        <String>LH_ID_Gloss_2</String>
-        <String>NMS_1</String>
-        <String>NMS_2</String>
+        <String>Stimulus_1</String>
+        <String>Stimulus_2</String>
         <String>Formal category/Sign_1</String>
         <String>Formal category/Sign_2</String>
-        <String>NH_Sign_Origin_1n</String>
-        <String>NMS of T0_1</String>
         <String>motivation_1</String>
-        <String>motivation_2</String>
+        <String>Easily-articulated_1</String>
         <String>Frequency_1</String>
-        <String>Frequency_2</String>
         <String>바르게/흐르게_1</String>
+        <String>motivation_2</String>
+        <String>Easily-articulated_2</String>
+        <String>Frequency_2</String>
         <String>바르게/흐르게_2</String>
-        <String>COLOR_1(자원)</String>
-        <String>COLOR_2(자원)</String>
-        <String>Stimulus_11</String>
-        <String>2_Selected stimulus1</String>
-        <String>Stimulus_22</String>
-        <String>1_Selected stimulus</String>
-        <String>Sign(RH)_Origin_1</String>
-        <String>Sign(RH)_Origin_2</String>
+        <String>Color_1#2</String>
+        <String>Modification_1</String>
+        <String>Modification_2</String>
         <String>Coordination-bias_1</String>
         <String>Coordination-bias_2</String>
         <String>Formal Category/ SIGN(LH)_1</String>
         <String>Formal Category/ SIGN(LH)_2</String>
+        <String>NMS_1</String>
+        <String>NMS_2</String>
         <String>Egocentric bias_1</String>
         <String>Egocentric bias_2</String>
         <String>아우라 성향_1</String>
         <String>아우라 성향_2</String>
+        <String>Comment_1</String>
+        <String>Comment_2</String>
         <String>How Sign_1</String>
         <String>Teach Sign_1</String>
         <String>Try-marker_1</String>
@@ -48,30 +40,32 @@
         <String>Try-marker_2</String>
         <String>NH_Sign_Orign_1</String>
         <String>NH_Sign_Origin_2</String>
-        <String>Comment_1</String>
-        <String>color_1#2</String>
+        <String>2_Selected stimulus2</String>
+        <String>1_Selected stimulus1</String>
+        <String>Sign_Orign_11</String>
+        <String>Sign_Orign_22</String>
         <String>T0/Check_1</String>
         <String>T0/Check_2</String>
-        <String>T0_2_motivation</String>
-        <String>T0_1_motivation</String>
+        <String>motivation of T0_2</String>
+        <String>motivation of T0_1</String>
         <String>T0_2_Origin</String>
         <String>T0_1_Origin</String>
         <String>candidate(understand) of T0_1</String>
         <String>candidate(understand) of T0_2</String>
-        <String>Indexical_1</String>
-        <String>Indexical_2</String>
+        <String>indexical_1</String>
+        <String>indexical_2</String>
         <String>SI/CG_1</String>
         <String>SI/CG_2</String>
         <String>Metonymy/metaphor_1</String>
         <String>Metonymy/metaphor_2</String>
-        <String>T0_Metonymy/metaphor_2</String>
         <String>T0_Metonymy/metaphor_1</String>
+        <String>T0_Metonymy/metaphor_2</String>
         <String>T0_indixical_1</String>
         <String>T0_indixical_2</String>
-        <String>How Sign by 1_2</String>
-        <String>How Sign by 2_1</String>
-        <String>Teach Sign by 2_1</String>
-        <String>Teach Sign by 1_2</String>
+        <String>Teach Sign by 2</String>
+        <String>Teach Sign by 1</String>
+        <String>How Sign by 2</String>
+        <String>How Sign by 1</String>
     </prefList>
     <pref key="LayoutManager.VisibleMultiTierViewer">
         <String>mpi.eudico.client.annotator.viewer.TimeLineViewer</String>
@@ -92,95 +86,77 @@
         <Int>2</Int>
     </pref>
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>10.0</Float>
+        <Float>469.0</Float>
     </pref>
     <pref key="LayoutManager.SelectedTabIndex">
         <Int>7</Int>
     </pref>
     <prefGroup key="TierColors">
-        <pref key="Formal category/Sign_1">
-            <Object class="java.awt.Color">90,90,160</Object>
-        </pref>
-        <pref key="COLOR_2(자원)">
-            <Object class="java.awt.Color">160,0,160</Object>
-        </pref>
-        <pref key="RH_ID_Gloss_2">
-            <Object class="java.awt.Color">160,90,0</Object>
-        </pref>
-        <pref key="아우라 성향_2">
-            <Object class="java.awt.Color">0,0,90</Object>
-        </pref>
-        <pref key="아우라 성향_1">
-            <Object class="java.awt.Color">0,90,90</Object>
-        </pref>
-        <pref key="RH_ID_Gloss_1">
-            <Object class="java.awt.Color">90,160,0</Object>
-        </pref>
-        <pref key="Egocentric bias_1">
-            <Object class="java.awt.Color">90,0,90</Object>
-        </pref>
-        <pref key="Egocentric bias_2">
-            <Object class="java.awt.Color">160,160,90</Object>
-        </pref>
-        <pref key="Comment_2">
-            <Object class="java.awt.Color">0,160,0</Object>
-        </pref>
-        <pref key="Comment_1">
-            <Object class="java.awt.Color">160,90,160</Object>
-        </pref>
-        <pref key="T0/Check_1">
-            <Object class="java.awt.Color">90,0,90</Object>
-        </pref>
-        <pref key="T0/Check_2">
-            <Object class="java.awt.Color">160,90,0</Object>
-        </pref>
-        <pref key="color_1#2">
-            <Object class="java.awt.Color">90,0,90</Object>
-        </pref>
-        <pref key="COLOR_1(자원)">
-            <Object class="java.awt.Color">90,160,160</Object>
-        </pref>
-        <pref key="NH_Sign_Origin_1n">
-            <Object class="java.awt.Color">160,0,90</Object>
-        </pref>
-        <pref key="Formal category/Sign_2">
-            <Object class="java.awt.Color">0,0,160</Object>
-        </pref>
         <pref key="Formal Category/ SIGN(LH)_1">
-            <Object class="java.awt.Color">0,90,160</Object>
+            <Object class="java.awt.Color">160,90,0</Object>
         </pref>
         <pref key="Formal Category/ SIGN(LH)_2">
-            <Object class="java.awt.Color">0,0,90</Object>
+            <Object class="java.awt.Color">160,0,160</Object>
         </pref>
-        <pref key="Language Tool_1">
-            <Object class="java.awt.Color">0,160,90</Object>
+        <pref key="Formal category/Sign_1">
+            <Object class="java.awt.Color">0,160,0</Object>
         </pref>
-        <pref key="Language Tool_2">
-            <Object class="java.awt.Color">90,0,160</Object>
+        <pref key="Modification_1">
+            <Object class="java.awt.Color">90,0,90</Object>
+        </pref>
+        <pref key="Modification_2">
+            <Object class="java.awt.Color">90,160,0</Object>
+        </pref>
+        <pref key="아우라 성향_2">
+            <Object class="java.awt.Color">160,160,90</Object>
+        </pref>
+        <pref key="아우라 성향_1">
+            <Object class="java.awt.Color">90,90,160</Object>
+        </pref>
+        <pref key="Stimulus_1">
+            <Object class="java.awt.Color">160,160,0</Object>
+        </pref>
+        <pref key="Color_1#2">
+            <Object class="java.awt.Color">0,160,160</Object>
+        </pref>
+        <pref key="Stimulus_2">
+            <Object class="java.awt.Color">160,0,90</Object>
+        </pref>
+        <pref key="Egocentric bias_1">
+            <Object class="java.awt.Color">160,90,90</Object>
         </pref>
         <pref key="default">
+            <Object class="java.awt.Color">90,0,0</Object>
+        </pref>
+        <pref key="Egocentric bias_2">
             <Object class="java.awt.Color">90,90,0</Object>
         </pref>
         <pref key="Coordination-bias_2">
-            <Object class="java.awt.Color">160,160,0</Object>
-        </pref>
-        <pref key="Coordination-bias_1">
-            <Object class="java.awt.Color">90,160,90</Object>
-        </pref>
-        <pref key="NMS_1">
-            <Object class="java.awt.Color">160,0,0</Object>
-        </pref>
-        <pref key="LH_ID_Gloss_2">
-            <Object class="java.awt.Color">0,160,160</Object>
-        </pref>
-        <pref key="NMS_2">
             <Object class="java.awt.Color">0,90,0</Object>
         </pref>
-        <pref key="NMS of T0_1">
-            <Object class="java.awt.Color">160,90,90</Object>
+        <pref key="Comment_2">
+            <Object class="java.awt.Color">90,160,90</Object>
         </pref>
-        <pref key="LH_ID_Gloss_1">
-            <Object class="java.awt.Color">90,0,0</Object>
+        <pref key="Comment_1">
+            <Object class="java.awt.Color">90,0,160</Object>
+        </pref>
+        <pref key="T0/Check_1">
+            <Object class="java.awt.Color">0,90,160</Object>
+        </pref>
+        <pref key="Coordination-bias_1">
+            <Object class="java.awt.Color">90,160,160</Object>
+        </pref>
+        <pref key="T0/Check_2">
+            <Object class="java.awt.Color">0,90,90</Object>
+        </pref>
+        <pref key="NMS_1">
+            <Object class="java.awt.Color">160,90,160</Object>
+        </pref>
+        <pref key="NMS_2">
+            <Object class="java.awt.Color">0,0,90</Object>
+        </pref>
+        <pref key="Formal category/Sign_2">
+            <Object class="java.awt.Color">160,0,0</Object>
         </pref>
     </prefGroup>
     <prefList key="CommentViewer.Columns.Hidden">
@@ -188,19 +164,19 @@
         <String>Recipient</String>
     </prefList>
     <pref key="FrameLocation">
-        <Object class="java.awt.Point">480,23</Object>
+        <Object class="java.awt.Point">19,23</Object>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>0</Long>
+        <Long>1038254</Long>
     </pref>
     <pref key="LayoutManager.CurrentMode">
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>0</Long>
+        <Long>1038254</Long>
     </pref>
     <pref key="FrameSize">
-        <Object class="java.awt.Dimension">800,1164</Object>
+        <Object class="java.awt.Dimension">1865,1177</Object>
     </pref>
     <prefGroup key="AAM-LR Phone level audio segmentation">
         <pref key="base_url">
@@ -246,12 +222,12 @@
         <String>AAM-LR Phone level audio segmentation</String>
     </pref>
     <pref key="LayoutManager.ControlPanelWidth">
-        <Int>334</Int>
+        <Int>375</Int>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>900</Long>
+        <Long>1036771</Long>
     </pref>
     <pref key="SelectionEndTime">
-        <Long>0</Long>
+        <Long>1038412</Long>
     </pref>
 </preferences>
