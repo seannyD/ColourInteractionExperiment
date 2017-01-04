@@ -8,6 +8,32 @@ This analysis looks at the sign variants used in a colour naming game between si
 
 The analysis tries to predict the relative frequency of each variant within a colour category in week 3, based on measures from week 1.
 
+## Data
+
+-  colour: Code of the target colour
+-  colourName: English name of the target colour
+-  sign: label for the variant produced
+-  freq_week_1_total: Total number of occurances of the variant in the first week, across all colour contexts.
+-  freq_week_4_total: Total number of occurances of the variant in the final week, across all colour contexts.
+-  freq_week_1: Number of occurances of the variant used during the given target colour context in week 1.
+-  freq_week_4: Number of occurances of the variant used during the given target colour context in the final week.
+-  prop_week_1: Same as freq_week_1, but as a proportion of all variants used in the given colour context.
+-  prop_week_4: Same as freq_week_4, but as a proportion of all variants used in the given colour context.
+-  origin:  The origin language of the sign.  For many, identifying an origin is not possible, so is labelled "None"
+-  iconic: Old variable
+-  check: The number of times this variable was used in a checking turn.
+-  indexical:  Is the variant non-indexical, indexical or indexical of the body?
+-  inventedBy:  The name of the first signer to use this variant in the experiment.
+-  TryMarked:  The number of times this sign was used in try-marking.
+-  Teach:  The number of times this sign was explicitly taught.
+-  averageLength_week_1:  Average time to produce the variant in milliseconds
+-  averageTrialLength_week_1:  Average time for completing the trial for the given target colour.
+-  BodyAnchor:  Is the variant body-anchored (redundant with 'indexical')
+
+## Poisson regression
+
+Many variants have zero counts.  This makes transformation difficult, and heavily skews the distribution.  The poisson distribution also has the advantage of only predicting whole, non-negative numbers, which makes sense for this data because a variant can't be used half a time or a negative number of times.
+
 # Load libraries
 ```{r warning=F, message=F}
 
@@ -80,9 +106,9 @@ variants$Teach = variants$Teach >0
 
 variants$check.any = variants$check>0
 
-variants$freq_week_1.logcenter = log(variants$freq_week_1 + 1)
-variants$freq_week_1.logcenter = 
-  variants$freq_week_1.logcenter - mean(variants$freq_week_1.logcenter)
+variants$freq_week_1_total.logcenter = log(variants$freq_week_1_total + 1)
+variants$freq_week_1_total.logcenter = 
+  variants$freq_week_1_total.logcenter - mean(variants$freq_week_1_total.logcenter)
 
 # cut TryMarking into two categories
 variants$TryMarked.cat = cut(variants$TryMarked, 
@@ -101,10 +127,10 @@ variants$averageLength_week_1.logcenter =
 Perform a straightforward ANOVA analysis:
 
 ```{r}
-m1 = aov(freq_week_4_withinColour+1 ~ 
+m1 = aov(prop_week_4+1 ~ 
       indexical + 
       Teach * TryMarked*check.any+
-      freq_week_1.logcenter +
+      freq_week_1_total.logcenter +
       averageLength_week_1.logcenter+
       inventedBy + colourName,
     data=variants)
@@ -116,60 +142,60 @@ summary(m1)
 
 # LMER models
 ```{r modelBits}
-m0 = lmer(freq_week_4_withinColour ~ 
+m0 = lmer(prop_week_4 ~ 
             1
           + (1 | colourName), 
           data=variants)
-m1 = lmer(freq_week_4_withinColour ~ 
+m1 = lmer(prop_week_4 ~ 
             (indexical) + 
             + (1 | colourName), 
           data=variants)
-m2 = lmer(freq_week_4_withinColour ~ 
+m2 = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach) 
           + (1 | colourName), 
           data=variants)
 
-m3 = lmer(freq_week_4_withinColour ~ 
+m3 = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach) + (TryMarked.cat) 
           + (1 | colourName), 
           data=variants)
 
-m4 = lmer(freq_week_4_withinColour ~ 
+m4 = lmer(prop_week_4 ~ 
             (indexical) + 
             Teach * TryMarked.cat
           + (1 | colourName), 
           data=variants)
 
-m5 = lmer(freq_week_4_withinColour ~ 
+m5 = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach * TryMarked.cat) +
-            freq_week_1.logcenter
+          freq_week_1_total.logcenter
           + (1 | colourName), 
           data=variants)
 
-m6 = lmer(freq_week_4_withinColour ~ 
+m6 = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach * TryMarked.cat) +
-            freq_week_1.logcenter +
+            freq_week_1_total.logcenter +
             averageLength_week_1.logcenter
           + (1 | colourName), 
           data=variants)
 
-m7 = lmer(freq_week_4_withinColour ~ 
+m7 = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach * TryMarked.cat) +
-            freq_week_1.logcenter +
+            freq_week_1_total.logcenter +
             averageLength_week_1.logcenter+
             check.any 
           + (1 | colourName), 
           data=variants)
 
-m8 = lmer(freq_week_4_withinColour ~ 
+m8 = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach * TryMarked.cat) +
-            freq_week_1.logcenter +
+            freq_week_1_total.logcenter +
             averageLength_week_1.logcenter+
             check.any + inventedBy
           + (1 | colourName), 
@@ -194,19 +220,19 @@ For each of the predictors, we see if random slopes help improve the model.  Ran
 
 ```{r}
 
-m7R = lmer(freq_week_4_withinColour ~ 
+m7R = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach * TryMarked.cat) +
-            freq_week_1.logcenter +
+            freq_week_1_total.logcenter +
             averageLength_week_1.logcenter+
             check.any 
           + (1 | colourName), 
           data=variants)
           
-m7R.indexical = lmer(freq_week_4_withinColour ~ 
+m7R.indexical = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach * TryMarked.cat) +
-            freq_week_1.logcenter +
+            freq_week_1_total.logcenter +
             averageLength_week_1.logcenter+
             check.any 
           + (1 + indexical | colourName), 
@@ -214,50 +240,50 @@ m7R.indexical = lmer(freq_week_4_withinColour ~
 
 anova(m7R,m7R.indexical)
 
-m7R.Teach = lmer(freq_week_4_withinColour ~ 
+m7R.Teach = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach * TryMarked.cat) +
-            freq_week_1.logcenter +
+            freq_week_1_total.logcenter +
             averageLength_week_1.logcenter+
             check.any 
           + (1 + Teach| colourName), 
           data=variants)
 anova(m7R,m7R.Teach)
 
-m7R.TryMark = lmer(freq_week_4_withinColour ~ 
+m7R.TryMark = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach * TryMarked.cat) +
-            freq_week_1.logcenter +
+            freq_week_1_total.logcenter +
             averageLength_week_1.logcenter+
             check.any 
           + (1 + TryMarked.cat| colourName), 
           data=variants)
 anova(m7R,m7R.TryMark)
 
-m7R.Freq = lmer(freq_week_4_withinColour ~ 
+m7R.Freq = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach * TryMarked.cat) +
-            freq_week_1.logcenter +
+            freq_week_1_total.logcenter +
             averageLength_week_1.logcenter+
             check.any 
           + (1 + averageLength_week_1.logcenter| colourName), 
           data=variants)
 anova(m7R,m7R.Freq)
 
-m7R.Length = lmer(freq_week_4_withinColour ~ 
+m7R.Length = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach * TryMarked.cat) +
-            freq_week_1.logcenter +
+            freq_week_1_total.logcenter +
             averageLength_week_1.logcenter+
             check.any 
           + (1 + averageLength_week_1.logcenter| colourName), 
           data=variants)
 anova(m7R,m7R.Length)
 
-m7R.Check = lmer(freq_week_4_withinColour ~ 
+m7R.Check = lmer(prop_week_4 ~ 
             (indexical) + 
             (Teach * TryMarked.cat) +
-            freq_week_1.logcenter +
+            freq_week_1_total.logcenter +
             averageLength_week_1.logcenter+
             check.any 
           + (1 + check.any| colourName), 
@@ -286,7 +312,7 @@ finalModel = m7R.indexical
 
 `r getMEText(anova(m3,m4), "interaction between try marking and teaching",summary(finalModel)$coef['TeachTRUE:TryMarked.catHigh',])`
 
-`r getMEText(anova(m4,m5), "main effect of frequency in week 1",summary(finalModel)$coef['freq_week_1.logcenter',])`
+`r getMEText(anova(m4,m5), "main effect of frequency in week 1",summary(finalModel)$coef['freq_week_1_total.logcenter',])`
 
 `r getMEText(anova(m0,m1), "main effect of indexicality",summary(finalModel)$coef['indexicalYes',])`
 
@@ -302,15 +328,15 @@ Plot the interaction between teaching and try marking.
 
 ```{r}
 
-sumStats2 = summarySE(variants, measurevar="freq_week_4_withinColour",
+sumStats2 = summarySE(variants, measurevar="prop_week_4",
                       groupvars=c("TryMarked.cat","Teach"))
 
 dodge <- position_dodge(width=0.5) 
 
 main.plot <- ggplot(sumStats2,
-	aes(x = TryMarked.cat, y = freq_week_4_withinColour, colour=Teach)) +
+	aes(x = TryMarked.cat, y = prop_week_4, colour=Teach)) +
   geom_point(position=dodge, size=4) + geom_line(aes(group=Teach),position=dodge) +
-  geom_errorbar(aes(ymax=freq_week_4_withinColour+se, ymin=freq_week_4_withinColour-se), width=0.25,position=dodge) +
+  geom_errorbar(aes(ymax=prop_week_4+se, ymin=prop_week_4-se), width=0.25,position=dodge) +
   xlab("Try Marked Frequency") +
   ylab("Proportional frequency in week 3") +
   coord_cartesian(ylim=c(0,0.6)) + 
@@ -330,15 +356,15 @@ dev.off()
 Plot the interaction between teaching and checking.
 
 ```{r}
-sumStats2 = summarySE(variants, measurevar="freq_week_4_withinColour",
+sumStats2 = summarySE(variants, measurevar="prop_week_4",
                       groupvars=c("Teach","check.any"))
 
 dodge <- position_dodge(width=0.5) 
 
 main.plot2 <- ggplot(sumStats2,
-	aes(x = check.any, y = freq_week_4_withinColour, colour=Teach)) +
+	aes(x = check.any, y = prop_week_4, colour=Teach)) +
   geom_point(position=dodge, size=4) + geom_line(aes(group=Teach),position=dodge) +
-  geom_errorbar(aes(ymax=freq_week_4_withinColour+se, ymin=freq_week_4_withinColour-se), width=0.25,position=dodge) +
+  geom_errorbar(aes(ymax=prop_week_4+se, ymin=prop_week_4-se), width=0.25,position=dodge) +
   xlab("Check") +
   ylab("Proportional frequency in week 3") +
   coord_cartesian(ylim=c(0,0.25)) + 

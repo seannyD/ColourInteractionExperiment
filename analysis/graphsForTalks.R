@@ -1,3 +1,28 @@
+
+setwd("~/Documents/MPI/KangSukColours/ColourExperiment/analysis/")
+
+variants = read.csv('../data/processedData/variants_summary.csv', stringsAsFactors = F)
+
+variants$Teach = variants$Teach >0
+
+variants$check.any = variants$check>0
+
+variants$freq_week_1.logcenter = log(variants$freq_week_1 + 1)
+variants$freq_week_1.logcenter = 
+  variants$freq_week_1.logcenter - mean(variants$freq_week_1.logcenter)
+
+# cut TryMarking into two categories
+variants$TryMarked.cat = cut(variants$TryMarked, 
+                             c(-Inf,3,Inf), 
+                             labels = c("Low",'High')) 
+
+variants$averageLength_week_1.logcenter = log(variants$averageLength_week_1)
+variants$averageLength_week_1.logcenter = 
+  variants$averageLength_week_1.logcenter -
+  mean(variants$averageLength_week_1.logcenter)
+
+
+
 variants = variants[order(variants$freq_week_4_withinColour),]
 x = variants[variants$colourName=='yellow',]$freq_week_4_withinColour
 
@@ -28,3 +53,5 @@ plotmeans(variants$freq_week_4_withinColour~cut(variants$averageLength_week_1,c(
     
 plotmeans(variants$freq_week_4_withinColour~variants$TryMarked.cat,
           xlab='',ylab='Frequency of variant in week 3')
+
+

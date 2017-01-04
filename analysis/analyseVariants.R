@@ -228,6 +228,24 @@ pdf("../results/descriptive/graphs/NumberOfVariantsByColourByWeek.pdf", width=8,
 barplot(xtab,beside=T, col=colourNames[rownames(xtab)], main='Number of Variants')
 dev.off()
 
+xtab2 = week1
+xtab2 = sort(xtab2)
+
+propBodyAnchor = tapply(d$Indexicality,d$trial_value,function(X){sum(X %in% c("Yes-body","Yes"),na.rm=T)/length(X)})
+propBodyAnchor = propBodyAnchor[as.character(rownames(xtab2))]
+
+pdf("../results/descriptive/graphs/NumberOfVariantsByColourByWeek_sorted.pdf", width=8, height=5)
+barplot(xtab2,beside=T, col=colourNames[rownames(xtab2)], main='', names.arg = colourNames[rownames(xtab2)], ylim=c(0,45), ylab='Number of variants in week 1')
+#text(seq(0.75,8,length.out=7),xtab2+2,
+#     paste(round(propBodyAnchor*100),"%",sep=''))
+dev.off()
+
+pdf("../results/descriptive/graphs/NumberOfVariantsBy_by_Indexicality.pdf", width=4, height=5)
+plot(xtab2, propBodyAnchor, pch=16, col=colourNames[rownames(xtab2)], xlab='Number of variants in week 1', ylab='Proportion of indexical variants', cex=2)
+points(xtab2[1], propBodyAnchor[1], pch=1, col=1, cex=2)
+points(xtab2[7], propBodyAnchor[7], pch=1, col=1, cex=2)
+dev.off()
+
 
 ####
 # Try marking

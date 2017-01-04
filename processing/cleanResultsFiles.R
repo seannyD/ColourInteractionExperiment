@@ -169,43 +169,69 @@ d$LW = grepl("LW",d$sign_notes)
 d$SE = grepl("SE",d$sign_notes)
 
 # absolute frequency
-d$freq_week_4 = tapply(d[d$week==4,]$sign_value,d[d$week==4,]$sign_value, length)[d$sign_value]
+# Note that this includes the use of variants in all target colour contexts
+d$freq_week_1_total = table(d[d$week==1,]$sign_value)[d$sign_value]
+d$freq_week_1_total[is.na(d$freq_week_1_total)] = 0
 
-# relative frequency, compared to other competitiors for the same colour
+d$freq_week_4_total = table(d[d$week==4,]$sign_value)[d$sign_value]
+d$freq_week_4_total[is.na(d$freq_week_4_total)] = 0
+
+# absolute frequency used in each colour context
 d$freq_week4_withinColour = NA
 
 for(colx in colourNumbers){
   d$freq_week4_withinColour[d$trial_value==colx] = 0
   dx = d[d$trial_value==colx & d$week==4, ]
   tx = table(dx$sign_value)
-  tx = tx / sum(tx)
   d[d$trial_value==colx & d$week==4,]$freq_week4_withinColour = tx[d[d$trial_value==colx & d$week==4,]$sign_value]
 }
 
+# relative frequency, compared to other competitiors for the same colour
+d$prop_week4_withinColour = NA
 
+for(colx in colourNumbers){
+  d$prop_week4_withinColour[d$trial_value==colx] = 0
+  dx = d[d$trial_value==colx & d$week==4, ]
+  tx = table(dx$sign_value)
+  tx = tx / sum(tx)
+  d[d$trial_value==colx & d$week==4,]$prop_week4_withinColour = tx[d[d$trial_value==colx & d$week==4,]$sign_value]
+}
 
 variants = data.frame()
+# For each target colour
 for(colourID in colourNumbers){
-  d2 =d[d$trial_value==colourID & nchar(d2[d2$week==1,]$sign_value)>0,]
+  # select trials for that target colour
+  d2 =d[d$trial_value==colourID,]
   
+  # make a data frame for variants used for this colour
   v = data.frame(colour=colourID, colourName = colourNames[which(colourNumbers==colourID)],sign=unique(d2[d2$week==1,]$sign_value), stringsAsFactors = F)
   
+  # Total frequency of use (all colour contexts)
+  v$freq_week_1_total = table(d[d$week==1,]$sign_value)[v$sign]
+  v$freq_week_4_total = table(d[d$week==4,]$sign_value)[v$sign]
+  
+  # count occurances in both weeks, only when referring to this colour
   v$freq_week_1 = table(d2[d2$week==1,]$sign_value)[v$sign]
   v$freq_week_4 = table(d2[d2$week==4,]$sign_value)[v$sign]
   
+  v$freq_week_1[is.na(v$freq_week_1)] = 0
+  v$freq_week_4[is.na(v$freq_week_4)] = 0
   
-  v$freq_week_1_withinColour = 0
-  v$freq_week_4_withinColour = 0
+  v$prop_week_1 = 0
+  v$prop_week_4 = 0
   
   signCounts = table(d2[d2$week==1,]$sign_value)
   signCounts = signCounts / sum(signCounts)
     
-  v[v$sign %in% names(signCounts),]$freq_week_1_withinColour = signCounts[v[v$sign %in% names(signCounts),]$sign]
+  v[v$sign %in% names(signCounts),]$prop_week_1 = signCounts[v[v$sign %in% names(signCounts),]$sign]
   
   signCounts = table(d2[d2$week==4,]$sign_value)
   signCounts = signCounts / sum(signCounts)
   
-  v[v$sign %in% names(signCounts),]$freq_week_4_withinColour = signCounts[v[v$sign %in% names(signCounts),]$sign]
+  v[v$sign %in% names(signCounts),]$prop_week_4 = signCounts[v[v$sign %in% names(signCounts),]$sign]
+  
+  v$prop_week_1[is.na(v$prop_week_1)] = 0
+  v$prop_week_4[is.na(v$prop_week_4)] = 0
   
   v$origin = tapply(d2$signOrigin, d2$sign_value, function(X){
     X= X[!is.na(X)]
