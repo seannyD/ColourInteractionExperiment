@@ -71,7 +71,7 @@ library(dplyr)
 
 setwd("~/Documents/MPI/KangSukColours/ColourExperiment/analysis/")
 
-getMEText = function(r,ef, wald=NULL, showWaldP=F){
+getMEText = function(r,ef, wald=NULL, showWald=F){
   
   AIC = r[2,]$AIC
   loglikDiff = signif(diff(r$logLik),2)
@@ -86,10 +86,13 @@ getMEText = function(r,ef, wald=NULL, showWaldP=F){
     stder = signif(wald[2],2)
     t = signif(wald[3],2)
     wptext = ""
-    if(showWaldP & !is.na(wald[4])){
+    wald.text =  paste("beta = ",est,",")
+    if(showWald){
+      if(!is.na(wald[4])){
       wptext = paste(", Wald p =",signif(wald[4],2))
-    }
+      }
     wald.text = paste("beta = ",est,", std.err = ",stder, ", Wald t = ",t,wptext,';')
+    }
   }
   
   begin = 'There was no significant'
@@ -151,20 +154,6 @@ variants$averageLength_week_1.logcenter =
 
 ```
 
-# ANOVA
-
-Perform a straightforward ANOVA analysis for comparison:
-
-```{r}
-m1 = aov(prop_week_4+1 ~ 
-      indexical + 
-      Teach * TryMarked*check.any+
-      freq_week_1_total.logcenter +
-      averageLength_week_1.logcenter+
-      inventedBy + colourName,
-    data=variants)
-summary(m1)
-```
 
 
 
@@ -181,106 +170,114 @@ m0 = glmer(freq_week_4 ~
            + (1 | colourName) , 
            data=variants, family=poisson)
 
-# add frequency in week 1
-m1 = glmer(freq_week_4 ~ 
-              1 + freq_week_1_total + 
-              + (1 | colourName) , 
-            data=variants, family=poisson)
-
 # add indexicality
-m2 = glmer(freq_week_4 ~ 
-             1 + freq_week_1_total + 
-             (indexical) + 
-             + (1 | colourName) , 
+m1 = glmer(freq_week_4 ~ 
+             1 + 
+             indexical + 
+            (1 | colourName) , 
            data=variants, family=poisson)
 
 # add whether the variant is explicitly taught
+m2 = glmer(freq_week_4 ~ 
+             1 +  
+             indexical + 
+             Teach +
+            (1 | colourName) , 
+           data=variants, family=poisson)
+
 m3 = glmer(freq_week_4 ~ 
-             1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach) 
-           + (1 | colourName) , 
+             1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+            (1 | colourName) , 
            data=variants, family=poisson)
 
-# Add try marking
 m4 = glmer(freq_week_4 ~ 
-             1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach) + (TryMarked) 
-           + (1 | colourName) , 
+             1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+            (1 | colourName) , 
            data=variants, family=poisson)
 
-# Add the interaction between teaching and try marking
 m5 = glmer(freq_week_4 ~ 
-             1 + freq_week_1_total + 
-             (indexical) + 
-             Teach * TryMarked
-           + (1 | colourName) , 
+             1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+             freq_week_1_total +
+            (1 | colourName) , 
            data=variants, family=poisson)
 
-# Add the average length of the sign
 m6 = glmer(freq_week_4 ~ 
-             1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
+             1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+             freq_week_1_total +
              averageLength_week_1.logcenter +
             (1 | colourName) , 
            data=variants, family=poisson)
 
-# Add checks
 m7 = glmer(freq_week_4 ~ 
-             1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any 
-           + (1 | colourName) , 
+             1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+             freq_week_1_total +
+             averageLength_week_1.logcenter +
+             inventedBy +
+            (1 | colourName) , 
            data=variants, family=poisson)
 
-# Add the identity of the first signer to use the variant
 m8 = glmer(freq_week_4 ~ 
-             1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any + inventedBy
-           + (1 | colourName) , 
+             1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+             freq_week_1_total +
+             averageLength_week_1.logcenter +
+             inventedBy +
+             Teach : TryMarked +
+            (1 | colourName) , 
            data=variants, family=poisson)
 
-# Add interaction between teaching and checking
 m9 = glmer(freq_week_4 ~ 
-             1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any + inventedBy +
-             Teach : check.any
-           + (1 | colourName) , 
-           data=variants, family=poisson)
-
-# Add interaction between try marking and checking
-m10 = glmer(freq_week_4 ~ 
-             1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any + inventedBy +
+             1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+             freq_week_1_total +
+             averageLength_week_1.logcenter +
+             inventedBy +
+             Teach : TryMarked +
              Teach : check.any +
-              check.any : TryMarked
-           + (1 | colourName) , 
+            (1 | colourName) , 
            data=variants, family=poisson)
 
-
-# Add 3 way interaction for teaching, checking and try marking
-m11 = glmer(freq_week_4 ~ 
-             1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any + inventedBy +
-             Teach * check.any * TryMarked
-           + (1 | colourName) , 
+m10 = glmer(freq_week_4 ~ 
+             1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+             freq_week_1_total +
+             averageLength_week_1.logcenter +
+             inventedBy +
+             Teach : TryMarked +
+             Teach : check.any +
+             TryMarked : check.any +
+            (1 | colourName) , 
            data=variants, family=poisson)
+
+anova(m0,m1,m2,m3,m4,m5,m6,m7,m8,m9,m10)
 
 ```
 
@@ -289,182 +286,25 @@ m11 = glmer(freq_week_4 ~
 Model comparison test:
 
 ```{r}
-anova(m0,m1,m2,m3,m4,m5, m6,m7,m8, m9, m10, m11)
+anova(m0,m1,m2,m3,m4,m5, m6,m7,m8, m9, m10)
 ```
 
-Inside the chosen final model (m10 and 11 add many parameters and do not improve the model, so we choose m9):
-
-```{r}
-summary(m9)
-```
-
-See how well the model predictions match the real data:
-
-```{r}
-plot(variants$freq_week_4, exp(predict(m9)),
-     xlab="Actual frequency",
-     ylab="Model prediction")
-```
-
-
-## Random slopes
-
-For each of the predictors, we see if random slopes help improve the model.  Random slopes allow the strenght of the effect of a factor to be different for each colour concept.
-
-```{r randomSlopes, cache=T}
-
-m8R = glmer(freq_week_4 ~ 
-            1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any + inventedBy+
-             Teach : check.any
-           + (1 | colourName) , 
-          data=variants, family=poisson)
-          
-# Some convergence issues with this model, so use 
-# bobyqa algorithm for both steps.
-m8R.indexical = glmer(freq_week_4 ~ 
-            1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any + inventedBy +
-             Teach : check.any +
-           (1 | colourName) +
-           (0 + indexical | colourName), 
-          data=variants, family=poisson,
-                    control=glmerControl(
-            optimizer = "bobyqa",
-            optCtrl = list(maxfun=500000)))
-
-anova(m8R,m8R.indexical)
-
-m8R.Teach = glmer(freq_week_4 ~ 
-            1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any + inventedBy +
-              Teach : check.any +
-          (1 + Teach| colourName),
-          data=variants, family=poisson,
-          control=glmerControl(
-            optimizer = "bobyqa",
-            optCtrl = list(maxfun=500000)))
-anova(m8R,m8R.Teach)
-
-m8R.TryMark = glmer(freq_week_4 ~ 
-          1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any + inventedBy +
-            Teach : check.any +
-          (1 | colourName) +  
-          (0 + TryMarked| colourName), 
-          data=variants, family=poisson,
-          control=glmerControl(
-            optimizer = "bobyqa",
-            optCtrl = list(maxfun=500000)))
-anova(m8R,m8R.TryMark)
-
-m8R.Freq = glmer(freq_week_4 ~ 
-            1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any + inventedBy +
-              Teach : check.any +
-          (1 | colourName) +
-          (0 + freq_week_1_total| colourName), 
-          data=variants, family=poisson,
-          control=glmerControl(
-            optimizer = "bobyqa",
-            optCtrl = list(maxfun=500000)))
-anova(m8R,m8R.Freq)
-
-m8R.Length = glmer(freq_week_4 ~ 
-            1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any + inventedBy +
-              Teach : check.any +
-          (1 | colourName) +
-          (0 + averageLength_week_1.logcenter| colourName), 
-          data=variants, family=poisson,
-          control=glmerControl(
-            optimizer = "bobyqa",
-            optCtrl = list(maxfun=500000)))
-anova(m8R,m8R.Length)
-
-m8R.Check = glmer(freq_week_4 ~ 
-           1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any + inventedBy +
-             Teach : check.any +
-          (1 | colourName) +
-          (0 + check.any| colourName), 
-          data=variants, family=poisson,
-          control=glmerControl(
-            optimizer = "Nelder_Mead",
-            optCtrl = list(maxfun=500000)))
-anova(m8R,m8R.Check)
-```
-
-### Interpretation of random slopes
-
-We see that indexicality and checking improves the model as a random slope.  
-
-*  Indexicality
-
-For some colours, indexicality matters more than for others.  We can plot the random slopes below:
-
-```{r}
-dotplot(ranef(m8R.indexical))
-```
-
-We see that indexicality improves the chance of selection of variants for black and red, but reduces the chance of selection for green and pink.  
-
-*  Try Marking
-
-For some colours, try marking has a bigger effect than others.  Here are the random slopes.
-
-```{r}
-dotplot(ranef(m8R.TryMark))
-```
-
-Try marking improves the probability of selection for red, green and black, but decreases the probabilith of selection for brown, yellow an pink.
-
-* Teaching
-
-```{r}
-dotplot(ranef(m8R.Teach))
-```
-
-Explicit teaching improves the likelihood of teaching for pink, but not for other colours.
-
-## Final model
-
-Choose a final model for the beta values.  Both *indexical* and *Teach* are included as random slopes.
+Choose a final model for the beta values.
 
 ```{r finalModel, cache=T}
 finalModel = glmer(freq_week_4 ~ 
-            1 + freq_week_1_total + 
-             (indexical) + 
-             (Teach * TryMarked) +
-             averageLength_week_1.logcenter+
-             check.any + inventedBy +
-              Teach : check.any +
-             (1 + indexical + TryMarked + Teach | colourName), 
-          data=variants, family=poisson,
-          control=glmerControl(
-            optimizer = "bobyqa",
-            optCtrl = list(maxfun=500000)))
+            1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+             freq_week_1_total +
+             averageLength_week_1.logcenter +
+             inventedBy +
+             Teach : TryMarked +
+             Teach : check.any +
+            (1  | colourName), 
+          data=variants, family=poisson)
 ```
 
 Fixed effects:
@@ -489,32 +329,161 @@ plot(variants$freq_week_4, exp(predict(finalModel)),
      ylab="Model prediction")
 ```
 
+# Random slopes
+
+For each of the predictors, we see if random slopes help improve the model.  Random slopes allow the strenght of the effect of a factor to be different for each colour concept.  There were some convergence issues with some of the models (hence chancing the optimiser and maximum iterations below), which indicates that the random slopes may not be suitable with this amount of data.  However, the tests below can serve as indicators about whether there is variation within colours.
+
+```{r randomSlopes, cache=T}
+
+rsControl = glmerControl(
+            optimizer = "bobyqa",
+            optCtrl = list(maxfun=500000))
+
+m8R = glmer(freq_week_4 ~ 
+            1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+             freq_week_1_total +
+             averageLength_week_1.logcenter +
+             inventedBy +
+             Teach : TryMarked +
+             Teach : check.any +
+           (1 | colourName) , 
+          data=variants, family=poisson,
+          control = rsControl)
+          
+m8R.indexical = glmer(freq_week_4 ~ 
+            1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+             freq_week_1_total +
+             averageLength_week_1.logcenter +
+             inventedBy +
+             Teach : TryMarked +
+             Teach : check.any +
+           (1 + indexical| colourName), 
+          data=variants, family=poisson,
+          control = rsControl)
+
+anova(m8R,m8R.indexical)
+
+m8R.Teach = glmer(freq_week_4 ~ 
+            1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+             freq_week_1_total +
+             averageLength_week_1.logcenter +
+             inventedBy +
+             Teach : TryMarked +
+             Teach : check.any +
+          (1 + Teach| colourName),
+          data=variants, family=poisson,
+          control=rsControl)
+anova(m8R,m8R.Teach)
+
+m8R.TryMark = glmer(freq_week_4 ~ 
+          1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+             freq_week_1_total +
+             averageLength_week_1.logcenter +
+             inventedBy +
+             Teach : TryMarked +
+             Teach : check.any +
+          (1 | colourName) +  
+          (0 + TryMarked| colourName), 
+          data=variants, family=poisson,
+          control = rsControl)
+anova(m8R,m8R.TryMark)
+
+
+
+m8R.Check = glmer(freq_week_4 ~ 
+           1 +  
+             indexical + 
+             Teach +
+             TryMarked +
+             check.any +
+             freq_week_1_total +
+             averageLength_week_1.logcenter +
+             inventedBy +
+             Teach : TryMarked +
+             Teach : check.any +
+          (1 | colourName) +
+          (0 + check.any| colourName), 
+          data=variants, family=poisson,
+          control = rsControl)
+anova(m8R,m8R.Check)
+```
+
+We see that indexicality, try marking and teaching.  We can plot the random slopes below:
+
+* Indexicality
+
+```{r}
+dotplot(ranef(m8R.indexical))
+```
+
+Indexicality improves the chance of selection of variants for black and red, but reduces the chance of selection for green and pink.  
+
+*  Try Marking
+
+```{r}
+dotplot(ranef(m8R.TryMark))
+```
+
+Try marking improves the probability of selection for red, green and black, but decreases the probability of selection for brown, yellow an pink.
+
+* Teaching
+
+```{r}
+dotplot(ranef(m8R.Teach))
+```
+
+Explicit teaching improves the likelihood of selection for pink, but not for other colours.
+
+\newpage
+
 # Summary
 
 Here is a summary of the main results:
 
-`r getMEText(anova(m0,m1), "main effect of frequency in week 1",summary(finalModel)$coef['freq_week_1_total',])`.  On its own, more frequent variants in week 1 are also more frequent in the final week.  However, when considering this variable with the other variables the relationship is reversed: variants used a lot in week 1 are slightly less likely to be used in the final week.  An explanation may be the following:  A poor variant may be repeated many times before it is understood, while a good variant only needs to be used once.  That is, frequent use in the first week may be an indication of communication problems.
+`r getMEText(anova(m0,m1), "main effect of indexicality",summary(finalModel)$coef['indexicalYes',])` (beta for body-indexical = 0.853). Indexical variants were more likely to be selected.
 
-`r getMEText(anova(m1,m2), "main effect of indexicality",summary(finalModel)$coef['indexicalYes',])` (beta for body-indexical = 0.853). Indexical variants were more likely to be selected.
+`r getMEText(anova(m1,m2), "main effect of teaching",summary(finalModel)$coef['TeachTRUE',])`  Teaching increased the likelyhood of selection.
 
-`r getMEText(anova(m2,m3), "main effect of teaching",summary(finalModel)$coef['TeachTRUE',])`  Teaching increased the likelyhood of selection.
+`r getMEText(anova(m2,m3), "main effect of try marking",summary(finalModel)$coef['TryMarked',])` Variants that were try marked more often were more likely to be selected.
+
+`r getMEText(anova(m3,m4), "main effect of checking",summary(finalModel)$coef['check.anyTRUE',])`  A variant was more likely to be selected if it had been used in a checking context.
 
 
-`r getMEText(anova(m3,m4), "main effect of try marking",summary(finalModel)$coef['TryMarked',])` Variants that were try marked more often were more likely to be selected.
+
+`r getMEText(anova(m4,m5), "main effect of frequency in week 1",summary(finalModel)$coef['freq_week_1_total',])`  On its own, more frequent variants in week 1 are also more frequent in the final week (r = `r cor(variants$freq_week_1_total, variants$freq_week_4)`).  However, when considering this variable with the other variables the relationship dissappears.  An explanation may be the following:  A poor variant may be repeated many times before it is understood, while a good variant only needs to be used once.  That is, frequent use in the first week may be an indication of communication problems.  The sequential measures (teaching, try marking, checking) and indexicality are better measures of whether a variant is problematic, so the predictive power of frequency is small in comparison.
+
+`r getMEText(anova(m5,m6), "main effect of sign length",summary(finalModel)$coef['averageLength_week_1.logcenter',])`  Shorter signs were more likely to be selected.  However the effect size is very small.
 
 
-`r getMEText(anova(m5,m6), "main effect of sign length",summary(finalModel)$coef['averageLength_week_1.logcenter',])`
+`r getMEText(anova(m6,m7), "main effect of first user (inventedBy)")`  Sign variants first used by the Jordanian signer were more likely to be selected than variants first used by other signers.
 
-`r getMEText(anova(m6,m7), "main effect of checking",summary(finalModel)$coef['check.anyTRUE',])`  A variant was more likely to be selected if it had been used in a checking context.
-
-`r getMEText(anova(m7,m8), "main effect of first user (inventedBy)")`e  Compared to the Indian signer, signs first used by the Jordanian signer were slightly more likely to be selected and signs first used by the Indonesian and Nepalese signers were slighlty less likely to be selected.
-
-`r getMEText(anova(m4,m5), "interaction between try marking and teaching",summary(finalModel)$coef['TeachTRUE:TryMarked',])` The effect of teaching was bigger when the variant was also often try marked (see graphs below). 
+`r getMEText(anova(m7,m8), "interaction between try marking and teaching",summary(finalModel)$coef['TeachTRUE:TryMarked',])` The effect of teaching was bigger when the variant was also often try marked (see graphs below). 
 
 `r getMEText(anova(m8,m9), "interaction between teaching and checking",summary(finalModel)$coef['TeachTRUE:check.anyTRUE',])`  (see graphs below).
 
-We also found that certain factors are more important for particular colours (see above).
+We also found some evidence that certain factors are more important for particular colours:
 
+-  Try marking predicts increased selection particularly for red, green and black.
+-  Indexicality predicts increased selection particularly for black and red, but decreased selection (relatively) for green and pink. 
+-  Explicit teaching predicts increased selection particularly for pink.
+
+\newpage
 
 # Graphs
 
@@ -578,7 +547,7 @@ main.plot2
 ```
 
 
-```{r echo=F}
+```{r echo=F, message=F, comment=F, warning=F}
 pdf("../results/descriptive/graphs/Interaction_Teach_Check.pdf", height=5, width=6)
 main.plot2
 dev.off()
