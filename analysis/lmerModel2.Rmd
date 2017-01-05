@@ -277,8 +277,6 @@ m10 = glmer(freq_week_4 ~
             (1 | colourName) , 
            data=variants, family=poisson)
 
-anova(m0,m1,m2,m3,m4,m5,m6,m7,m8,m9,m10)
-
 ```
 
 # Results
@@ -289,7 +287,7 @@ Model comparison test:
 anova(m0,m1,m2,m3,m4,m5, m6,m7,m8, m9, m10)
 ```
 
-Choose a final model for the beta values.
+Choose a final model for the beta values (based on m9).
 
 ```{r finalModel, cache=T}
 finalModel = glmer(freq_week_4 ~ 
@@ -320,7 +318,6 @@ Random effects:
 dotplot(ranef(finalModel))
 ```
 
-
 Check the predictions:
 
 ```{r}
@@ -331,7 +328,7 @@ plot(variants$freq_week_4, exp(predict(finalModel)),
 
 # Random slopes
 
-For each of the predictors, we see if random slopes help improve the model.  Random slopes allow the strenght of the effect of a factor to be different for each colour concept.  There were some convergence issues with some of the models (hence chancing the optimiser and maximum iterations below), which indicates that the random slopes may not be suitable with this amount of data.  However, the tests below can serve as indicators about whether there is variation within colours.
+For each of the predictors, we see if random slopes help improve the model.  Random slopes allow the strenght of the effect of a factor to be different for each colour concept.  There were many convergence issues with some of the models (hence chancing the optimiser and maximum iterations below), which indicates that the random slopes may not be suitable with this amount of data.  However, the tests below can serve as indicators about whether there is variation within colours.
 
 ```{r randomSlopes, cache=T}
 
@@ -339,7 +336,7 @@ rsControl = glmerControl(
             optimizer = "bobyqa",
             optCtrl = list(maxfun=500000))
 
-m8R = glmer(freq_week_4 ~ 
+m9R = glmer(freq_week_4 ~ 
             1 +  
              indexical + 
              Teach +
@@ -354,7 +351,7 @@ m8R = glmer(freq_week_4 ~
           data=variants, family=poisson,
           control = rsControl)
           
-m8R.indexical = glmer(freq_week_4 ~ 
+m9R.indexical = glmer(freq_week_4 ~ 
             1 +  
              indexical + 
              Teach +
@@ -369,9 +366,9 @@ m8R.indexical = glmer(freq_week_4 ~
           data=variants, family=poisson,
           control = rsControl)
 
-anova(m8R,m8R.indexical)
+anova(m9R,m9R.indexical)
 
-m8R.Teach = glmer(freq_week_4 ~ 
+m9R.Teach = glmer(freq_week_4 ~ 
             1 +  
              indexical + 
              Teach +
@@ -385,9 +382,9 @@ m8R.Teach = glmer(freq_week_4 ~
           (1 + Teach| colourName),
           data=variants, family=poisson,
           control=rsControl)
-anova(m8R,m8R.Teach)
+anova(m9R,m9R.Teach)
 
-m8R.TryMark = glmer(freq_week_4 ~ 
+m9R.TryMark = glmer(freq_week_4 ~ 
           1 +  
              indexical + 
              Teach +
@@ -398,15 +395,14 @@ m8R.TryMark = glmer(freq_week_4 ~
              inventedBy +
              Teach : TryMarked +
              Teach : check.any +
-          (1 | colourName) +  
-          (0 + TryMarked| colourName), 
+          (1 + TryMarked| colourName), 
           data=variants, family=poisson,
           control = rsControl)
-anova(m8R,m8R.TryMark)
+anova(m9R,m9R.TryMark)
 
 
 
-m8R.Check = glmer(freq_week_4 ~ 
+m9R.Check = glmer(freq_week_4 ~ 
            1 +  
              indexical + 
              Teach +
@@ -417,38 +413,21 @@ m8R.Check = glmer(freq_week_4 ~
              inventedBy +
              Teach : TryMarked +
              Teach : check.any +
-          (1 | colourName) +
-          (0 + check.any| colourName), 
+          (1 + check.any| colourName), 
           data=variants, family=poisson,
           control = rsControl)
-anova(m8R,m8R.Check)
+anova(m9R,m9R.Check)
 ```
 
-We see that indexicality, try marking and teaching.  We can plot the random slopes below:
+## Random slopes results
 
-* Indexicality
+The only significant improvement in the model was from adding a random slope by indexicality.  We can plot the random slopes below:
 
 ```{r}
-dotplot(ranef(m8R.indexical))
+dotplot(ranef(m9R.indexical))
 ```
 
-Indexicality improves the chance of selection of variants for black and red, but reduces the chance of selection for green and pink.  
-
-*  Try Marking
-
-```{r}
-dotplot(ranef(m8R.TryMark))
-```
-
-Try marking improves the probability of selection for red, green and black, but decreases the probability of selection for brown, yellow an pink.
-
-* Teaching
-
-```{r}
-dotplot(ranef(m8R.Teach))
-```
-
-Explicit teaching improves the likelihood of selection for pink, but not for other colours.
+The effect of indexicality is stronger for black and red, and weaker for green and pink.
 
 \newpage
 
@@ -456,32 +435,25 @@ Explicit teaching improves the likelihood of selection for pink, but not for oth
 
 Here is a summary of the main results:
 
-`r getMEText(anova(m0,m1), "main effect of indexicality",summary(finalModel)$coef['indexicalYes',])` (beta for body-indexical = 0.853). Indexical variants were more likely to be selected.
+`r getMEText(anova(m0,m1), "main effect of indexicality",summary(finalModel)$coef['indexicalYes',])` (beta for body-indexical = 0.853). Indexical variants were more frequent in the final week.
 
-`r getMEText(anova(m1,m2), "main effect of teaching",summary(finalModel)$coef['TeachTRUE',])`  Teaching increased the likelyhood of selection.
+`r getMEText(anova(m1,m2), "main effect of teaching",summary(finalModel)$coef['TeachTRUE',])`  Teaching increased the frequency of variants in the final week.
 
-`r getMEText(anova(m2,m3), "main effect of try marking",summary(finalModel)$coef['TryMarked',])` Variants that were try marked more often were more likely to be selected.
+`r getMEText(anova(m2,m3), "main effect of try marking",summary(finalModel)$coef['TryMarked',])` Variants that were try marked more often were more frequent in the final week.
 
-`r getMEText(anova(m3,m4), "main effect of checking",summary(finalModel)$coef['check.anyTRUE',])`  A variant was more likely to be selected if it had been used in a checking context.
-
-
+`r getMEText(anova(m3,m4), "main effect of checking",summary(finalModel)$coef['check.anyTRUE',])`  Variants used in a checking context were more frequent in the final week.
 
 `r getMEText(anova(m4,m5), "main effect of frequency in week 1",summary(finalModel)$coef['freq_week_1_total',])`  On its own, more frequent variants in week 1 are also more frequent in the final week (r = `r cor(variants$freq_week_1_total, variants$freq_week_4)`).  However, when considering this variable with the other variables the relationship dissappears.  An explanation may be the following:  A poor variant may be repeated many times before it is understood, while a good variant only needs to be used once.  That is, frequent use in the first week may be an indication of communication problems.  The sequential measures (teaching, try marking, checking) and indexicality are better measures of whether a variant is problematic, so the predictive power of frequency is small in comparison.
 
-`r getMEText(anova(m5,m6), "main effect of sign length",summary(finalModel)$coef['averageLength_week_1.logcenter',])`  Shorter signs were more likely to be selected.  However the effect size is very small.
+`r getMEText(anova(m5,m6), "main effect of sign length",summary(finalModel)$coef['averageLength_week_1.logcenter',])`  
 
-
-`r getMEText(anova(m6,m7), "main effect of first user (inventedBy)")`  Sign variants first used by the Jordanian signer were more likely to be selected than variants first used by other signers.
+`r getMEText(anova(m6,m7), "main effect of first user (inventedBy)")`  
 
 `r getMEText(anova(m7,m8), "interaction between try marking and teaching",summary(finalModel)$coef['TeachTRUE:TryMarked',])` The effect of teaching was bigger when the variant was also often try marked (see graphs below). 
 
 `r getMEText(anova(m8,m9), "interaction between teaching and checking",summary(finalModel)$coef['TeachTRUE:check.anyTRUE',])`  (see graphs below).
 
-We also found some evidence that certain factors are more important for particular colours:
-
--  Try marking predicts increased selection particularly for red, green and black.
--  Indexicality predicts increased selection particularly for black and red, but decreased selection (relatively) for green and pink. 
--  Explicit teaching predicts increased selection particularly for pink.
+We also found some evidence that the effect of indexicality is more important for black and red, and less important for green and pink.
 
 \newpage
 

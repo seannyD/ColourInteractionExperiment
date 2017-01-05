@@ -6,6 +6,7 @@ colourNames = c("red",'brown','black','green','yellow','pink','white')
 names(colourNames) = colourNumbers
 colourNamesDark = c("dark red", 'orange', 'dark gray', 'dark green','gold', 'purple','gray')
 
+
 checkIconicity = function(x){
   tx = table(x[x!=''])
   
@@ -245,10 +246,14 @@ for(colourID in colourNumbers){
     return(X[1])
   })[v$sign]
   
-  
+  # Iconicity - no changes over the different weeks
   v$iconic = tapply(d2$iconic, d2$sign_value, head,n=1)[v$sign]
+  
+  # Checking
   #v$check = tapply(d2[d2$week==1,]$T0Check,d2[d2$week==1,]$sign_value,function(X){sum(X,na.rm=T)>0})[v$sign]
   v$check = tapply(d2[d2$week==1,]$T0Check,d2[d2$week==1,]$sign_value,sum, na.rm=T)[v$sign]
+  
+  # Indexical
   indexical = tapply(d2$Indexicality,d2$sign_value,function(X){
       x = table(X)
       names(x)[which(x==max(x))[1]]
@@ -257,16 +262,18 @@ for(colourID in colourNumbers){
   v$indexical = unlist(indexical)[v$sign]
   v$indexical[is.na(v$indexical)] = "No"
   
-  
+  # Invented by
   v$inventedBy= tapply(d2$inventedBy, d2$sign_value, head, n=1)[v$sign]
-  v$TryMarked = tapply(d2$TryMarked, d2$sign_value, sum, na.rm=T)[v$sign]
-  v$TryMarked = tapply(d2$TryMarked, d2$sign_value, sum, na.rm=T)[v$sign]
-  v$Teach = tapply(d2$Teach, d2$sign_value, sum, na.rm=T)[v$sign]
   
+  # Try marked
+  v$TryMarked = tapply(d2[d2$week==1,]$TryMarked, d2[d2$week==1,]$sign_value, sum, na.rm=T)[v$sign]
+
+  # Teaching
+  v$Teach = tapply(d2[d2$week==1,]$Teach, d2[d2$week==1,]$sign_value, sum, na.rm=T)[v$sign]
+  
+  # Average length
   v$averageLength_week_1 = tapply(d2[d2$week==1,]$sign_length, d2[d2$week==1,]$sign_value, mean)
-  
-  
-  
+  # Average trial Length
   v$averageTrialLength_week_1 = tapply(d2[d2$week==1,]$trial_length, d2[d2$week==1,]$sign_value, mean)
   
   variants = rbind(variants,v)
