@@ -150,7 +150,7 @@ makePropSquare = function(prop,x,y,vcolours){
 
 nv = unique(d[d$director==d$speaker,]$sign_value)
 vcols = rainbow(length(nv))
-set.seed(127)
+set.seed(126)
 vcols = sample(vcols)
 names(vcols)= nv
 

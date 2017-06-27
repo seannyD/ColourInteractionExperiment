@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="" DATE="2016-10-24T17:57:52+01:00" FORMAT="2.8" VERSION="2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2017-06-26T18:28:51+01:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
-        <MEDIA_DESCRIPTOR MEDIA_URL="file:///K:/07ERC 프로젝트연구/03ELAN 작업/2014년 Lucknow대학/Colour_game- 주석할 것/04_After_three_weeks_18122014/04_After_three_weeks_18122014_04Colour_game_Nepal-Indonesia.mpeg" MIME_TYPE="video/mpeg" RELATIVE_MEDIA_URL="../04_After_three_weeks_18122014/04_After_three_weeks_18122014_04Colour_game_Nepal-Indonesia.mpeg"/>
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///K:/07ERC 프로젝트연구/03ELAN 작업/2014년 Lucknow대학/Colour_game- 주석할 것/주석하고있는 것/3week/04_After_three_weeks_18122014_04Colour_game_Nepal-Indonesia.mpeg" MIME_TYPE="video/mpeg" RELATIVE_MEDIA_URL="./04_After_three_weeks_18122014_04Colour_game_Nepal-Indonesia.mpeg"/>
         <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:d191bc75-f8d2-4842-aba1-12ea240bd947</PROPERTY>
-        <PROPERTY NAME="lastUsedAnnotationId">203</PROPERTY>
+        <PROPERTY NAME="lastUsedAnnotationId">205</PROPERTY>
     </HEADER>
     <TIME_ORDER>
         <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="7784"/>
@@ -564,7 +564,7 @@
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="default-lt" TIER_ID="Formal Category/ SIGN(RH)_2">
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a146" TIME_SLOT_REF1="ts25" TIME_SLOT_REF2="ts26">
-                <ANNOTATION_VALUE>OS:RED</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>OS:RED(mouth)</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -574,7 +574,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a99" TIME_SLOT_REF1="ts55" TIME_SLOT_REF2="ts60">
-                <ANNOTATION_VALUE>OS:BROWN(ISL+NSL)</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>IX:'back of one's hand'</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -584,7 +584,7 @@
         </ANNOTATION>
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a163" TIME_SLOT_REF1="ts74" TIME_SLOT_REF2="ts75">
-                <ANNOTATION_VALUE>IX:TONGUE</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>IX:tongue</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
         <ANNOTATION>
@@ -655,6 +655,16 @@
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="Formal Category/ SIGN(RH)_2" TIER_ID="Sign_Origin_2"/>
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal Category/ SIGN(RH)_2" TIER_ID="motivation_2">
         <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204" ANNOTATION_REF="a146" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205" ANNOTATION_REF="a99" CVE_REF="cveid0">
+                <ANNOTATION_VALUE>yes</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
             <REF_ANNOTATION ANNOTATION_ID="a201" ANNOTATION_REF="a200" CVE_REF="cveid0">
                 <ANNOTATION_VALUE>yes</ANNOTATION_VALUE>
             </REF_ANNOTATION>
@@ -684,20 +694,20 @@
     </TIER>
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="Formal Category/ SIGN(LH)_1" TIER_ID="NH_Sign_Orign_1"/>
     <TIER DEFAULT_LOCALE="en" LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="Formal Category/ SIGN(LH)_2" TIER_ID="NH_Sign_Origin_2"/>
-    <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="T0_2">
+    <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="T0/Check_2">
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a199" TIME_SLOT_REF1="ts86" TIME_SLOT_REF2="ts87">
-                <ANNOTATION_VALUE>Repeat</ANNOTATION_VALUE>
+                <ANNOTATION_VALUE>OS:GREEN(ISL)</ANNOTATION_VALUE>
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
     </TIER>
-    <TIER LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="T0_2" TIER_ID="T0_2_Origin"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0_2" TIER_ID="T0_2_motivation"/>
-    <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="T0_1"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0_1" TIER_ID="T0_1_motivation"/>
-    <TIER LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="T0_1" TIER_ID="T0_1_Origin"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0_1" TIER_ID="candidate(understand) of T0_1"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0_2" TIER_ID="candidate(understand) of T0_2"/>
+    <TIER LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="T0/Check_2" TIER_ID="T0_2_Origin"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/Check_2" TIER_ID="T0_2_motivation"/>
+    <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="T0/Check_1"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/Check_1" TIER_ID="T0_1_motivation"/>
+    <TIER LINGUISTIC_TYPE_REF="SIGN LANGUAGE" PARENT_REF="T0/Check_1" TIER_ID="T0_1_Origin"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/Check_1" TIER_ID="candidate(understand) of T0_1"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/Check_2" TIER_ID="candidate(understand) of T0_2"/>
     <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal Category/ SIGN(RH)_1" TIER_ID="indexical_1"/>
     <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="Formal Category/ SIGN(RH)_2" TIER_ID="indexical_2">
         <ANNOTATION>
@@ -741,14 +751,14 @@
             </REF_ANNOTATION>
         </ANNOTATION>
     </TIER>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0_1" TIER_ID="T0_indixical_1"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0_2" TIER_ID="T0_indixical_2"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0_2" TIER_ID="T0_Metonymy/metaphor_2"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0_1" TIER_ID="T0_Metonymy/metaphor_1"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0_2" TIER_ID="Teach Sign by 2"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0_1" TIER_ID="Teach Sign by 1"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0_2" TIER_ID="How Sign by 2"/>
-    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0_1" TIER_ID="How Sign by 1"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/Check_1" TIER_ID="T0_indexical_1"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/Check_2" TIER_ID="T0_indexical_2"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/Check_2" TIER_ID="T0_Metonymy/metaphor_2"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/Check_1" TIER_ID="T0_Metonymy/metaphor_1"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/Check_2" TIER_ID="Teach Sign by 2"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/Check_1" TIER_ID="Teach Sign by 1"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/Check_2" TIER_ID="How Sign by 2"/>
+    <TIER LINGUISTIC_TYPE_REF="Yes/No 구분" PARENT_REF="T0/Check_1" TIER_ID="How Sign by 1"/>
     <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="default-lt" TIME_ALIGNABLE="true"/>
     <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="brightness" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="brightness" TIME_ALIGNABLE="true"/>
     <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" CONTROLLED_VOCABULARY_REF="color" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Color" TIME_ALIGNABLE="false"/>
@@ -768,13 +778,13 @@
     <CONTROLLED_VOCABULARY CV_ID="YES/NO">
         <DESCRIPTION LANG_REF="und"/>
         <CV_ENTRY_ML CVE_ID="cveid0">
-            <CVE_VALUE DESCRIPTION="" LANG_REF="und">yes</CVE_VALUE>
+            <CVE_VALUE LANG_REF="und">yes</CVE_VALUE>
         </CV_ENTRY_ML>
         <CV_ENTRY_ML CVE_ID="cveid1">
-            <CVE_VALUE DESCRIPTION="" LANG_REF="und">no</CVE_VALUE>
+            <CVE_VALUE LANG_REF="und">no</CVE_VALUE>
         </CV_ENTRY_ML>
         <CV_ENTRY_ML CVE_ID="cveid2">
-            <CVE_VALUE DESCRIPTION="" LANG_REF="und">yes-body</CVE_VALUE>
+            <CVE_VALUE LANG_REF="und">yes-body</CVE_VALUE>
         </CV_ENTRY_ML>
     </CONTROLLED_VOCABULARY>
     <CONTROLLED_VOCABULARY CV_ID="color">
@@ -783,7 +793,7 @@
     <CONTROLLED_VOCABULARY CV_ID="Sign-Language">
         <DESCRIPTION LANG_REF="und"/>
         <CV_ENTRY_ML CVE_ID="cveid0">
-            <CVE_VALUE DESCRIPTION="" LANG_REF="und">ISL</CVE_VALUE>
+            <CVE_VALUE LANG_REF="und">ISL</CVE_VALUE>
         </CV_ENTRY_ML>
     </CONTROLLED_VOCABULARY>
     <CONTROLLED_VOCABULARY CV_ID="사용빈도">

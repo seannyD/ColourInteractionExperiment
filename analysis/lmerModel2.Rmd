@@ -152,8 +152,10 @@ variants$averageLength_week_1.logcenter =
   variants$averageLength_week_1.logcenter -
     mean(variants$averageLength_week_1.logcenter)
 
-```
+listofsigns = variants[,c("colourName","sign")]
+write.csv(listofsigns,"../results/descriptive/ListOfVariants.csv", fileEncoding = 'utf-8')
 
+```
 
 
 

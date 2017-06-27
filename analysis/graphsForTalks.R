@@ -35,9 +35,16 @@ text(1,x,variants[variants$colourName=='green' & variants$freq_week_4_withinColo
 
 x = variants[variants$colourName=="pink",]
 
+x$freq_week_1_withinColour = x$freq_week_1 / sum(x$freq_week_1)
+x$freq_week_4_withinColour = x$freq_week_4 / sum(x$freq_week_4)
+
+pdf("../results/descriptive/graphs/PinkArrows.pdf", width=4,height = 4)
 plot(c(0.9,2.5),0:1,type='n', xlab='',ylab='Proportion of variants used', xaxt='n')
-arrows(1,x$freq_week_1_withinColour,2,x$freq_week_4_withinColour)
+arrows(1,x$freq_week_1_withinColour,2,x$freq_week_4_withinColour, length=0.2)
 points(rep(1,nrow(x)),x$freq_week_1_withinColour, pch=16)
+axis(1,at=c(1,2),labels = c("Week 1", "Week 2"))
+dev.off()
+
 
 barplot(cbind(x$freq_week_1_withinColour,x$freq_week_4_withinColour))
 
