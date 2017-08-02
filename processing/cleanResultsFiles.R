@@ -67,7 +67,13 @@ d = d[d$sign_value!='?',]
 d$sign_value = gsub("^ ","", d$sign_value)
 d$sign_value = gsub(" $","", d$sign_value)
 d$sign_value = gsub("[!\\?\t]","", d$sign_value)
+
+# Upper and lower case?
 d$sign_value = toupper(d$sign_value)
+
+sx = sort(unique(d$sign_value))
+cat(paste(sx,collapse='\n'), file = "../processing/ListOfVariants_BeforeProcessing.txt")
+
 
 # Edit signs
 source("signChanges.R")
@@ -118,19 +124,32 @@ d$iconic = iconicityMeasures[d$sign_value]
 
 d[d$sign_value=="WHITE",]$Indexicality = "Yes-body"
 
-d$Indexicality[d$Indexicality==""] = "Yes"
+d$Indexicality[d$Indexicality==""] = "No"
 d$Indexicality[d$Indexicality=="yes"] = "Yes"
 d$Indexicality[d$Indexicality=="no"] = "No"
 d$Indexicality[d$Indexicality=="yes-body"] = "Yes-body"
 
 #  Try marking
 
+d$TryMarked[d$TryMarked=="yes"] = "Yes"
 d$TryMarked = d$TryMarked=="Yes"
+d$TryMarked = d$TryMarked == "Yes"
 d$TryMarked[is.na(d$TryMarked)] = F
 
 # Teaching
+d$Teach[d$Teach=="yes"] = "Yes"
+d$Teach = d$Teach == "Yes"
 d$Teach = d$Teach == "Yes"
 d$Teach[is.na(d$Teach)] = F
+
+# T-1
+d$T_minus_1[d$T_minus_1=="yes"] = "Yes"
+d$T_minus_1[d$T_minus_1=="YES"] = "Yes"
+d$T_minus_1 = d$T_minus_1 == "Yes"
+d$T_minus_1[is.na(d$T_minus_1)] = F
+
+# T0
+d$T0 = d$T0 == "Yes"
 
 # trial lengths
 trialLengths = tapply(d$trial_length,d$trial_start,head,n=1)/1000
@@ -304,7 +323,7 @@ allTargetVars = sort(unique(d[d$trial_value %in% colourNumbers,]$sign_value))
 
 cat(
   paste(paste('"',allTargetVars,'"',sep=''),collapse='\n'),
-  file="../processing/ListOfVariants.txt")
+  file="../processing/ListOfVariants_AfterProcessing.txt")
 
 write.csv(d, file="../data/processedData/variants_processed.csv")
 

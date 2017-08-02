@@ -1,0 +1,28 @@
+"Yes" is positive, blank is not.
+
+Get the T-1 value:
+Find annotations in the T-1 tier (named "T-1_Repair") that occur in the times of the sign annotation (+ or - 50 milliseconds).
+		If there is an annotation, and it is "Yes" then *this sign is a problem source*
+		
+		
+		Change millisecond window:
+		
+		Get the teaching value:
+		Find annotations in the teaching tier ("Teach Sign_1", "Teach Sign_2") that occur 		within the times of the sign annotation (+ or - 50 milliseconds).
+		
+		
+Check tier names: ("T0/Check_1", "repair initiation_1","Repair 	initiation_1","T0/check_1","T0/Check_2", "repair initiation_2","Repair 	initiation_2","T0/check_2" )
+
+
+--
+CHECK TIERS
+	For each annotation in the check tier ("T0/Check_1", "repair initiation_1","Repair 	initiation_1","T0/check_1","T0/Check_2", "repair initiation_2","Repair 	initiation_2","T0/check_2" )(within this trial):
+	
+		All of these signs *are T0Check signs*
+		
+		Get candidate understanding value:
+ 		Find annotations in the candidate understanding tier 					("T0_1_candidate(understand)”, “T0_2_candidate(understand)") that occur within the times 	of the sign annotation (+ or - 50 milliseconds).
+			If there is an annotation, and the annotation label is "Yes", then *this is a 			candidate understanding form*
+
+	
+		Take all of this information and make one line in the results file spreadsheet for it.
