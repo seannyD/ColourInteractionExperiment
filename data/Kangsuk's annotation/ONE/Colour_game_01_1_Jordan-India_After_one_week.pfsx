@@ -5,7 +5,7 @@
         <Object class="java.awt.Rectangle">810,450,300,300</Object>
     </pref>
     <pref key="TimeLineViewer.ZoomLevel">
-        <Float>100.999985</Float>
+        <Float>10.0</Float>
     </pref>
     <prefGroup key="TierColors">
         <pref key="Formal category/Sign_1">
@@ -14,11 +14,11 @@
         <pref key="COLOR_2(자원)">
             <Object class="java.awt.Color">0,0,160</Object>
         </pref>
-        <pref key="RH_ID_Gloss_2">
-            <Object class="java.awt.Color">0,0,0</Object>
-        </pref>
         <pref key="아우라 성향_2">
             <Object class="java.awt.Color">160,0,0</Object>
+        </pref>
+        <pref key="RH_ID_Gloss_2">
+            <Object class="java.awt.Color">0,0,0</Object>
         </pref>
         <pref key="아우라 성향_1">
             <Object class="java.awt.Color">160,160,90</Object>
@@ -47,14 +47,14 @@
         <pref key="color_1#2">
             <Object class="java.awt.Color">90,160,0</Object>
         </pref>
+        <pref key="Formal category/Sign_2">
+            <Object class="java.awt.Color">0,204,51</Object>
+        </pref>
         <pref key="COLOR_1(자원)">
             <Object class="java.awt.Color">0,0,90</Object>
         </pref>
         <pref key="NH_Sign_Origin_1n">
             <Object class="java.awt.Color">0,0,0</Object>
-        </pref>
-        <pref key="Formal category/Sign_2">
-            <Object class="java.awt.Color">0,204,51</Object>
         </pref>
         <pref key="Formal Category/ SIGN(LH)_1">
             <Object class="java.awt.Color">90,0,90</Object>
@@ -83,11 +83,11 @@
         <pref key="NMS_1">
             <Object class="java.awt.Color">0,0,0</Object>
         </pref>
-        <pref key="NMS of T0_1">
-            <Object class="java.awt.Color">204,0,204</Object>
-        </pref>
         <pref key="NMS_2">
             <Object class="java.awt.Color">0,0,0</Object>
+        </pref>
+        <pref key="NMS of T0_1">
+            <Object class="java.awt.Color">204,0,204</Object>
         </pref>
         <pref key="LH_ID_Gloss_1">
             <Object class="java.awt.Color">0,0,0</Object>
@@ -97,7 +97,7 @@
         <Boolean>true</Boolean>
     </pref>
     <pref key="FrameLocation">
-        <Object class="java.awt.Point">0,0</Object>
+        <Object class="java.awt.Point">0,23</Object>
     </pref>
     <prefList key="ExportSmilDialog.selectedTiers">
         <String>default</String>
@@ -171,13 +171,13 @@
         <pref key="Teach_Sign_1">
             <Int>10</Int>
         </pref>
-        <pref key="T0/Check_1-SD">
+        <pref key="Formal category/Sign_2-SD">
             <Int>10</Int>
         </pref>
         <pref key="OIR_1(sequences)-TC">
             <Int>10</Int>
         </pref>
-        <pref key="Formal category/Sign_2-SD">
+        <pref key="T0/Check_1-SD">
             <Int>10</Int>
         </pref>
         <pref key="Teach_Sign_2">
@@ -189,25 +189,25 @@
         <pref key="NMS of T0_1-SD">
             <Int>10</Int>
         </pref>
-        <pref key="Egocentric bias_2-SD">
-            <Int>10</Int>
-        </pref>
         <pref key="Language Tool_1-SD">
             <Int>10</Int>
         </pref>
-        <pref key="color_1#2-SD">
-            <Int>10</Int>
-        </pref>
-        <pref key="Comment_1-SD">
+        <pref key="Egocentric bias_2-SD">
             <Int>10</Int>
         </pref>
         <pref key="Color를 표시한 Sign_2">
             <Int>10</Int>
         </pref>
-        <pref key="Color를 표시한 Sign_1">
+        <pref key="Comment_1-SD">
+            <Int>10</Int>
+        </pref>
+        <pref key="color_1#2-SD">
             <Int>10</Int>
         </pref>
         <pref key="1이 선택한 Color's number">
+            <Int>10</Int>
+        </pref>
+        <pref key="Color를 표시한 Sign_1">
             <Int>10</Int>
         </pref>
         <pref key="Trouble source_2">
@@ -294,22 +294,22 @@
         <pref key="OIR_2(sequences)">
             <Int>10</Int>
         </pref>
-        <pref key="Egocentric bias_1-SD">
+        <pref key="NMS_1">
             <Int>10</Int>
         </pref>
         <pref key="LH_ID_Gloss_2">
             <Int>10</Int>
         </pref>
-        <pref key="NMS_1">
+        <pref key="Egocentric bias_1-SD">
             <Int>10</Int>
         </pref>
-        <pref key="아우라 성향_2-SD">
+        <pref key="NMS_2">
             <Int>10</Int>
         </pref>
         <pref key="RH_ID_Gloss_1-SD">
             <Int>10</Int>
         </pref>
-        <pref key="NMS_2">
+        <pref key="아우라 성향_2-SD">
             <Int>10</Int>
         </pref>
         <pref key="LH_ID_Gloss_1">
@@ -320,7 +320,7 @@
         <String>color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>173834</Long>
+        <Long>1404399</Long>
     </pref>
     <prefList key="Interlinear.TierOrder">
         <String>default</String>
@@ -367,7 +367,7 @@
         <String>RH_ID_Gloss_2</String>
     </pref>
     <pref key="FrameSize">
-        <Object class="java.awt.Dimension">1920,1144</Object>
+        <Object class="java.awt.Dimension">1920,1057</Object>
     </pref>
     <pref key="SubTitleViewer.TierName-1">
         <String>RH_ID_Gloss_1</String>
@@ -382,7 +382,7 @@
         <Int>281</Int>
     </pref>
     <pref key="LayoutManager.MediaAreaHeight">
-        <Int>447</Int>
+        <Int>132</Int>
     </pref>
     <pref key="ActiveAudioRecognizerName">
         <String>BAS - WebMAUS Basic</String>
@@ -394,7 +394,7 @@
         <String>Language Tool_1</String>
     </prefList>
     <pref key="SelectionEndTime">
-        <Long>174229</Long>
+        <Long>1408949</Long>
     </pref>
     <prefList key="ExportSmilDialog.HiddenTiers"/>
     <prefList key="MultiTierViewer.TierOrder">
@@ -485,12 +485,6 @@
         </pref>
     </prefGroup>
     <prefGroup key="BAS - WebMAUS Basic">
-        <pref key="ServiceName">
-            <String>runMAUSBasic</String>
-        </pref>
-        <pref key="LANGUAGE">
-            <String>deu</String>
-        </pref>
         <prefGroup key="TierUrl">
             <pref key="SignalParamName">
                 <String>SIGNAL</String>
@@ -499,25 +493,31 @@
                 <String>TEXT</String>
             </pref>
         </prefGroup>
+        <pref key="LANGUAGE">
+            <String>deu</String>
+        </pref>
+        <pref key="ServiceName">
+            <String>runMAUSBasic</String>
+        </pref>
     </prefGroup>
     <prefList key="CommentViewer.Columns.Order">
-        <String>시작 시간</String>
-        <String>종료 시간</String>
-        <String>층렬</String>
-        <String>이니셜</String>
-        <String>코멘트</String>
-        <String>스레드</String>
-        <String>보내는 사람</String>
-        <String>받는 사람</String>
-        <String>만든 날짜</String>
-        <String>수정 날짜</String>
+        <String>Start Time</String>
+        <String>End Time</String>
+        <String>Tier</String>
+        <String>Initials</String>
+        <String>Comment</String>
+        <String>Thread</String>
+        <String>Sender</String>
+        <String>Recipient</String>
+        <String>Creation Date</String>
+        <String>Modification Date</String>
     </prefList>
     <prefGroup key="Human motion analysis and annotation">
-        <pref key="output_video_resolution">
-            <String>half</String>
-        </pref>
         <pref key="background_image">
             <String>false</String>
+        </pref>
+        <pref key="output_video_resolution">
+            <String>half</String>
         </pref>
         <pref key="use_single_cluster">
             <String>false</String>
@@ -532,11 +532,11 @@
             <String>normal</String>
         </pref>
         <prefGroup key="input_xml">
-            <pref key="use_rest_position">
-                <String>false</String>
-            </pref>
             <pref key="change_threshold">
                 <Float>30.0</Float>
+            </pref>
+            <pref key="use_rest_position">
+                <String>false</String>
             </pref>
         </prefGroup>
     </prefGroup>
@@ -576,7 +576,7 @@
         <String>Cooment</String>
     </prefList>
     <pref key="LayoutManager.SplitPaneDividerLocation">
-        <Int>1</Int>
+        <Int>2</Int>
     </pref>
     <pref key="TimeLineViewer.ActiveAnnotationBold">
         <Boolean>true</Boolean>
@@ -593,7 +593,7 @@
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>173834</Long>
+        <Long>1404399</Long>
     </pref>
     <pref key="TimeLineViewer.TimeRulerVisible">
         <Boolean>true</Boolean>
@@ -635,22 +635,22 @@
         <pref key="Pointing(T+1/-1)_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
+        <pref key="Language Tool_1">
+            <Object class="java.awt.Color">204,255,204</Object>
+        </pref>
         <pref key="OIR_2">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
         <pref key="Repair initiation_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
-        <pref key="Language Tool_1">
-            <Object class="java.awt.Color">204,255,204</Object>
-        </pref>
-        <pref key="OIR_1">
+        <pref key="Language Tool_2">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
         <pref key="Teach_Sign_2">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
-        <pref key="Language Tool_2">
+        <pref key="OIR_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
         <pref key="Trouble Source_1">
@@ -659,10 +659,10 @@
         <pref key="OIR_2(sequences)">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
-        <pref key="How Sign_1">
+        <pref key="NMS of T0_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
-        <pref key="NMS of T0_1">
+        <pref key="How Sign_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
         <pref key="NMS of T0_2">
@@ -692,37 +692,37 @@
         <Boolean>true</Boolean>
     </pref>
     <pref key="MultiTierViewer.ActiveTierName">
-        <String>Formal category/Sign_1</String>
+        <String>Teach_2</String>
     </pref>
     <prefGroup key="CommentViewer.Columns">
-        <pref key="종료 시간">
+        <pref key="Modification Date">
             <Int>75</Int>
         </pref>
-        <pref key="수정 날짜">
+        <pref key="Sender">
             <Int>75</Int>
         </pref>
-        <pref key="스레드">
+        <pref key="Tier">
             <Int>75</Int>
         </pref>
-        <pref key="받는 사람">
+        <pref key="Creation Date">
             <Int>75</Int>
         </pref>
-        <pref key="코멘트">
+        <pref key="Initials">
             <Int>75</Int>
         </pref>
-        <pref key="만든 날짜">
+        <pref key="Comment">
             <Int>75</Int>
         </pref>
-        <pref key="시작 시간">
+        <pref key="End Time">
             <Int>75</Int>
         </pref>
-        <pref key="이니셜">
+        <pref key="Start Time">
             <Int>75</Int>
         </pref>
-        <pref key="보내는 사람">
+        <pref key="Recipient">
             <Int>75</Int>
         </pref>
-        <pref key="층렬">
+        <pref key="Thread">
             <Int>75</Int>
         </pref>
     </prefGroup>
@@ -730,7 +730,7 @@
         <String>RH_ID_Gloss_1</String>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>173676</Long>
+        <Long>1320400</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>RH_ID_Gloss_1</String>

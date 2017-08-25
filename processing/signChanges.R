@@ -12,7 +12,7 @@ signChanges= list(
   c("BLACK(ISL)","BLACK"),
   c("BLACK(JSL)","BLACK"),
   c("BLACK1-3수형으로 BLACK1-4수동","BLACK"),
-  c("BLACKBOARD","BLACK"),
+  c("BLACKBOARD","BLACKBOARD"),
   c("BLIND ROAD","ROAD-BLIND"),
   c("BLOOD","RED-BLOOD"),
   c("BOOGER","BOOGER"),
@@ -167,5 +167,8 @@ signChanges= list(
   c("NO",NA),
   c("NO?",NA),
   c("GREEN2",NA),
-  c("GREEN2(NSL)",NA)
+  c("GREEN2(NSL)",NA),
+  c("IX;FOREST",'IX:FOREST'),
+  c("IX-SKY",'IX:SKY'),
+  c("IX#SOMETHING","IX#SOMETHING")
 )

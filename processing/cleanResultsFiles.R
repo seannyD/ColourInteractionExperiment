@@ -68,10 +68,19 @@ d$sign_value = gsub("^ ","", d$sign_value)
 d$sign_value = gsub(" $","", d$sign_value)
 d$sign_value = gsub("[!\\?\t]","", d$sign_value)
 
-# Upper and lower case?
-d$sign_value = toupper(d$sign_value)
+# the python script strips out "IX" notes, but we'll put them back in here.
+# When it says IX:door it means pointing at an actual door, when it says IX:DOOR it means pointing at the lexical sign for door.
+ix_signs = d$sign_notes=="IX"
+ix_signs[is.na(ix_signs)] = FALSE
+# check for lowercase characters:
+has_lowercase = grepl("[a-z]", d$sign_value)
 
-sx = sort(unique(d$sign_value))
+d$sign_value[ix_signs] = paste0("IX:",d$sign_value[ix_signs])
+
+# Change signs to uppercase, unless they are IX lowercase signs
+d$sign_value[!(ix_signs & has_lowercase)] = toupper(d$sign_value[!(ix_signs & has_lowercase)])
+
+sx = sort(unique(d$sign_value[d$trial_value %in% colourNumbers]))
 cat(paste(sx,collapse='\n'), file = "../processing/ListOfVariants_BeforeProcessing.txt")
 
 
@@ -99,6 +108,10 @@ d$trial_value = gsub("[^0-9]+"," ",d$trial_value)
 d$trial_value = sapply(d$trial_value, function(X){
   strsplit(X," ")[[1]][1]
 })
+
+# Miscoding: '20' is red, and should be coded as '1'
+
+d[d$trial_value=='20',]$trial_value = '1'
 
 #####
 # Find any trials that are overlapping
@@ -133,12 +146,10 @@ d$Indexicality[d$Indexicality=="yes-body"] = "Yes-body"
 
 d$TryMarked[d$TryMarked=="yes"] = "Yes"
 d$TryMarked = d$TryMarked=="Yes"
-d$TryMarked = d$TryMarked == "Yes"
 d$TryMarked[is.na(d$TryMarked)] = F
 
 # Teaching
 d$Teach[d$Teach=="yes"] = "Yes"
-d$Teach = d$Teach == "Yes"
 d$Teach = d$Teach == "Yes"
 d$Teach[is.na(d$Teach)] = F
 
@@ -167,7 +178,7 @@ signs  = unique(d2[sel,]$sign_value)
 set.seed(1211)
 cols = sample(rainbow(length(signs)))
 names(cols) = signs
-plot(rank(d2[sel,]$sign_start),rep(1,sum(sel)), col=cols[d2[sel,]$sign_value], pch=16)
+#plot(rank(d2[sel,]$sign_start),rep(1,sum(sel)), col=cols[d2[sel,]$sign_value], pch=16)
 
 tapply(d$sign_value, d$week, function(X){length(unique(X))})
 
@@ -272,6 +283,11 @@ for(colourID in colourNumbers){
   #v$check = tapply(d2[d2$week==1,]$T0Check,d2[d2$week==1,]$sign_value,function(X){sum(X,na.rm=T)>0})[v$sign]
   v$check = tapply(d2[d2$week==1,]$T0Check,d2[d2$week==1,]$sign_value,sum, na.rm=T)[v$sign]
   
+  # T-1
+  v$T_minus_1 = tapply(d2[d2$week==1,]$T_minus_1,
+                       d2[d2$week==1,]$sign_value, sum, na.rm=T)[v$sign]
+  
+  # TODO: check that this is correctly coding Indexicality
   # Indexical
   indexical = tapply(d2$Indexicality,d2$sign_value,function(X){
       x = table(X)
@@ -304,18 +320,35 @@ variants$freq_week_4[is.na(variants$freq_week_4)] = 0
 
 b = read.delim("../data/otherData/SignProperties.tab", sep='\t', encoding = 'utf-8', stringsAsFactors = F)
 
-b$Sign = gsub("^ ","", b$Sign)
-b$Sign = gsub(" $","", b$Sign)
+b$Sign = gsub("^ +","", b$Sign)
+b$Sign = gsub(" +$","", b$Sign)
 b$Sign = toupper(b$Sign)
 
-for(i in 1:length(signChanges)){
-  if(signChanges[[i]][1] %in% b$Sign){
-    b[b$Sign==signChanges[[i]][1]
-      & !is.na(b$Sign),]$Sign = signChanges[[i]][2]
-  }
-}
+b$iconic = gsub("^ +","", b$iconic)
+b$iconic = gsub(" +$","", b$iconic)
 
-variants$BodyAnchor = b[match(variants$sign, b$Sign),]$Body.Anchor
+
+all_signs = sort(unique(d[d$trial_value %in% colourNumbers,]$sign_value))
+
+# write out list of signs to check that we have them all. 
+mx = b[match(all_signs,b$Sign),]
+mx = mx[,names(mx)!="X"]
+mx = mx[!is.na(mx$Sign),]
+names(mx) = c("Sign","KB.Coded.Body.Anchor","KB.Coded.iconic")
+mxx = rbind(
+  mx,
+  data.frame(Sign=all_signs[!all_signs %in% mx$Sign],
+             KB.Coded.Body.Anchor = "?",
+             KB.Coded.iconic = "?"))
+
+mxx$From.ELAN.Indexicality = d[match(mxx$Sign, d$sign_value),]$Indexicality
+
+write.csv(mxx, "../data/otherData/SignProperties_AllVariants_forChecking.csv")
+
+# TODO: code indexicality
+#variants$BodyAnchor = b[match(variants$sign, b$Sign),]$Body.Anchor
+#variants$indexical = b[match(variants$sign, b$Sign),]$iconic
+
 
 write.csv(variants,file='../data/processedData/variants_summary.csv')
 

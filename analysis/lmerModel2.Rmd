@@ -122,6 +122,13 @@ There is only 1 variant for `white'.  Therefore, we remove it from this statisti
 variants = variants[variants$colourName!='white',]
 ```
 
+Some variants need to be removed
+
+```{r}
+variants = variants[!variants$sign %in% c("SAME","DIFFERENT"),]
+```
+
+
 Transform some variables.
 
 ```{r}
@@ -135,6 +142,10 @@ variants$Teach = variants$Teach >0
 # Similar for checking
 variants$check.any = variants$check>0
 
+# ... and T-1
+
+variants$T_minus_1.any = variants$T_minus_1>0
+
 # Transform total frequency
 variants$freq_week_1_total.logcenter = 
   log(variants$freq_week_1_total + 1)
@@ -142,9 +153,7 @@ variants$freq_week_1_total.logcenter =
   variants$freq_week_1_total.logcenter - mean(variants$freq_week_1_total.logcenter)
 
 # cut TryMarking into two categories
-variants$TryMarked.cat = cut(variants$TryMarked, 
-                             c(-Inf,3,Inf), 
-                             labels = c("Low",'High')) 
+variants$TryMarked.any = variants$TryMarked>0
 
 # transform length
 variants$averageLength_week_1.logcenter = log(variants$averageLength_week_1)
@@ -166,145 +175,167 @@ Each model predicts the frequency of a variant in week 4, with a random intercep
 We begin with a null model and gradually add predictor variables, using model comparison to judge the significance of each variable.
 
 ```{r modelBits, cache=T}
+
+gcontrol = control=glmerControl(
+  optimizer = 'bobyqa',
+  optCtrl = list(maxfun = 1000000))
+
 # Null model
 m0 = glmer(freq_week_4 ~ 
              1
-           + (1 | colourName) , 
-           data=variants, family=poisson)
+           + (1 + indexical || colourName) , 
+           data=variants, family=poisson,
+           control=gcontrol)
 
 # add indexicality
-m1 = glmer(freq_week_4 ~ 
-             1 + 
-             indexical + 
-            (1 | colourName) , 
-           data=variants, family=poisson)
+mIndx = glmer(freq_week_4 ~ 
+                1 + 
+                indexical + 
+                (1 + indexical || colourName) , 
+              data=variants, family=poisson,
+              control=gcontrol)
 
 # add whether the variant is explicitly taught
-m2 = glmer(freq_week_4 ~ 
-             1 +  
-             indexical + 
-             Teach +
-            (1 | colourName) , 
-           data=variants, family=poisson)
+mTeach = glmer(freq_week_4 ~ 
+                 1 +  
+                 indexical + 
+                 Teach +
+                 (1 + indexical || colourName) , 
+               data=variants, family=poisson,
+               control=gcontrol)
 
-m3 = glmer(freq_week_4 ~ 
-             1 +  
-             indexical + 
-             Teach +
-             TryMarked +
-            (1 | colourName) , 
-           data=variants, family=poisson)
+mTry = glmer(freq_week_4 ~ 
+               1 +  
+               indexical + 
+               Teach +
+               TryMarked.any +
+               (1 + indexical || colourName) , 
+             data=variants, family=poisson,
+             control=gcontrol)
 
-m4 = glmer(freq_week_4 ~ 
-             1 +  
-             indexical + 
-             Teach +
-             TryMarked +
-             check.any +
-            (1 | colourName) , 
-           data=variants, family=poisson)
+mChk = glmer(freq_week_4 ~ 
+               1 +  
+               indexical + 
+               Teach +
+               TryMarked.any +
+               check.any +
+               (1 + indexical || colourName) , 
+             data=variants, family=poisson,
+             control=gcontrol)
 
-m5 = glmer(freq_week_4 ~ 
-             1 +  
-             indexical + 
-             Teach +
-             TryMarked +
-             check.any +
-             freq_week_1_total +
-            (1 | colourName) , 
-           data=variants, family=poisson)
+mTm1 = glmer(freq_week_4 ~ 
+               1 +  
+               indexical + 
+               Teach +
+               TryMarked.any +
+               check.any +
+               T_minus_1.any +
+               (1 + indexical || colourName) , 
+             data=variants, family=poisson,
+             control=gcontrol)
 
-m6 = glmer(freq_week_4 ~ 
-             1 +  
-             indexical + 
-             Teach +
-             TryMarked +
-             check.any +
-             freq_week_1_total +
-             averageLength_week_1.logcenter +
-            (1 | colourName) , 
-           data=variants, family=poisson)
+mFrq = glmer(freq_week_4 ~ 
+               1 +  
+               indexical + 
+               Teach +
+               TryMarked.any +
+               check.any +
+               T_minus_1.any +
+               freq_week_1_total.logcenter +
+               (1 + indexical || colourName) , 
+             data=variants, family=poisson,
+             control=gcontrol)
 
-m7 = glmer(freq_week_4 ~ 
-             1 +  
-             indexical + 
-             Teach +
-             TryMarked +
-             check.any +
-             freq_week_1_total +
-             averageLength_week_1.logcenter +
-             inventedBy +
-            (1 | colourName) , 
-           data=variants, family=poisson)
+mLen = glmer(freq_week_4 ~ 
+               1 +  
+               indexical + 
+               Teach +
+               TryMarked.any +
+               check.any +
+               T_minus_1.any +
+               freq_week_1_total.logcenter +
+               averageLength_week_1.logcenter +
+               (1 + indexical || colourName) , 
+             data=variants, family=poisson,
+             control=gcontrol)
 
-m8 = glmer(freq_week_4 ~ 
-             1 +  
-             indexical + 
-             Teach +
-             TryMarked +
-             check.any +
-             freq_week_1_total +
-             averageLength_week_1.logcenter +
-             inventedBy +
-             Teach : TryMarked +
-            (1 | colourName) , 
-           data=variants, family=poisson)
+mInv = glmer(freq_week_4 ~ 
+               1 +  
+               indexical + 
+               Teach +
+               TryMarked.any +
+               check.any +
+               T_minus_1.any +
+               freq_week_1_total.logcenter +
+               averageLength_week_1.logcenter +
+               inventedBy +
+               (1 + indexical || colourName) , 
+             data=variants, family=poisson,
+             control=gcontrol)
 
-m9 = glmer(freq_week_4 ~ 
-             1 +  
-             indexical + 
-             Teach +
-             TryMarked +
-             check.any +
-             freq_week_1_total +
-             averageLength_week_1.logcenter +
-             inventedBy +
-             Teach : TryMarked +
-             Teach : check.any +
-            (1 | colourName) , 
-           data=variants, family=poisson)
+mTchXTry = glmer(freq_week_4 ~ 
+                   1 +  
+                   indexical + 
+                   Teach +
+                   TryMarked.any +
+                   check.any +
+                   T_minus_1.any +
+                   freq_week_1_total.logcenter +
+                   averageLength_week_1.logcenter +
+                   inventedBy +
+                   Teach : TryMarked.any +
+                   (1 + indexical || colourName) , 
+                 data=variants, family=poisson,
+                 control=gcontrol)
 
-m10 = glmer(freq_week_4 ~ 
-             1 +  
-             indexical + 
-             Teach +
-             TryMarked +
-             check.any +
-             freq_week_1_total +
-             averageLength_week_1.logcenter +
-             inventedBy +
-             Teach : TryMarked +
-             Teach : check.any +
-             TryMarked : check.any +
-            (1 | colourName) , 
-           data=variants, family=poisson)
+# Interaction of teaching and checking causes severe 
+#  convergence issues
+# m10 = glmer(freq_week_4 ~ 
+#              1 +  
+#              indexical + 
+#              Teach +
+#              TryMarked.any +
+#              check.any +
+#              T_minus_1.any +
+#              freq_week_1_total.logcenter +
+#              averageLength_week_1.logcenter +
+#              inventedBy +
+#              Teach : TryMarked.any +
+#              Teach : check.any +
+#             (1 + indexical || colourName) , 
+#            data=variants, family=poisson,,
+#            control=gcontrol)
+
+mTryXChk = glmer(freq_week_4 ~ 
+                   1 +  
+                   indexical + 
+                   Teach +
+                   TryMarked.any +
+                   check.any +
+                   T_minus_1.any +
+                   freq_week_1_total.logcenter +
+                   averageLength_week_1.logcenter +
+                   inventedBy +
+                   Teach : TryMarked.any +
+                   TryMarked.any : check.any +
+                   (1 + indexical || colourName) , 
+                 data=variants, family=poisson,
+                 control=gcontrol)
 
 ```
 
 # Results
 
 Model comparison test:
-
+  
 ```{r}
-anova(m0,m1,m2,m3,m4,m5, m6,m7,m8, m9, m10)
+anova(m0,mIndx,mTeach,mTry,mChk,mTm1,mFrq,mLen,mInv,mTchXTry,mTryXChk)
 ```
 
-Choose a final model for the beta values (based on m9).
+Choose a final model for the beta values.
 
 ```{r finalModel, cache=T}
-finalModel = glmer(freq_week_4 ~ 
-            1 +  
-             indexical + 
-             Teach +
-             TryMarked +
-             check.any +
-             freq_week_1_total +
-             averageLength_week_1.logcenter +
-             inventedBy +
-             Teach : TryMarked +
-             Teach : check.any +
-            (1  | colourName), 
-          data=variants, family=poisson)
+finalModel = mTchXTry
 ```
 
 Fixed effects:
@@ -326,6 +357,7 @@ Check the predictions:
 plot(variants$freq_week_4, exp(predict(finalModel)),
      xlab="Actual frequency",
      ylab="Model prediction")
+abline(0,1)
 ```
 
 # Random slopes
@@ -337,6 +369,8 @@ For each of the predictors, we see if random slopes help improve the model.  Ran
 rsControl = glmerControl(
             optimizer = "bobyqa",
             optCtrl = list(maxfun=500000))
+
+mRIndx = update(finalModel, ~. + (0 + indexical | colourName), control=rsControl)
 
 m9R = glmer(freq_week_4 ~ 
             1 +  
@@ -471,19 +505,19 @@ Overall, the model suggests that teaching a variant improves its chances of bein
 
 ```{r}
 sumStats2 = summarySE(variants, measurevar="freq_week_4",
-                      groupvars=c("TryMarked.cat","Teach"))
-
+                      groupvars=c("TryMarked.any","Teach"))
+sumStats2$TryMarked.any = c("No","Yes")[1+sumStats2$TryMarked.any]
 dodge <- position_dodge(width=0.5) 
 
 main.plot <- ggplot(sumStats2,
-	aes(x = TryMarked.cat, y = freq_week_4, colour=Teach)) +
+	aes(x = TryMarked.any, y = freq_week_4, colour=Teach)) +
   geom_point(position=dodge, size=4) + geom_line(aes(group=Teach),position=dodge) +
   geom_errorbar(aes(ymax=freq_week_4+se, ymin=freq_week_4-se), width=0.25,position=dodge) +
-  xlab("Try Marked Frequency") +
+  xlab("Try Marked") +
   ylab("Frequency in week 3") +
   coord_cartesian(ylim=c(0,6)) + 
-  scale_color_discrete(breaks=c(FALSE,TRUE),
-                       labels=c("No","Yes"),
+  scale_color_discrete(breaks=c(TRUE,FALSE),
+                       labels=c("Yes","No"),
                        name="Teach") +
   theme(text=element_text(size=18))
 main.plot

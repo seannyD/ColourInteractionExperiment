@@ -1,14 +1,13 @@
-Sign	Body Anchor	iconic
-		
- i / M	no	no
- I / ME	no	no
- TONGUE	yes	yes
- WATCH	no	yes
- 손등	yes	yes
+Sign	Body Anchor	iconic	
+i / M	no	no
+I / ME	no	no
+TONGUE	yes	yes
+WATCH	no	yes
+IX:'back of one's hand'	yes	yes
 ?	no	no
 2번째	no	no
 2형에서	no	no
-BEFORE-ROAD	no	yes
+BEFORE-ROAD	no	no
 BIGHT	no	no
 BLACK	yes	yes
 black1-3수형으로 BLACK1-4수동	yes	yes
@@ -17,7 +16,7 @@ BOOGER	no	yes
 BRIGHT	no	no
 BRIGHT?	no	no
 BRIGHT1	no	no
-BROWN	no	no
+BROWN	yes	yes
 carriageway	no	yes
 CHECK? 	no	no
 CLOWN	yes	yes
@@ -35,7 +34,7 @@ DRIVE	no	no
 face	yes	yes
 FACE#DARK	yes	yes
 FIRST	no	no
-FLOWER	no	yes
+FLOWER	no	no
 FOLWER	no	yes
 GOOD	no	no
 GREEN	no	no
@@ -45,18 +44,18 @@ GREEN1-1	no	no
 hair	yes	yes
 HAIR	yes	yes
 I / ME	no	no
-INDIA	yes	yes
+INDIA	no	yes
 IX SKIN	yes	yes
 IX(RED)	yes	yes
 JORDAN	no	no
 LEMON	no	yes
-LIGHT	no	no
+LIGHT	no	yes
 LIP	yes	yes
-LIPSTICK	yes	yes
+LIPSTICK	no	yes
 LW:CAP(POLICE)'S LW:BOLD PATTRN OF DRESS	no	yes
 ME	no	no
-MOUTHING?	no	no
-NIGHT	no	no
+MOUTHING	no	no
+NIGHT	no	yes
 NO	no	no
 NOSE-PENDANT	no	yes
 NOT	no	no
@@ -93,4 +92,4 @@ YELLOW	no	no
 YES	no	no
 YOU	no	no
 WHITE	yes	yes                                   
-T0보다 CHECK쪽이 맞음	no	no
+T0보다 CHECK쪽이 맞음	yes	yes
