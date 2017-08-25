@@ -1,0 +1,40 @@
+
+Issue 1)
+
+There are some strange sign labels in the corpus.  Should these be taken out?
+
+SAME
+DIFFERENT
+UNDERSTAND
+DO NOT UNDERSTAND
+ME
+YOU
+YES
+NOT
+SIGNING
+
+Issue 2)
+
+There are a few very long signs.  Maybe there is a problem with the coding?  Or maybe the sign is being repeated several times?  If so, this should be broken up into separate annotations.  This means it can be counted as several repetitions.
+
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf
+Starting at: 0:02:40
+Sign: Do not understand
+Length: 30 seconds
+
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf
+Starting at: 0:02:57
+Sign: EAT#FOOD
+Length: 13 seconds
+
+Colour_game_01_1_Jordan-India_After_one_week.eaf
+Starting at: 0:22:42
+Sign: ORANGE PEEL  and PEEL COLOR TWO
+Length: 18 seconds, 10 seconds
+
+
+
+Issue 3)
+
+There is a sign in the ELAN files called "LW:STRUT+IX" (Week 1, Indonesia&India, 0:11:12).  What should the variant label be for this?  Is it the same as "STRUT", or should it be different?
+

@@ -61,6 +61,8 @@ d$week = as.numeric(d$week)
 d = d[order(d$week,d$session,d$sign_start),]
 
 
+d$originalSignLabel = d$sign_value
+
 #d = d[d$sign_value!='SAME',]
 d = d[d$sign_value!='',]
 d = d[d$sign_value!='?',]

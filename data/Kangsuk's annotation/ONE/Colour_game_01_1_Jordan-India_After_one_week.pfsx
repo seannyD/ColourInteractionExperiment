@@ -14,11 +14,11 @@
         <pref key="COLOR_2(자원)">
             <Object class="java.awt.Color">0,0,160</Object>
         </pref>
-        <pref key="아우라 성향_2">
-            <Object class="java.awt.Color">160,0,0</Object>
-        </pref>
         <pref key="RH_ID_Gloss_2">
             <Object class="java.awt.Color">0,0,0</Object>
+        </pref>
+        <pref key="아우라 성향_2">
+            <Object class="java.awt.Color">160,0,0</Object>
         </pref>
         <pref key="아우라 성향_1">
             <Object class="java.awt.Color">160,160,90</Object>
@@ -320,7 +320,7 @@
         <String>color_1#2</String>
     </pref>
     <pref key="SelectionBeginTime">
-        <Long>1404399</Long>
+        <Long>1428042</Long>
     </pref>
     <prefList key="Interlinear.TierOrder">
         <String>default</String>
@@ -367,7 +367,7 @@
         <String>RH_ID_Gloss_2</String>
     </pref>
     <pref key="FrameSize">
-        <Object class="java.awt.Dimension">1920,1057</Object>
+        <Object class="java.awt.Dimension">1280,773</Object>
     </pref>
     <pref key="SubTitleViewer.TierName-1">
         <String>RH_ID_Gloss_1</String>
@@ -394,7 +394,7 @@
         <String>Language Tool_1</String>
     </prefList>
     <pref key="SelectionEndTime">
-        <Long>1408949</Long>
+        <Long>1438000</Long>
     </pref>
     <prefList key="ExportSmilDialog.HiddenTiers"/>
     <prefList key="MultiTierViewer.TierOrder">
@@ -593,7 +593,7 @@
         <Int>1</Int>
     </pref>
     <pref key="MediaTime">
-        <Long>1404399</Long>
+        <Long>1428042</Long>
     </pref>
     <pref key="TimeLineViewer.TimeRulerVisible">
         <Boolean>true</Boolean>
@@ -635,13 +635,13 @@
         <pref key="Pointing(T+1/-1)_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
-        <pref key="Language Tool_1">
-            <Object class="java.awt.Color">204,255,204</Object>
-        </pref>
         <pref key="OIR_2">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
         <pref key="Repair initiation_1">
+            <Object class="java.awt.Color">204,255,204</Object>
+        </pref>
+        <pref key="Language Tool_1">
             <Object class="java.awt.Color">204,255,204</Object>
         </pref>
         <pref key="Language Tool_2">
@@ -730,7 +730,7 @@
         <String>RH_ID_Gloss_1</String>
     </pref>
     <pref key="TimeScaleBeginTime">
-        <Long>1320400</Long>
+        <Long>1361271</Long>
     </pref>
     <prefList key="MultiTierViewer.HiddenTiers">
         <String>RH_ID_Gloss_1</String>
