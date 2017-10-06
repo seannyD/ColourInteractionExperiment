@@ -1,636 +1,624 @@
-filename,trialID,director,speaker,trial_value,trial_start,trial_end,trial_length,sign_start,sign_end,sign_length,sign_value,sign_notes,iconic,signOrigin,T0Check,TryMarked,Indexicality,Teach,T_minus_1,T0
-Colour_game_01_1_Jordan-India_After_one_week.eaf,1,1,1,16,800078,817798,17720,800078,817798,17720,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,3,1,1,6,153552,154722,1170,153675,154541,866,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,6,1,1,20,830641,835355,4714,830682,831412,730,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,6,1,1,20,830641,835355,4714,833354,834225,871,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,6,1,2,20,830641,835355,4714,832171,833238,1067,RED(mouth),OS,NA,NA,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,6,1,2,20,830641,835355,4714,833302,835341,2039,RED(frontlet) ,OS,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,8,1,1,14,1741805,1744745,2940,1741962,1743205,1243,PLANTS,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,8,1,1,14,1741805,1744745,2940,1743205,1744685,1480,forest,IX,NA,NA,FALSE,No,Yes,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,9,1,1,5,2025520,2027634,2114,2025560,2026980,1420,arm,IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,1,21,1341127,1471692,130565,1362558,1381209,18651,ORANGE PEEL,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,1,21,1341127,1471692,130565,1386061,1396100,10039,CUTTING(ACTION) ORANGE,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,1,21,1341127,1471692,130565,1409394,1413679,4285,THAT IS ORANGE PEEL SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,1,21,1341127,1471692,130565,1428042,1438000,9958,첫번째 밝은 것 두번째 어두운 것인데 두번째야!,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,1,21,1341127,1471692,130565,1442261,1446219,3958,아까 말했듯이 오렌지색!,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,1,21,1341127,1471692,130565,1466700,1469966,3266,두번째야!,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,2,21,1341127,1471692,130565,1379998,1384148,4150,ACTION(눈) WITH ANGERINE ,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,2,21,1341127,1471692,130565,1398398,1404200,5802,PEEL ORANGE^냄새맡게 되는 특성,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,2,21,1341127,1471692,130565,1404399,1408949,4550,PEEL ORANGE EAT SEED  THROW-OUT(씨앗먹다가 버리다) ,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,2,21,1341127,1471692,130565,1419165,1429087,9922,PEEL COLOR TWO,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,2,21,1341127,1471692,130565,1460918,1465200,4282,첫번째는 ACTION(눈으로 귤을 말하면서 밝고),NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,2,21,1341127,1471692,130565,1467500,1470400,2900,두번째로 어두운 것?,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,1,22,1790430,1889866,99436,1808252,1823184,14932,3가지가 있어 맞지?,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,1,22,1790430,1889866,99436,1823184,1828435,5251,첫째는 밝은 것,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,1,22,1790430,1889866,99436,1828584,1833778,5194,두번째 약간 어둡게,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,1,22,1790430,1889866,99436,1833778,1839923,6145,세번째는 팔과 같아,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,1,22,1790430,1889866,99436,1839923,1845176,5253,세번째야,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,1,22,1790430,1889866,99436,1884505,1890038,5533,그럼 첫째 딱맞은 것 2째 약간 어둡게 그치? 그거야!,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,2,22,1790430,1889866,99436,1873921,1884505,10584,3개가 아니라 2개 있어,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,13,1,1,7,9990,20623,10633,10050,10875,825,BLACK,OS,NA,NA,FALSE,Yes,Yes-body,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,13,1,1,7,9990,20623,10633,10955,12325,1370,BLACK(JSL),OS,NA,NA,FALSE,No,No,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,13,1,1,7,9990,20623,10633,13967,15150,1183,DARK-NIGHT,NA,NA,NA,FALSE,No,No,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,13,1,1,7,9990,20623,10633,16129,17673,1544,NIGHT,NA,NA,NA,FALSE,No,No,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,13,1,1,7,9990,20623,10633,17690,19207,1517,DARK-NIGHT,NA,NA,NA,FALSE,Yes,No,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,13,1,1,7,9990,20623,10633,19552,20529,977,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,13,1,2,7,9990,20623,10633,12202,12932,730,BLACK,OS,NA,NA,TRUE,No,Yes-body,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,13,1,2,7,9990,20623,10633,12932,15022,2090,DARK,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,13,1,2,7,9990,20623,10633,16722,18216,1494,NIGHT,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,15,1,1,6,70142,72995,2853,70229,71334,1105,WHITE,OS,NA,,FALSE,No,yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,15,1,1,6,70142,72995,2853,71334,72225,891,WHITE,OS,NA,,FALSE,No,yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,15,1,2,6,70142,72995,2853,71350,72846,1496,WHITE,OS,NA,NA,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,8,1646430,1691859,45429,1648682,1652244,3562,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,8,1646430,1691859,45429,1652244,1659400,7156,TREE DARK,NA,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,8,1646430,1691859,45429,1661851,1666833,4982,BOOGER코딱지와 같은 어두운 색,NA,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,8,1646430,1691859,45429,1676950,1680500,3550,arm,IX,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,8,1646430,1691859,45429,1658488,1661851,3363,BLACKBOARD,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,8,1646430,1691859,45429,1666242,1668765,2523,BOOGER,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,18,2,2,14,1766948,1767375,427,1766969,1767325,356,GREEN(ISL),OS,NA,ISL,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,204968,205572,604,partition,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,205580,206455,875,RED(mouth),OS,NA,,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,206523,207190,667,SAME?,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,208752,209606,854,SIGNING,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,209606,210609,1003,COLOR,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,210913,212216,1303,JORDAN,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,212216,212696,480,INDIA,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,212696,212902,206,ME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,212902,213228,326,JORDAN,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,213228,215141,1913,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,218199,218703,504,FLOWER+NOT,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,219043,220091,1048,PINK(JSL),OS,NA,JSL,FALSE,No,no,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,166720,168620,1900,tongue,IX,NA,NA,FALSE,Yes,Yes-body,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,168815,169241,426,FLOWER,LW,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,169451,170393,942,tongue,IX,NA,NA,FALSE,yes,Yes-body,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,170393,170395,2,TONGUE,IX,NA,NA,FALSE,yes,NA,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,170558,171865,1307,RED(mouth),OS,NA,,FALSE,Yes,Yes-body,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,171932,172423,491,LIPSTICK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,172423,174786,2363,RED(mouth) + NOT+different,OS,NA,,FALSE,Yes,Yes-body,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,174842,176859,2017,IX:tongue +IX:lip+Different,NA,NA,NA,FALSE,Yes,Yes-body,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,176900,177864,964,IX:tongue+IX:lip,NA,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,179253,179516,263,tongue,IX,NA,,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,184604,185747,1143,lip,IX,NA,NA,FALSE,yes,Yes-body,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,185747,186451,704,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,186457,186988,531,LIPSTICK,NA,NA,NA,FALSE,No,NA,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,186992,187171,179,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,187171,187381,210,SIGNING,NA,NA,NA,FALSE,No,NA,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,187640,187991,351,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,188132,188294,162,SIGINING,NA,NA,NA,FALSE,No,NA,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,188423,189127,704,tongue,IX,NA,NA,FALSE,yes,Yes-body,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,189248,189581,333,SIGNING,NA,NA,NA,FALSE,No,NA,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,189621,190294,673,tongue,IX,NA,NA,FALSE,No,Yes-body,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,190443,190891,448,?,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,190891,191409,518,tongue,IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,192461,195418,2957,FLOWER,LW,NA,NA,FALSE,yes,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,195537,197105,1568,tongue,IX,NA,NA,FALSE,No,Yes-body,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,198794,201039,2245,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,201693,204125,2432,OS:RED(mouth)+IX:Tongue+diffferent,NA,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,204125,204129,4,DIFFERENT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,207768,208322,554,NOT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,208344,209308,964,DIFFERENT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,214720,215049,329,ME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,215049,217013,1964,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,221018,221171,153,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,221530,222258,728,tongue,IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,222354,222676,322,FLOWER,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,222798,223489,691,tongue,IX,NA,,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,224179,224804,625,FLOWER,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,24,166464,226582,60118,224958,225280,322,YES,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,180244,180729,485,SAME,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,180783,183480,2697,FLOWER,LW,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,193740,194093,353,FLOWER,LW,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,194135,195214,1079,SIGN,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,196930,199185,2255,RED(mouth),OS,NA,NA,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,200292,201626,1334,RED(mouth),OS,NA,NA,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,207900,216500,8600,,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,216864,220257,3393,,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,220257,223507,3250,,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,24,166464,226582,60118,223507,225034,1527,,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1270596,1271067,471,YELLOW(ISL),OS,NA,ISL,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1273112,1273552,440,YELLOW(ISL),OS,NA,ISL,FALSE,yes,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1273735,1274894,1159,LEMON,LW,NA,NA,FALSE,yes,NA,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1276600,1277064,464,L,fs,NA,NA,FALSE,No,NA,No,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1277624,1277846,222,SIGN,NA,NA,NA,FALSE,No,NA,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1277846,1278090,244,LEMON,LW,NA,NA,FALSE,No,NA,Yes,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1278919,1279471,552,SUN,LW,NA,NA,FALSE,Yes,NA,Yes,yes,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1279578,1279885,307,DIFFERENT,NA,NA,NA,FALSE,No,NA,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1279911,1281176,1265,LEMON,LW,NA,NA,FALSE,No,NA,Yes,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1281353,1281775,422,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1283465,1285093,1628,floor,IX,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1285308,1285536,228,BRIGHT1,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,1,18 ,1270518,1285676,15158,1282456,1283005,549,EAT,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,1,18 ,1270518,1285676,15158,1283005,1283643,638,LEMON,LW,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,1,18 ,1270518,1285676,15158,1285297,1285626,329,BRIGHT1,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,22,2,2,5,2028919,2038869,9950,2029050,2029812,762,arm,IX,NA,NA,FALSE,yes,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,22,2,2,5,2028919,2038869,9950,2029812,2031141,1329,DARK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,22,2,2,5,2028919,2038869,9950,2031152,2031709,557,BLACK,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,22,2,2,5,2028919,2038869,9950,2031983,2034400,2417,DARK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,22,2,2,5,2028919,2038869,9950,2035000,2036000,1000,DARK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,22,2,1,5,2028919,2038869,9950,2034381,2035849,1468,DARK,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,22,2,1,5,2028919,2038869,9950,2036509,2038636,2127,BOOGER,OS,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,25,2,2,23,535400,797560,262160,535400,797560,262160,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,26,2,2,6,84450,86621,2171,84577,86450,1873,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,27,2,2,6,154909,157137,2228,155229,156986,1757,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,29,2,2,3,1134102,1139742,5640,1136146,1136406,260,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,29,2,2,3,1134102,1139742,5640,1136406,1136817,411,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,31,2,2,22,1892957,1897298,4341,1892957,1897298,4341,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,32,2,2,7,58543,62497,3954,58518,60138,1620,BLACK,OS,NA,NA,FALSE,yes,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,32,2,2,7,58543,62497,3954,60140,61048,908,HAIR,NA,NA,,FALSE,yes,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,32,2,2,7,58543,62497,3954,61134,62414,1280,BLACK,OS,NA,NA,FALSE,,Yes-body,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,34,2,2,9,849751,1022739,172988,849751,1022739,172988,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,35,2,2,12,1474596,1551896,77300,1474396,1485496,11100,하늘과 같은데.. 바다보다 더 밝은데 그건 하얀색을 더해서 나온 색,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,35,2,2,12,1474596,1551896,77300,1486264,1493451,7187,POINTING(하늘),NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,35,2,2,12,1474596,1551896,77300,1527000,1542900,15900,3번째중에서 1째로 하늘 하얀 같은 색,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,35,2,2,12,1474596,1551896,77300,1549500,1551553,2053,YES!,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Jordan-India_After_one_week.eaf,35,2,1,12,1474596,1551896,77300,1490220,1496688,6468,SKY+SEA?,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,35,2,1,12,1474596,1551896,77300,1497500,1504000,6500,첫째로 하늘 둘째 바다 셋째 어두운 것으로 셋째? ,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Jordan-India_After_one_week.eaf,35,2,1,12,1474596,1551896,77300,1544628,1551250,6622,하얀색이라고 하지말아. 그냥 하늘색이지?,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,1,1,1,20,486230,488287,2057,486259,488187,1928,RED(frontlet) ,OS,NA,NSL,FALSE,No,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,3,1,1,7,17308,19675,2367,17298,19655,2357,BLACK,OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,4,1,1,18 노랑,556104,572304,16200,556304,559204,2900,DRINK,LW,NA,NA,FALSE,Yes,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,4,1,1,18 노랑,556104,572304,16200,560100,561737,1637,ORANGE?,LW,NA,,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,4,1,1,18 노랑,556104,572304,16200,561737,563637,1900,NO,NA,NA,NA,FALSE,No,NA,No,Yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,4,1,1,18 노랑,556104,572304,16200,563637,564662,1025,BRIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,4,1,1,18 노랑,556104,572304,16200,564662,566549,1887,SAME,NA,NA,NA,FALSE,Yes,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,4,1,1,18 노랑,556104,572304,16200,570508,571058,550,YES,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,4,1,2,18 노랑,556104,572304,16200,561544,562464,920,SALTY,LW,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,4,1,2,18 노랑,556104,572304,16200,565255,566521,1266,BRIGHT,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,4,1,2,18 노랑,556104,572304,16200,569783,571133,1350,SUN,LW,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,69666,72593,2927,YELLOW(NSL),OS,NA,NSL,FALSE,yes,no,No,yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,80050,81950,1900,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,83796,88911,5115,EAT^PEEL,LW,NA,NA,FALSE,Yes,NA,No,YES,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,88950,92700,3750,YELLOW(NSL),OS,NA,NSL,FALSE,yes,no,No,yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,92817,93670,853,GREEN(ISL),OS,NA,ISL,FALSE,No,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,93670,94316,646,GREEN(NSL),OS,NA,NSL,FALSE,No,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,94336,94977,641,NO,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,94977,95603,626,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,96075,97325,1250,YELLOW(NSL),OS,NA,NSL,FALSE,Yes,no,No,yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,105619,106092,473,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,107454,111125,3671,EAT,SE,NA,NA,FALSE,Yes,NA,No,YES,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,114517,117836,3319,EAT everyday,SE,NA,NA,FALSE,Yes,NA,No,Yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,118791,119255,464,RED(mouth),OS,NA,NA,FALSE,yes,yes-body,No,yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,125316,127399,2083,NO,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,132227,132861,634,GREEN(NSL),OS,NA,NSL,FALSE,No,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,132902,133269,367,NO,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,133269,136094,2825,ring,IX,NA,,FALSE,No,yes,No,yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,143919,146719,2800,NO,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,156619,159419,2800,YELLOW(NSL),OS,NA,NSL,FALSE,No,no,No,yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,1,18 노랑,69619,192119,122500,177636,190466,12830,EAT#FOOD,NA,NA,NA,FALSE,No,NA,No,Yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,74830,75070,240,forest,IX,NA,NA,TRUE,No,yes,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,75110,76330,1220,PLANTS,LW,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,76700,77199,499,GREEN(NSL),OS,NA,NSL,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,77199,77932,733,NO?,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,85700,90600,4900,EAT^PEEL,LW,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,91500,94800,3300,GREEN(ISL),OS,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,106941,108226,1285,RED(frontlet) ,OS,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,108298,110476,2178,EAT,SE,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,115968,118396,2428,EAT everyday,SE,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,119709,121361,1652,RED(mouth),OS,NA,NA,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,124000,125600,1600,RED(frontlet) ,OS,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,129365,132149,2784,GREEN(ISL),OS,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,136184,139962,3778,EAT,SE,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,140069,144169,4100,LEMON,LW,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,148455,149100,645,forest,IX,NA,NA,TRUE,No,yes,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,149100,154267,5167,PLANTS,LW,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,155193,156553,1360,GREEN(ISL),OS,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,5,1,2,18 노랑,69619,192119,122500,159800,190400,30600,Do not understand,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,9,1,1,6,478649,481857,3208,479235,479657,422,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,11,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,349961,350966,1005,GREEN(NSL),OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,11,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,352667,353064,397,TREE,NA,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,11,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,353064,353860,796,LEAF,NA,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,11,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,356362,361462,5100,DARK1#LITTLE,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,11,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,361462,362084,622,BRIGHT1,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,11,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,362084,362799,715,NO,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,11,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,362799,364019,1220,DARK1,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,11,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,367998,369446,1448,wall,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,11,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,369446,370672,1226,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,11,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,370672,377203,6531,SAME2,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,1,18 노랑,408270,467356,59086,408599,412185,3586,ORANGE JUICE^DRINK,SE,NA,NA,FALSE,Yes,no,No,YES,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,1,18 노랑,408270,467356,59086,412443,415062,2619,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,1,18 노랑,408270,467356,59086,415062,421395,6333,every day^DRINK,NA,NA,NA,FALSE,No,NA,No,yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,1,18 노랑,408270,467356,59086,421613,425613,4000,BRIGHT,NA,NA,NA,FALSE,Yes,no,No,Yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,1,18 노랑,408270,467356,59086,425613,426200,587,DARK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,1,18 노랑,408270,467356,59086,437454,439000,1546,YELLOW(NSL),OS,NA,NSL,FALSE,Yes,no,No,Yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,1,18 노랑,408270,467356,59086,444820,446580,1760,NO,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,1,18 노랑,408270,467356,59086,451791,454960,3169,IX#something,NA,NA,NA,FALSE,yes,NA,No,YES,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,1,18 노랑,408270,467356,59086,455072,457312,2240,DARK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,1,18 노랑,408270,467356,59086,461510,464059,2549,PAINT THE WALL,LW,NA,NA,FALSE,Yes,NA,No,Yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,1,18 노랑,408270,467356,59086,464063,465763,1700,YELLOW(NSL),OS,NA,NSL,FALSE,yes,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,2,18 노랑,408270,467356,59086,413622,415717,2095,ORANGE JUICE^DRINK,SE,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,2,18 노랑,408270,467356,59086,444100,445120,1020,RED(mouth),OS,NA,NA,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,2,18 노랑,408270,467356,59086,451126,452013,887,BRIGHT,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,12,1,2,18 노랑,408270,467356,59086,457107,458361,1254,DARK,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,1,14,857691,861754,4063,857791,861448,3657,GREEN(NSL),OS,NA,NSL,FALSE,Yes,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,2,14,857691,861754,4063,858490,860069,1579,GREEN(NSL),OS,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,2,14,857691,861754,4063,860069,860783,714,PLANTS,LW,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,2,14,857691,861754,4063,860826,861726,900,GREEN(NSL),OS,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,5,1019932,1024966,5034,1020009,1022346,2337,'back of one's hand',IX,NA,NA,FALSE,Yes,Yes-body,No,Yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,5,1019932,1024966,5034,1023532,1023962,430,'back of one's hand',IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,5,1019932,1024966,5034,1024014,1024864,850,DARK,NA,NA,NA,FALSE,Yes,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,5,1019932,1024966,5034,1021608,1022810,1202,'back of one's hand',IX,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,16,2,2,7,11333,12942,1609,11345,12932,1587,BLACK,OS,NA,NA,FALSE,yes,Yes-body,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,17,2,2,24,48566,62810,14244,48582,50805,2223,FLOWER,LW,NA,NA,FALSE,Yes,no,No,Yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,17,2,2,24,48566,62810,14244,54580,55877,1297,BRIGHT1,NA,NA,NA,FALSE,yes,NA,No,yes,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,17,2,2,24,48566,62810,14244,56998,57636,638,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,17,2,2,24,48566,62810,14244,57656,58160,504,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,17,2,2,24,48566,62810,14244,58496,59947,1451,RED(frontlet) ,OS,NA,NA,FALSE,Yes,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,17,2,2,24,48566,62810,14244,59970,60470,500,DIFFERENT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,17,2,2,24,48566,62810,14244,60535,62535,2000,BIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,17,2,1,24,48566,62810,14244,52206,52731,525,RED(frontlet) ,OS,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,17,2,1,24,48566,62810,14244,52756,53856,1100,NO,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,17,2,1,24,48566,62810,14244,53856,55181,1325,DARK,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,21,2,2,6   하얀,472492,476850,4358,472489,476846,4357,WHITE,OS,NA,,FALSE,No,yes-body,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,21,2,1,6   하얀,472492,476850,4358,474870,476099,1229,WHITE,OS,NA,,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,22,2,2,15,992613,1005114,12501,996058,996650,592,GREEN2(NSL),NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,22,2,2,15,992613,1005114,12501,996650,997232,582,DARK1#LITTLE,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,24,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,203316,204722,1406,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,24,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,204722,206118,1396,SEA,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,24,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,206118,206502,384,COMBINE,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,24,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,206502,207786,1284,MIX,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,24,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,207786,208937,1151,DARK1#LITTLE,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,24,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,209989,210878,889,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,24,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,210878,213062,2184,SEA,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,24,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,213062,214238,1176,WATER,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,24,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,214238,214954,716,COMBINE,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,24,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,214954,215816,862,MIX,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,24,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,215816,217227,1411,DARK1#LITTLE,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,25,2,2,14,865233,867110,1877,865223,867044,1821,GREEN(NSL),OS,NA,NSL,FALSE,No,No,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,3,1,1,18,118731,130558,11827,118812,121360,2548,YELLOW(ISL),OS,NA,ISL,FALSE,Yes,Yes-body,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,3,1,1,18,118731,130558,11827,121360,123365,2005,BRIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,3,1,1,18,118731,130558,11827,125081,125935,854,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,3,1,1,18,118731,130558,11827,125935,128456,2521,LW:CAP(POLICE)'S LW:BOLD PATTRN OF DRESS,NA,NA,NA,FALSE,Yes,NA,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,3,1,1,18,118731,130558,11827,128456,129722,1266,DRIVE,LW,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,3,1,1,18,118731,130558,11827,129722,130498,776,LIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,3,1,2,18,118731,130558,11827,122847,123539,692,BRIGHT,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,17,1,1,14,760874,763425,2551,761130,761882,752,PLANTS,LW,NA,,FALSE,No,No,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,17,1,1,14,760874,763425,2551,761882,763355,1473,GREEN(ISL),OS,NA,ISL,FALSE,No,No,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,18,2,2,6,1224363,1228575,4212,1224432,1228485,4053,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,2,7,161403,165995,4592,161403,162934,1531,BLACK,OS,NA,NA,FALSE,Yes,Yes-body,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,2,7,161403,165995,4592,163000,164983,1983,BLACK,OS,NA,NA,FALSE,Yes,Yes-body,No,yes,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,1,7,161403,165995,4592,163159,165435,2276,BLACK,OS,NA,NA,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,1,7,161403,165995,4592,165435,165967,532,'blank',MOUTHING,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,25,2,2,24,502357,515964,13607,502491,503125,634,CLOWN,LW,NA,NA,FALSE,yes,no,No,yes,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,25,2,2,24,502357,515964,13607,503125,504660,1535,clown#face,IX,NA,NA,FALSE,yes,yes,No,yes,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,25,2,2,24,502357,515964,13607,504731,508817,4086,CLOWN,LW,NA,NA,FALSE,Yes,no,No,yes,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,25,2,2,24,502357,515964,13607,510012,511328,1316,RED(mouth),OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,25,2,2,24,502357,515964,13607,511407,513776,2369,BRIGHT,NA,NA,NA,FALSE,Yes,NA,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,25,2,1,24,502357,515964,13607,507881,509591,1710,RED(mouth),OS,NA,NA,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,25,2,1,24,502357,515964,13607,513403,513847,444,SAME,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,25,2,1,24,502357,515964,13607,513872,516139,2267,FLOWER,LW,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,26,2,2,14 녹색,213173,218817,5644,213330,214680,1350,PLANTS,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,26,2,2,14 녹색,213173,218817,5644,214680,215246,566,DARK(VERY LITTLE),NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,26,2,2,14 녹색,213173,218817,5644,215246,216856,1610,FIRST,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,26,2,2,14 녹색,213173,218817,5644,216856,218751,1895,BRIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,29,2,2,5,588402,608442,20040,588690,590315,1625,arm,IX,NA,NA,FALSE,Yes,Yes-body,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,29,2,2,5,588402,608442,20040,590527,592775,2248,dark,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,29,2,2,5,588402,608442,20040,593042,595831,2789,arm,IX,NA,NA,FALSE,Yes,Yes-body,No,yes,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,29,2,2,5,588402,608442,20040,596300,597040,740,face#dark,NA,NA,NA,FALSE,Yes,,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,29,2,2,5,588402,608442,20040,601796,602278,482,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,29,2,2,5,588402,608442,20040,602278,603477,1199,SIWASH,LW,NA,NA,FALSE,Yes,NA,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,29,2,2,5,588402,608442,20040,603477,604626,1149,face#dark,IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,29,2,1,5,588402,608442,20040,596921,597658,737,arm,IX,NA,NA,TRUE,No,Yes-body,No,No,Yes
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,29,2,1,5,588402,608442,20040,597658,598973,1315,DARK,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,29,2,1,5,588402,608442,20040,606907,608335,1428,watch,IX,NA,NA,TRUE,No,yes,No,No,Yes
-Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,35,2,2,1,135972,138137,2165,136420,137880,1460,BLOOD,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,1,18,10583,24166,13583,10570,12810,2240,YELLOW(NSL),OS,NA,NSL,FALSE,Yes,no,No,yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,1,18,10583,24166,13583,12810,13440,630,GREEN(ISL),OS,NA,ISL,FALSE,No,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,1,18,10583,24166,13583,13440,13942,502,GREEN(NSL),OS,NA,NSL,FALSE,No,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,1,18,10583,24166,13583,13942,15063,1121,NO,NA,NA,NA,FALSE,No,NA,No,Yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,1,18,10583,24166,13583,15063,15442,379,forest,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,1,18,10583,24166,13583,15442,16035,593,TREE,LW,NA,,FALSE,No,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,1,18,10583,24166,13583,16035,16560,525,GREEN(NSL),OS,NA,NSL,FALSE,No,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,1,18,10583,24166,13583,16560,17163,603,NO,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,1,18,10583,24166,13583,17163,17501,338,GREEN(ISL),OS,NA,ISL,FALSE,No,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,1,18,10583,24166,13583,17501,18582,1081,COLOR,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,1,18,10583,24166,13583,18582,20679,2097,BRIGHT,NA,NA,NA,FALSE,Yes,NA,No,YES,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,2,18,10583,24166,13583,12304,13730,1426,GREEN(ISL),OS,NA,ISL,TRUE,No,no,No,No,Yes
-Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,2,18,10583,24166,13583,21482,24112,2630,GREEN(ISL),OS,NA,ISL,TRUE,No,no,No,No,Yes
-Colour_game_01_2_Nepal-India_After_one_week.eaf,11,1,1,18,455190,459303,4113,455206,456052,846,YELLOW(NSL),OS,NA,NSL,FALSE,Yes,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,11,1,1,18,455190,459303,4113,456052,457726,1674,LEMON,LW,NA,NA,FALSE,Yes,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,11,1,1,18,455190,459303,4113,457808,459269,1461,BRIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,15,1,1,1빨강,1083314,1085290,1976,1083360,1085290,1930,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,16,1,1,6,1038254,1038528,274,1038254,1038412,158,WHITE,OS,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,16,1,2,6,1038254,1038528,274,1038289,1038978,689,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,17,1,2,14녹색,1025950,1027350,1400,1026214,1027082,868,GREEN(ISL),OS,NA,ISL,TRUE,No,no,No,No,Yes
-Colour_game_01_2_Nepal-India_After_one_week.eaf,17,1,2,14녹색,1025950,1027350,1400,1027082,1027176,94,TREE-GREEN2/1,NA,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_2_Nepal-India_After_one_week.eaf,18,1,1,14녹색,1005268,1007894,2626,1005533,1006706,1173,GREEN(NSL),OS,NA,NSL,FALSE,No,no,No,yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,18,1,1,14녹색,1005268,1007894,2626,1006706,1007823,1117,wall,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,20,2,2,14,431948,439679,7731,432044,432835,791,GREEN(ISL),OS,NA,ISL,FALSE,No,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,20,2,2,14,431948,439679,7731,432835,434185,1350,blood vessel,IX,NA,,FALSE,Yes,yes-body,No,Yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,20,2,2,14,431948,439679,7731,436150,436623,473,GREEN(ISL),OS,NA,ISL,FALSE,yes,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,20,2,2,14,431948,439679,7731,436623,436945,322,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,20,2,2,14,431948,439679,7731,436945,438041,1096,blood vessel,IX,NA,NA,FALSE,yes,yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,20,2,2,14,431948,439679,7731,439192,439344,152,IX;forest,NA,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,20,2,2,14,431948,439679,7731,439358,439661,303,TREE,NA,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,25,2,2,20,696018,697390,1372,696015,696671,656,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,25,2,2,20,696018,697390,1372,696671,697296,625,RED(frontlet) ,OS,NA,NA,FALSE,Yes,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,27,2,2,7,59146,60906,1760,59168,60878,1710,BLACK,OS,NA,NA,FALSE,Yes,Yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,28,2,1,6,1038175,1039187,1012,1038254,1038412,158,WHITE,OS,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,28,2,2,6,1038175,1039187,1012,1038289,1038978,689,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,2,24,657634,673354,15720,657684,659284,1600,RED(mouth),OS,NA,NA,FALSE,yes,Yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,2,24,657634,673354,15720,659694,660874,1180,tongue,IX,NA,NA,FALSE,Yes,Yes-body,No,Yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,2,24,657634,673354,15720,660914,661274,360,DIFFERENT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,2,24,657634,673354,15720,661324,662944,1620,tongue,IX,NA,NA,FALSE,yes,Yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,2,24,657634,673354,15720,663024,663344,320,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,2,24,657634,673354,15720,663414,665294,1880,FLOWER,LW,NA,NA,FALSE,Yes,no,No,Yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,2,24,657634,673354,15720,665304,665798,494,tongue,IX,NA,NA,FALSE,yes,Yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,2,24,657634,673354,15720,665798,666374,576,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,2,24,657634,673354,15720,666396,667616,1220,FLOWER,LW,NA,NA,FALSE,yes,no,No,yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,2,24,657634,673354,15720,669684,669884,200,tongue,IX,NA,NA,FALSE,yes,yes-body,No,yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,2,24,657634,673354,15720,669884,670974,1090,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,2,24,657634,673354,15720,670974,673339,2365,FLOWER,LW,NA,NA,FALSE,yes,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,30,2,1,24,657634,673354,15720,671687,673317,1630,FLOWER,LW,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,191169,192004,835,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,192245,192611,366,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,192611,192934,323,sky,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,192934,194177,1243,SKY,NA,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,196151,197341,1190,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,197341,198173,832,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,199133,199427,294,SEA,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,199427,200422,995,DARK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,200527,201208,681,NOT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,201773,202201,428,clothes,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,202201,202841,640,DARK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,202841,203172,331,NOT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,203172,203514,342,sky,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,203514,204013,499,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,34,2,2,12,186455,205335,18880,204613,205321,708,SKY,NA,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,35,2,2,1,26234,35146,8912,26340,26986,646,RED(frontlet) ,OS,NA,NA,FALSE,yes,no,No,yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,35,2,2,1,26234,35146,8912,27164,27864,700,RED(mouth),OS,NA,NA,FALSE,yes,Yes-body,No,yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,35,2,2,1,26234,35146,8912,27864,28526,662,RED(Imouth),OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,35,2,2,1,26234,35146,8912,28526,28955,429,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,35,2,2,1,26234,35146,8912,28955,30271,1316,Prayer,NA,NA,NA,FALSE,Yes,NA,No,Yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,35,2,2,1,26234,35146,8912,30271,30685,414,RED(mouth),OS,NA,NA,FALSE,yes,Yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,35,2,2,1,26234,35146,8912,30685,31658,973,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,35,2,2,1,26234,35146,8912,31658,33533,1875,RED(frontlet) ,OS,NA,NA,FALSE,Yes,no,No,Yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,35,2,2,1,26234,35146,8912,34879,35179,300,BLOOD,LW,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,35,2,1,1,26234,35146,8912,33480,35066,1586,BLOOD,LW,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_2_Nepal-India_After_one_week.eaf,36,2,2,5,813505,829277,15772,813675,814289,614,'back of one's hand',IX,NA,NA,FALSE,yes,Yes-body,No,yes,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,36,2,2,5,813505,829277,15772,815362,816704,1342,'back of one's hand',IX,NA,NA,FALSE,yes,Yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,36,2,2,5,813505,829277,15772,816711,818824,2113,'back of one's hand',IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,36,2,2,5,813505,829277,15772,818850,820077,1227,'back of one's hand',IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,36,2,2,5,813505,829277,15772,823890,828338,4448,TREE-STRUT+IX,LW,NA,NA,FALSE,Yes,no,No,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,36,2,2,5,813505,829277,15772,828413,829251,838,'back of one's hand',IX,NA,NA,FALSE,yes,Yes-body,Yes,No,No
-Colour_game_01_2_Nepal-India_After_one_week.eaf,36,2,1,5,813505,829277,15772,814779,816260,1481,'back of one's hand',IX,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_2_Nepal-India_After_one_week.eaf,36,2,1,5,813505,829277,15772,816877,817087,210,BRIGHT,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_2_Nepal-India_After_one_week.eaf,36,2,1,5,813505,829277,15772,817087,818017,930,DARK,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,3,1,1,18,1002400,1012390,9990,1002370,1003350,980,chair,IX,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,3,1,1,18,1002400,1012390,9990,1003645,1004319,674,YELLOW(ISL),OS,NA,ISL,FALSE,No,Yes-body,yes,yes,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,3,1,1,18,1002400,1012390,9990,1004319,1005060,741,BRIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,3,1,1,18,1002400,1012390,9990,1007713,1008394,681,sky,IX,NA,NA,FALSE,No,yes,No,yes,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,3,1,1,18,1002400,1012390,9990,1008394,1008884,490,SUN,LW,NA,,FALSE,Yes,no,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,3,1,1,18,1002400,1012390,9990,1008884,1010190,1306,BRIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,3,1,2,18,1002400,1012390,9990,1005911,1006071,160,YELLOW(ISL),OS,NA,ISL,TRUE,No,Yes-body,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,3,1,2,18,1002400,1012390,9990,1006296,1007142,846,BRIGHT,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,3,1,2,18,1002400,1012390,9990,1010460,1010722,262,'LE',fs,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,3,1,2,18,1002400,1012390,9990,1010722,1011227,505,WHITE,OS,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,3,1,2,18,1002400,1012390,9990,1011237,1012267,1030,BRIGHT,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,4,1,1,6,643559,646647,3088,643554,644665,1111,WHITE, OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,4,1,2,6,643559,646647,3088,645325,646570,1245,WHITE,OS,NA,NA,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,5,1,1,24,430635,464155,33520,430764,433564,2800,FLOWER,LW,NA,NA,FALSE,yes,no,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,5,1,1,24,430635,464155,33520,439285,440619,1334,RED(mouth),OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,5,1,1,24,430635,464155,33520,444085,446180,2095,FLOWER,LW,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,5,1,1,24,430635,464155,33520,450060,451632,1572,RED(mouth),OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,5,1,1,24,430635,464155,33520,451727,452441,714,BRIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,5,1,1,24,430635,464155,33520,454012,454441,429,DARK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,5,1,1,24,430635,464155,33520,456107,457773,1666,BRIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,5,1,1,24,430635,464155,33520,458011,459916,1905,FLOWER,LW,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,5,1,2,24,430635,464155,33520,443034,446320,3286,FLOWER,LW,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,5,1,2,24,430635,464155,33520,455843,456891,1048,FLOWER,LW,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,8,1,1,14,136429,139441,3012,136464,136974,510,GREEN(ISL),OS,NA,ISL,FALSE,No,no,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,8,1,1,14,136429,139441,3012,136974,137630,656,CORRECT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,8,1,2,14,136429,139441,3012,137630,138321,691,GREEN(ISL),OS,NA,ISL,TRUE,No,no,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,8,1,2,14,136429,139441,3012,138321,139407,1086,CORRECT,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,12,1,1,1,307041,310413,3372,307123,308504,1381,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,12,1,1,1,307041,310413,3372,309893,310393,500,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,12,1,2,1,307041,310413,3372,308023,308555,532,RED(frontlet) ,OS,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,18,2,2,7,527463,532113,4650,527511,528097,586,BLACK,OS,NA,NA,FALSE,No,Yes-body,No,yes,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,18,2,2,7,527463,532113,4650,530362,531184,822,BLACK,OS,NA,NA,FALSE,No,Yes-body,No,yes,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,18,2,1,7,527463,532113,4650,528597,529226,629,BLACK,OS,NA,NA,TRUE,No,Yes-body,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,18,2,1,7,527463,532113,4650,530360,530810,450,BLACK,OS,NA,NA,TRUE,No,Yes-body,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,18,2,1,7,527463,532113,4650,530810,531086,276,CORRECT,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,18,2,1,7,527463,532113,4650,531086,532022,936,BLACK,OS,NA,NA,TRUE,No,Yes-body,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,18 노랑,974899,981201,6302,974907,976657,1750,YELLOW(ISL),OS,NA,ISL,FALSE,Yes,Yes-body,No,Yes,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,18 노랑,974899,981201,6302,976657,977615,958,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,18 노랑,974899,981201,6302,977647,978084,437,sky,IX,NA,NA,FALSE,No,Yes,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,18 노랑,974899,981201,6302,978105,979417,1312,SUN,NA,NA,NA,FALSE,Yes,no,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,18 노랑,974899,981201,6302,979417,980105,688,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,18 노랑,974899,981201,6302,980105,981147,1042,SUN,NA,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,18 노랑,974899,981201,6302,975306,976700,1394,YELLOW(ISL),OS,NA,,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,661394,662981,1587,'back of one's hand',IX,NA,NA,FALSE,Yes,Yes-body,No,Yes,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,663429,665679,2250,TREE-STRUT,LW,NA,NA,FALSE,Yes,no,No,Yes,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,665712,667662,1950,TREE-STRUT,LW,NA,NA,FALSE,Yes,no,No,Yes,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,667712,671245,3533,STRUT+IX,LW,NA,NA,FALSE,Yes,no,No,Yes,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,671287,671780,493,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,671780,672056,276,forest,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,672056,674123,2067,STRUT+IX,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,674123,675060,937,'back of one's hand',IX,NA,NA,FALSE,yes,Yes-body,No,yes,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,681156,684306,3150,'back of one's hand',IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,684439,684656,217,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,684656,685338,682,door,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,692150,696400,4250,TREE-STRUT,LW,NA,NA,FALSE,Yes,no,No,yes,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,2,5,660908,711364,50456,705948,708571,2623,TREE,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,665983,667246,1263,'back of one's hand',IX,NA,NA,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,670201,672901,2700,STRUT,NA,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,675106,675397,291,'back of one's hand',IX,NA,NA,TRUE,No,Yes-body,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,675397,677326,1929,DARK,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,678700,680900,2200,arm,IX,NA,NA,TRUE,No,Yes-body,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,681405,682476,1071,DARK,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,683604,686090,2486,DARK#FACE,NA,NA,NA,TRUE,No,Yes-body,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,687497,688013,516,wall,IX,NA,NA,TRUE,No,Yes,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,688013,688639,626,SAME,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,688639,689758,1119,wall,IX,NA,NA,TRUE,No,Yes,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,695450,697100,1650,STRUT,NA,NA,NA,TRUE,No,no,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,699556,699884,328,door,IX,NA,NA,TRUE,No,yes,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,699941,703089,3148,DARK,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,703277,704834,1557,FACE#DARK,IX,NA,NA,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_3_Indonesia-India_After_one_week.eaf,25,2,1,5,660908,711364,50456,707316,711087,3771,dark-circles around the eyes,NA,NA,NA,TRUE,No,yes-body,No,No,Yes
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,5,1,1,18,1038200,1041201,3001,1038788,1039375,587,YELLOW(NSL),OS,NA,NSL,FALSE,No,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,5,1,1,18,1038200,1041201,3001,1039848,1041166,1318,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,5,1,2,18,1038200,1041201,3001,1038974,1040342,1368,YELLOW(NSL),OS,NA,NSL,FALSE,No,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,6,1,1,24,549932,552132,2200,549932,552132,2200,FLOWER,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,6,1,2,24,549932,552132,2200,550083,550636,553,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,6,1,2,24,549932,552132,2200,550666,552991,2325,FLOWER,LW,NA,NA,FALSE,Yes,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,11,1,1,6,353890,356592,2702,353906,356494,2588,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,13,1,2,1,24650,26546,1896,23244,24588,1344,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,14,1,1,14,183677,187591,3914,183687,185554,1867,GREEN(ISL),OS,NA,ISL,FALSE,Yes,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,14,1,1,14,183677,187591,3914,186503,187385,882,GREEN(NSL),OS,NA,NSL,FALSE,No,no,Yes,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,14,1,2,14,183677,187591,3914,185464,186809,1345,GREEN(NSL),OS,NA,NSL,TRUE,No,no,No,No,Yes
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,22,2,2,7,527236,528132,896,527251,528147,896,BLACK,OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,23,2,2,1,23234,24896,1662,23244,24588,1344,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,25,2,2,5,386058,398178,12120,386124,387921,1797,'back of one's hand',IX,NA,NA,FALSE,Yes,Yes-body,No,Yes,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,25,2,2,5,386058,398178,12120,388459,390355,1896,DOOR-YESTERDAY-the DOOR,SE,NA,NA,FALSE,Yes,no,No,Yes,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,25,2,2,5,386058,398178,12120,390362,392115,1753,-the DOOR,SE,NA,NA,FALSE,Yes,no,No,Yes,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,25,2,2,5,386058,398178,12120,392136,392837,701,door,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,25,2,2,5,386058,398178,12120,392837,394724,1887,the DOOR,SE,NA,NA,FALSE,Yes,NA,No,Yes,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,25,2,2,5,386058,398178,12120,394733,394922,189,DOOR,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,25,2,2,5,386058,398178,12120,394922,395764,842,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,25,2,1,5,386058,398178,12120,397410,398110,700,watch,IX,NA,NA,TRUE,No,Yes,No,No,Yes
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,27,2,1,24,550090,558164,8074,549932,552132,2200,FLOWER,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,27,2,2,24,550090,558164,8074,550083,550636,553,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,27,2,2,24,550090,558164,8074,550666,552991,2325,FLOWER,LW,NA,NA,FALSE,Yes,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,27,2,2,24,550090,558164,8074,552997,554977,1980,FLOWER,LW,NA,NA,FALSE,Yes,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,27,2,2,24,550090,558164,8074,555000,555493,493,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,27,2,2,24,550090,558164,8074,555514,556574,1060,NO,NA,NA,NA,FALSE,Yes,NA,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,27,2,2,24,550090,558164,8074,556700,558178,1478,FLOWER,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,31,2,1,18,1038977,1040322,1345,1038788,1039375,587,YELLOW(NSL),OS,NA,NSL,FALSE,No,no,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,31,2,1,18,1038977,1040322,1345,1039848,1041166,1318,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,31,2,2,18,1038977,1040322,1345,1038974,1040342,1368,YELLOW(NSL),OS,NA,NSL,FALSE,No,no,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,1,1,1,1,7650,9550,1900,7749,9500,1751,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,3,1,1,12,186952,193848,6896,189514,190175,661,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,3,1,1,12,186952,193848,6896,190175,190372,197,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,3,1,1,12,186952,193848,6896,190372,191272,900,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,3,1,2,12,186952,193848,6896,191452,191715,263,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,3,1,2,12,186952,193848,6896,191771,192892,1121,,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,4,1,1,18,715924,717003,1079,716028,716957,929,YELLOW(ISL),OS,NA,ISL,FALSE,No,Yes-body,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,6,1,1,9,79509,87500,7991,83560,84746,1186,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,6,1,1,9,79509,87500,7991,84863,85672,809,BLACK,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,6,1,1,9,79509,87500,7991,85672,85947,275,BLACK,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,6,1,1,9,79509,87500,7991,85947,86587,640,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,6,1,1,9,79509,87500,7991,86587,87560,973,MIX,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,10,1,1,14,31602,33757,2155,31622,33688,2066,GREEN(ISL),OS,NA,ISL,FALSE,No,No,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,11,1,1,24,473848,478905,5057,473971,476204,2233,FLOWER,LW,NA,NA,FALSE,Yes,No,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,11,1,1,24,473848,478905,5057,478389,478861,472,tongue,IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,11,1,2,24,473848,478905,5057,477096,478346,1250,tongue,IX,NA,NA,TRUE,No,Yes-body,No,No,Yes
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,16,1,1,6,438270,439337,1067,438265,439312,1047,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,24,2,2,1,17191,17631,440,17195,17620,425,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,25,2,1,9,87394,90554,3160,86587,87560,973,MIX,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,25,2,1,9,87394,90554,3160,87757,88303,546,SAME,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,25,2,1,9,87394,90554,3160,88303,90427,2124,SAME,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,29,2,2,7,409899,412481,2582,409950,411065,1115,BLACK,OS,NA,NA,FALSE,No,Yes-body,No,yes,No
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,29,2,1,7,409899,412481,2582,411065,412472,1407,BLACK,OS,NA,NA,TRUE,No,Yes-body,No,No,Yes
-Colour_game_04_1_Indonesia-India_After_three_week.eaf,30,2,2,5,444189,445975,1786,444181,445956,1775,'back of one's hand',IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,19,2,1,9,58193,60849,2656,58993,59849,856,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,19,2,2,9,58193,60849,2656,58993,59849,856,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,20,2,1,5,303330,307021,3691,303371,305777,2406,'back of one's hand',IX,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,20,2,1,5,303330,307021,3691,305777,306995,1218,'back of one's hand',IX,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,20,2,2,5,303330,307021,3691,303371,305777,2406,'back of one's hand',IX,NA,NA,FALSE,Yes,Yes-body,No,Yes,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,20,2,2,5,303330,307021,3691,305777,306995,1218,'back of one's hand',IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,25,2,1,8,463192,466569,3377,463192,466569,3377,1-1의 그림에서 옷의 색깔. 쥐색,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,25,2,2,8,463192,466569,3377,463192,466569,3377,1-1의 그림에서 옷의 색깔. 쥐색,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,26,2,1,7,382072,383635,1563,382094,383605,1511,BLACK,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,26,2,2,7,382072,383635,1563,382094,383605,1511,BLACK,OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,30,2,1,1,12424,15337,2913,12426,15311,2885,RED(mouth),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,30,2,2,1,12424,15337,2913,12426,15311,2885,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,32,2,1,18,622190,627254,5064,622331,622899,568,YELLOW(ISL),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,32,2,1,18,622190,627254,5064,623935,626201,2266,BEFORE-ROAD,SE,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,32,2,1,18,622190,627254,5064,626201,627159,958,UNDERSTAND,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,32,2,2,18,622190,627254,5064,622331,622899,568,YELLOW(ISL),OS,NA,ISL,FALSE,yes,Yes,No,yes,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,32,2,2,18,622190,627254,5064,623935,626201,2266,BEFORE-ROAD,SE,NA,,FALSE,Yes,No,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,32,2,2,18,622190,627254,5064,626201,627159,958,UNDERSTAND,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,37,2,1,6,298275,299235,960,298275,299215,940,WHITE,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,37,2,2,6,298275,299235,960,298275,299215,940,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,6,1,2,14,631091,631981,890,631215,631882,667,GREEN(ISL),OS,NA,JSL,TRUE,No,no,No,No,Yes
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,15,1,1,7,141698,143303,1605,140408,142580,2172,BLACK,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,15,1,2,7,141698,143303,1605,140408,142580,2172,BLACK,OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,21,2,1,18,283466,284982,1516,283542,284239,697,YELLOW(JSL),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,21,2,1,18,283466,284982,1516,284239,284634,395,GOOD,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,21,2,1,18,283466,284982,1516,284634,284942,308,CORRECT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,21,2,2,18,283466,284982,1516,283542,284239,697,YELLOW(JSL),OS,NA,JSL,FALSE,No,yes,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,21,2,2,18,283466,284982,1516,284239,284634,395,GOOD,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,21,2,2,18,283466,284982,1516,284634,284942,308,CORRECT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,23,2,1,24,29171,31105,1934,29171,31105,1934,FLOWER,LW,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,23,2,2,24,29171,31105,1934,29171,31105,1934,FLOWER,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,26,2,1,3,380636,383203,2567,380722,382972,2250,RED(mouth),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,26,2,2,3,380636,383203,2567,380722,382972,2250,RED(mouth),OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,27,2,1,6,69737,70390,653,69756,70355,599,WHITE,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,27,2,2,6,69737,70390,653,69756,70355,599,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,31,2,1,7,140423,142624,2201,140408,142580,2172,BLACK,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,31,2,2,7,140423,142624,2201,140408,142580,2172,BLACK,OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,32,2,1,14,642290,642645,355,642325,642626,301,GREEN(ISL),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,32,2,2,14,642290,642645,355,642325,642626,301,GREEN(ISL),OS,NA,ISL,FALSE,No,No,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,18,2,1,14,649540,649995,455,649534,649988,454,GREEN(ISL),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,18,2,1,14,649540,649995,455,649988,650546,558,CORRECT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,18,2,2,14,649540,649995,455,649534,649988,454,GREEN(ISL),OS,NA,ISL,FALSE,No,No,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,18,2,2,14,649540,649995,455,649988,650546,558,CORRECT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,20,2,1,3,495714,497928,2214,495749,496464,715,RED(mouth),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,20,2,1,3,495714,497928,2214,496571,497356,785,RED(frontlet) ,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,20,2,1,3,495714,497928,2214,497356,497713,357,RED(mouth),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,20,2,2,3,495714,497928,2214,495749,496464,715,RED(mouth),OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,20,2,2,3,495714,497928,2214,496571,497356,785,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,20,2,2,3,495714,497928,2214,497356,497713,357,RED(mouth),OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,1,18,313440,319471,6031,313462,314833,1371,YELLOW(ISL),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,1,18,313440,319471,6031,314833,316505,1672,YELLOW(ISL),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,1,18,313440,319471,6031,316627,316755,128,YOU,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,1,18,313440,319471,6031,316764,317004,240,NOSE-PENDANT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,1,18,313440,319471,6031,317016,317100,84,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,1,18,313440,319471,6031,317108,317298,190,YOU,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,1,18,313440,319471,6031,317301,317931,630,NOSE-PENDANT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,1,18,313440,319471,6031,318181,318469,288,SIGN,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,1,18,313440,319471,6031,318469,319406,937,YELLOW(ISL),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,2,18,313440,319471,6031,313462,314833,1371,YELLOW(ISL),OS,NA,ISL,FALSE,Yes,Yes,No,Yes,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,2,18,313440,319471,6031,314833,316505,1672,YELLOW(ISL),OS,NA,ISL,FALSE,Yes,Yes,No,Yes,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,2,18,313440,319471,6031,316627,316755,128,YOU,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,2,18,313440,319471,6031,316764,317004,240,NOSE-PENDANT,NA,NA,,FALSE,No,Yes,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,2,18,313440,319471,6031,317016,317100,84,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,2,18,313440,319471,6031,317108,317298,190,YOU,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,2,18,313440,319471,6031,317301,317931,630,NOSE-PENDANT,NA,NA,NA,FALSE,yes,Yes,No,yes,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,2,18,313440,319471,6031,318181,318469,288,SIGN,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,2,18,313440,319471,6031,318469,319406,937,YELLOW(ISL),OS,NA,ISL,FALSE,No,yes-body,yes,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,23,2,1,6,383513,383797,284,383540,383770,230,WHITE,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,23,2,2,6,383513,383797,284,383540,383770,230,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,27,2,1,7,48700,49728,1028,48763,49691,928,BLACK,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,27,2,2,7,48700,49728,1028,48738,49789,1051,black1-3수형으로 BLACK1-4수동,NA,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,27,2,2,7,48700,49728,1028,48763,49691,928,BLACK,OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,33,2,1,24,68265,69368,1103,68265,69368,1103,FLOWER,LW,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_2_Nepal-India_After_three_weeks.eaf,33,2,2,24,68265,69368,1103,68265,69368,1103,FLOWER,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,12,1,2,18,248801,263976,15175,258254,259500,1246,YELLOW(JSL),OS,NA,JSL,TRUE,No,yes-body,No,No,Yes
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,13,1,2,14,419029,422445,3416,420465,421190,725,GREEN(ISL),OS,NA,,TRUE,No,NA,No,No,Yes
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,18,1,1,5 밤,407615,409063,1448,407623,407962,339,'back of one's hand',IX,NA,NA,FALSE,No,no,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,18,1,1,5 밤,407615,409063,1448,407975,409273,1298,watch,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,18,1,2,5 밤,407615,409063,1448,407623,407962,339,'back of one's hand',IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,18,1,2,5 밤,407615,409063,1448,407975,409273,1298,watch,IX,NA,,FALSE,No,yes,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,19,2,1,6,716427,718971,2544,716427,718971,2544,WHITE,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,19,2,2,6,716427,718971,2544,716427,718971,2544,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,21,2,1,20,436985,440985,4000,437108,438389,1281,RED(mouth),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,21,2,1,20,436985,440985,4000,440151,440467,316,RED(mouth),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,21,2,2,20,436985,440985,4000,437108,438389,1281,RED(mouth),OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,21,2,2,20,436985,440985,4000,440151,440467,316,RED(mouth),OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,23,2,1,1  빨강,204668,206223,1555,204688,205125,437,RED(mouth),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,23,2,1,1  빨강,204668,206223,1555,205205,206195,990,RED(frontlet) ,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,23,2,2,1  빨강,204668,206223,1555,204688,205125,437,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,23,2,2,1  빨강,204668,206223,1555,205205,206195,990,RED(frontlet) ,OS,NA,NA,FALSE,No,no,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,25,2,1,7,308945,309945,1000,308960,309841,881,BLACK,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,25,2,2,7,308945,309945,1000,308960,309841,881,BLACK,OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,26,2,1,24  분홍,494009,497580,3571,494009,497580,3571,FLOWER,LW,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,26,2,2,24  분홍,494009,497580,3571,494009,497580,3571,FLOWER,LW,NA,,FALSE,No,no,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,27,2,1,12,3813,7813,4000,6354,6473,119,?,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,27,2,1,12,3813,7813,4000,7180,7602,422,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,27,2,2,12,3813,7813,4000,6354,6473,119,?,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,27,2,2,12,3813,7813,4000,7180,7602,422,SAME,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,29,2,1,7,268764,270662,1898,268700,270785,2085,BLACK,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,29,2,2,7,268764,270662,1898,268700,270785,2085,BLACK,OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,33,2,1,5,407623,409285,1662,407623,407962,339,'back of one's hand',IX,NA,NA,FALSE,No,no,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,33,2,1,5,407623,409285,1662,407975,409273,1298,watch,IX,NA,NA,FALSE,No,yes,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,33,2,2,5,407623,409285,1662,407623,407962,339,'back of one's hand',IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,33,2,2,5,407623,409285,1662,407975,409273,1298,watch,IX,NA,,FALSE,No,yes,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,1,21,155916,170338,14422,160952,162237,1285,ORANGE?,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,1,21,155916,170338,14422,162394,163965,1571,PEEL,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,1,21,155916,170338,14422,164086,164429,343,ORANGE?,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,1,21,155916,170338,14422,165047,165602,555,BRIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,1,21,155916,170338,14422,166042,166992,950,DARK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,1,21,155916,170338,14422,167562,168037,475,BRIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,1,21,155916,170338,14422,168277,169123,846,DARK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,2,21,155916,170338,14422,160952,162237,1285,ORANGE?,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,2,21,155916,170338,14422,162394,163965,1571,PEEL,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,2,21,155916,170338,14422,164086,164429,343,ORANGE?,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,2,21,155916,170338,14422,165047,165602,555,BRIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,2,21,155916,170338,14422,166042,166992,950,DARK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,2,21,155916,170338,14422,167562,168037,475,BRIGHT,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,2,21,155916,170338,14422,168277,169123,846,DARK,NA,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,4,1,1,5,380834,381814,980,379677,380973,1296,'back of one's hand',IX,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,4,1,2,5,380834,381814,980,379677,380973,1296,'back of one's hand',IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,18,1,2,14,431003,435096,4093,432117,432848,731,GREEN(ISL),OS,NA,NA,TRUE,No,NA,No,No,Yes
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,21,2,1,7,248945,249485,540,248974,249432,458,BLACK,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,21,2,2,7,248945,249485,540,248974,249432,458,BLACK,OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,22,2,1,5 밤,379651,380973,1322,379677,380973,1296,'back of one's hand',IX,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,22,2,2,5 밤,379651,380973,1322,379677,380973,1296,'back of one's hand',IX,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,24,2,1,6,597180,597847,667,597180,597847,667,WHITE,OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,24,2,2,6,597180,597847,667,597180,597847,667,WHITE,OS,NA,NA,FALSE,No,yes-body,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,26,2,1,1  빨강,215490,216567,1077,215500,216560,1060,RED(mouth),OS,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,26,2,2,1  빨강,215490,216567,1077,215500,216560,1060,RED(mouth),OS,NA,NA,FALSE,No,Yes-body,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,32,2,1,24  분홍,413927,417578,3651,413959,414445,486,FLOWER,LW,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,32,2,1,24  분홍,413927,417578,3651,414958,415399,441,tongue,IX,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,32,2,1,24  분홍,413927,417578,3651,416595,417567,972,FLOWER,LW,NA,NA,FALSE,No,NA,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,32,2,2,24  분홍,413927,417578,3651,413959,414445,486,FLOWER,LW,NA,NA,FALSE,No,no,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,32,2,2,24  분홍,413927,417578,3651,414958,415399,441,tongue,IX,NA,NA,FALSE,yes,Yes-body,No,No,No
-Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,32,2,2,24  분홍,413927,417578,3651,416595,417567,972,FLOWER,LW,NA,NA,FALSE,Yes,no,No,No,No
+filename,trialID,director,speaker,trial_value,trial_start,trial_end,trial_length,sign_start,sign_end,sign_length,sign_value,sign_notes,iconic,signOrigin,T0Check,CandidateUnderstanding,TryMarked,Indexicality,Teach,T_minus_1,T0
+Colour_game_01_1_Jordan-India_After_one_week.eaf,1,1,1,20,830641,835355,4714,830682,831412,730,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,1,1,1,20,830641,835355,4714,833354,834225,871,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,1,1,2,20,830641,835355,4714,832171,833238,1067,RED(mouth),OS,NA,NA,TRUE,NA,No,yes-body,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,1,1,2,20,830641,835355,4714,833302,835341,2039,RED(frontlet) ,OS,NA,NA,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,4,1,1,6,70142,72995,2853,70229,71334,1105,WHITE,OS,NA,,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,4,1,1,6,70142,72995,2853,71334,72225,891,WHITE,OS,NA,,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,4,1,2,6,70142,72995,2853,71350,72846,1496,WHITE,OS,NA,NA,TRUE,NA,No,yes-body,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,5,1,1,16,800078,817798,17720,800078,817798,17720,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,6,1,1,22,1790430,1889866,99436,1808252,1823184,14932,3가지가 있어 맞지?,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,6,1,1,22,1790430,1889866,99436,1823184,1828435,5251,첫째는 밝은 것,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,6,1,1,22,1790430,1889866,99436,1828584,1833778,5194,두번째 약간 어둡게,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,6,1,1,22,1790430,1889866,99436,1833778,1839923,6145,세번째는 팔과 같아,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,6,1,1,22,1790430,1889866,99436,1839923,1845176,5253,세번째야,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,6,1,1,22,1790430,1889866,99436,1884505,1890038,5533,그럼 첫째 딱맞은 것 2째 약간 어둡게 그치? 그거야!,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,6,1,2,22,1790430,1889866,99436,1873921,1884505,10584,3개가 아니라 2개 있어,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,7,1,1,6,153552,154722,1170,153675,154541,866,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,9,1,1,14,1741805,1744745,2940,1741962,1743205,1243,PLANTS,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,9,1,1,14,1741805,1744745,2940,1743205,1744685,1480,forest,IX,NA,NA,FALSE,No,No,Yes,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,10,1,1,5,2025520,2027634,2114,2025560,2026980,1420,arm,IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,1,21,1341127,1471692,130565,1362558,1381209,18651,ORANGE PEEL,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,1,21,1341127,1471692,130565,1386061,1396100,10039,CUTTING(ACTION) ORANGE,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,1,21,1341127,1471692,130565,1409394,1413679,4285,THAT IS ORANGE PEEL SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,1,21,1341127,1471692,130565,1428042,1438000,9958,첫번째 밝은 것 두번째 어두운 것인데 두번째야!,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,1,21,1341127,1471692,130565,1442261,1446219,3958,아까 말했듯이 오렌지색!,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,1,21,1341127,1471692,130565,1466700,1469966,3266,두번째야!,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,2,21,1341127,1471692,130565,1379998,1384148,4150,ACTION(눈) WITH ANGERINE ,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,2,21,1341127,1471692,130565,1398398,1404200,5802,PEEL ORANGE^냄새맡게 되는 특성,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,2,21,1341127,1471692,130565,1404399,1408949,4550,PEEL ORANGE EAT SEED  THROW-OUT(씨앗먹다가 버리다) ,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,2,21,1341127,1471692,130565,1419165,1429087,9922,PEEL COLOR TWO,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,2,21,1341127,1471692,130565,1460918,1465200,4282,첫번째는 ACTION(눈으로 귤을 말하면서 밝고),NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,11,1,2,21,1341127,1471692,130565,1467500,1470400,2900,두번째로 어두운 것?,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,14,1,1,7,9990,20623,10633,10050,10875,825,BLACK,OS,NA,NA,FALSE,No,Yes,Yes-body,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,14,1,1,7,9990,20623,10633,10955,12325,1370,BLACK(JSL),OS,NA,NA,FALSE,No,No,No,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,14,1,1,7,9990,20623,10633,13967,15150,1183,DARK-NIGHT,NA,NA,NA,FALSE,No,No,No,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,14,1,1,7,9990,20623,10633,16129,17673,1544,NIGHT,NA,NA,NA,FALSE,No,No,No,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,14,1,1,7,9990,20623,10633,17690,19207,1517,DARK-NIGHT,NA,NA,NA,FALSE,No,Yes,No,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,14,1,1,7,9990,20623,10633,19552,20529,977,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,14,1,2,7,9990,20623,10633,12202,12932,730,BLACK,OS,NA,NA,TRUE,NA,No,Yes-body,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,14,1,2,7,9990,20623,10633,12932,15022,2090,DARK,NA,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,14,1,2,7,9990,20623,10633,16722,18216,1494,NIGHT,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,204968,205572,604,partition,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,205580,206455,875,RED(mouth),OS,NA,,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,206523,207190,667,SAME?,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,208752,209606,854,SIGNING,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,209606,210609,1003,COLOR,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,210913,212216,1303,JORDAN,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,212216,212696,480,INDIA,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,212696,212902,206,ME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,212902,213228,326,JORDAN,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,213228,215141,1913,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,218199,218703,504,FLOWER+NOT,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,219043,220091,1048,PINK(JSL),OS,NA,JSL,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,166720,168620,1900,tongue,IX,NA,NA,FALSE,No,Yes,Yes-body,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,168815,169241,426,FLOWER,LW,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,169451,170393,942,tongue,IX,NA,NA,FALSE,No,yes,Yes-body,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,170393,170395,2,TONGUE,IX,NA,NA,FALSE,No,yes,NA,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,170558,171865,1307,RED(mouth),OS,NA,,FALSE,No,Yes,Yes-body,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,171932,172423,491,LIPSTICK,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,172423,174786,2363,RED(mouth) + NOT+different,OS,NA,,FALSE,No,Yes,Yes-body,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,174842,176859,2017,IX:tongue +IX:lip+Different,NA,NA,NA,FALSE,No,Yes,Yes-body,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,176900,177864,964,IX:tongue+IX:lip,NA,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,179253,179516,263,tongue,IX,NA,,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,184604,185747,1143,lip,IX,NA,NA,FALSE,No,yes,Yes-body,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,185747,186451,704,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,186457,186988,531,LIPSTICK,NA,NA,NA,FALSE,No,No,NA,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,186992,187171,179,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,187171,187381,210,SIGNING,NA,NA,NA,FALSE,No,No,NA,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,187640,187991,351,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,188132,188294,162,SIGINING,NA,NA,NA,FALSE,No,No,NA,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,188423,189127,704,tongue,IX,NA,NA,FALSE,No,yes,Yes-body,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,189248,189581,333,SIGNING,NA,NA,NA,FALSE,No,No,NA,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,189621,190294,673,tongue,IX,NA,NA,FALSE,No,No,Yes-body,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,190443,190891,448,?,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,190891,191409,518,tongue,IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,192461,195418,2957,FLOWER,LW,NA,NA,FALSE,No,yes,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,195537,197105,1568,tongue,IX,NA,NA,FALSE,No,No,Yes-body,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,198794,201039,2245,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,201693,204125,2432,OS:RED(mouth)+IX:Tongue+diffferent,NA,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,204125,204129,4,DIFFERENT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,207768,208322,554,NOT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,208344,209308,964,DIFFERENT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,214720,215049,329,ME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,215049,217013,1964,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,221018,221171,153,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,221530,222258,728,tongue,IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,222354,222676,322,FLOWER,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,222798,223489,691,tongue,IX,NA,,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,224179,224804,625,FLOWER,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,2,24,166464,226582,60118,224958,225280,322,YES,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,180244,180729,485,SAME,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,180783,183480,2697,FLOWER,LW,NA,NA,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,193740,194093,353,FLOWER,LW,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,194135,195214,1079,SIGN,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,196930,199185,2255,RED(mouth),OS,NA,NA,TRUE,NA,No,yes-body,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,200292,201626,1334,RED(mouth),OS,NA,NA,TRUE,NA,No,yes-body,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,207900,216500,8600,,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,216864,220257,3393,,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,220257,223507,3250,,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,17,2,1,24,166464,226582,60118,223507,225034,1527,,NA,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,18,2,2,6,154909,157137,2228,155229,156986,1757,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,12,1474596,1551896,77300,1474396,1485496,11100,하늘과 같은데.. 바다보다 더 밝은데 그건 하얀색을 더해서 나온 색,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,12,1474596,1551896,77300,1486264,1493451,7187,POINTING(하늘),NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,12,1474596,1551896,77300,1527000,1542900,15900,3번째중에서 1째로 하늘 하얀 같은 색,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,2,12,1474596,1551896,77300,1549500,1551553,2053,YES!,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,12,1474596,1551896,77300,1490220,1496688,6468,SKY+SEA?,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,12,1474596,1551896,77300,1497500,1504000,6500,첫째로 하늘 둘째 바다 셋째 어두운 것으로 셋째? ,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,19,2,1,12,1474596,1551896,77300,1544628,1551250,6622,하얀색이라고 하지말아. 그냥 하늘색이지?,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,20,2,2,3,1134102,1139742,5640,1136146,1136406,260,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,20,2,2,3,1134102,1139742,5640,1136406,1136817,411,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1270596,1271067,471,YELLOW(ISL),OS,NA,ISL,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1273112,1273552,440,YELLOW(ISL),OS,NA,ISL,FALSE,No,yes,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1273735,1274894,1159,LEMON,LW,NA,NA,FALSE,No,yes,NA,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1276600,1277064,464,L,fs,NA,NA,FALSE,No,No,NA,No,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1277624,1277846,222,SIGN,NA,NA,NA,FALSE,No,No,NA,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1277846,1278090,244,LEMON,LW,NA,NA,FALSE,No,No,NA,Yes,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1278919,1279471,552,SUN,LW,NA,NA,FALSE,No,Yes,NA,Yes,yes,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1279578,1279885,307,DIFFERENT,NA,NA,NA,FALSE,No,No,NA,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1279911,1281176,1265,LEMON,LW,NA,NA,FALSE,No,No,NA,Yes,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1281353,1281775,422,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1283465,1285093,1628,floor,IX,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,2,18 ,1270518,1285676,15158,1285308,1285536,228,BRIGHT1,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,1,18 ,1270518,1285676,15158,1282456,1283005,549,EAT,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,1,18 ,1270518,1285676,15158,1283005,1283643,638,LEMON,LW,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,21,2,1,18 ,1270518,1285676,15158,1285297,1285626,329,BRIGHT1,NA,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,22,2,2,22,1892957,1897298,4341,1892957,1897298,4341,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,25,2,2,9,849751,1022739,172988,849751,1022739,172988,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,27,2,2,14,1766948,1767375,427,1766969,1767325,356,GREEN(ISL),OS,NA,ISL,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,29,2,2,6,84450,86621,2171,84577,86450,1873,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,30,2,2,23,535400,797560,262160,535400,797560,262160,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,31,2,2,8,1646430,1691859,45429,1648682,1652244,3562,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,31,2,2,8,1646430,1691859,45429,1652244,1659400,7156,TREE DARK,NA,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,31,2,2,8,1646430,1691859,45429,1661851,1666833,4982,BOOGER코딱지와 같은 어두운 색,NA,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,31,2,2,8,1646430,1691859,45429,1676950,1680500,3550,arm,IX,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,31,2,1,8,1646430,1691859,45429,1658488,1661851,3363,BLACKBOARD,NA,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,31,2,1,8,1646430,1691859,45429,1666242,1668765,2523,BOOGER,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,34,2,2,5,2028919,2038869,9950,2029050,2029812,762,arm,IX,NA,NA,FALSE,No,yes,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,34,2,2,5,2028919,2038869,9950,2029812,2031141,1329,DARK,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,34,2,2,5,2028919,2038869,9950,2031152,2031709,557,BLACK,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,34,2,2,5,2028919,2038869,9950,2031983,2034400,2417,DARK,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,34,2,2,5,2028919,2038869,9950,2035000,2036000,1000,DARK,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,34,2,1,5,2028919,2038869,9950,2034381,2035849,1468,DARK,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,34,2,1,5,2028919,2038869,9950,2036509,2038636,2127,BOOGER,OS,NA,NA,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_1_Jordan-India_After_one_week.eaf,35,2,2,7,58543,62497,3954,58518,60138,1620,BLACK,OS,NA,NA,FALSE,No,yes,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,35,2,2,7,58543,62497,3954,60140,61048,908,HAIR,NA,NA,,FALSE,No,yes,Yes-body,No,No,No
+Colour_game_01_1_Jordan-India_After_one_week.eaf,35,2,2,7,58543,62497,3954,61134,62414,1280,BLACK,OS,NA,NA,FALSE,No,,Yes-body,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,1,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,349961,350966,1005,GREEN(NSL),OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,1,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,352667,353064,397,TREE,NA,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,1,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,353064,353860,796,LEAF,NA,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,1,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,356362,361462,5100,DARK1#LITTLE,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,1,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,361462,362084,622,BRIGHT1,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,1,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,362084,362799,715,NO,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,1,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,362799,364019,1220,DARK1,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,1,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,367998,369446,1448,wall,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,1,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,369446,370672,1226,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,1,1,1,16   몰래 16라고 알려줌 ㅋ,346594,397363,50769,370672,377203,6531,SAME2,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,2,1,1,5,1019932,1024966,5034,1020009,1022346,2337,'back of one's hand',IX,NA,NA,FALSE,No,Yes,Yes-body,No,Yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,2,1,1,5,1019932,1024966,5034,1023532,1023962,430,'back of one's hand',IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,2,1,1,5,1019932,1024966,5034,1024014,1024864,850,DARK,NA,NA,NA,FALSE,No,Yes,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,2,1,2,5,1019932,1024966,5034,1021608,1022810,1202,'back of one's hand',IX,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,3,1,1,14,857691,861754,4063,857791,861448,3657,GREEN(NSL),OS,NA,NSL,FALSE,No,Yes,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,3,1,2,14,857691,861754,4063,858490,860069,1579,GREEN(NSL),OS,NA,NA,TRUE,NA,No,no,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,3,1,2,14,857691,861754,4063,860069,860783,714,PLANTS,LW,NA,NA,TRUE,NA,No,no,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,3,1,2,14,857691,861754,4063,860826,861726,900,GREEN(NSL),OS,NA,NA,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,7,1,1,7,17308,19675,2367,17298,19655,2357,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,8,1,1,18 노랑,556104,572304,16200,556304,559204,2900,DRINK,LW,NA,NA,FALSE,No,Yes,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,8,1,1,18 노랑,556104,572304,16200,560100,561737,1637,ORANGE?,LW,NA,,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,8,1,1,18 노랑,556104,572304,16200,561737,563637,1900,NO,NA,NA,NA,FALSE,No,No,NA,No,Yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,8,1,1,18 노랑,556104,572304,16200,563637,564662,1025,BRIGHT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,8,1,1,18 노랑,556104,572304,16200,564662,566549,1887,SAME,NA,NA,NA,FALSE,No,Yes,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,8,1,1,18 노랑,556104,572304,16200,570508,571058,550,YES,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,8,1,2,18 노랑,556104,572304,16200,561544,562464,920,SALTY,LW,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,8,1,2,18 노랑,556104,572304,16200,565255,566521,1266,BRIGHT,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,8,1,2,18 노랑,556104,572304,16200,569783,571133,1350,SUN,LW,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,10,1,1,20,486230,488287,2057,486259,488187,1928,RED(frontlet) ,OS,NA,NSL,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,11,1,1,6,478649,481857,3208,479235,479657,422,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,1,18 노랑,408270,467356,59086,408599,412185,3586,ORANGE JUICE^DRINK,SE,NA,NA,FALSE,No,Yes,no,No,YES,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,1,18 노랑,408270,467356,59086,412443,415062,2619,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,1,18 노랑,408270,467356,59086,415062,421395,6333,every day^DRINK,NA,NA,NA,FALSE,No,No,NA,No,yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,1,18 노랑,408270,467356,59086,421613,425613,4000,BRIGHT,NA,NA,NA,FALSE,No,Yes,no,No,Yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,1,18 노랑,408270,467356,59086,425613,426200,587,DARK,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,1,18 노랑,408270,467356,59086,437454,439000,1546,YELLOW(NSL),OS,NA,NSL,FALSE,No,Yes,no,No,Yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,1,18 노랑,408270,467356,59086,444820,446580,1760,NO,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,1,18 노랑,408270,467356,59086,451791,454960,3169,IX#something,NA,NA,NA,FALSE,No,yes,NA,No,YES,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,1,18 노랑,408270,467356,59086,455072,457312,2240,DARK,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,1,18 노랑,408270,467356,59086,461510,464059,2549,PAINT THE WALL,LW,NA,NA,FALSE,No,Yes,NA,No,Yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,1,18 노랑,408270,467356,59086,464063,465763,1700,YELLOW(NSL),OS,NA,NSL,FALSE,No,yes,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,2,18 노랑,408270,467356,59086,413622,415717,2095,ORANGE JUICE^DRINK,SE,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,2,18 노랑,408270,467356,59086,444100,445120,1020,RED(mouth),OS,NA,NA,TRUE,Yes,No,yes-body,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,2,18 노랑,408270,467356,59086,451126,452013,887,BRIGHT,NA,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,13,1,2,18 노랑,408270,467356,59086,457107,458361,1254,DARK,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,69666,72593,2927,YELLOW(NSL),OS,NA,NSL,FALSE,No,yes,no,No,yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,80050,81950,1900,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,83796,88911,5115,EAT^PEEL,LW,NA,NA,FALSE,No,Yes,NA,No,YES,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,88950,92700,3750,YELLOW(NSL),OS,NA,NSL,FALSE,No,yes,no,No,yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,92817,93670,853,GREEN(ISL),OS,NA,ISL,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,93670,94316,646,GREEN(NSL),OS,NA,NSL,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,94336,94977,641,NO,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,94977,95603,626,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,96075,97325,1250,YELLOW(NSL),OS,NA,NSL,FALSE,No,Yes,no,No,yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,105619,106092,473,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,107454,111125,3671,EAT,SE,NA,NA,FALSE,No,Yes,NA,No,YES,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,114517,117836,3319,EAT everyday,SE,NA,NA,FALSE,No,Yes,NA,No,Yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,118791,119255,464,RED(mouth),OS,NA,NA,FALSE,No,yes,yes-body,No,yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,125316,127399,2083,NO,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,132227,132861,634,GREEN(NSL),OS,NA,NSL,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,132902,133269,367,NO,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,133269,136094,2825,ring,IX,NA,,FALSE,No,No,yes,No,yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,143919,146719,2800,NO,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,156619,159419,2800,YELLOW(NSL),OS,NA,NSL,FALSE,No,No,no,No,yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,1,18 노랑,69619,192119,122500,177636,190466,12830,EAT#FOOD,NA,NA,NA,FALSE,No,No,NA,No,Yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,74830,75070,240,forest,IX,NA,NA,TRUE,NA,No,yes,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,75110,76330,1220,PLANTS,LW,NA,NA,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,76700,77199,499,GREEN(NSL),OS,NA,NSL,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,77199,77932,733,NO?,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,85700,90600,4900,EAT^PEEL,LW,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,91500,94800,3300,GREEN(ISL),OS,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,106941,108226,1285,RED(frontlet) ,OS,NA,NA,TRUE,NA,No,no,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,108298,110476,2178,EAT,SE,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,115968,118396,2428,EAT everyday,SE,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,119709,121361,1652,RED(mouth),OS,NA,NA,TRUE,NA,No,yes-body,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,124000,125600,1600,RED(frontlet) ,OS,NA,NA,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,129365,132149,2784,GREEN(ISL),OS,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,136184,139962,3778,EAT,SE,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,140069,144169,4100,LEMON,LW,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,148455,149100,645,forest,IX,NA,NA,TRUE,NA,No,yes,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,149100,154267,5167,PLANTS,LW,NA,NA,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,155193,156553,1360,GREEN(ISL),OS,NA,NA,TRUE,NA,No,no,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,14,1,2,18 노랑,69619,192119,122500,159800,190400,30600,Do not understand,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,17,2,2,6   하얀,472492,476850,4358,472489,476846,4357,WHITE,OS,NA,,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,17,2,1,6   하얀,472492,476850,4358,474870,476099,1229,WHITE,OS,NA,,TRUE,NA,No,yes-body,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,19,2,2,14,865233,867110,1877,865223,867044,1821,GREEN(NSL),OS,NA,NSL,FALSE,No,No,No,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,21,2,2,15,992613,1005114,12501,996058,996650,592,GREEN2(NSL),NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,21,2,2,15,992613,1005114,12501,996650,997232,582,DARK1#LITTLE,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,22,2,2,7,11333,12942,1609,11345,12932,1587,BLACK,OS,NA,NA,FALSE,No,yes,Yes-body,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,23,2,2,24,48566,62810,14244,48582,50805,2223,FLOWER,LW,NA,NA,FALSE,No,Yes,no,No,Yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,23,2,2,24,48566,62810,14244,54580,55877,1297,BRIGHT1,NA,NA,NA,FALSE,No,yes,NA,No,yes,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,23,2,2,24,48566,62810,14244,56998,57636,638,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,23,2,2,24,48566,62810,14244,57656,58160,504,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,23,2,2,24,48566,62810,14244,58496,59947,1451,RED(frontlet) ,OS,NA,NA,FALSE,No,Yes,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,23,2,2,24,48566,62810,14244,59970,60470,500,DIFFERENT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,23,2,2,24,48566,62810,14244,60535,62535,2000,BIGHT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,23,2,1,24,48566,62810,14244,52206,52731,525,RED(frontlet) ,OS,NA,NA,TRUE,NA,No,no,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,23,2,1,24,48566,62810,14244,52756,53856,1100,NO,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,23,2,1,24,48566,62810,14244,53856,55181,1325,DARK,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,25,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,203316,204722,1406,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,25,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,204722,206118,1396,SEA,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,25,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,206118,206502,384,COMBINE,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,25,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,206502,207786,1284,MIX,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,25,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,207786,208937,1151,DARK1#LITTLE,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,25,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,209989,210878,889,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,25,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,210878,213062,2184,SEA,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,25,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,213062,214238,1176,WATER,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,25,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,214238,214954,716,COMBINE,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,25,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,214954,215816,862,MIX,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf,25,2,2,23  (23이라고 알려줌 ㅋㅋ),192543,297501,104958,215816,217227,1411,DARK1#LITTLE,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,10,1,1,18,118731,130558,11827,118812,121360,2548,YELLOW(ISL),OS,NA,ISL,FALSE,No,Yes,Yes-body,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,10,1,1,18,118731,130558,11827,121360,123365,2005,BRIGHT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,10,1,1,18,118731,130558,11827,125081,125935,854,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,10,1,1,18,118731,130558,11827,125935,128456,2521,LW:CAP(POLICE)'S LW:BOLD PATTRN OF DRESS,NA,NA,NA,FALSE,No,Yes,NA,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,10,1,1,18,118731,130558,11827,128456,129722,1266,DRIVE,LW,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,10,1,1,18,118731,130558,11827,129722,130498,776,LIGHT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,10,1,2,18,118731,130558,11827,122847,123539,692,BRIGHT,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,17,1,1,14,760874,763425,2551,761130,761882,752,PLANTS,LW,NA,,FALSE,No,No,No,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,17,1,1,14,760874,763425,2551,761882,763355,1473,GREEN(ISL),OS,NA,ISL,FALSE,No,No,No,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,20,2,2,6,1224363,1228575,4212,1224432,1228485,4053,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,2,5,588402,608442,20040,588690,590315,1625,arm,IX,NA,NA,FALSE,No,Yes,Yes-body,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,2,5,588402,608442,20040,590527,592775,2248,dark,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,2,5,588402,608442,20040,593042,595831,2789,arm,IX,NA,NA,FALSE,No,Yes,Yes-body,No,yes,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,2,5,588402,608442,20040,596300,597040,740,face#dark,NA,NA,NA,FALSE,No,Yes,,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,2,5,588402,608442,20040,601796,602278,482,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,2,5,588402,608442,20040,602278,603477,1199,SIWASH,LW,NA,NA,FALSE,No,Yes,NA,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,2,5,588402,608442,20040,603477,604626,1149,face#dark,IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,1,5,588402,608442,20040,596921,597658,737,arm,IX,NA,NA,TRUE,NA,No,Yes-body,No,No,Yes
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,1,5,588402,608442,20040,597658,598973,1315,DARK,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,21,2,1,5,588402,608442,20040,606907,608335,1428,watch,IX,NA,NA,TRUE,Yes,No,yes,No,No,Yes
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,23,2,2,24,502357,515964,13607,502491,503125,634,CLOWN,LW,NA,NA,FALSE,No,yes,no,No,yes,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,23,2,2,24,502357,515964,13607,503125,504660,1535,clown#face,IX,NA,NA,FALSE,No,yes,yes,No,yes,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,23,2,2,24,502357,515964,13607,504731,508817,4086,CLOWN,LW,NA,NA,FALSE,No,Yes,no,No,yes,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,23,2,2,24,502357,515964,13607,510012,511328,1316,RED(mouth),OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,23,2,2,24,502357,515964,13607,511407,513776,2369,BRIGHT,NA,NA,NA,FALSE,No,Yes,NA,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,23,2,1,24,502357,515964,13607,507881,509591,1710,RED(mouth),OS,NA,NA,TRUE,Yes,No,yes-body,No,No,Yes
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,23,2,1,24,502357,515964,13607,513403,513847,444,SAME,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,23,2,1,24,502357,515964,13607,513872,516139,2267,FLOWER,LW,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,25,2,2,1,135972,138137,2165,136420,137880,1460,BLOOD,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,28,2,2,7,161403,165995,4592,161403,162934,1531,BLACK,OS,NA,NA,FALSE,No,Yes,Yes-body,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,28,2,2,7,161403,165995,4592,163000,164983,1983,BLACK,OS,NA,NA,FALSE,No,Yes,Yes-body,No,yes,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,28,2,1,7,161403,165995,4592,163159,165435,2276,BLACK,OS,NA,NA,TRUE,NA,No,yes-body,No,No,Yes
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,28,2,1,7,161403,165995,4592,165435,165967,532,'blank',MOUTHING,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,33,2,2,14 녹색,213173,218817,5644,213330,214680,1350,PLANTS,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,33,2,2,14 녹색,213173,218817,5644,214680,215246,566,DARK(VERY LITTLE),NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,33,2,2,14 녹색,213173,218817,5644,215246,216856,1610,FIRST,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf,33,2,2,14 녹색,213173,218817,5644,216856,218751,1895,BRIGHT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,2,14녹색,1025950,1027350,1400,1026214,1027082,868,GREEN(ISL),OS,NA,ISL,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_2_Nepal-India_After_one_week.eaf,1,1,2,14녹색,1025950,1027350,1400,1027082,1027176,94,TREE-GREEN2/1,NA,NA,NA,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,1,18,10583,24166,13583,10570,12810,2240,YELLOW(NSL),OS,NA,NSL,FALSE,No,Yes,no,No,yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,1,18,10583,24166,13583,12810,13440,630,GREEN(ISL),OS,NA,ISL,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,1,18,10583,24166,13583,13440,13942,502,GREEN(NSL),OS,NA,NSL,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,1,18,10583,24166,13583,13942,15063,1121,NO,NA,NA,NA,FALSE,No,No,NA,No,Yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,1,18,10583,24166,13583,15063,15442,379,forest,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,1,18,10583,24166,13583,15442,16035,593,TREE,LW,NA,,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,1,18,10583,24166,13583,16035,16560,525,GREEN(NSL),OS,NA,NSL,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,1,18,10583,24166,13583,16560,17163,603,NO,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,1,18,10583,24166,13583,17163,17501,338,GREEN(ISL),OS,NA,ISL,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,1,18,10583,24166,13583,17501,18582,1081,COLOR,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,1,18,10583,24166,13583,18582,20679,2097,BRIGHT,NA,NA,NA,FALSE,No,Yes,NA,No,YES,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,2,18,10583,24166,13583,12304,13730,1426,GREEN(ISL),OS,NA,ISL,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_2_Nepal-India_After_one_week.eaf,3,1,2,18,10583,24166,13583,21482,24112,2630,GREEN(ISL),OS,NA,ISL,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_2_Nepal-India_After_one_week.eaf,8,1,1,1빨강,1083314,1085290,1976,1083360,1085290,1930,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,10,1,1,6,1038254,1038528,274,1038254,1038412,158,WHITE,OS,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,10,1,2,6,1038254,1038528,274,1038289,1038978,689,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,15,1,1,18,455190,459303,4113,455206,456052,846,YELLOW(NSL),OS,NA,NSL,FALSE,No,Yes,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,15,1,1,18,455190,459303,4113,456052,457726,1674,LEMON,LW,NA,NA,FALSE,No,Yes,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,15,1,1,18,455190,459303,4113,457808,459269,1461,BRIGHT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,19,1,1,14녹색,1005268,1007894,2626,1005533,1006706,1173,GREEN(NSL),OS,NA,NSL,FALSE,No,No,no,No,yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,19,1,1,14녹색,1005268,1007894,2626,1006706,1007823,1117,wall,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,20,2,1,6,1038175,1039187,1012,1038254,1038412,158,WHITE,OS,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,20,2,2,6,1038175,1039187,1012,1038289,1038978,689,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,22,2,2,5,813505,829277,15772,813675,814289,614,'back of one's hand',IX,NA,NA,FALSE,No,yes,Yes-body,No,yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,22,2,2,5,813505,829277,15772,815362,816704,1342,'back of one's hand',IX,NA,NA,FALSE,No,yes,Yes-body,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,22,2,2,5,813505,829277,15772,816711,818824,2113,'back of one's hand',IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,22,2,2,5,813505,829277,15772,818850,820077,1227,'back of one's hand',IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,22,2,2,5,813505,829277,15772,823890,828338,4448,TREE-STRUT+IX,LW,NA,NA,FALSE,No,Yes,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,22,2,2,5,813505,829277,15772,828413,829251,838,'back of one's hand',IX,NA,NA,FALSE,No,yes,Yes-body,Yes,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,22,2,1,5,813505,829277,15772,814779,816260,1481,'back of one's hand',IX,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_2_Nepal-India_After_one_week.eaf,22,2,1,5,813505,829277,15772,816877,817087,210,BRIGHT,NA,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_2_Nepal-India_After_one_week.eaf,22,2,1,5,813505,829277,15772,817087,818017,930,DARK,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_2_Nepal-India_After_one_week.eaf,25,2,2,1,26234,35146,8912,26340,26986,646,RED(frontlet) ,OS,NA,NA,FALSE,No,yes,no,No,yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,25,2,2,1,26234,35146,8912,27164,27864,700,RED(mouth),OS,NA,NA,FALSE,No,yes,Yes-body,No,yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,25,2,2,1,26234,35146,8912,27864,28526,662,RED(Imouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,25,2,2,1,26234,35146,8912,28526,28955,429,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,25,2,2,1,26234,35146,8912,28955,30271,1316,Prayer,NA,NA,NA,FALSE,No,Yes,NA,No,Yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,25,2,2,1,26234,35146,8912,30271,30685,414,RED(mouth),OS,NA,NA,FALSE,No,yes,Yes-body,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,25,2,2,1,26234,35146,8912,30685,31658,973,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,25,2,2,1,26234,35146,8912,31658,33533,1875,RED(frontlet) ,OS,NA,NA,FALSE,No,Yes,no,No,Yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,25,2,2,1,26234,35146,8912,34879,35179,300,BLOOD,LW,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,25,2,1,1,26234,35146,8912,33480,35066,1586,BLOOD,LW,NA,NA,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_2_Nepal-India_After_one_week.eaf,28,2,2,20,696018,697390,1372,696015,696671,656,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,28,2,2,20,696018,697390,1372,696671,697296,625,RED(frontlet) ,OS,NA,NA,FALSE,No,Yes,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,191169,192004,835,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,192245,192611,366,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,192611,192934,323,sky,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,192934,194177,1243,SKY,NA,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,196151,197341,1190,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,197341,198173,832,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,199133,199427,294,SEA,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,199427,200422,995,DARK,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,200527,201208,681,NOT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,201773,202201,428,clothes,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,202201,202841,640,DARK,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,202841,203172,331,NOT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,203172,203514,342,sky,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,203514,204013,499,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,29,2,2,12,186455,205335,18880,204613,205321,708,SKY,NA,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,31,2,2,14,431948,439679,7731,432044,432835,791,GREEN(ISL),OS,NA,ISL,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,31,2,2,14,431948,439679,7731,432835,434185,1350,blood vessel,IX,NA,,FALSE,No,Yes,yes-body,No,Yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,31,2,2,14,431948,439679,7731,436150,436623,473,GREEN(ISL),OS,NA,ISL,FALSE,No,yes,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,31,2,2,14,431948,439679,7731,436623,436945,322,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,31,2,2,14,431948,439679,7731,436945,438041,1096,blood vessel,IX,NA,NA,FALSE,No,yes,yes-body,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,31,2,2,14,431948,439679,7731,439192,439344,152,IX;forest,NA,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,31,2,2,14,431948,439679,7731,439358,439661,303,TREE,NA,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,2,24,657634,673354,15720,657684,659284,1600,RED(mouth),OS,NA,NA,FALSE,No,yes,Yes-body,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,2,24,657634,673354,15720,659694,660874,1180,tongue,IX,NA,NA,FALSE,No,Yes,Yes-body,No,Yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,2,24,657634,673354,15720,660914,661274,360,DIFFERENT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,2,24,657634,673354,15720,661324,662944,1620,tongue,IX,NA,NA,FALSE,No,yes,Yes-body,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,2,24,657634,673354,15720,663024,663344,320,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,2,24,657634,673354,15720,663414,665294,1880,FLOWER,LW,NA,NA,FALSE,No,Yes,no,No,Yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,2,24,657634,673354,15720,665304,665798,494,tongue,IX,NA,NA,FALSE,No,yes,Yes-body,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,2,24,657634,673354,15720,665798,666374,576,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,2,24,657634,673354,15720,666396,667616,1220,FLOWER,LW,NA,NA,FALSE,No,yes,no,No,yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,2,24,657634,673354,15720,669684,669884,200,tongue,IX,NA,NA,FALSE,No,yes,yes-body,No,yes,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,2,24,657634,673354,15720,669884,670974,1090,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,2,24,657634,673354,15720,670974,673339,2365,FLOWER,LW,NA,NA,FALSE,No,yes,no,No,No,No
+Colour_game_01_2_Nepal-India_After_one_week.eaf,32,2,1,24,657634,673354,15720,671687,673317,1630,FLOWER,LW,NA,NA,TRUE,NA,No,no,No,No,Yes
+Colour_game_01_2_Nepal-India_After_one_week.eaf,36,2,2,7,59146,60906,1760,59168,60878,1710,BLACK,OS,NA,NA,FALSE,No,Yes,Yes-body,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,1,1,1,14,136429,139441,3012,136464,136974,510,GREEN(ISL),OS,NA,ISL,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,1,1,1,14,136429,139441,3012,136974,137630,656,CORRECT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,1,1,2,14,136429,139441,3012,137630,138321,691,GREEN(ISL),OS,NA,ISL,TRUE,NA,No,no,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,1,1,2,14,136429,139441,3012,138321,139407,1086,CORRECT,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,4,1,1,24,430635,464155,33520,430764,433564,2800,FLOWER,LW,NA,NA,FALSE,No,yes,no,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,4,1,1,24,430635,464155,33520,439285,440619,1334,RED(mouth),OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,4,1,1,24,430635,464155,33520,444085,446180,2095,FLOWER,LW,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,4,1,1,24,430635,464155,33520,450060,451632,1572,RED(mouth),OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,4,1,1,24,430635,464155,33520,451727,452441,714,BRIGHT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,4,1,1,24,430635,464155,33520,454012,454441,429,DARK,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,4,1,1,24,430635,464155,33520,456107,457773,1666,BRIGHT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,4,1,1,24,430635,464155,33520,458011,459916,1905,FLOWER,LW,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,4,1,2,24,430635,464155,33520,443034,446320,3286,FLOWER,LW,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,4,1,2,24,430635,464155,33520,455843,456891,1048,FLOWER,LW,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,7,1,1,6,643559,646647,3088,643554,644665,1111,WHITE, OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,7,1,2,6,643559,646647,3088,645325,646570,1245,WHITE,OS,NA,NA,TRUE,NA,No,yes-body,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,9,1,1,18,1002400,1012390,9990,1002370,1003350,980,chair,IX,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,9,1,1,18,1002400,1012390,9990,1003645,1004319,674,YELLOW(ISL),OS,NA,ISL,FALSE,No,No,Yes-body,yes,yes,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,9,1,1,18,1002400,1012390,9990,1004319,1005060,741,BRIGHT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,9,1,1,18,1002400,1012390,9990,1007713,1008394,681,sky,IX,NA,NA,FALSE,No,No,yes,No,yes,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,9,1,1,18,1002400,1012390,9990,1008394,1008884,490,SUN,LW,NA,,FALSE,No,Yes,no,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,9,1,1,18,1002400,1012390,9990,1008884,1010190,1306,BRIGHT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,9,1,2,18,1002400,1012390,9990,1005911,1006071,160,YELLOW(ISL),OS,NA,ISL,TRUE,NA,No,Yes-body,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,9,1,2,18,1002400,1012390,9990,1006296,1007142,846,BRIGHT,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,9,1,2,18,1002400,1012390,9990,1010460,1010722,262,'LE',fs,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,9,1,2,18,1002400,1012390,9990,1010722,1011227,505,WHITE,OS,NA,NA,TRUE,Yes,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,9,1,2,18,1002400,1012390,9990,1011237,1012267,1030,BRIGHT,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,17,1,1,1,307041,310413,3372,307123,308504,1381,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,17,1,1,1,307041,310413,3372,309893,310393,500,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,17,1,2,1,307041,310413,3372,308023,308555,532,RED(frontlet) ,OS,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,661394,662981,1587,'back of one's hand',IX,NA,NA,FALSE,No,Yes,Yes-body,No,Yes,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,663429,665679,2250,TREE-STRUT,LW,NA,NA,FALSE,No,Yes,no,No,Yes,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,665712,667662,1950,TREE-STRUT,LW,NA,NA,FALSE,No,Yes,no,No,Yes,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,667712,671245,3533,STRUT+IX,LW,NA,NA,FALSE,No,Yes,no,No,Yes,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,671287,671780,493,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,671780,672056,276,forest,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,672056,674123,2067,STRUT+IX,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,674123,675060,937,'back of one's hand',IX,NA,NA,FALSE,No,yes,Yes-body,No,yes,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,681156,684306,3150,'back of one's hand',IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,684439,684656,217,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,684656,685338,682,door,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,692150,696400,4250,TREE-STRUT,LW,NA,NA,FALSE,No,Yes,no,No,yes,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,2,5,660908,711364,50456,705948,708571,2623,TREE,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,665983,667246,1263,'back of one's hand',IX,NA,NA,TRUE,NA,No,yes-body,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,670201,672901,2700,STRUT,NA,NA,NA,TRUE,NA,No,no,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,675106,675397,291,'back of one's hand',IX,NA,NA,TRUE,NA,No,Yes-body,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,675397,677326,1929,DARK,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,678700,680900,2200,arm,IX,NA,NA,TRUE,Yes,No,Yes-body,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,681405,682476,1071,DARK,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,683604,686090,2486,DARK#FACE,NA,NA,NA,TRUE,Yes,No,Yes-body,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,687497,688013,516,wall,IX,NA,NA,TRUE,NA,No,Yes,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,688013,688639,626,SAME,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,688639,689758,1119,wall,IX,NA,NA,TRUE,Yes,No,Yes,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,695450,697100,1650,STRUT,NA,NA,NA,TRUE,NA,No,no,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,699556,699884,328,door,IX,NA,NA,TRUE,NA,No,yes,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,699941,703089,3148,DARK,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,703277,704834,1557,FACE#DARK,IX,NA,NA,TRUE,NA,No,yes-body,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,20,2,1,5,660908,711364,50456,707316,711087,3771,dark-circles around the eyes,NA,NA,NA,TRUE,Yes,No,yes-body,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,24,2,2,18 노랑,974899,981201,6302,974907,976657,1750,YELLOW(ISL),OS,NA,ISL,FALSE,No,Yes,Yes-body,No,Yes,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,24,2,2,18 노랑,974899,981201,6302,976657,977615,958,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,24,2,2,18 노랑,974899,981201,6302,977647,978084,437,sky,IX,NA,NA,FALSE,No,No,Yes,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,24,2,2,18 노랑,974899,981201,6302,978105,979417,1312,SUN,NA,NA,NA,FALSE,No,Yes,no,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,24,2,2,18 노랑,974899,981201,6302,979417,980105,688,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,24,2,2,18 노랑,974899,981201,6302,980105,981147,1042,SUN,NA,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,24,2,1,18 노랑,974899,981201,6302,975306,976700,1394,YELLOW(ISL),OS,NA,,TRUE,NA,No,yes-body,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,28,2,2,7,527463,532113,4650,527511,528097,586,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,yes,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,28,2,2,7,527463,532113,4650,530362,531184,822,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,yes,No
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,28,2,1,7,527463,532113,4650,528597,529226,629,BLACK,OS,NA,NA,TRUE,NA,No,Yes-body,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,28,2,1,7,527463,532113,4650,530360,530810,450,BLACK,OS,NA,NA,TRUE,Yes,No,Yes-body,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,28,2,1,7,527463,532113,4650,530810,531086,276,CORRECT,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_01_3_Indonesia-India_After_one_week.eaf,28,2,1,7,527463,532113,4650,531086,532022,936,BLACK,OS,NA,NA,TRUE,Yes,No,Yes-body,No,No,Yes
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,2,1,2,1,24650,26546,1896,23244,24588,1344,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,6,1,1,14,183677,187591,3914,183687,185554,1867,GREEN(ISL),OS,NA,ISL,FALSE,No,Yes,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,6,1,1,14,183677,187591,3914,186503,187385,882,GREEN(NSL),OS,NA,NSL,FALSE,No,No,no,Yes,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,6,1,2,14,183677,187591,3914,185464,186809,1345,GREEN(NSL),OS,NA,NSL,TRUE,Yes,No,no,No,No,Yes
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,8,1,1,6,353890,356592,2702,353906,356494,2588,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,11,1,1,24,549932,552132,2200,549932,552132,2200,FLOWER,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,11,1,2,24,549932,552132,2200,550083,550636,553,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,11,1,2,24,549932,552132,2200,550666,552991,2325,FLOWER,LW,NA,NA,FALSE,No,Yes,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,15,1,1,18,1038200,1041201,3001,1038788,1039375,587,YELLOW(NSL),OS,NA,NSL,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,15,1,1,18,1038200,1041201,3001,1039848,1041166,1318,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,15,1,2,18,1038200,1041201,3001,1038974,1040342,1368,YELLOW(NSL),OS,NA,NSL,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,22,2,2,1,23234,24896,1662,23244,24588,1344,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,23,2,2,7,527236,528132,896,527251,528147,896,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,24,2,2,5,386058,398178,12120,386124,387921,1797,'back of one's hand',IX,NA,NA,FALSE,No,Yes,Yes-body,No,Yes,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,24,2,2,5,386058,398178,12120,388459,390355,1896,DOOR-YESTERDAY-the DOOR,SE,NA,NA,FALSE,No,Yes,no,No,Yes,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,24,2,2,5,386058,398178,12120,390362,392115,1753,-the DOOR,SE,NA,NA,FALSE,No,Yes,no,No,Yes,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,24,2,2,5,386058,398178,12120,392136,392837,701,door,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,24,2,2,5,386058,398178,12120,392837,394724,1887,the DOOR,SE,NA,NA,FALSE,No,Yes,NA,No,Yes,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,24,2,2,5,386058,398178,12120,394733,394922,189,DOOR,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,24,2,2,5,386058,398178,12120,394922,395764,842,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,24,2,1,5,386058,398178,12120,397410,398110,700,watch,IX,NA,NA,TRUE,Yes,No,Yes,No,No,Yes
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,29,2,1,18,1038977,1040322,1345,1038788,1039375,587,YELLOW(NSL),OS,NA,NSL,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,29,2,1,18,1038977,1040322,1345,1039848,1041166,1318,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,29,2,2,18,1038977,1040322,1345,1038974,1040342,1368,YELLOW(NSL),OS,NA,NSL,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,31,2,1,24,550090,558164,8074,549932,552132,2200,FLOWER,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,31,2,2,24,550090,558164,8074,550083,550636,553,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,31,2,2,24,550090,558164,8074,550666,552991,2325,FLOWER,LW,NA,NA,FALSE,No,Yes,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,31,2,2,24,550090,558164,8074,552997,554977,1980,FLOWER,LW,NA,NA,FALSE,No,Yes,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,31,2,2,24,550090,558164,8074,555000,555493,493,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,31,2,2,24,550090,558164,8074,555514,556574,1060,NO,NA,NA,NA,FALSE,No,Yes,NA,No,No,No
+Colour_game_01_3_Jordan-Nepal_After_one_week.eaf,31,2,2,24,550090,558164,8074,556700,558178,1478,FLOWER,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,1,1,1,1,7650,9550,1900,7749,9500,1751,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,2,1,1,24,473848,478905,5057,473971,476204,2233,FLOWER,LW,NA,NA,FALSE,No,Yes,No,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,2,1,1,24,473848,478905,5057,478389,478861,472,tongue,IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,2,1,2,24,473848,478905,5057,477096,478346,1250,tongue,IX,NA,NA,TRUE,Yes,No,Yes-body,No,No,Yes
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,4,1,1,18,715924,717003,1079,716028,716957,929,YELLOW(ISL),OS,NA,ISL,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,5,1,1,9,79509,87500,7991,83560,84746,1186,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,5,1,1,9,79509,87500,7991,84863,85672,809,BLACK,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,5,1,1,9,79509,87500,7991,85672,85947,275,BLACK,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,5,1,1,9,79509,87500,7991,85947,86587,640,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,5,1,1,9,79509,87500,7991,86587,87560,973,MIX,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,7,1,1,6,438270,439337,1067,438265,439312,1047,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,12,1,1,12,186952,193848,6896,189514,190175,661,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,12,1,1,12,186952,193848,6896,190175,190372,197,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,12,1,1,12,186952,193848,6896,190372,191272,900,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,12,1,2,12,186952,193848,6896,191452,191715,263,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,12,1,2,12,186952,193848,6896,191771,192892,1121,,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,13,1,1,14,31602,33757,2155,31622,33688,2066,GREEN(ISL),OS,NA,ISL,FALSE,No,No,No,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,18,2,2,1,17191,17631,440,17195,17620,425,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,26,2,1,9,87394,90554,3160,86587,87560,973,MIX,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,26,2,1,9,87394,90554,3160,87757,88303,546,SAME,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,26,2,1,9,87394,90554,3160,88303,90427,2124,SAME,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,31,2,2,5,444189,445975,1786,444181,445956,1775,'back of one's hand',IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,33,2,2,7,409899,412481,2582,409950,411065,1115,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,yes,No
+Colour_game_04_1_Indonesia-India_After_three_week.eaf,33,2,1,7,409899,412481,2582,411065,412472,1407,BLACK,OS,NA,NA,TRUE,NA,No,Yes-body,No,No,Yes
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,1,1,1,14,77123,79335,2212,77141,79328,2187,GREEN(ISL),OS,NA,ISL,FALSE,No,No,NA,No,YES,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,1,1,1,14,77123,79335,2212,79328,80274,946,CORRECT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,2,1,1,9,50072,54172,4100,51024,51974,950,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,2,1,1,9,50072,54172,4100,52054,53401,1347,table,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,7,1,1,24,395177,396602,1425,395224,396558,1334,FLOWER,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,11,1,1,18,641642,645125,3483,641658,643250,1592,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,11,1,1,18,641642,645125,3483,643250,643793,543,YELLOW(ISL),OS,NA,ISL,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,11,1,1,18,641642,645125,3483,643793,645115,1322,SUN,NA,NA,,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,14,1,1,19,821537,826342,4805,821905,825284,3379,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,15,1,1,1 빨강,547521,548782,1261,547697,548709,1012,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,20,2,2,8,463192,466569,3377,463192,466569,3377,1-1의 그림에서 옷의 색깔. 쥐색,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,23,2,2,5,303330,307021,3691,303371,305777,2406,'back of one's hand',IX,NA,NA,FALSE,No,Yes,Yes-body,No,Yes,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,23,2,2,5,303330,307021,3691,305777,306995,1218,'back of one's hand',IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,25,2,2,6,298275,299235,960,298275,299215,940,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,29,2,2,18,622190,627254,5064,622331,622899,568,YELLOW(ISL),OS,NA,ISL,FALSE,No,yes,Yes,No,yes,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,29,2,2,18,622190,627254,5064,623935,626201,2266,BEFORE-ROAD,SE,NA,,FALSE,No,Yes,No,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,29,2,2,18,622190,627254,5064,626201,627159,958,UNDERSTAND,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,33,2,2,9,58193,60849,2656,58993,59849,856,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,36,2,2,1,12424,15337,2913,12426,15311,2885,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf,37,2,2,7,382072,383635,1563,382094,383605,1511,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,2,1,1,5,597121,600475,3354,597151,600432,3281,watch,IX,NA,NA,FALSE,No,No,Yes,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,6,1,1,14,631091,631981,890,631100,631981,881,GREEN(ISL),OS,NA,ISL,FALSE,No,No,No,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,6,1,2,14,631091,631981,890,631215,631882,667,GREEN(ISL),OS,NA,JSL,TRUE,NA,No,no,No,No,Yes
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,9,1,1,1   빨강,653705,656007,2302,653762,654288,526,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,9,1,1,1   빨강,653705,656007,2302,654696,655801,1105,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,10,1,1,20,106133,109316,3183,106233,109283,3050,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,11,1,1,7,141698,143303,1605,141735,141835,100,2형에서,본인수정,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,11,1,1,7,141698,143303,1605,141835,143251,1416,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,11,1,2,7,141698,143303,1605,140408,142580,2172,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,14,1,1,18 노랑,44749,49749,5000,44844,48930,4086,YELLOW(JSL),OS,NA,JSL,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,25,2,2,6,69737,70390,653,69756,70355,599,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,26,2,1,7,140423,142624,2201,141735,141835,100,2형에서,본인수정,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,26,2,1,7,140423,142624,2201,141835,143251,1416,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,26,2,2,7,140423,142624,2201,140408,142580,2172,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,28,2,2,14,642290,642645,355,642325,642626,301,GREEN(ISL),OS,NA,ISL,FALSE,No,No,No,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,30,2,2,3,380636,383203,2567,380722,382972,2250,RED(mouth),OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,31,2,2,24,29171,31105,1934,29171,31105,1934,FLOWER,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,33,2,2,18,283466,284982,1516,283542,284239,697,YELLOW(JSL),OS,NA,JSL,FALSE,No,No,yes,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,33,2,2,18,283466,284982,1516,284239,284634,395,GOOD,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf,33,2,2,18,283466,284982,1516,284634,284942,308,CORRECT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,3,1,1,5,638840,640572,1732,638881,640570,1689,'back of one's hand',IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,4,1,1,7,33393,34354,961,33397,34340,943,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,7,1,1,1,670981,672513,1532,670993,672390,1397,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,16,2,2,18,313440,319471,6031,313462,314833,1371,YELLOW(ISL),OS,NA,ISL,FALSE,No,Yes,Yes,No,Yes,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,16,2,2,18,313440,319471,6031,314833,316505,1672,YELLOW(ISL),OS,NA,ISL,FALSE,No,Yes,Yes,No,Yes,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,16,2,2,18,313440,319471,6031,316627,316755,128,YOU,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,16,2,2,18,313440,319471,6031,316764,317004,240,NOSE-PENDANT,NA,NA,,FALSE,No,No,Yes,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,16,2,2,18,313440,319471,6031,317016,317100,84,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,16,2,2,18,313440,319471,6031,317108,317298,190,YOU,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,16,2,2,18,313440,319471,6031,317301,317931,630,NOSE-PENDANT,NA,NA,NA,FALSE,No,yes,Yes,No,yes,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,16,2,2,18,313440,319471,6031,318181,318469,288,SIGN,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,16,2,2,18,313440,319471,6031,318469,319406,937,YELLOW(ISL),OS,NA,ISL,FALSE,No,No,yes-body,yes,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,21,2,2,14,649540,649995,455,649534,649988,454,GREEN(ISL),OS,NA,ISL,FALSE,No,No,No,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,21,2,2,14,649540,649995,455,649988,650546,558,CORRECT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,22,2,2,24,68265,69368,1103,68265,69368,1103,FLOWER,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,23,2,2,7,48700,49728,1028,48738,49789,1051,black1-3수형으로 BLACK1-4수동,NA,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,23,2,2,7,48700,49728,1028,48763,49691,928,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,24,2,2,6,383513,383797,284,383540,383770,230,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,25,2,2,3,495714,497928,2214,495749,496464,715,RED(mouth),OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,25,2,2,3,495714,497928,2214,496571,497356,785,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_04_2_Nepal-India_After_three_weeks.eaf,25,2,2,3,495714,497928,2214,497356,497713,357,RED(mouth),OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,8,1,1,5 밤,407615,409063,1448,407619,407930,311,BOOGER,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,8,1,1,5 밤,407615,409063,1448,407936,409056,1120,watch,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,8,1,2,5 밤,407615,409063,1448,407623,407962,339,'back of one's hand',IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,8,1,2,5 밤,407615,409063,1448,407975,409273,1298,watch,IX,NA,,FALSE,No,No,yes,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,9,1,1,12,123818,143059,19241,136139,137389,1250,WATER,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,9,1,1,12,123818,143059,19241,137389,140745,3356,SEA,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,9,1,1,12,123818,143059,19241,140755,141403,648,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,9,1,1,12,123818,143059,19241,141420,142657,1237,DARK,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,10,1,1,21,181454,184453,2999,181471,184403,2932,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,11,1,1,1,192397,193748,1351,192416,193716,1300,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,14,1,1,14,419029,422445,3416,419019,419540,521,GREEN(ISL),OS,NA,ISL,FALSE,No,No,No,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,14,1,1,14,419029,422445,3416,419637,420512,875,CORRECT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,14,1,1,14,419029,422445,3416,420512,421620,1108,GREEN(ISL),OS,NA,ISL,FALSE,No,No,No,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,14,1,1,14,419029,422445,3416,421620,422424,804,CORRECT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,14,1,2,14,419029,422445,3416,420465,421190,725,GREEN(ISL),OS,NA,,TRUE,NA,No,NA,No,No,Yes
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,16,1,1,18,248801,263976,15175,248863,253652,4789,carriageway(자동차도로),LW,NA,NA,FALSE,No,Yes,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,16,1,1,18,248801,263976,15175,253652,254727,1075,BLACK,OS,NA,NA,FALSE,No,yes,Yes,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,16,1,1,18,248801,263976,15175,255007,255662,655,YELLOW(JSL),OS,NA,JSL,FALSE,No,yes,yes-body,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,16,1,1,18,248801,263976,15175,255947,256512,565,BLACK,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,16,1,1,18,248801,263976,15175,256669,257299,630,YELLOW(JSL),OS,NA,JSL,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,16,1,1,18,248801,263976,15175,260261,261575,1314,SUN,NA,NA,,FALSE,No,yes,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,16,1,1,18,248801,263976,15175,261575,262862,1287,SUN,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,16,1,1,18,248801,263976,15175,262862,263262,400,SUN,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,16,1,1,18,248801,263976,15175,263262,263962,700,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,16,1,2,18,248801,263976,15175,258254,259500,1246,YELLOW(JSL),OS,NA,JSL,TRUE,Yes,No,yes-body,No,No,Yes
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,17,1,1,16,710035,713090,3055,711856,712393,537,wall,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,19,2,2,20,436985,440985,4000,437108,438389,1281,RED(mouth),OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,19,2,2,20,436985,440985,4000,440151,440467,316,RED(mouth),OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,24,2,2,12,3813,7813,4000,6354,6473,119,?,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,24,2,2,12,3813,7813,4000,7180,7602,422,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,26,2,2,21,155916,170338,14422,160952,162237,1285,ORANGE?,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,26,2,2,21,155916,170338,14422,162394,163965,1571,PEEL,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,26,2,2,21,155916,170338,14422,164086,164429,343,ORANGE?,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,26,2,2,21,155916,170338,14422,165047,165602,555,BRIGHT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,26,2,2,21,155916,170338,14422,166042,166992,950,DARK,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,26,2,2,21,155916,170338,14422,167562,168037,475,BRIGHT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,26,2,2,21,155916,170338,14422,168277,169123,846,DARK,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,29,2,2,1  빨강,204668,206223,1555,204688,205125,437,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,29,2,2,1  빨강,204668,206223,1555,205205,206195,990,RED(frontlet) ,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,30,2,2,7,268764,270662,1898,268700,270785,2085,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,31,2,1,5,407623,409285,1662,407619,407930,311,BOOGER,OS,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,31,2,1,5,407623,409285,1662,407936,409056,1120,watch,IX,NA,NA,FALSE,No,No,yes,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,31,2,2,5,407623,409285,1662,407623,407962,339,'back of one's hand',IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,31,2,2,5,407623,409285,1662,407975,409273,1298,watch,IX,NA,,FALSE,No,No,yes,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,32,2,2,24  분홍,494009,497580,3571,494009,497580,3571,FLOWER,LW,NA,,FALSE,No,No,no,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,35,2,2,6,716427,718971,2544,716427,718971,2544,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_3_Jordan-India_After_three_weeks.eaf,37,2,2,7,308945,309945,1000,308960,309841,881,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,3,1,1,18,232793,235013,2220,232803,234762,1959,YELLOW(NSL),OS,NA,NSL,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,5,1,1,14,431003,435096,4093,431071,432980,1909,GREEN(ISL),OS,NA,ISL,FALSE,No,No,NA,No,YES,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,5,1,1,14,431003,435096,4093,433280,433755,475,CORRECT,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,5,1,1,14,431003,435096,4093,433898,435035,1137,GREEN(ISL),OS,NA,ISL,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,5,1,2,14,431003,435096,4093,432117,432848,731,GREEN(ISL),OS,NA,NA,TRUE,NA,No,NA,No,No,Yes
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,12,1,1,5,380834,381814,980,380820,381800,980,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,12,1,2,5,380834,381814,980,379677,380973,1296,'back of one's hand',IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,25,2,2,6,597180,597847,667,597180,597847,667,WHITE,OS,NA,NA,FALSE,No,No,yes-body,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,31,2,2,1  빨강,215490,216567,1077,215500,216560,1060,RED(mouth),OS,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,32,2,2,24  분홍,413927,417578,3651,413959,414445,486,FLOWER,LW,NA,NA,FALSE,No,No,no,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,32,2,2,24  분홍,413927,417578,3651,414958,415399,441,tongue,IX,NA,NA,FALSE,No,yes,Yes-body,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,32,2,2,24  분홍,413927,417578,3651,416595,417567,972,FLOWER,LW,NA,NA,FALSE,No,Yes,no,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,33,2,1,5 밤,379651,380973,1322,380820,381800,980,SAME,NA,NA,NA,FALSE,No,No,NA,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,33,2,2,5 밤,379651,380973,1322,379677,380973,1296,'back of one's hand',IX,NA,NA,FALSE,No,No,Yes-body,No,No,No
+Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf,34,2,2,7,248945,249485,540,248974,249432,458,BLACK,OS,NA,NA,FALSE,No,No,Yes-body,No,No,No

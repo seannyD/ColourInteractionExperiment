@@ -1,89 +1,89 @@
 "","Sign","KB.Coded.Body.Anchor","KB.Coded.iconic","From.ELAN.Indexicality"
 "11","BLACK","yes","yes","Yes-body"
-"14","BOOGER","no","yes","No"
-"15","BRIGHT","no","no",NA
-"21","CLOWN","yes","yes","No"
-"22","COLOR","no","no",NA
-"24","CORRECT","no","no",NA
-"26","DARK","no","no",NA
+"14","BOOGER","no","yes","yes"
+"15","BRIGHT","no","no","yes"
+"21","CLOWN","yes","yes","yes"
+"22","COLOR","no","no","no"
+"24","CORRECT","no","no","no"
+"26","DARK","no","no","yes"
 "28","DARK#FACE","yes","yes","Yes-body"
-"29","DIFFERENT","no","no",NA
-"32","DRIVE","no","no",NA
-"35","FIRST","no","no",NA
-"36","FLOWER","no","no","No"
-"38","GOOD","no","no",NA
+"29","DIFFERENT","no","no","no"
+"32","DRIVE","no","no","no"
+"35","FIRST","no","no","no"
+"36","FLOWER","no","no","no"
+"38","GOOD","no","no","no"
 "43","HAIR","yes","yes","Yes-body"
 "5","IX:'BACK OF ONE'S HAND'","yes","yes","Yes-body"
-"49","JORDAN","no","no",NA
-"50","LEMON","no","yes",NA
-"53","LIPSTICK","no","yes",NA
-"54","LW:CAP(POLICE)'S LW:BOLD PATTRN OF DRESS","no","yes",NA
-"55","ME","no","no",NA
-"57","NIGHT","no","yes","No"
-"59","NOSE-PENDANT","no","yes",NA
-"60","NOT","no","no",NA
-"65","PLANTS","no","yes","No"
-"71","SAME","no","no",NA
-"76","SIGNING","no","no",NA
-"77","SIWASH","no","no",NA
-"80","SUN","no","yes",NA
-"85","TREE","no","yes","No"
-"87","UNDERSTAND","no","no",NA
+"49","JORDAN","no","no","no"
+"50","LEMON","no","yes","yes"
+"53","LIPSTICK","no","yes","yes"
+"54","LW:CAP(POLICE)'S LW:BOLD PATTRN OF DRESS","no","yes","yes"
+"55","ME","no","no","no"
+"57","NIGHT","no","yes","yes"
+"59","NOSE-PENDANT","no","yes","yes"
+"60","NOT","no","no","no"
+"65","PLANTS","no","yes","yes"
+"71","SAME","no","no","no"
+"76","SIGNING","no","no","no"
+"77","SIWASH","no","no","no"
+"80","SUN","no","yes","yes"
+"85","TREE","no","yes","yes"
+"87","UNDERSTAND","no","no","no"
 "93","WHITE","yes","yes","Yes-body"
-"91","YES","no","no",NA
-"92","YOU","no","no",NA
+"91","YES","no","no","no"
+"92","YOU","no","no","no"
 "1","'BLANK'","?","?",NA
 "2","'LE'","?","?",NA
 "3","DARK-CIRCLES AROUND THE EYES","?","?","Yes-body"
-"4","DARK-NIGHT","?","?","No"
-"56","DO NOT UNDERSTAND","?","?",NA
-"6","DRINK","?","?",NA
-"7","EAT","?","?",NA
-"8","EAT EVERYDAY","?","?",NA
-"9","EAT#FOOD","?","?",NA
-"10","EAT+PEEL","?","?",NA
-"111","EVERY DAY^DRINK","?","?",NA
-"12","FACE+DARK","?","?","No"
-"13","GREEN-CHEST","?","?",NA
-"141","GREEN-NSL","?","?","No"
+"4","DARK-NIGHT","?","?","yes"
+"56","DO NOT UNDERSTAND","?","?","no"
+"6","DRINK","?","?","no"
+"7","EAT","?","?","no"
+"8","EAT EVERYDAY","?","?","no"
+"9","EAT#FOOD","?","?","no"
+"10","EAT+PEEL","?","?","yes"
+"111","EVERY DAY^DRINK","?","?","no"
+"12","FACE+DARK","?","?",NA
+"13","GREEN-CHEST","?","?","no"
+"141","GREEN-NSL","?","?","no"
 "151","IX:ARM","?","?","Yes-body"
 "16","IX:BLOOD VESSEL","?","?","Yes-body"
-"17","IX:CHAIR","?","?",NA
-"18","IX:CLOWN#FACE","?","?","Yes"
-"19","IX:DOOR","?","?","Yes"
+"17","IX:CHAIR","?","?","no"
+"18","IX:CLOWN#FACE","?","?","yes"
+"19","IX:DOOR","?","?","yes"
 "20","IX:FACE#DARK","?","?","Yes-body"
-"211","IX:FLOOR","?","?","Yes-body"
-"221","IX:FOREST","?","?","Yes"
+"211","IX:FLOOR","?","?","yes"
+"221","IX:FOREST","?","?","yes"
 "23","IX:LIP","?","?","Yes-body"
-"241","IX:PARTITION","?","?","Yes"
-"25","IX:RING","?","?","Yes"
-"261","IX:SKY","?","?",NA
+"241","IX:PARTITION","?","?","yes"
+"25","IX:RING","?","?","yes"
+"261","IX:SKY","?","?","yes"
 "27","IX:TONGUE","?","?","Yes-body"
 "281","IX:TONGUE +IX:LIP+DIFFERENT","?","?","Yes-body"
 "291","IX:TONGUE+IX:LIP","?","?","Yes-body"
-"30","IX:WALL","?","?","Yes"
-"31","IX:WATCH","?","?","Yes"
-"321","IX#SOMETHING","?","?",NA
-"33","L","?","?",NA
-"34","ORANGE","?","?",NA
-"351","ORANGE JUICE^DRINK","?","?","No"
+"30","IX:WALL","?","?","yes"
+"31","IX:WATCH","?","?","yes"
+"321","IX#SOMETHING","?","?","yes"
+"33","L","?","?","no"
+"34","ORANGE","?","?","yes"
+"351","ORANGE JUICE^DRINK","?","?","yes"
 "361","OS:RED(MOUTH)+IX:TONGUE+DIFFFERENT","?","?","Yes-body"
-"37","PAINT THE WALL","?","?",NA
-"381","PINK(JSL)","?","?","No"
-"39","PRAYER","?","?",NA
-"40","RED-BLOOD","?","?","No"
-"41","RED-BROW","?","?",NA
-"42","RED(FRONTLET)","?","?","No"
-"431","RED(IMOUTH)","?","?","Yes-body"
+"37","PAINT THE WALL","?","?","yes"
+"381","PINK(JSL)","?","?","no"
+"39","PRAYER","?","?","no"
+"40","RED-BLOOD","?","?","Yes-body"
+"41","RED-BROW","?","?","yes"
+"42","RED(FRONTLET)","?","?","yes"
+"431","RED(IMOUTH)","?","?",NA
 "44","RED(MOUTH)","?","?","Yes-body"
 "45","RED(MOUTH) + NOT+DIFFERENT","?","?","Yes-body"
-"46","ROAD","?","?",NA
-"47","SALTY","?","?",NA
-"48","STRUT","?","?","No"
-"491","STRUT+IX","?","?","No"
-"501","THE DOOR","?","?","No"
-"51","TREE-STRUT","?","?","No"
-"52","TREE-STRUT+IX","?","?","No"
-"531","YELLOW-CHEST","?","?","No"
-"541","YELLOW-CHIN","?","?",NA
-"551","YELLOW(ISL)","?","?","Yes-body"
+"46","ROAD","?","?","no"
+"47","SALTY","?","?","no"
+"48","STRUT","?","?","yes"
+"491","STRUT+IX","?","?","yes"
+"501","THE DOOR","?","?","yes"
+"51","TREE-STRUT","?","?","yes"
+"52","TREE-STRUT+IX","?","?","yes"
+"531","YELLOW-CHEST","?","?","no"
+"541","YELLOW-CHIN","?","?","no"
+"551","YELLOW(ISL)","?","?","no"

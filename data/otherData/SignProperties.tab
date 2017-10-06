@@ -1,95 +1,89 @@
-Sign	Body Anchor	iconic	
-i / M	no	no
-I / ME	no	no
-TONGUE	yes	yes
-WATCH	no	yes
-IX:'back of one's hand'	yes	yes
-?	no	no
-2번째	no	no
-2형에서	no	no
-BEFORE-ROAD	no	no
-BIGHT	no	no
-BLACK	yes	yes
-black1-3수형으로 BLACK1-4수동	yes	yes
-BLOOD	yes	yes
-BOOGER	no	yes
-BRIGHT	no	no
-BRIGHT?	no	no
-BRIGHT1	no	no
-BROWN	yes	yes
-carriageway	no	yes
-CHECK? 	no	no
-CLOWN	yes	yes
-COLOR	no	no
-COLUMN	no	yes
-CORRECT	no	no
-CORRENT	no	no
-dark	no	no
-DARK	no	no
-DARK#FACE	yes	yes
-DIFFERENT	no	no
-DOOR	no	yes
-DOOR-YESTERDAY-the DOOR	no	yes
-DRIVE	no	no
-face	yes	yes
-FACE#DARK	yes	yes
-FIRST	no	no
-FLOWER	no	no
-FOLWER	no	yes
-GOOD	no	no
-GREEN	no	no
-GREEN(ISL)	no	no
-GREEN1	no	no
-GREEN1-1	no	no
-hair	yes	yes
-HAIR	yes	yes
-I / ME	no	no
-INDIA	no	yes
-IX SKIN	yes	yes
-IX(RED)	yes	yes
-JORDAN	no	no
-LEMON	no	yes
-LIGHT	no	yes
-LIP	yes	yes
-LIPSTICK	no	yes
-LW:CAP(POLICE)'S LW:BOLD PATTRN OF DRESS	no	yes
-ME	no	no
-MOUTHING	no	no
-NIGHT	no	yes
-NO	no	no
-NOSE-PENDANT	no	yes
-NOT	no	no
-OHTER	no	no
-OUT	no	no
-PEPEAT	no	no
-PINK	no	no
-PLANTS	no	yes
-RED	yes	yes
-RED(ISL)	yes	yes
-RED(JSL)	yes	yes
-RELATION	no	no
-REPEAT	no	no
-SAME	no	no
-SAME?	no	no
-SECOND	no	no
-SIGINING	no	no
-SIGN	no	no
-SIGNING	no	no
-SIWASH	no	no
-SKIN	yes	yes
-SKY	no	yes
-SUN	no	yes
-THAT	no	no
-THAT!	no	no
-THERE	no	yes
-TONGUE	yes	yes
-TREE	no	yes
-TREE-POST	no	yes
-UNDERSTAND	no	no
-WATCH	no	yes
-WHAT	no	no
-YELLOW	no	no
-YES	no	no
-YOU	no	no
-WHITE	yes	yes                                   
-T0보다 CHECK쪽이 맞음	yes	yes
+Sign	KB.Coded.Body.Anchor	KB.Coded.iconic	From.ELAN.Indexicality
+BLACK	yes	yes	Yes-body
+BOOGER	no	yes	No
+BRIGHT	no	yes	NA
+CLOWN	no	yes	No
+COLOR	no	no	NA
+CORRECT	no	no	NA
+DARK	no	yes	NA
+DARK#FACE	yes	yes	Yes-body
+DIFFERENT	no	no	NA
+DRIVE	no	no	NA
+FIRST	no	no	NA
+FLOWER	no	no	No
+GOOD	no	no	NA
+HAIR	yes	yes	Yes-body
+IX:'BACK OF ONE'S HAND'	yes	yes	Yes-body
+JORDAN	no	no	NA
+LEMON	no	yes	NA
+LIPSTICK	no	yes	NA
+LW:CAP(POLICE)'S LW:BOLD PATTRN OF DRESS	no	yes	NA
+ME	no	no	NA
+NIGHT	no	yes	No
+NOSE-PENDANT	no	yes	NA
+NOT	no	no	NA
+PLANTS	no	yes	No
+SAME	no	no	NA
+SIGNING	no	no	NA
+SIWASH	no	no	NA
+SUN	no	yes	NA
+TREE	no	yes	No
+UNDERSTAND	no	no	NA
+WHITE	yes	yes	Yes-body
+YES	no	no	NA
+YOU	no	no	NA
+BLANK'	no	no	NA
+LE'	no	no	NA
+DARK-CIRCLES AROUND THE EYES	yes	yes	Yes-body
+DARK-NIGHT	no	yes	No
+DO NOT UNDERSTAND	no	no	NA
+DRINK	no	no	NA
+EAT	no	no	NA
+EAT EVERYDAY	no	no	NA
+EAT#FOOD	no	no	NA
+EAT+PEEL	no	yes	NA
+EVERY DAY^DRINK	no	no	NA
+FACE+DARK     same DARK#FACE	yes	yes	No
+GREEN-CHEST	no	no	NA
+GREEN-NSL	no	no	No
+IX:ARM	yes	yes	Yes-body
+IX:BLOOD VESSEL	yes	yes	Yes-body
+IX:CHAIR	no	no	NA
+IX:CLOWN#FACE	no	yes	Yes
+IX:DOOR	no	yes	Yes
+IX:FACE#DARK	yes	yes	Yes-body
+IX:FLOOR	no	yes	yes
+IX:FOREST	no	yes	Yes
+IX:LIP	yes	yes	Yes-body
+IX:PARTITION	NO	yes	Yes
+IX:RING	no	yes	Yes
+IX:SKY	no	yes	yes
+IX:TONGUE	yes	yes	Yes-body
+IX:TONGUE +IX:LIP+DIFFERENT	yes	yes	Yes-body
+IX:TONGUE+IX:LIP	yes	yes	Yes-body
+IX:WALL	no	yes	Yes
+IX:WATCH	no	yes	Yes
+IX#SOMETHING	no	yes	yes
+L	no	no	NA
+ORANGE	no	yes	NA
+ORANGE JUICE^DRINK	no	yes	No
+OS:RED(MOUTH)+IX:TONGUE+DIFFFERENT	yes	yes	Yes-body
+PAINT THE WALL	no	yes	NA
+PINK(JSL)	no	no	No
+PRAYER	no	no	NA
+RED-BLOOD	yes	yes	yes-body
+RED-BROW	no	yes	NA
+RED(FRONTLET)	no	yes	No
+RED(IMOUTH)  --> RED(MOUTH)	yes	yes	no
+RED(MOUTH)	yes	yes	no
+RED(MOUTH) + NOT+DIFFERENT	yes	yes	no
+ROAD	no	no	NA
+SALTY	no	no	NA
+STRUT	no	yes	No
+STRUT+IX	no	yes	yes
+THE DOOR	no	yes	No
+TREE-STRUT	no	yes	No
+TREE-STRUT+IX	no	yes	No
+YELLOW-CHEST	no	no	No
+YELLOW-CHIN	no	no	NA
+YELLOW(ISL)	no	no	no

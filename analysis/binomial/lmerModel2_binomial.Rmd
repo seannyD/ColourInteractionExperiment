@@ -38,23 +38,16 @@ The analysis tries to predict the relative frequency of each variant within a co
 
 \newpage
 
-## Poisson regression
+## Binomial regression
 
-This study uses a mixed effects regression model with poisson distributions.  Most standard regression analyses assume that the values they are trying to model come from a normal distribution, like this:
-
-```{r echo=F}
-set.seed(237)
-hist(rnorm(1000, mean = 8, sd = 2), main='', xlab='Frequency', ylab='Count')
-```
-
-However, the main variable for this study is the frequency of sign variants, with a strong skew and many zero values:
+The main variable for this study is the frequency of sign variants, with a strong skew and many zero values:
 
 ```{r echo=F}
 variants = read.csv('../data/processedData/variants_summary.csv', stringsAsFactors = F)
 hist(variants$freq_week_4, main='', xlab='Frequency', ylab='Count', breaks=0:max(variants$freq_week_4))
 ```
 
-Instead of using a normal distribution as the basis for the statistical model or transforming the data (which is difficult anyway because of the large number of zero counts), we can use a poisson distribution.  This also has the advantage of only predicting whole, non-negative numbers, which makes sense for this data because a variant can't be used half a time or a negative number of times.
+The approach taken here is to transform this into a binary variable - whether or not the variant survived to the final week.
 
 # Load libraries
 ```{r warning=F, message=F}
@@ -65,7 +58,6 @@ library(Rmisc)
 library(dplyr)
 library(sjPlot)
 library(gridExtra)
-library(REEMtree)
 ```
 
 ```{r echo=F}
@@ -144,6 +136,8 @@ Transform some variables.
 ```{r}
 
 
+variants$survivedToFinalWeek = variants$freq_week_4>0
+
 # The range of values for 'Teach' is very small:
 table(variants$Teach)
 # So we'll turn it into a binary category: 
@@ -157,8 +151,6 @@ variants$candidateUnderstanding.any = as.factor(variants$candidateUnderstanding>
 
 variants$T0 = c("No","Check")[as.numeric(variants$check.any=="TRUE")+1]
 variants$T0[variants$candidateUnderstanding.any=="TRUE"] = "Candidate Understanding"
-
-variants$T0 = factor(variants$T0, levels = c("No","Check","Candidate Understanding"))
 
 # ... and T-1
 
@@ -197,9 +189,10 @@ write.csv(listofsigns,"../results/descriptive/ListOfVariants.csv", fileEncoding 
 
 ```
 
+
 # LMER models
 
-Each model predicts the frequency of a variant in week 4, with a random intercept by colourName.  The random intercept allows some colours to have higher variant frequencies than others.  This is useful because we know that signs for some colours are converged on quickly, making their frequencies within those colours potentially higher.  In other words, the use of a particular variant to refer to a given colour is not entierly independent of the use of another variant to refer to the same colour.
+Each model predicts the probability of surviving to week 4, with a random intercept by colourName.  The random intercept allows some colours to have higher variant frequencies than others.  This is useful because we know that signs for some colours are converged on quickly, making their frequencies within those colours potentially higher.  In other words, the use of a particular variant to refer to a given colour is not entierly independent of the use of another variant to refer to the same colour.
 
 Random slopes allow the strength of the effect of a factor to be different for each colour concept.  Only indexicality is theoretically relevant here: it is possible that an indexical strategy, particularly body-indexical signs, would be more effective for some colours than others.  For example, the body affords indexicality for black (hair) and red (tongue), but not green.  We can check whether this is true by comparing a baseline model to one with a random slope for indexicality.
 
@@ -209,175 +202,168 @@ gcontrol = control=glmerControl(
   optimizer = 'bobyqa',
   optCtrl = list(maxfun = 1000000))
 
-m0 = glmer(freq_week_4 ~ 
+m0 = glmer(survivedToFinalWeek ~ 
              1
            + (1 | colourName) , 
-           data=variants, family=poisson,
+           data=variants, family=binomial,
            control=gcontrol)
 
-m1 = glmer(freq_week_4 ~ 
+m1 = glmer(survivedToFinalWeek ~ 
              1
-           + (1 + indexical || colourName) , 
-           data=variants, family=poisson,
+           + (1 + indexical  || colourName) , 
+           data=variants, family=binomial,
            control=gcontrol)
 anova(m0,m1)
 ```
 
-Indeed, a random slope for indexicality significantly improves the model.  It is difficult to think of a theoretical reason why different colours would be affected differently for other variables.  Given that random slopes make the model more complex, these are left out.
+A random slope for indexicality does not significantly improve the model.  
+
+It is difficult to think of a theoretical reason why different colours would be affected differently for other variables.  Given that random slopes make the model more complex, these are left out.
 
 We begin with a null model and gradually add predictor variables, using model comparison to judge the significance of each variable.
 
 ```{r modelBits, cache=T}
 # Null model
-m0 = glmer(freq_week_4 ~ 
+m0 = glmer(survivedToFinalWeek ~ 
              1
-           + (1 + indexical || colourName) , 
-           data=variants, family=poisson,
+           + (1  | colourName) , 
+           data=variants, family=binomial,
            control=gcontrol)
 
-mFrq = glmer(freq_week_4 ~ 
-               1 +  
-               freq_week_1_total.logcenter +
-               (1 + indexical || colourName) , 
-             data=variants, family=poisson,
-             control=gcontrol)
-
-mLen = glmer(freq_week_4 ~ 
-               1 +  
-               freq_week_1_total.logcenter +
-               averageLength_week_1.logcenter +
-               (1 + indexical || colourName) , 
-             data=variants, family=poisson,
-             control=glmerControl(
-               optimizer = 'bobyqa',
-               optCtrl = list(maxfun = 10000000)))
-
 # add indexicality
-mIndx = glmer(freq_week_4 ~ 
+mIndx = glmer(survivedToFinalWeek ~ 
                 1 + 
-                freq_week_1_total.logcenter +
-                averageLength_week_1.logcenter +
                 indexical + 
-                (1 + indexical || colourName) , 
-              data=variants, family=poisson,
-              control=glmerControl(
-                optimizer = c('Nelder_Mead','bobyqa'),
-                optCtrl = list(maxfun = 10000000)))
+                (1  | colourName) , 
+              data=variants, family=binomial,
+              control=gcontrol)
 
 # add whether the variant is explicitly taught
-mTeach = glmer(freq_week_4 ~ 
+mTeach = glmer(survivedToFinalWeek ~ 
                  1 +  
-                 freq_week_1_total.logcenter +
-                 averageLength_week_1.logcenter +
                  indexical + 
                  Teach +
-                 (1 + indexical || colourName) , 
-               data=variants, family=poisson,
-               control=glmerControl(
-                 optimizer = c('Nelder_Mead','bobyqa'),
-                 optCtrl = list(maxfun = 10000000)))
+                 (1  | colourName) , 
+               data=variants, family=binomial,
+               control=gcontrol)
 
-mTry = glmer(freq_week_4 ~ 
+mTry = glmer(survivedToFinalWeek ~ 
                1 +  
-               freq_week_1_total.logcenter +
-               averageLength_week_1.logcenter +
                indexical + 
                Teach +
                TryMarked.any +
-               (1 + indexical || colourName) , 
-             data=variants, family=poisson,
+               (1  | colourName) , 
+             data=variants, family=binomial,
              control=gcontrol)
 
-mChk = glmer(freq_week_4 ~ 
+mChk = glmer(survivedToFinalWeek ~ 
                1 +  
-               freq_week_1_total.logcenter +
-               averageLength_week_1.logcenter +
                indexical + 
                Teach +
                TryMarked.any +
                T0 +
-               (1 + indexical || colourName) , 
-             data=variants, family=poisson,
+               (1  | colourName) , 
+             data=variants, family=binomial,
              control=gcontrol)
 
-mTm1 = glmer(freq_week_4 ~ 
+mTm1 = glmer(survivedToFinalWeek ~ 
                1 +  
-               freq_week_1_total.logcenter +
-               averageLength_week_1.logcenter +
                indexical + 
                Teach +
                TryMarked.any +
                T0 +
                T_minus_1.any +
-               (1 + indexical || colourName) , 
-             data=variants, family=poisson,
+               (1  | colourName) , 
+             data=variants, family=binomial,
              control=gcontrol)
 
-mInv = glmer(freq_week_4 ~ 
+mFrq = glmer(survivedToFinalWeek ~ 
                1 +  
-               freq_week_1_total.logcenter +
-               averageLength_week_1.logcenter +
                indexical + 
                Teach +
                TryMarked.any +
                T0 +
                T_minus_1.any +
+               freq_week_1_total.logcenter +
+               (1  | colourName) , 
+             data=variants, family=binomial,
+             control=gcontrol)
+
+mLen = glmer(survivedToFinalWeek ~ 
+               1 +  
+               indexical + 
+               Teach +
+               TryMarked.any +
+               T0 +
+               T_minus_1.any +
+               freq_week_1_total.logcenter +
+               averageLength_week_1.logcenter +
+               (1  | colourName) , 
+             data=variants, family=binomial,
+             control=gcontrol)
+
+mInv = glmer(survivedToFinalWeek ~ 
+               1 +  
+               indexical + 
+               Teach +
+               TryMarked.any +
+               T0 +
+               T_minus_1.any +
+               freq_week_1_total.logcenter +
+               averageLength_week_1.logcenter +
                inventedBy +
-               (1 + indexical || colourName) , 
-             data=variants, family=poisson,
-             control=gcontrol)
-```
-
-Test some interactions:
-
-```{r inteactions, cache=T}
-mT0xF = glmer(freq_week_4 ~ 
-               1 +  
-               freq_week_1_total.logcenter +
-               averageLength_week_1.logcenter +
-               indexical + 
-               Teach +
-               TryMarked.any +
-               T0 +
-               T_minus_1.any +
-               inventedBy +
-               T0:freq_week_1_total.logcenter +
-               (1 + indexical || colourName) , 
-             data=variants, family=poisson,
+               (1  | colourName) , 
+             data=variants, family=binomial,
              control=gcontrol)
 
-mTchxF = glmer(freq_week_4 ~ 
-               1 +  
-               freq_week_1_total.logcenter +
-               averageLength_week_1.logcenter +
-               indexical + 
-               Teach +
-               TryMarked.any +
-               T0 +
-               T_minus_1.any +
-               inventedBy +
-               T0:freq_week_1_total.logcenter +
-               Teach:freq_week_1_total.logcenter +
-               (1 + indexical || colourName) , 
-             data=variants, family=poisson,
-             control=gcontrol)
+mTchXTry = glmer(survivedToFinalWeek ~ 
+                   1 +  
+                   indexical + 
+                   Teach +
+                   TryMarked.any +
+                   T0 +
+                   T_minus_1.any +
+                   freq_week_1_total.logcenter +
+                   averageLength_week_1.logcenter +
+                   inventedBy +
+                   Teach : TryMarked.any +
+                   (1  | colourName) , 
+                 data=variants, family=binomial,
+                 control=gcontrol)
 
-mTryXF = glmer(freq_week_4 ~ 
-               1 +  
-               freq_week_1_total.logcenter +
-               averageLength_week_1.logcenter +
-               indexical + 
-               Teach +
-               TryMarked.any +
-               T0 +
-               T_minus_1.any +
-               inventedBy +
-               T0:freq_week_1_total.logcenter +
-               Teach:freq_week_1_total.logcenter +
-               TryMarked.any:freq_week_1_total.logcenter +
-               (1 + indexical || colourName) , 
-             data=variants, family=poisson,
-             control=gcontrol)
+# Interaction of teaching and checking causes severe 
+#  convergence issues
+# m10 = glmer(survivedToFinalWeek ~ 
+#              1 +  
+#              indexical + 
+#              Teach +
+#              TryMarked.any +
+#              check.any +
+#              T_minus_1.any +
+#              freq_week_1_total.logcenter +
+#              averageLength_week_1.logcenter +
+#              inventedBy +
+#              Teach : TryMarked.any +
+#              Teach : check.any +
+#             (1  | colourName) , 
+#            data=variants, family=binomial,,
+#            control=gcontrol)
+
+mTryXChk = glmer(survivedToFinalWeek ~ 
+                   1 +  
+                   indexical + 
+                   Teach +
+                   TryMarked.any +
+                   T0 +
+                   T_minus_1.any +
+                   freq_week_1_total.logcenter +
+                   averageLength_week_1.logcenter +
+                   inventedBy +
+                   Teach : TryMarked.any +
+                   TryMarked.any : check.any +
+                   (1  | colourName) , 
+                 data=variants, family=binomial,
+                 control=gcontrol)
 
 ```
 
@@ -386,14 +372,14 @@ mTryXF = glmer(freq_week_4 ~
 Model comparison test:
   
 ```{r}
-anova(m0,mFrq,mLen,mIndx,mTeach,mTry,mChk,
-      mTm1,mInv,mT0xF,mTchxF, mTryXF)
+anova(m0,mIndx,mTeach,mTry,mChk,
+      mTm1,mFrq,mLen,mInv,mTchXTry,mTryXChk)
 ```
 
 Choose a final model for the beta values.
 
 ```{r}
-finalModel = mTryXF
+finalModel = mLen
 ```
 
 \newpage
@@ -418,10 +404,6 @@ abline(0,1)
 tx = table(
   exp(predict(finalModel))>=1,
   variants$freq_week_4>=1)
-colnames(tx) = c("Not observed","Observed")
-rownames(tx) = c("Predicted: Not observed",
-                 "Predicted: Observed")
-tx
 ```
 
 These are the variants used in the final week:
@@ -469,29 +451,25 @@ The correlation is high, suggesting that the extra random slopes would not have 
 
 Here is a summary of the main results:
 
-`r getMEText(anova(m0,mFrq), "main effect of frequency in week 1",summary(finalModel)$coef['freq_week_1_total.logcenter',])`  More frequent forms in the first week were more likely to be more frequent in the final week.
-
-`r getMEText(anova(mFrq,mLen), "main effect of sign length",summary(finalModel)$coef['averageLength_week_1.logcenter',])`  Shorter signs were more frequent in the final week.
-
-`r getMEText(anova(mLen,mIndx), "main effect of indexicality",summary(finalModel)$coef['indexicalyes',])` (beta for body-indexical = 0.853). Indexical variants were more frequent in the final week.
+`r getMEText(anova(m0,mIndx), "main effect of indexicality",summary(finalModel)$coef['indexicalyes',])` (beta for body-indexical = 0.853). Indexical variants were more frequent in the final week.
 
 `r getMEText(anova(mIndx,mTeach), "main effect of teaching",summary(finalModel)$coef['TeachTRUE',])`  Teaching increased the frequency of variants in the final week.
 
 `r getMEText(anova(mTeach,mTry), "main effect of try marking",summary(finalModel)$coef['TryMarked.anyTRUE',])` Variants that were try marked more often were more frequent in the final week.
 
-`r getMEText(anova(mTry,mChk), "main effect of checking",summary(finalModel)$coef['T0Check',])`  Variants used in a checking context were more frequent in the final week.
+`r getMEText(anova(mTry,mChk), "main effect of checking",summary(finalModel)$coef['check.anyTRUE',])`  Variants used in a checking context were more frequent in the final week.
 
 
 `r getMEText(anova(mChk,mTm1), "main effect of use in repair initiation (T-1)",summary(finalModel)$coef['T_minus_1.anyTRUE',])` 
 
 
-`r getMEText(anova(mTm1,mInv), "main effect of first user (inventedBy)")`  Signs invented by the signer from Nepal were less frequent in the final week.
+`r getMEText(anova(mTm1,mFrq), "main effect of frequency in week 1",summary(finalModel)$coef['freq_week_1_total.logcenter',])`  More frequent forms in the first week were more likely to be more frequent in the final week.
 
-`r getMEText(anova(mInv,mT0xF), "interaction between T0 and frequency",summary(finalModel)$coef['freq_week_1_total.logcenter:T0Check',])` The effect of frequency only applies to variants not appearing in T0 turns.
+`r getMEText(anova(mFrq,mLen), "main effect of sign length",summary(finalModel)$coef['averageLength_week_1.logcenter',])`  Shorter signs were more frequent in the final week.
 
-`r getMEText(anova(mT0xF,mTchxF), "interaction between Teaching and frequency")` 
+`r getMEText(anova(mLen,mInv), "main effect of first user (inventedBy)")`  Signs invented by the signer from Nepal were less frequent in the final week.
 
-`r getMEText(anova(mTchxF,mTryXF), "interaction between Try marking and frequency")` 
+`r getMEText(anova(mInv,mTchXTry), "interaction between try marking and teaching",summary(finalModel)$coef['TeachTRUE:TryMarked.anyTRUE',])` The effect of teaching was bigger when the variant was also often try marked (see graphs below). 
 
 
 We also found some evidence that the effect of indexicality is more important for black and red, and less important for green and pink.
@@ -500,14 +478,15 @@ We also found some evidence that the effect of indexicality is more important fo
 
 # Graphs
 
-```{r echo=F, eval=F}
 
 ## Teaching and Try marking
 
-#Plot the interaction between teaching and try marking.  Variants are more frequent in the final week if they were both taught and try marked.  However, the second plot shows that there are actually relatively few taught variants, suggesting that the results may not generalise well.
+Plot the interaction between teaching and try marking.  Variants are more frequent in the final week if they were both taught and try marked.  However, the second plot shows that there are actually relatively few taught variants, suggesting that the results may not generalise well.
 
-#Plot is raw means with standard errors.
+Plot is raw means with standard errors.
 
+
+```{r}
 sumStats2 = summarySE(variants, measurevar="freq_week_4",
                       groupvars=c("TryMarked.any","Teach"))
 
@@ -531,13 +510,17 @@ main.plot
 
 ggplot(variants,
 	aes(x = TryMarked.any, y = freq_week_4, colour=Teach)) + geom_jitter()
+```
 
+```{r echo=F}
 pdf("../results/descriptive/graphs/Interaction_Teach_TryMark.pdf", height=5, width=6)
 main.plot
 dev.off()
+```
 
-#The same plot, but in model estimates:
+The same plot, but in model estimates:
 
+```{r}
 x = sjp.int(finalModel, show.ci = F, prnt.plot = F)
 x$plot.list[[1]]$data$x = c(0.9,1.1,1.9,2.1)
 x$plot.list[[1]]$coordinates$limits$x = c(0.8,2.2)
@@ -557,64 +540,35 @@ x$plot.list[[1]] +
 Plot of the marginal effects of the predicted probabilities for each fixed effect:
 
 ```{r warning=F}
-x = sjp.glmer(mInv, 'eff', 
-          vars=c('Teach',
-                 'TryMarked.any',
-                 'T0',
-                 'freq_week_1_total.logcenter',
-                 'averageLength_week_1.logcenter',
-                 'T_minus_1.any'), 
+x = sjp.glmer(finalModel, 'eff', 
+          vars=c("indexical",'check.any','averageLength_week_1.logcenter',
+            'freq_week_1_total.logcenter'), 
           facet.grid = F,
-          prnt.plot = F,
-          show.ci = T)
-
-freqi = 1
-leni = 2
-t0i = 5
-teachi = 3
-tryi = 4
-tm1i = 6
+          prnt.plot = F)
 
 # Rescale frequency back to real values
-freq.m = x$plot.list[[freqi]]$data$x
-x$plot.list[[freqi]]$data$x = 
+freq.m = x$plot.list[[3]]$data$x
+x$plot.list[[3]]$data$x = 
   exp(freq.m* 
   attr(variants$freq_week_1_total.logcenter, 'scaled:scale') + 
   attr(variants$freq_week_1_total.logcenter, 'scaled:center') -1)
 
-x$plot.list[[freqi]]$labels$x = "Frequency"
-x$plot.list[[freqi]]$labels$title = "Frequency"
-
 # Rescale length back to real values
-len.m = x$plot.list[[leni]]$data$x
-x$plot.list[[leni]]$data$x = 
+len.m = x$plot.list[[4]]$data$x
+x$plot.list[[4]]$data$x = 
   exp(len.m* 
   attr(variants$averageLength_week_1.logcenter, 'scaled:scale') + 
   attr(variants$averageLength_week_1.logcenter, 'scaled:center') -1)
 
-#x$plot.list[[1]]$labels$title = "Indexicality"
-#x$plot.list[[1]]$scales$scales[[1]]$labels = c("No","Yes","Body")
-
-x$plot.list[[teachi]]$labels$title = "Teaching"
-x$plot.list[[teachi]]$scales$scales[[1]]$labels = c("No","Yes\n")
-x$plot.list[[teachi]]$coordinates$limits$x = c(0.5,2.5)
-
-x$plot.list[[tryi]]$labels$title = "Try Marking"
-x$plot.list[[tryi]]$scales$scales[[1]]$labels = c("No","Yes\n")
-x$plot.list[[tryi]]$coordinates$limits$x = c(0.5,2.5)
-
-x$plot.list[[t0i]]$labels$title = "T0"
-x$plot.list[[t0i]]$scales$scales[[1]]$labels = c("No","Check","Candidate\nUnderstanding")
-x$plot.list[[t0i]]$coordinates$limits$x = c(0.5,3.5)
-
-x$plot.list[[tm1i]]$labels$title = "T-1"
-x$plot.list[[tm1i]]$scales$scales[[1]]$labels = c("No","Yes\n")
-x$plot.list[[tm1i]]$coordinates$limits$x = c(0.5,2.5)
-
-x$plot.list[[leni]]$labels$title = "Length"
-for(i in 1:6){
-  x$plot.list[[i]]$coordinates$limits$y = c(0,1)
-  if(i!=leni){
+x$plot.list[[1]]$labels$title = "Indexicality"
+x$plot.list[[1]]$scales$scales[[1]]$labels = c("No","Yes","Body")
+x$plot.list[[2]]$labels$title = "Checking"
+x$plot.list[[2]]$scales$scales[[1]]$labels = c("No","Yes")
+x$plot.list[[3]]$labels$title = "Frequency (W1)"
+x$plot.list[[4]]$labels$title = "Length (ms)"
+for(i in 1:4){
+  x$plot.list[[i]]$coordinates$limits$y = c(0,0.2)
+  if(i>1){
     x$plot.list[[i]]$theme = 
       list(
         panel.grid.minor.x = element_blank(),
@@ -626,96 +580,25 @@ for(i in 1:6){
   x$plot.list[[i]]$labels$y = element_blank()
 }
 
-x$plot.list[[leni]]$labels$y = "Predicted incidents for final week frequency"
-x$plot.list[[leni]]$labels$x = "Length (ms)"
+x$plot.list[[1]]$labels$y = "Final Week Frequency"
 
-grx = grid.arrange(
-             x$plot.list[[leni]]  + scale_x_log10(),
-             x$plot.list[[freqi]]  + scale_x_log10(),
-             x$plot.list[[tm1i]]+ 
-               geom_point() +
-               geom_errorbar(aes(ymin=lower,ymax=upper), width=0.2),
-             x$plot.list[[t0i]]+ 
-               geom_point() +
-               geom_errorbar(aes(ymin=lower,ymax=upper), width=0.2),
-             x$plot.list[[teachi]]+ geom_point()+
-               geom_errorbar(aes(ymin=lower,ymax=upper), width=0.2),
-             x$plot.list[[tryi]]+ geom_point()+
-               geom_errorbar(aes(ymin=lower,ymax=upper), width=0.2), 
-             widths=c(2.1,1.8,1,2.1,1,1.5))
+grid.arrange(
+             x$plot.list[[1]]+ geom_point(),
+             x$plot.list[[2]]+ geom_point(),
+             x$plot.list[[3]], 
+             x$plot.list[[4]], 
+             widths=c(2,1,2,2))
 
 pdf("../results/descriptive/graphs/EffectsPlot.pdf", width=8.5, height=3.5)
-plot(grx)
+grid.arrange(
+             x$plot.list[[1]]+ geom_point(),
+             x$plot.list[[2]]+ geom_point(),
+             x$plot.list[[3]], 
+             x$plot.list[[4]], 
+             widths=c(2,1,2,2))
 dev.off()
 
 ```
-
-\newpage
-
-Plot interactions
-
-```{r echo=F, eval=F}
-xi = sjp.int(finalModel, swap.pred = T, facet.grid = F,
-             prnt.plot = F)
-
-for(i in 1:3){
-  freq.mx = xi$plot.list[[i]]$data$x
-  xi$plot.list[[i]]$data$x = 
-    exp(freq.mx* 
-    attr(variants$freq_week_1_total.logcenter, 'scaled:scale') + 
-    attr(variants$freq_week_1_total.logcenter, 'scaled:center') -1)
-}
-
-ggplot(xi$plot.list[[1]]$data, aes(x,y,colour=grp)) + 
-  geom_line()  +
-  xlab("Frequency") + 
-  ylab("Predicted incidents for final week frequency") +
-  theme(legend.position="top") +
-  scale_color_discrete(name="T0")
-
-xi$plot.list[[2]]$data$grp = c("No","Yes")[as.numeric(xi$plot.list[[2]]$data$grp)]
-
-ggplot(xi$plot.list[[2]]$data, aes(x,y,colour=grp)) + 
-  geom_line()  +
-  xlab("Frequency") + 
-  ylab("Predicted incidents for final week frequency") +
-  theme(legend.position="top") +
-  scale_color_discrete(name="Teach")
-
-xi$plot.list[[3]]$data$grp = c("No","Yes")[as.numeric(xi$plot.list[[3]]$data$grp)]
-
-ggplot(xi$plot.list[[2]]$data, aes(x,y,colour=grp)) + 
-  geom_line()  +
-  xlab("Frequency") + 
-  ylab("Predicted incidents for final week frequency") +
-  theme(legend.position="top") +
-  scale_color_discrete(name="Try Marked")
-
-```
-
-
-```{r}
-
-ggplot(variants, aes(x=freq_week_1,
-                     y=freq_week_4,
-                     colour=Teach)) +
-         geom_point()+
-         stat_smooth(method = "gam", fullrange = T, se=F)
-
-ggplot(variants, aes(x=freq_week_1,
-                     y=freq_week_4,
-                     colour=T0)) +
-         geom_point()+
-         stat_smooth(method = "gam", fullrange = T, se=F)
-
-ggplot(variants, aes(x=freq_week_1,
-                     y=freq_week_4,
-                     colour=TryMarked.any)) +
-         geom_point()+
-         stat_smooth(method = "gam", fullrange = T, se=F)
-
-```
-
 
 \newpage
 

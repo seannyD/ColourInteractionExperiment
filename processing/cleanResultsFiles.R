@@ -144,6 +144,16 @@ d$Indexicality[d$Indexicality=="yes"] = "Yes"
 d$Indexicality[d$Indexicality=="no"] = "No"
 d$Indexicality[d$Indexicality=="yes-body"] = "Yes-body"
 
+# assign indexicality by list
+handcoded.indexicality = read.delim("../data/otherData/SignProperties.tab", sep='\t', stringsAsFactors = F)
+
+d$Indexicality = handcoded.indexicality[match(d$sign_value, handcoded.indexicality$Sign),]$KB.Coded.iconic
+
+bodyIndex = handcoded.indexicality[match(d$sign_value, handcoded.indexicality$Sign),]$KB.Coded.Body.Anchor
+
+d$Indexicality[bodyIndex=="yes"] = "Yes-body"
+
+
 #  Try marking
 
 d$TryMarked[d$TryMarked=="yes"] = "Yes"
@@ -163,6 +173,9 @@ d$T_minus_1[is.na(d$T_minus_1)] = F
 
 # T0
 d$T0 = d$T0 == "Yes"
+
+# candiate understandings
+d$CandidateUnderstanding[is.na(d$CandidateUnderstanding)] = "No"
 
 # trial lengths
 trialLengths = tapply(d$trial_length,d$trial_start,head,n=1)/1000
@@ -285,6 +298,9 @@ for(colourID in colourNumbers){
   #v$check = tapply(d2[d2$week==1,]$T0Check,d2[d2$week==1,]$sign_value,function(X){sum(X,na.rm=T)>0})[v$sign]
   v$check = tapply(d2[d2$week==1,]$T0Check,d2[d2$week==1,]$sign_value,sum, na.rm=T)[v$sign]
   
+  # Candidate understanding
+  v$candidateUnderstanding = tapply(d2[d2$week==1,]$CandidateUnderstanding,d2[d2$week==1,]$sign_value,function(X){sum(X=="Yes")})[v$sign]
+  
   # T-1
   v$T_minus_1 = tapply(d2[d2$week==1,]$T_minus_1,
                        d2[d2$week==1,]$sign_value, sum, na.rm=T)[v$sign]
@@ -295,9 +311,9 @@ for(colourID in colourNumbers){
       x = table(X)
       names(x)[which(x==max(x))[1]]
     })
-  #indexical[is.null(indexical)] = "No"
+  #indexical[is.null(indexical)] = "no"
   v$indexical = unlist(indexical)[v$sign]
-  v$indexical[is.na(v$indexical)] = "No"
+  v$indexical[is.na(v$indexical)] = "no"
   
   # Invented by
   v$inventedBy= tapply(d2$inventedBy, d2$sign_value, head, n=1)[v$sign]
