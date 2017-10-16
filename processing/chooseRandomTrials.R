@@ -14,6 +14,9 @@ d = d[d$trial_value %in% colourNumbers,]
 
 d$trialString = paste(d$filename, d$trialID, d$trial_start)
 
+
+##
+
 totalTime = sum(tapply(d$trial_length, d$trialString, head,n=1))
 
 (totalTime/1000)/60 #minutes
@@ -58,3 +61,38 @@ ransel = ransel[!duplicated(ransel),]
 
 
 write.csv(ransel,"../processing/RandomTrials.csv")
+
+###
+
+# Random variants
+
+d2 = d[d$trial_value %in% colourNumbers,]
+
+d2 = d2[d2$trial_value !=6,]
+d2 = d2[!d2$sign_value %in%
+                      c("SAME",
+                        "DIFFERENT",
+                        "DO NOT UNDERSTAND",
+                        "UNDERSTAND",
+                        "ME",
+                        "YOU",
+                        "YES",
+                        "NOT",
+                        "SIGNING"),]
+
+
+dim(d2)
+# There are 489 variant tokens coded
+sel.n = 42
+
+set.seed(2398)
+d2 = d2[sample(1:nrow(d2),sel.n),]
+
+d2 = d2[,c("X","filename",'trialID','trial_value','sign_start','sign_end','speakerName')]
+
+d2$sign_start = millisecondsToReadbleTime(d2$sign_start)
+d2$sign_end = millisecondsToReadbleTime(d2$sign_end)
+
+d2 = d2[order(d2$filename,d2$sign_start),]
+
+write.csv(d2, "../processing/RandomVariants.csv")

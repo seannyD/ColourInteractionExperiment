@@ -150,7 +150,7 @@ table(variants$Teach)
 #  variants that were never taught and variants that were
 variants$Teach = as.factor(variants$Teach >0)
 
-# Similar for checking and candidate understandings
+# Similar for checking 
 variants$check.any = as.factor(variants$check>0)
 
 variants$candidateUnderstanding.any = as.factor(variants$candidateUnderstanding>0)
@@ -158,7 +158,10 @@ variants$candidateUnderstanding.any = as.factor(variants$candidateUnderstanding>
 variants$T0 = c("No","Check")[as.numeric(variants$check.any=="TRUE")+1]
 variants$T0[variants$candidateUnderstanding.any=="TRUE"] = "Candidate Understanding"
 
-variants$T0 = factor(variants$T0, levels = c("No","Check","Candidate Understanding"))
+# Collapse checks and candidate understandings
+variants$T0[variants$T0 %in% c("Check","Candidate Understanding")] = "Yes"
+
+variants$T0 = factor(variants$T0, levels = c("No","Yes"))
 
 # ... and T-1
 
@@ -189,7 +192,7 @@ variants$indexical = as.factor(variants$indexical)
 # Make inventedBy deviation coding 
 #  (deviation from the grand mean)
 variants$inventedBy = as.factor(variants$inventedBy)
-contrasts(variants$inventedBy) = contr.sum(length(levels(variants$inventedBy)))
+#contrasts(variants$inventedBy) = contr.sum(length(levels(variants$inventedBy)))
 
 
 listofsigns = variants[,c("colourName","sign")]
@@ -261,8 +264,8 @@ mIndx = glmer(freq_week_4 ~
                 (1 + indexical || colourName) , 
               data=variants, family=poisson,
               control=glmerControl(
-                optimizer = c('Nelder_Mead','bobyqa'),
-                optCtrl = list(maxfun = 10000000)))
+                optimizer = c('Nelder_Mead'),
+                optCtrl = list(maxfun = 100000000)))
 
 # add whether the variant is explicitly taught
 mTeach = glmer(freq_week_4 ~ 
@@ -311,7 +314,9 @@ mTm1 = glmer(freq_week_4 ~
                T_minus_1.any +
                (1 + indexical || colourName) , 
              data=variants, family=poisson,
-             control=gcontrol)
+             control=glmerControl(
+                 optimizer = c('Nelder_Mead','bobyqa'),
+                 optCtrl = list(maxfun = 10000000)))
 
 mInv = glmer(freq_week_4 ~ 
                1 +  
@@ -327,6 +332,15 @@ mInv = glmer(freq_week_4 ~
              data=variants, family=poisson,
              control=gcontrol)
 ```
+
+Note that the model `mTm1` throws a convergence warning. It suggests that the estimates were still changing to some extent when the estimation process finished running.  However, a more accurate estimation of the model graident shows that the model is actually converged suitably:
+
+```{r}
+relgrad <- with(mTm1@optinfo$derivs, 
+                solve(Hessian,gradient))
+max(abs(relgrad))
+```
+
 
 Test some interactions:
 
@@ -384,10 +398,14 @@ mTryXF = glmer(freq_week_4 ~
 # Results
 
 Model comparison test:
+
+Results of the model comparison tests.  Each row represents an increasingly complex model, with each fixed effect being added one at a time.  The statistics describe the change in how well the model fits the data after adding each fixed effect.  A significant result suggests that the fixed effect significantly improves the fit of the model, and therefore is a good predictor of frequency of variants in the first week.
   
 ```{r}
-anova(m0,mFrq,mLen,mIndx,mTeach,mTry,mChk,
+modelComparisonResults = 
+  anova(m0,mFrq,mLen,mIndx,mTeach,mTry,mChk,
       mTm1,mInv,mT0xF,mTchxF, mTryXF)
+modelComparisonResults
 ```
 
 Choose a final model for the beta values.
@@ -395,6 +413,36 @@ Choose a final model for the beta values.
 ```{r}
 finalModel = mTryXF
 ```
+
+Write model comparison results to file:
+
+```{r}
+mcr = as.data.frame(modelComparisonResults)
+mcr$AIC = round(mcr$AIC,2)
+mcr$BIC = round(mcr$BIC,2)
+mcr$logLik = round(mcr$logLik,2)
+mcr$deviance = round(mcr$deviance,2)
+mcr$Chisq = round(mcr$Chisq,2)
+mcr$Significance = ""
+mcr$Significance[mcr$`Pr(>Chisq)`<0.05] = "*"
+mcr$p = mcr$`Pr(>Chisq)`
+mcr$p = round(mcr$p,2)
+mcr$p[mcr$p<0.001] = "< 0.001"
+
+mcr = mcr[,c("AIC","BIC","logLik","Chisq",'Chi Df','p',"Significance")]
+names(mcr) = c("AIC","BIC","Log likelihood","χ2","Df",'p','')
+mcr[is.na(mcr)] = ""
+
+rownames(mcr) = c("Null model","Frequency","Length",
+                  "Indexicality","Teach","Try-marking",
+                  "T0","T-1",'Identity of first user',
+                  "T0 x Frequency","T-1 x Frequency",
+                  'Try-marking x Frequency')
+write.csv(mcr, 
+          "../results/inferential/ModelComparisonResults.csv",
+          row.names = T)
+```
+
 
 \newpage
 
@@ -457,7 +505,8 @@ Check whether the coefficients are radically different with a full random effect
 ```{r checkFullModel, cache=T}
 finalModelFull = update(finalModel, ~. + 
                           (0 + Teach + check.any +
-                             T_minus_1.any + inventedBy || colourName))
+                             T_minus_1.any + inventedBy || colourName),
+                        control=gcontrol)
 cor.test(fixef(finalModel), fixef(finalModelFull))
 ```
 
@@ -473,25 +522,31 @@ Here is a summary of the main results:
 
 `r getMEText(anova(mFrq,mLen), "main effect of sign length",summary(finalModel)$coef['averageLength_week_1.logcenter',])`  Shorter signs were more frequent in the final week.
 
-`r getMEText(anova(mLen,mIndx), "main effect of indexicality",summary(finalModel)$coef['indexicalyes',])` (beta for body-indexical = 0.853). Indexical variants were more frequent in the final week.
+`r getMEText(anova(mLen,mIndx), "main effect of indexicality",summary(finalModel)$coef['indexicalyes',])` (beta for body-indexical = 0.853). 
 
 `r getMEText(anova(mIndx,mTeach), "main effect of teaching",summary(finalModel)$coef['TeachTRUE',])`  Teaching increased the frequency of variants in the final week.
 
 `r getMEText(anova(mTeach,mTry), "main effect of try marking",summary(finalModel)$coef['TryMarked.anyTRUE',])` Variants that were try marked more often were more frequent in the final week.
 
-`r getMEText(anova(mTry,mChk), "main effect of checking",summary(finalModel)$coef['T0Check',])`  Variants used in a checking context were more frequent in the final week.
+`r getMEText(anova(mTry,mChk), "main effect of of repair initiation (T0)",summary(finalModel)$coef['T0Yes',])`  Variants used in a repair initiation were more frequent in the final week.
 
 
-`r getMEText(anova(mChk,mTm1), "main effect of use in repair initiation (T-1)",summary(finalModel)$coef['T_minus_1.anyTRUE',])` 
+`r getMEText(anova(mChk,mTm1), "main effect of use in a problem source turn (T-1)",summary(finalModel)$coef['T_minus_1.anyTRUE',])` 
 
 
-`r getMEText(anova(mTm1,mInv), "main effect of first user (inventedBy)")`  Signs invented by the signer from Nepal were less frequent in the final week.
+`r getMEText(anova(mTm1,mInv), "main effect of first user (inventedBy)")`  Signs invented by the signer from Jordan and Nepal were more frequent in the final week.
 
-`r getMEText(anova(mInv,mT0xF), "interaction between T0 and frequency",summary(finalModel)$coef['freq_week_1_total.logcenter:T0Check',])` The effect of frequency only applies to variants not appearing in T0 turns.
+`r getMEText(anova(mInv,mT0xF), "interaction between T0 and frequency",summary(finalModel)$coef['freq_week_1_total.logcenter:T0Yes',])` The effect of frequency only applies to variants not appearing in T0 turns.
 
 `r getMEText(anova(mT0xF,mTchxF), "interaction between Teaching and frequency")` 
 
 `r getMEText(anova(mTchxF,mTryXF), "interaction between Try marking and frequency")` 
+
+
+```{r}
+
+```
+
 
 
 We also found some evidence that the effect of indexicality is more important for black and red, and less important for green and pink.
@@ -539,7 +594,8 @@ dev.off()
 #The same plot, but in model estimates:
 
 x = sjp.int(finalModel, show.ci = F, prnt.plot = F)
-x$plot.list[[1]]$data$x = c(0.9,1.1,1.9,2.1)
+#x$plot.list[[1]]$data$x = c(0.9,1.1,1.9,2.1)
+x$plot.list[[1]]$data$x = c(1,1,2,2)
 x$plot.list[[1]]$coordinates$limits$x = c(0.8,2.2)
 x$plot.list[[1]]$scales$scales[[1]] = scale_x_continuous(limits = c(0.8,2.2))
 
@@ -596,19 +652,19 @@ x$plot.list[[leni]]$data$x =
 #x$plot.list[[1]]$scales$scales[[1]]$labels = c("No","Yes","Body")
 
 x$plot.list[[teachi]]$labels$title = "Teaching"
-x$plot.list[[teachi]]$scales$scales[[1]]$labels = c("No","Yes\n")
+x$plot.list[[teachi]]$scales$scales[[1]]$labels = c("No","Yes")
 x$plot.list[[teachi]]$coordinates$limits$x = c(0.5,2.5)
 
 x$plot.list[[tryi]]$labels$title = "Try Marking"
-x$plot.list[[tryi]]$scales$scales[[1]]$labels = c("No","Yes\n")
+x$plot.list[[tryi]]$scales$scales[[1]]$labels = c("No","Yes")
 x$plot.list[[tryi]]$coordinates$limits$x = c(0.5,2.5)
 
 x$plot.list[[t0i]]$labels$title = "T0"
-x$plot.list[[t0i]]$scales$scales[[1]]$labels = c("No","Check","Candidate\nUnderstanding")
-x$plot.list[[t0i]]$coordinates$limits$x = c(0.5,3.5)
+x$plot.list[[t0i]]$scales$scales[[1]]$labels = c("No","Yes")
+x$plot.list[[t0i]]$coordinates$limits$x = c(0.5,2.5)
 
 x$plot.list[[tm1i]]$labels$title = "T-1"
-x$plot.list[[tm1i]]$scales$scales[[1]]$labels = c("No","Yes\n")
+x$plot.list[[tm1i]]$scales$scales[[1]]$labels = c("No","Yes")
 x$plot.list[[tm1i]]$coordinates$limits$x = c(0.5,2.5)
 
 x$plot.list[[leni]]$labels$title = "Length"
@@ -642,7 +698,7 @@ grx = grid.arrange(
                geom_errorbar(aes(ymin=lower,ymax=upper), width=0.2),
              x$plot.list[[tryi]]+ geom_point()+
                geom_errorbar(aes(ymin=lower,ymax=upper), width=0.2), 
-             widths=c(2.1,1.8,1,2.1,1,1.5))
+             widths=c(2.1,1.8,1.1,1.1,1.1,1.1))
 
 pdf("../results/descriptive/graphs/EffectsPlot.pdf", width=8.5, height=3.5)
 plot(grx)
@@ -652,9 +708,32 @@ dev.off()
 
 \newpage
 
-Plot interactions
+Plot the average frequency in the final week for signs invented by each signer:
 
-```{r echo=F, eval=F}
+```{r}
+itx = prop.table(table(
+  variants$inventedBy,
+  variants$freq_week_4>0), margin=1)
+barplot(t(itx))
+
+ggplot(variants, 
+       aes(x=inventedBy, fill=indexical)) +
+  geom_bar(position="fill")
+
+
+ggplot(variants, 
+       aes(x=freq_week_1_total,
+           y=averageLength_week_1,
+           colour=inventedBy)) +
+  geom_point() + scale_y_log10() 
+
+```
+
+\newpage
+
+Plot interactions between frequency and sequential variables:
+
+```{r echo=T, eval=T}
 xi = sjp.int(finalModel, swap.pred = T, facet.grid = F,
              prnt.plot = F)
 
@@ -694,21 +773,21 @@ ggplot(xi$plot.list[[2]]$data, aes(x,y,colour=grp)) +
 ```
 
 
-```{r}
+```{r eval=F, echo=F}
 
-ggplot(variants, aes(x=freq_week_1,
+ggplot(variants, aes(x=freq_week_1_total,
                      y=freq_week_4,
                      colour=Teach)) +
          geom_point()+
          stat_smooth(method = "gam", fullrange = T, se=F)
 
-ggplot(variants, aes(x=freq_week_1,
+ggplot(variants, aes(x=freq_week_1_total,
                      y=freq_week_4,
                      colour=T0)) +
          geom_point()+
          stat_smooth(method = "gam", fullrange = T, se=F)
 
-ggplot(variants, aes(x=freq_week_1,
+ggplot(variants, aes(x=freq_week_1_total,
                      y=freq_week_4,
                      colour=TryMarked.any)) +
          geom_point()+
