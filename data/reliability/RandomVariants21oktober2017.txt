@@ -1,0 +1,43 @@
+	X	filename	trialID	trial_value	sign_start	sign_end	speakerName	Try-marking	T0	T-1	Teaching	Candidate Understanding	Comments
+184	118	Colour_game_01_1_Jordan-India_After_one_week.eaf	21	18	21 min 19 sec	21 min 21 sec	India	NO	NO	NO	NO	NO	
+189	124	Colour_game_01_1_Jordan-India_After_one_week.eaf	21	18	21 min 25 sec	21 min 25 sec	Jordan	YES	YES	NO	NO	YES	
+211	17	Colour_game_01_1_Jordan-India_After_one_week.eaf	9	14	29 min 1 sec	29 min 3 sec	Jordan	NO	NO	NO	NO	NO	
+86	75	Colour_game_01_1_Jordan-India_After_one_week.eaf	17	24	3 min 12 sec	3 min 15 sec	India	YES	NO	YES	NO	NO	
+91	77	Colour_game_01_1_Jordan-India_After_one_week.eaf	17	24	3 min 18 sec	3 min 21 sec	India	NO	NO	NO	NO	NO	T+1
+28	211	Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf	14	18	1 min 14 sec	1 min 15 sec	Indonesia	NO	YES	NO	NO	YES	
+35	194	Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf	14	18	1 min 28 sec	1 min 32 sec	Nepal	YES	NO	NO	NO	NO	
+38	196	Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf	14	18	1 min 33 sec	1 min 34 sec	Nepal	NO	NO	NO	NO	NO	T+1
+45	202	Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf	14	18	1 min 54 sec	1 min 57 sec	Nepal	NO	NO	NO	NO	NO	
+24	191	Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf	14	18	1 min 9 sec	1 min 12 sec	Nepal	YES	NO	NO	NO	NO	
+171	159	Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf	2	5	17 min 1 sec	17 min 2 sec	Indonesia	NO	NO	NO	NO	NO	
+141	181	Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf	13	18	7 min 17 sec	7 min 19 sec	Nepal	YES	NO	NO	NO	NO	
+302	272	Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf	21	5	10 min 3 sec	10 min 4 sec	Indonesia	NO	NO	NO	NO	NO	
+256	286	Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf	28	7	2 min 43 sec	2 min 44 sec	Indonesia	NO	NO	NO	NO	NO	
+286	276	Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf	23	24	8 min 22 sec	8 min 23 sec	Indonesia	YES	NO	YES	NO	NO	
+298	273	Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf	21	5	9 min 56 sec	9 min 57 sec	Jordan	na	na	na	na	na	The Jordan signer is not signing here. He is 1 second later. Either the annotation is misaligned with the video or placed on the wrong tier?
+230	300	Colour_game_01_2_Nepal-India_After_one_week.eaf	3	18	0 min 15 sec	0 min 16 sec	Nepal	YES	NO	NO	NO	NO	
+236	327	Colour_game_01_2_Nepal-India_After_one_week.eaf	25	1	0 min 26 sec	0 min 26 sec	India	NO	NO	NO	NO	NO	Sign start and sign end identical so not sure which sign is meant, I think INDIA and this variant is part of teaching construction, but not the taught sign itself. In fact it is not a colour descriptor.
+304	361	Colour_game_01_2_Nepal-India_After_one_week.eaf	32	24	10 min 57 sec	10 min 59 sec	India	YES	NO	NO	NO	NO	
+310	367	Colour_game_01_2_Nepal-India_After_one_week.eaf	32	24	11 min 5 sec	11 min 5 sec	India						Same issue with start and end time. Not sure which sign I need to code.
+324	320	Colour_game_01_2_Nepal-India_After_one_week.eaf	22	5	13 min 36 sec	13 min 38 sec	India	NO	YES	NO	NO	YES	
+326	326	Colour_game_01_2_Nepal-India_After_one_week.eaf	22	5	13 min 37 sec	13 min 38 sec	Nepal	NO	NO	NO	NO	NO	T+1
+389	405	Colour_game_01_3_Indonesia-India_After_one_week.eaf	20	5	11 min 1 sec	11 min 2 sec	India	YES	NO	NO	NO	NO	
+406	415	Colour_game_01_3_Indonesia-India_After_one_week.eaf	20	5	11 min 24 sec	11 min 25 sec	India	NO	NO	NO	NO	NO	T+1
+412	429	Colour_game_01_3_Indonesia-India_After_one_week.eaf	20	5	11 min 39 sec	11 min 39 sec	Indonesia						Same issue with start and end time. Not sure which sign I need to code.
+426	393	Colour_game_01_3_Indonesia-India_After_one_week.eaf	9	18	16 min 44 sec	16 min 45 sec	Indonesia	NO	NO	YES	NO	NO	
+344	377	Colour_game_01_3_Indonesia-India_After_one_week.eaf	1	14	2 min 17 sec	2 min 18 sec	India	NO	YES	NO	NO	YES	
+362	380	Colour_game_01_3_Indonesia-India_After_one_week.eaf	4	24	7 min 19 sec	7 min 20 sec	Indonesia	YES	NO	NO	NO	NO	
+354	460	Colour_game_01_3_Jordan-Nepal_After_one_week.eaf	24	5	6 min 28 sec	6 min 30 sec	Nepal	NO	NO	YES	NO	NO	
+371	458	Colour_game_01_3_Jordan-Nepal_After_one_week.eaf	23	7	8 min 47 sec	8 min 48 sec	Nepal	NO	NO	NO	NO	NO	
+385	474	Colour_game_01_3_Jordan-Nepal_After_one_week.eaf	31	24	9 min 15 sec	9 min 15 sec	Nepal	NO	NO	YES	NO	NO	
+378	451	Colour_game_01_3_Jordan-Nepal_After_one_week.eaf	11	24	9 min 9 sec	9 min 12 sec	Jordan	NO	NO	NO	NO	NO	
+444	493	Colour_game_04_1_Indonesia-India_After_three_week.eaf	13	14	0 min 31 sec	0 min 33 sec	Indonesia	No coding	final week	No coding	final week	No coding	
+449	502	Colour_game_04_1_Jordan-Nepal_After_three_weeks.eaf	1	14	1 min 19 sec	1 min 20 sec	Jordan	No coding	final week	No coding	final week	No coding	
+509	522	Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf	6	14	10 min 31 sec	10 min 31 sec	Jordan	No coding	final week	No coding	final week	No coding	
+512	535	Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf	28	14	10 min 42 sec	10 min 42 sec	Indonesia	No coding	final week	No coding	final week	No coding	
+515	524	Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf	9	1	10 min 53 sec	10 min 54 sec	Jordan	No coding	final week	No coding	final week	No coding	
+492	539	Colour_game_04_2_Jordan-Indonesia_After_three_week.eaf	33	18	4 min 44 sec	4 min 44 sec	Indonesia	No coding	final week	No coding	final week	No coding	
+511	541	Colour_game_04_2_Nepal-India_After_three_weeks.eaf	3	5	10 min 38 sec	10 min 40 sec	Nepal	No coding	final week	No coding	final week	No coding	
+538	578	Colour_game_04_3_Jordan-India_After_three_weeks.eaf	16	18	4 min 13 sec	4 min 14 sec	Jordan	No coding	final week	No coding	final week	No coding	
+558	603	Colour_game_04_3_Jordan-India_After_three_weeks.eaf	31	5	6 min 47 sec	6 min 49 sec	Jordan	No coding	final week	No coding	final week	No coding	
+569	610	Colour_game_04_3_Nepal-Indonesia_After_three_weeks.eaf	5	14	7 min 11 sec	7 min 12 sec	Nepal	No coding	final week	No coding	final week	No coding	

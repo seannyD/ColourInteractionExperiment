@@ -2,7 +2,8 @@
 title: "Colour experiment"
 output: 
     pdf_document:
-        toc: true
+      latex_engine: xelatex
+      toc: yes
 ---
 
 
@@ -399,7 +400,7 @@ mTryXF = glmer(freq_week_4 ~
 
 Model comparison test:
 
-Results of the model comparison tests.  Each row represents an increasingly complex model, with each fixed effect being added one at a time.  The statistics describe the change in how well the model fits the data after adding each fixed effect.  A significant result suggests that the fixed effect significantly improves the fit of the model, and therefore is a good predictor of frequency of variants in the first week.
+Results of the model comparison tests.  In the output below, there is a summary of the structure of each model, then a table with titles "Df", "AIC", "BIC" etc.  Each row represents an increasingly complex model, with each fixed effect being added one at a time.  The statistics describe how much better the model fits the data compared to the model above.  A significant result (low p-value) suggests that the fixed effect significantly improves the fit of the model, and therefore is a good predictor of frequency of variants in the first week.
   
 ```{r}
 modelComparisonResults = 
@@ -446,14 +447,16 @@ write.csv(mcr,
 
 \newpage
 
-Full summary:
+## Final model parameter summary 
+
+This show the estimates for all parameters in the model.
 
 ```{r}
 summary(finalModel)
 ```
 
 
-Check the predictions:
+Check the predictions.  Each point in the graph below is a variant.  The actual frequency in the 3rd week is on the horizontal axis.  Many have a frequency of 0: they don't appear.  The model's predictions are shown on the vertical axis.  The diagonal line is just a guide to show a perfect fit.  Most of the points line on this line, suggesting that the model has fit the data well.
 
 ```{r}
 plot(variants$freq_week_4, exp(predict(finalModel)),

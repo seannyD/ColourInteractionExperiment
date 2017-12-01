@@ -72,9 +72,9 @@ plot(
 text(as.vector(inventedBy), as.vector(table(d$inventedBy)), names((inventedBy)),pos=3)
 dev.off()
 
-freqWithinVarByInventor = tapply(variants$freq_week_4_withinColour, variants$inventedBy, mean)
+freqWithinVarByInventor = tapply(variants$freq_week_4, variants$inventedBy, mean)
 
-pdf("../results/descriptive/graphs/NumVarByFreq_withinColour.pdf")
+pdf("../results/descriptive/graphs/NumVarByFreq.pdf")
 plot(
   as.vector(inventedBy), 
   as.vector(freqWithinVarByInventor), 
@@ -140,7 +140,7 @@ limits <- aes(ymax = myData$mean + myData$se, ymin = myData$mean - myData$se)
 
 p <- ggplot(data = myData, aes(x = Colour, y = mean, group = Week))
 
-pdf("../results/descriptive/graphs/LengthOfTrialsByColourAndWeek_gg.pdf")
+pdf("../results/descriptive/graphs/LengthOfTrialsByColourAndWeek_gg.pdf", width=6, height=4)
 p + geom_bar(stat = "identity", position = 'dodge', fill=rep(colourNames,each=2)) +
   geom_errorbar(limits, position = dodge, width = 0.25) +
   theme(axis.text.x=element_text(), axis.ticks.x=element_blank(),
@@ -215,8 +215,8 @@ pdf("../results/descriptive/graphs/FreqWeek1_vs_FreqWeek2.pdf", width=5, height=
 plot(variants$freq_week_1, jitter(variants$freq_week_4), pch=16, col=rgb(0,0,0,0.2), ylab='Frequency in week 3', xlab='Frequency in week 1')
 dev.off()
 
-pdf("../results/descriptive/graphs/FreqWeek1_vs_FreqWeek2_withinColour.pdf", width=5, height=5)
-plot(variants$freq_week_1_withinColour, jitter(variants$freq_week_4_withinColour), pch=16, col=variants$colourName, ylab='Frequency in week 3', xlab='Frequency in week 1')
+pdf("../results/descriptive/graphs/FreqWeek1_vs_FreqWeek2.pdf", width=5, height=5)
+plot(variants$freq_week_1, jitter(variants$freq_week_4), pch=16, col=variants$colourName, ylab='Frequency in week 3', xlab='Frequency in week 1')
 dev.off()
 
 week1 = tapply(d[d$trial_value %in% colourNumbers & d$week==1,]$sign_value, d[d$trial_value %in% colourNumbers & d$week==1,]$trial_value, function(X){length(unique(X,na.rm=T))})
@@ -252,23 +252,23 @@ dev.off()
 
 variants$check.any = variants$check >0
 
-plotmeans(freq_week_4_withinColour ~
+plotmeans(freq_week_4 ~
             paste(TryMarked>0,Teach>0),
           data = variants[!(!(variants$TryMarked>0) & (variants$Teach>0)),],
           legends = c("No Try Mark","Try Marking","Try Marking & Teaching"),
           xlab="", ylab='Fitness of variants')
 
-plotmeans(variants$freq_week_4_withinColour~
+plotmeans(variants$freq_week_4~
             paste(variants$colourName,variants$TryMarked>0),
           col = rep(colourNamesDark,each=2), pch=c(16,15))
 
-plotmeans(variants$freq_week_4_withinColour ~ 
+plotmeans(variants$freq_week_4 ~ 
             paste(variants$colourName,variants$check.any),
           col = rep(colourNamesDark,each=2), pch=c(16,15))
 
 ### sign origin
 
-plotmeans(freq_week_4_withinColour~ origin, data=variants[variants$origin %in% c("ISL","JSL","NSL"),])
+plotmeans(freq_week_4~ origin, data=variants[variants$origin %in% c("ISL","JSL","NSL"),])
 
 #######
 
@@ -279,7 +279,7 @@ variants$inventedBy = as.factor(variants$inventedBy)
 variants$indexical = as.factor(variants$indexical)
 variants$TeachT = as.factor(variants$Teach>0)
 variants$TryMarkedT = as.factor(variants$TryMarked>0)
-f = ctree(freq_week_4_withinColour ~ 
+f = ctree(freq_week_4 ~ 
        #     freq_week_1 + 
         #    indexical + 
          #   TeachT +
@@ -293,15 +293,15 @@ plot(f, terminal_panel=node_barplot)
 
 d3 = d
 d3$freq_week_4[is.na(d3$freq_week_4)] = 0
-d3$freq_week4_withinColour[is.na(d3$freq_week4_withinColour)] = 0
+d3$freq_week4[is.na(d3$freq_week4)] = 0
 
-d3 = d3[d3$freq_week4_withinColour>0,]
+d3 = d3[d3$freq_week4>0,]
 
 for(i in c('Indexicality','speakerName')){
   d3[,i] = as.factor(d3[,i])
 }
 
-f2 = ctree(freq_week4_withinColour ~ 
+f2 = ctree(freq_week4 ~ 
              Indexicality + 
              T0Check + 
              speakerName + 

@@ -85,14 +85,35 @@ dim(d2)
 # There are 489 variant tokens coded
 sel.n = 42
 
+d2Orig = d2
+
 set.seed(2398)
 d2 = d2[sample(1:nrow(d2),sel.n),]
 
 d2 = d2[,c("X","filename",'trialID','trial_value','sign_start','sign_end','speakerName')]
 
+d2$sign_startms = d2$sign_start
 d2$sign_start = millisecondsToReadbleTime(d2$sign_start)
+d2$sign_endms = d2$sign_end
 d2$sign_end = millisecondsToReadbleTime(d2$sign_end)
 
 d2 = d2[order(d2$filename,d2$sign_start),]
 
 write.csv(d2, "../processing/RandomVariants.csv")
+
+rowsToSample = d2Orig[d2Orig$week==4,]$X
+rowsToSample = rowsToSample[!rowsToSample %in% d2$X]
+set.seed(3278)
+rowsToSample = sample(rowsToSample, sel.n)
+d2b = d2Orig[match(rowsToSample,d2Orig$X),]
+
+d2b = d2b[,c("X","filename",'trialID','trial_value','sign_start','sign_end','speakerName')]
+
+d2b$sign_startms = d2b$sign_start
+d2b$sign_start = millisecondsToReadbleTime(d2b$sign_start)
+d2b$sign_endms = d2b$sign_end
+d2b$sign_end = millisecondsToReadbleTime(d2b$sign_end)
+
+d2b = d2b[order(d2b$filename,d2b$sign_start),]
+
+write.csv(d2b, "../processing/RandomVariants_SecondRound.csv")
