@@ -1,0 +1,21 @@
+X.1	X	filename	trialID	trial_value	sign_start	sign_end	speakerName	sign_startms	sign_endms	T0	T-1	Try-marking	Teaching	
+1	32	Colour_game_01_1_Jordan-India_After_one_week.eaf	14	7	0 min 10 sec	0 min 10 sec	Jordan	10050	10875	NO	YES	NO	NO	
+162	4	Colour_game_01_1_Jordan-India_After_one_week.eaf	1	1	13 min 53 sec	13 min 55 sec	India	833302	835341	NO	NO	NO	NO	
+181	115	Colour_game_01_1_Jordan-India_After_one_week.eaf	21	18	21 min 17 sec	21 min 18 sec	India	1277846	1278090	NO	NO	NO	NO	
+182	116	Colour_game_01_1_Jordan-India_After_one_week.eaf	21	18	21 min 18 sec	21 min 19 sec	India	1278919	1279471	NO	NO	NO	YES	
+89	76	Colour_game_01_1_Jordan-India_After_one_week.eaf	17	24	3 min 15 sec	3 min 17 sec	India	195537	197105	NO	NO	NO	YES	
+76	64	Colour_game_01_1_Jordan-India_After_one_week.eaf	17	24	3 min 5 sec	3 min 6 sec	India	185747	186451	NO	NO	NO	NO	
+77	65	Colour_game_01_1_Jordan-India_After_one_week.eaf	17	24	3 min 6 sec	3 min 6 sec	India	186457	186988	NO	NO	NO	NO	
+80	68	Colour_game_01_1_Jordan-India_After_one_week.eaf	17	24	3 min 7 sec	3 min 7 sec	India	187640	187991	NO	NO	NO	YES	
+84	72	Colour_game_01_1_Jordan-India_After_one_week.eaf	17	24	3 min 9 sec	3 min 10 sec	India	189621	190294	NO	NO	NO	YES	
+30	213	Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf	14	18	1 min 16 sec	1 min 17 sec	Indonesia	76700	77199	YES	NO	NO	NO	
+142	188	Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf	13	18	7 min 24 sec	7 min 25 sec	Indonesia	444100	445120	NO	NO	NO	NO	
+158	173	Colour_game_01_1_Nepal-Indonesia_After_one_week.eaf	8	18	9 min 29 sec	9 min 31 sec	Indonesia	569783	571133	NO	NO	NO	NO	
+258	288	Colour_game_01_2_Jordan-Indonesia_After_one_week.eaf	28	7	2 min 45 sec	2 min 45 sec	Jordan	165435	165967	YES	NO	YES	NO	
+329	323	Colour_game_01_2_Nepal-India_After_one_week.eaf	22	5	13 min 48 sec	13 min 49 sec	India	828413	829251	NO	NO	NO	NO	unsure about this one if he is saying "mine is brown" or "my (sign) is brown"
+400	421	Colour_game_01_3_Indonesia-India_After_one_week.eaf	20	5	11 min 15 sec	11 min 17 sec	Indonesia	675397	677326	YES	NO	YES	NO	
+409	427	Colour_game_01_3_Indonesia-India_After_one_week.eaf	20	5	11 min 28 sec	11 min 29 sec	Indonesia	688639	689758	YES	NO	NO	NO	
+416	432	Colour_game_01_3_Indonesia-India_After_one_week.eaf	20	5	11 min 47 sec	11 min 51 sec	Indonesia	707316	711087	NO	NO	YES	NO	
+425	392	Colour_game_01_3_Indonesia-India_After_one_week.eaf	9	18	16 min 43 sec	16 min 44 sec	Indonesia	1003645	1004319	NO	NO	YES	NO	
+428	398	Colour_game_01_3_Indonesia-India_After_one_week.eaf	9	18	16 min 46 sec	16 min 47 sec	India	1006296	1007142	NO	NO	NO	NO	
+348	448	Colour_game_01_3_Jordan-Nepal_After_one_week.eaf	6	14	3 min 6 sec	3 min 7 sec	Jordan	186503	187385	YES	NO	NO	NO	

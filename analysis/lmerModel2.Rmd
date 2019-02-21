@@ -456,7 +456,7 @@ summary(finalModel)
 ```
 
 
-Check the predictions.  Each point in the graph below is a variant.  The actual frequency in the 3rd week is on the horizontal axis.  Many have a frequency of 0: they don't appear.  The model's predictions are shown on the vertical axis.  The diagonal line is just a guide to show a perfect fit.  Most of the points line on this line, suggesting that the model has fit the data well.
+Check the predictions.  Each point in the graph below is a variant.  The actual frequency in the 3rd week is on the horizontal axis.  Many have a frequency of 0: they don't appear.  The model's predictions are shown on the vertical axis.  The diagonal line is just a guide to show a perfect fit.  Most of the points lie on this line, suggesting that the model has fit the data well.
 
 ```{r}
 plot(variants$freq_week_4, exp(predict(finalModel)),
@@ -464,6 +464,8 @@ plot(variants$freq_week_4, exp(predict(finalModel)),
      ylab="Model prediction")
 abline(0,1)
 ```
+
+Here is a summary of whether a variant appeared or did not appear in the final week, and the model's predictions of whether they appeared or not:
 
 ```{r echo=F}
 tx = table(
@@ -762,16 +764,18 @@ ggplot(xi$plot.list[[2]]$data, aes(x,y,colour=grp)) +
   xlab("Frequency") + 
   ylab("Predicted incidents for final week frequency") +
   theme(legend.position="top") +
-  scale_color_discrete(name="Teach")
+  scale_color_discrete(name="Teach") +
+  coord_cartesian(ylim=c(0,1))
 
 xi$plot.list[[3]]$data$grp = c("No","Yes")[as.numeric(xi$plot.list[[3]]$data$grp)]
 
-ggplot(xi$plot.list[[2]]$data, aes(x,y,colour=grp)) + 
+ggplot(xi$plot.list[[3]]$data, aes(x,y,colour=grp)) + 
   geom_line()  +
   xlab("Frequency") + 
   ylab("Predicted incidents for final week frequency") +
   theme(legend.position="top") +
-  scale_color_discrete(name="Try Marked")
+  scale_color_discrete(name="Try Marked") +
+  coord_cartesian(ylim=c(0,1))
 
 ```
 
@@ -796,6 +800,24 @@ ggplot(variants, aes(x=freq_week_1_total,
          geom_point()+
          stat_smooth(method = "gam", fullrange = T, se=F)
 
+```
+
+
+```{r echo=F, eval=F}
+#sjp.glmer(finalModel,type='pred',vars="indexical")
+pdf("../results/descriptive/graphs/Indexicality_RedBrown.pdf",
+    width=4.5,height=4)
+ggplot(variants[variants$colourName %in% c("red","brown"),],
+       aes(x=indexical,y=freq_week_4)) + geom_violin() +
+  xlab("Indexicaltiy") +
+  ylab("Final week frequency") +
+  ggtitle("Data for RED and BROWN")
+dev.off()
+ggplot(variants[!variants$colourName%in% c("red","brown"),],
+       aes(x=indexical,y=freq_week_4)) + geom_violin()
+#sjp.glmer(finalModel,type='eff',vars="inventedBy")
+#ggplot(variants, aes(log(1+freq_week_4),colour=inventedBy)) +
+#  geom_density()
 ```
 
 

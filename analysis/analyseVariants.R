@@ -88,8 +88,9 @@ adopted = sapply(sort(unique(d$speakerName)), function(X){
   x2 = tapply(d[d$speakerName==X,]$sign_value, d[d$speakerName==X,]$inventedBy, function(z){length(unique(z))})
   sum(x2[names(x2)!=X])
 })
-pdf("../results/descriptive/graphs/AdoptedVsInvented.pdf")
-plot(inventedBy,adopted, ylim=c(0,35), xlim=c(0,35), xlab="Number of variants invented", ylab="Number of variants adopted")
+pdf("../results/descriptive/graphs/AdoptedVsInvented.pdf",
+    width = 4, height=4)
+plot(inventedBy,adopted, ylim=c(10,35), xlim=c(10,35), xlab="Number of variants invented", ylab="Number of variants adopted")
 abline(0,1, col='gray')
 text(inventedBy,adopted,names(inventedBy), pos=3)
 dev.off()
