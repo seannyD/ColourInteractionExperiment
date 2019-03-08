@@ -141,7 +141,7 @@ limits <- aes(ymax = myData$mean + myData$se, ymin = myData$mean - myData$se)
 
 p <- ggplot(data = myData, aes(x = Colour, y = mean, group = Week))
 
-pdf("../results/descriptive/graphs/LengthOfTrialsByColourAndWeek_gg.pdf", width=6, height=4)
+pdf("../results/descriptive/graphs/LengthOfTrialsByColourAndWeek_gg.pdf",width=3.5, height=3.5)
 p + geom_bar(stat = "identity", position = 'dodge', fill=rep(colourNames,each=2)) +
   geom_errorbar(limits, position = dodge, width = 0.25) +
   theme(axis.text.x=element_text(), axis.ticks.x=element_blank(),
@@ -165,7 +165,7 @@ limits <- aes(ymax = myData$mean + myData$se, ymin = myData$mean - myData$se)
 
 p <- ggplot(data = myData, aes(x = Colour, y = mean, group = Week))
 
-pdf("../results/descriptive/graphs/LengthOfSignsByColourAndWeek_gg.pdf")
+pdf("../results/descriptive/graphs/LengthOfSignsByColourAndWeek_gg.pdf",width=3.5, height=3.5)
 p + geom_bar(stat = "identity", position = 'dodge', fill=rep(colourNames,each=2)) +
   geom_errorbar(limits, position = dodge, width = 0.25) +
   theme(axis.text.x=element_text(), axis.ticks.x=element_blank(),
@@ -175,14 +175,19 @@ dev.off()
 
 ####
 
-pdf("../results/descriptive/graphs/LengthOfTrialsByColour.pdf")
+week1L.trial.label = week1L.trial
+week1L.trial.label['black'] = 7000
+week1L.trial.label['green'] = 4000
+
+pdf("../results/descriptive/graphs/LengthOfTrialsByColour.pdf", width=4, height=5)
 plot(c(0.5,2.5),range(c(week1L.trial,week4L.trial)), type='n', ylab='Trial length (ms)', xlab='Week', xaxt="n")
-axis(1,at=1:2, c("Week 1", "week 3"))
-points(rep(1,length(week1L.trial)), week1L.trial, col=colourNamesDark, pch=16)
-points(rep(2,length(week4L.trial)), week4L.trial, col=colourNamesDark, pch=16)
+axis(1,at=1:2, c("Week 1", "Week 3"))
 for(i in 1:length(week1L)){
   lines(c(1,2),c(week1L.trial[i],week4L.trial[i]), col=colourNamesDark[i])
 }
+points(rep(1,length(week1L.trial)), week1L.trial, col=colourNamesDark, pch=16)
+points(rep(2,length(week4L.trial)), week4L.trial, col=colourNamesDark, pch=16)
+text(0.9,week1L.trial.label,names(week1L.trial.label),adj = 1)
 dev.off()
 
 plotmeans(sign_length~trialColourName,  d[d$director==d$speaker & d$week==1,], connect = F, col = colourNames, pch=16, barcol = 1,xlab='Colour', ylab='Sign length (ms)')
