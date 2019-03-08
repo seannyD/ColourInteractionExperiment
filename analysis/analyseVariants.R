@@ -175,6 +175,77 @@ dev.off()
 
 ####
 
+myDataS <- aggregate(d[d$director==d$speaker,]$sign_length,
+                    by = list(d[d$director==d$speaker,]$week,d[d$director==d$speaker,]$session),
+                    FUN = function(x) c(mean = mean(x), sd = sd(x),
+                                        n = length(x)))
+
+myDataS <- do.call(data.frame, myDataS)
+myDataS$se <- myDataS$x.sd / sqrt(myDataS$x.n)
+colnames(myDataS) = c('Week','Session','mean','sd','n','se')
+
+myDataS$Week = factor(myDataS$Week,labels =c("Week 1","Week 3"))
+myDataS$Session = as.factor(myDataS$Session)
+
+dodge <- position_dodge(width = 0.6)
+limits <- aes(ymax = myDataS$mean + myDataS$se, ymin = myDataS$mean - myDataS$se)
+
+
+p <- ggplot(data = myDataS, aes(x = Week, y = mean,group=Session))
+
+pdf("../results/descriptive/graphs/LengthOfSignsByColourAndSession_gg.pdf",width=3.5, height=3.5)
+p + geom_bar(stat = "identity", position = dodge, width = 0.5) +
+  geom_errorbar(limits, position = dodge, width = 0.25) +
+  theme(axis.text.x=element_text(), axis.ticks.x=element_blank(),
+        axis.title.x=element_blank(), plot.title=element_text("Sign Length")) + ylab("Sign length (ms)") +
+  scale_colour_manual(values=colourNames) +
+  annotate("text", x = 0.8, y = 500, label = "Round 1",angle = 90,color="white",size=5) +
+  annotate("text", x = 1, y = 500, label = "Round 2",angle = 90,color="white",size=5)+
+  annotate("text", x = 1.2, y = 500, label = "Round 3",angle = 90,color="white",size=5) +
+  annotate("text", x = 1.8, y = 500, label = "Round 1",angle = 90,color="white",size=5) +
+  annotate("text", x = 2, y = 500, label = "Round 2",angle = 90,color="white",size=5)+
+  annotate("text", x = 2.2, y = 500, label = "Round 3",angle = 90,color="white",size=5)
+dev.off()
+
+####
+
+
+####
+
+myDataS <- aggregate(d[d$director==d$speaker,]$trial_length,
+                     by = list(d[d$director==d$speaker,]$week,d[d$director==d$speaker,]$session),
+                     FUN = function(x) c(mean = mean(x), sd = sd(x),
+                                         n = length(x)))
+
+myDataS <- do.call(data.frame, myDataS)
+myDataS$se <- myDataS$x.sd / sqrt(myDataS$x.n)
+colnames(myDataS) = c('Week','Session','mean','sd','n','se')
+
+myDataS$Week = factor(myDataS$Week,labels =c("Week 1","Week 3"))
+myDataS$Session = as.factor(myDataS$Session)
+
+dodge <- position_dodge(width = 0.6)
+limits <- aes(ymax = myDataS$mean + myDataS$se, ymin = myDataS$mean - myDataS$se)
+
+
+p <- ggplot(data = myDataS, aes(x = Week, y = mean,group=Session))
+
+pdf("../results/descriptive/graphs/LengthOfTrialByColourAndSession_gg.pdf",width=3.5, height=3.5)
+p + geom_bar(stat = "identity", position = dodge, width = 0.5) +
+  geom_errorbar(limits, position = dodge, width = 0.25) +
+  theme(axis.text.x=element_text(), axis.ticks.x=element_blank(),
+        axis.title.x=element_blank(), plot.title=element_text("Sign Length")) + ylab("Trial length (ms)") +
+  scale_colour_manual(values=colourNames) +
+  annotate("text", x = 0.8, y = 5000, label = "Round 1",angle = 90,color="white",size=5) +
+  annotate("text", x = 1, y = 5000, label = "Round 2",angle = 90,color="white",size=5)+
+  annotate("text", x = 1.2, y = 5000, label = "Round 3",angle = 90,color="white",size=5) +
+  annotate("text", x = 1.8, y = 10200, label = "Round 1",angle = 90,color="black",size=5) +
+  annotate("text", x = 2, y = 10200, label = "Round 2",angle = 90,color="black",size=5)+
+  annotate("text", x = 2.2, y = 10200, label = "Round 3",angle = 90,color="black",size=5)
+dev.off()
+
+####
+
 week1L.trial.label = week1L.trial
 week1L.trial.label['black'] = 7000
 week1L.trial.label['green'] = 4000
