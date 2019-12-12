@@ -307,8 +307,8 @@ dev.off()
 
 xtab = xtab[order(xtab[,1]),]
 pdf("../results/descriptive/graphs/NumberOfVariantsByColourByWeek_SideBySide.pdf", width=8, height=5)
-barplot(t(xtab),beside=T, col=rep(colourNames[rownames(xtab)],each=2), main='Number of Variants',names.arg = colourNames[rownames(xtab)])
-barplot(t(xtab),beside=T, col=c(1,1,1,1,0,0,1,1,1,1,1,1,1,1), main='',add = T,density=rep(c(0,15),7),names.arg = rep("",7),yaxt='n')
+barplot(t(xtab),beside=T, col=rep(colourNames[rownames(xtab)],each=2), main='',names.arg = colourNames[rownames(xtab)])
+barplot(t(xtab),beside=T, col=c(1,1,1,1,0,0,1,1,1,1,1,1,1,1), main='',add = T,density=rep(c(0,15),7),names.arg = rep("",7),yaxt='n',ylab="Number of variants",xlab="Stimuli colour")
 legend(1,30,legend=c("Week 1","Week 3"),col = 'black',density = c(0,15),cex=1.5)
 dev.off()
 
