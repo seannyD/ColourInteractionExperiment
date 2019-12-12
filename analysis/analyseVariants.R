@@ -236,12 +236,12 @@ p + geom_bar(stat = "identity", position = dodge, width = 0.5) +
   theme(axis.text.x=element_text(), axis.ticks.x=element_blank(),
         axis.title.x=element_blank(), plot.title=element_text("Sign Length")) + ylab("Trial length (ms)") +
   scale_colour_manual(values=colourNames) +
-  annotate("text", x = 0.8, y = 5000, label = "Round 1",angle = 90,color="white",size=5) +
-  annotate("text", x = 1, y = 5000, label = "Round 2",angle = 90,color="white",size=5)+
-  annotate("text", x = 1.2, y = 5000, label = "Round 3",angle = 90,color="white",size=5) +
-  annotate("text", x = 1.8, y = 10200, label = "Round 1",angle = 90,color="black",size=5) +
-  annotate("text", x = 2, y = 10200, label = "Round 2",angle = 90,color="black",size=5)+
-  annotate("text", x = 2.2, y = 10200, label = "Round 3",angle = 90,color="black",size=5)
+  annotate("text", x = 0.8, y = 5000, label = "Round 1",angle = 90,color="white",size=3) +
+  annotate("text", x = 1, y = 5000, label = "Round 2",angle = 90,color="white",size=3)+
+  annotate("text", x = 1.2, y = 5000, label = "Round 3",angle = 90,color="white",size=3) +
+  annotate("text", x = 1.8, y = 10700, label = "Round 1",angle = 90,color="black",size=3) +
+  annotate("text", x = 2, y = 10700, label = "Round 2",angle = 90,color="black",size=3)+
+  annotate("text", x = 2.2, y = 10700, label = "Round 3",angle = 90,color="black",size=3)
 dev.off()
 
 ####
@@ -302,7 +302,14 @@ week4 = tapply(d[d$trial_value %in% colourNumbers & d$week==4,]$sign_value, d[d$
 xtab = cbind(week1,week4)
 
 pdf("../results/descriptive/graphs/NumberOfVariantsByColourByWeek.pdf", width=8, height=5)
-barplot(xtab,beside=T, col=colourNames[rownames(xtab)], main='Number of Variants')
+barplot(xtab,beside=T, col=colourNames[rownames(xtab)], main='Number of Variants',names.arg = c("Week 1", "Week 3"))
+dev.off()
+
+xtab = xtab[order(xtab[,1]),]
+pdf("../results/descriptive/graphs/NumberOfVariantsByColourByWeek_SideBySide.pdf", width=8, height=5)
+barplot(t(xtab),beside=T, col=rep(colourNames[rownames(xtab)],each=2), main='Number of Variants',names.arg = colourNames[rownames(xtab)])
+barplot(t(xtab),beside=T, col=c(1,1,1,1,0,0,1,1,1,1,1,1,1,1), main='',add = T,density=rep(c(0,15),7),names.arg = rep("",7),yaxt='n')
+legend(1,30,legend=c("Week 1","Week 3"),col = 'black',density = c(0,15),cex=1.5)
 dev.off()
 
 xtab2 = week1
@@ -390,3 +397,27 @@ plot(f2, inner_panel=node_inner(f2,id=F),terminal_panel=node_barplot)
 
 
 
+
+
+
+###
+dx = d[d$sign_length < 10000,]
+plot(dx$freq_week_1_total,(dx$sign_length))
+abline(lm((dx$sign_length)~dx$freq_week_1_total))
+
+cor.test(dx$sign_length,dx$freq_week_4_total)
+cor.test(dx$sign_length,dx$freq_week_1_total)
+
+meanSL1 = tapply(d[d$week==1,]$sign_length,d[d$week==1,]$sign_value,mean)
+meanSL4 = tapply(d[d$week==4,]$sign_length,d[d$week==4,]$sign_value,mean)
+
+meanSL1 = meanSL1[names(meanSL1) %in% names(meanSL4)]
+meanSL4 = meanSL4[names(meanSL4) %in% names(meanSL1)]
+
+freqLength = data.frame(meanSL1=meanSL1,meanSL4=meanSL4,
+           freq1 = d$freq_week_1_total[match(names(meanSL1),d$sign_value)],
+           freq4 = d$freq_week_4_total[match(names(meanSL1),d$sign_value)])
+
+freqLength$lenDiff = freqLength$meanSL4 -freqLength$meanSL1
+
+plot(freqLength$lenDiff,freqLength$freq1)
