@@ -138,11 +138,13 @@ colnames(myData) = c('Colour','Week','mean','sd','n','se')
 dodge <- position_dodge(width = 0.9)
 limits <- aes(ymax = myData$mean + myData$se, ymin = myData$mean - myData$se)
 
+colourNames2 = colourNames
+colourNames2[4] = "#444444"
 
 p <- ggplot(data = myData, aes(x = Colour, y = mean, group = Week))
 
 pdf("../results/descriptive/graphs/LengthOfTrialsByColourAndWeek_gg.pdf",width=3.5, height=3.5)
-p + geom_bar(stat = "identity", position = 'dodge', fill=rep(colourNames,each=2)) +
+p + geom_bar(stat = "identity", position = dodge, fill=rep(colourNames2,each=2), colour="black") +
   geom_errorbar(limits, position = dodge, width = 0.25) +
   theme(axis.text.x=element_text(), axis.ticks.x=element_blank(),
         axis.title.x=element_blank(), plot.title=element_text("Trial Length")) + ylab("Trial length (ms)") +
@@ -162,11 +164,13 @@ colnames(myData) = c('Colour','Week','mean','sd','n','se')
 dodge <- position_dodge(width = 0.9)
 limits <- aes(ymax = myData$mean + myData$se, ymin = myData$mean - myData$se)
 
+colourNames2 = colourNames
+colourNames2[4] = "#444444"
 
 p <- ggplot(data = myData, aes(x = Colour, y = mean, group = Week))
 
 pdf("../results/descriptive/graphs/LengthOfSignsByColourAndWeek_gg.pdf",width=3.5, height=3.5)
-p + geom_bar(stat = "identity", position = 'dodge', fill=rep(colourNames,each=2)) +
+p + geom_bar(stat = "identity", position = dodge, fill=rep(colourNames2,each=2),colour="black") +
   geom_errorbar(limits, position = dodge, width = 0.25) +
   theme(axis.text.x=element_text(), axis.ticks.x=element_blank(),
         axis.title.x=element_blank(), plot.title=element_text("Sign Length")) + ylab("Sign length (ms)") +
