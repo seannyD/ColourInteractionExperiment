@@ -1,9 +1,11 @@
 ---
 title: "Colour experiment"
-output: 
-    pdf_document:
-      latex_engine: xelatex
-      toc: yes
+output:
+  word_document:
+    toc: yes
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
 ---
 
 
@@ -541,18 +543,11 @@ Here is a summary of the main results:
 
 `r getMEText(anova(mTm1,mInv), "main effect of first user (inventedBy)")`  Signs invented by the signer from Jordan and Nepal were more frequent in the final week.
 
-`r getMEText(anova(mInv,mT0xF), "interaction between T0 and frequency",summary(finalModel)$coef['freq_week_1_total.logcenter:T0Yes',])` The effect of frequency only applies to variants not appearing in T0 turns.
+`r getMEText(anova(mInv,mT0xF), "interaction between T0 and frequency",summary(finalModel)$coef['freq_week_1_total.logcenter:T0Yes',])` The effect of appearing in a T0 sequence is stronger if the variant was more frequent in the first week.
 
-`r getMEText(anova(mT0xF,mTchxF), "interaction between Teaching and frequency")` 
+`r getMEText(anova(mT0xF,mTchxF), "interaction between Teaching and frequency")`. The effect of teaching was stronger if the variant was more frequent in the first week.
 
-`r getMEText(anova(mTchxF,mTryXF), "interaction between Try marking and frequency")` 
-
-
-```{r}
-
-```
-
-
+`r getMEText(anova(mTchxF,mTryXF), "interaction between Try marking and frequency")`. The effect of try marking is stronger if the variant was more frequent in the first week.
 
 We also found some evidence that the effect of indexicality is more important for black and red, and less important for green and pink.
 
@@ -618,7 +613,7 @@ x$plot.list[[1]] +
 Plot of the marginal effects of the predicted probabilities for each fixed effect:
 
 ```{r warning=F}
-x = sjp.glmer(mInv, 'eff', 
+x = plot_model(mInv, 'eff', 
           vars=c('Teach',
                  'TryMarked.any',
                  'T0',
@@ -631,24 +626,24 @@ x = sjp.glmer(mInv, 'eff',
 
 freqi = 1
 leni = 2
-t0i = 5
-teachi = 3
-tryi = 4
-tm1i = 6
+t0i = 6
+teachi = 4
+tryi = 5
+tm1i = 7
 
 # Rescale frequency back to real values
-freq.m = x$plot.list[[freqi]]$data$x
-x$plot.list[[freqi]]$data$x = 
+freq.m = x[[freqi]]$data$x
+x[[freqi]]$data$x = 
   exp(freq.m* 
   attr(variants$freq_week_1_total.logcenter, 'scaled:scale') + 
   attr(variants$freq_week_1_total.logcenter, 'scaled:center') -1)
 
-x$plot.list[[freqi]]$labels$x = "Frequency"
-x$plot.list[[freqi]]$labels$title = "Frequency"
+x[[freqi]]$labels$x = "Frequency"
+x[[freqi]]$labels$title = "Frequency"
 
 # Rescale length back to real values
-len.m = x$plot.list[[leni]]$data$x
-x$plot.list[[leni]]$data$x = 
+len.m = x[[leni]]$data$x
+x[[leni]]$data$x = 
   exp(len.m* 
   attr(variants$averageLength_week_1.logcenter, 'scaled:scale') + 
   attr(variants$averageLength_week_1.logcenter, 'scaled:center') -1)
@@ -656,53 +651,57 @@ x$plot.list[[leni]]$data$x =
 #x$plot.list[[1]]$labels$title = "Indexicality"
 #x$plot.list[[1]]$scales$scales[[1]]$labels = c("No","Yes","Body")
 
-x$plot.list[[teachi]]$labels$title = "Teaching"
-x$plot.list[[teachi]]$scales$scales[[1]]$labels = c("No","Yes")
-x$plot.list[[teachi]]$coordinates$limits$x = c(0.5,2.5)
+x[[teachi]]$labels$title = "Teaching"
+x[[teachi]]$scales$scales[[1]]$labels = c("No","Yes")
+x[[teachi]]$coordinates$limits$x = c(0.5,2.5)
 
-x$plot.list[[tryi]]$labels$title = "Try Marking"
-x$plot.list[[tryi]]$scales$scales[[1]]$labels = c("No","Yes")
-x$plot.list[[tryi]]$coordinates$limits$x = c(0.5,2.5)
+x[[tryi]]$labels$title = "Try Marked"
+x[[tryi]]$scales$scales[[1]]$labels = c("No","Yes")
+x[[tryi]]$coordinates$limits$x = c(0.5,2.5)
 
-x$plot.list[[t0i]]$labels$title = "T0"
-x$plot.list[[t0i]]$scales$scales[[1]]$labels = c("No","Yes")
-x$plot.list[[t0i]]$coordinates$limits$x = c(0.5,2.5)
+x[[t0i]]$labels$title = "T0"
+x[[t0i]]$scales$scales[[1]]$labels = c("No","Yes")
+x[[t0i]]$coordinates$limits$x = c(0.5,2.5)
 
-x$plot.list[[tm1i]]$labels$title = "T-1"
-x$plot.list[[tm1i]]$scales$scales[[1]]$labels = c("No","Yes")
-x$plot.list[[tm1i]]$coordinates$limits$x = c(0.5,2.5)
+x[[tm1i]]$labels$title = "T-1"
+x[[tm1i]]$scales$scales[[1]]$labels = c("No","Yes")
+x[[tm1i]]$coordinates$limits$x = c(0.5,2.5)
 
-x$plot.list[[leni]]$labels$title = "Length"
-for(i in 1:6){
-  x$plot.list[[i]]$coordinates$limits$y = c(0,1)
+x[[leni]]$labels$title = "Length"
+for(i in 1:7){
+  x[[i]]$coordinates$limits$y = c(0,1)
   if(i!=leni){
-    x$plot.list[[i]]$theme = 
+    x[[i]]$theme = 
       list(
         panel.grid.minor.x = element_blank(),
         axis.text.y = element_blank(),
         axis.line.y=element_blank())
   } else{
-    x$plot.list[[i]]$theme = list(panel.grid.minor.x = element_blank())
+    x[[i]]$theme = list(panel.grid.minor.x = element_blank())
   }
-  x$plot.list[[i]]$labels$y = element_blank()
+  x[[i]]$labels$y = element_blank()
 }
 
-x$plot.list[[leni]]$labels$y = "Predicted incidents for final week frequency"
-x$plot.list[[leni]]$labels$x = "Length (ms)"
+x[[leni]]$labels$y = "Predicted incidents for final week frequency"
+x[[leni]]$labels$x = "Length (ms)"
+x[[tm1i]]$labels$x = "T-1"
+x[[tryi]]$labels$x = "Try Marked"
+#x[[tm1i]]$labels$y = "Predicted incidents for final week frequency"
+
 
 grx = grid.arrange(
-             x$plot.list[[leni]]  + scale_x_log10(),
-             x$plot.list[[freqi]]  + scale_x_log10(),
-             x$plot.list[[tm1i]]+ 
+             x[[leni]]  + scale_x_log10(),
+             x[[freqi]]  + scale_x_log10(),
+             x[[tm1i]]+ 
                geom_point() +
-               geom_errorbar(aes(ymin=lower,ymax=upper), width=0.2),
-             x$plot.list[[t0i]]+ 
+               geom_errorbar(aes(ymin=conf.low,ymax=conf.high), width=0.2),
+             x[[t0i]]+ 
                geom_point() +
-               geom_errorbar(aes(ymin=lower,ymax=upper), width=0.2),
-             x$plot.list[[teachi]]+ geom_point()+
-               geom_errorbar(aes(ymin=lower,ymax=upper), width=0.2),
-             x$plot.list[[tryi]]+ geom_point()+
-               geom_errorbar(aes(ymin=lower,ymax=upper), width=0.2), 
+               geom_errorbar(aes(ymin=conf.low,ymax=conf.high), width=0.2),
+             x[[teachi]]+ geom_point()+
+               geom_errorbar(aes(ymin=conf.low,ymax=conf.high), width=0.2),
+             x[[tryi]]+ geom_point()+
+               geom_errorbar(aes(ymin=conf.low,ymax=conf.high), width=0.2), 
              widths=c(2.1,1.8,1.1,1.1,1.1,1.1))
 
 pdf("../results/descriptive/graphs/EffectsPlot.pdf", width=8.5, height=3.5)
@@ -736,97 +735,68 @@ ggplot(variants,
 
 \newpage
 
-Plot interactions between frequency and sequential variables:
+Plot interactions between frequency and sequential variables. Here we're just visualising the rough relationship in the raw data in order to understand the direction of the interaction.
 
-```{r echo=T, eval=T}
-xi = sjp.int(finalModel, swap.pred = T, facet.grid = F,
-             prnt.plot = F)
+```{r}
 
-for(i in 1:3){
-  freq.mx = xi$plot.list[[i]]$data$x
-  xi$plot.list[[i]]$data$x = 
-    exp(freq.mx* 
-    attr(variants$freq_week_1_total.logcenter, 'scaled:scale') + 
-    attr(variants$freq_week_1_total.logcenter, 'scaled:center') -1)
-}
-
-ggplot(xi$plot.list[[1]]$data, aes(x,y,colour=grp)) + 
-  geom_line()  +
-  xlab("Frequency") + 
-  ylab("Predicted incidents for final week frequency") +
-  theme(legend.position="top") +
-  scale_color_discrete(name="T0")
-
-xi$plot.list[[2]]$data$grp = c("No","Yes")[as.numeric(xi$plot.list[[2]]$data$grp)]
-
-ggplot(xi$plot.list[[2]]$data, aes(x,y,colour=grp)) + 
-  geom_line()  +
-  xlab("Frequency") + 
-  ylab("Predicted incidents for final week frequency") +
-  theme(legend.position="top") +
-  scale_color_discrete(name="Teach") +
-  coord_cartesian(ylim=c(0,1))
-
-xi$plot.list[[3]]$data$grp = c("No","Yes")[as.numeric(xi$plot.list[[3]]$data$grp)]
-
-ggplot(xi$plot.list[[3]]$data, aes(x,y,colour=grp)) + 
-  geom_line()  +
-  xlab("Frequency") + 
-  ylab("Predicted incidents for final week frequency") +
-  theme(legend.position="top") +
-  scale_color_discrete(name="Try Marked") +
-  coord_cartesian(ylim=c(0,1))
-
-```
-
-
-```{r eval=F, echo=F}
-
-ggplot(variants, aes(x=freq_week_1_total,
-                     y=freq_week_4,
-                     colour=Teach)) +
-         geom_point()+
-         stat_smooth(method = "gam", fullrange = T, se=F)
-
-ggplot(variants, aes(x=freq_week_1_total,
-                     y=freq_week_4,
-                     colour=T0)) +
-         geom_point()+
-         stat_smooth(method = "gam", fullrange = T, se=F)
-
-ggplot(variants, aes(x=freq_week_1_total,
-                     y=freq_week_4,
-                     colour=TryMarked.any)) +
-         geom_point()+
-         stat_smooth(method = "gam", fullrange = T, se=F)
-
-```
-
-
-```{r echo=F, eval=F}
-#sjp.glmer(finalModel,type='pred',vars="indexical")
-pdf("../results/descriptive/graphs/Indexicality_RedBrown.pdf",
-    width=4.5,height=4)
-ggplot(variants[variants$colourName %in% c("red","brown"),],
-       aes(x=indexical,y=freq_week_4)) + geom_violin() +
-  xlab("Indexicaltiy") +
+variants$freq_week_1_total.cut = cut(variants$freq_week_1_total,
+          breaks = quantile(variants$freq_week_1_total,
+                            probs = c(0,1/3,2/3,1)),include.lowest = T,
+          labels = c("low","medium","high"))
+xi = variants %>% group_by(Teach, freq_week_1_total.cut) %>%
+    summarise(freq_week_4 = mean(freq_week_4))
+int1 = ggplot(xi,aes(x=freq_week_1_total.cut,y=freq_week_4,group=Teach,colour=Teach,shape=Teach)) +
+  geom_point(size=3) + geom_line() +
   ylab("Final week frequency") +
-  ggtitle("Data for RED and BROWN")
+  xlab("First week frequency") +
+  theme(legend.position = c(0.3,0.8)) +
+  coord_cartesian(ylim=c(0,4)) +
+  scale_colour_discrete(name = "Teach", labels = c("No", "Yes")) +
+  scale_shape_discrete(name = "Teach", labels = c("No", "Yes")) 
+
+xi = variants %>% group_by(T0, freq_week_1_total.cut) %>%
+    summarise(freq_week_4 = mean(freq_week_4))
+int2 = ggplot(xi,aes(x=freq_week_1_total.cut,y=freq_week_4,group=T0,colour=T0,shape=T0)) +
+  geom_point(size=3) + geom_line() +
+  xlab("First week frequency") +
+  theme(legend.position = c(0.3,0.8), 
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank()) +
+  coord_cartesian(ylim=c(0,4))
+
+xi = variants %>% group_by(TryMarked.any,freq_week_1_total.cut) %>%
+    summarise(freq_week_4 = mean(freq_week_4))
+int3 = ggplot(xi,aes(x=freq_week_1_total.cut,y=freq_week_4,group=TryMarked.any,
+              colour=TryMarked.any,shape=TryMarked.any)) +
+  geom_point(size=3) + geom_line() +
+  xlab("First week frequency") +
+  theme(legend.position = c(0.3,0.8), 
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank()) +
+  coord_cartesian(ylim=c(0,4)) +
+  #labs(group="TryMarked",colour="TryMarked",shape="TryMarked")
+  scale_colour_discrete(name = "TryMarked", labels = c("No", "Yes")) +
+  scale_shape_discrete(name = "TryMarked", labels = c("No", "Yes")) 
+
+gx = grid.arrange(int1,int2,int3, layout_matrix=t(matrix(c(1,2,3))))
+pdf("../results/descriptive/graphs/Interactions.pdf",
+    width=6,height=3)
+plot(gx)
 dev.off()
-ggplot(variants[!variants$colourName%in% c("red","brown"),],
-       aes(x=indexical,y=freq_week_4)) + geom_violin()
-#sjp.glmer(finalModel,type='eff',vars="inventedBy")
-#ggplot(variants, aes(log(1+freq_week_4),colour=inventedBy)) +
-#  geom_density()
+
+gx
+
+
 ```
+
 
 
 \newpage
 
-Check model assumptions.  The model is not good at predicting higher values.
+Check model assumptions.  The model is not good at predicting higher values and less common cases.
 
-```{r}
-sjp.glmer(finalModel, 'ma')
+```{r message=F, warning=F}
+plot_model(finalModel, 'resid')
 ```
 
 

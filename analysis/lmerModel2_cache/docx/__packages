@@ -1,0 +1,13 @@
+base
+ggplot2
+Matrix
+lme4
+lattice
+plyr
+Rmisc
+dplyr
+sjPlot
+gridExtra
+nlme
+rpart
+REEMtree
