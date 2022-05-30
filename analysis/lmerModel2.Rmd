@@ -1,8 +1,6 @@
 ---
 title: "Colour experiment"
 output:
-  word_document:
-    toc: yes
   pdf_document:
     latex_engine: xelatex
     toc: yes
