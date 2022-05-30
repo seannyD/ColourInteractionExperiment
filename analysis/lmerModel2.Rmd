@@ -6,6 +6,8 @@ output:
   pdf_document:
     latex_engine: xelatex
     toc: yes
+editor_options: 
+  chunk_output_type: console
 ---
 
 
@@ -13,7 +15,7 @@ output:
 
 # Introduction
 
-This analysis looks at the sign variants used in a colour naming game between signers of different sign languages meeting after 1 week of interaction and after 3 weeks of interaction.  The data was collected by Kang Suk Byun (Kang-Suk.Byun@mpi.nl).
+This analysis looks at the sign variants used in a colour naming game between signers of different sign languages meeting after 1 week of interaction and after 3 weeks of interaction.  The data was collected by Kang Suk Byun.
 
 The analysis tries to predict the relative frequency of each variant within a colour category in week 3, based on measures from week 1.
 
@@ -59,6 +61,19 @@ hist(variants$freq_week_4, main='', xlab='Frequency', ylab='Count', breaks=0:max
 
 Instead of using a normal distribution as the basis for the statistical model or transforming the data (which is difficult anyway because of the large number of zero counts), we can use a poisson distribution.  This also has the advantage of only predicting whole, non-negative numbers, which makes sense for this data because a variant can't be used half a time or a negative number of times.
 
+\clearpage
+\newpage
+
+## Stimuli
+
+The table below summarises the colours used in each round, which we identified by giving each one a number. The numbers highlighted in yellow were the colours that were the same across both pictures. The table above gives an indication of the kind of planning that was carried out prior to the experiments to ensure robust organisation and reliable use of the materials. The actual table we used is much longer, encompassing all of the dates and rounds, but for the sake of brevity only the part related to the first week of data-gathering is shown here. The numbers in yellow, which indicate colours that were the same across both pictures, are also not repeated after that one use in the week; i.e. 1 and 9 do not appear after the first row. This was done to maximise discussion about as large a range of colours as possible.
+
+![Stimuli design](StimuliDesign.png)
+
+\clearpage
+\newpage
+
+
 # Load libraries
 ```{r warning=F, message=F}
 
@@ -69,12 +84,14 @@ library(dplyr)
 library(sjPlot)
 library(gridExtra)
 library(REEMtree)
+library(ggpubr)
+```
+
+```{r echo=F,eval=F}
+try(setwd("~/OneDrive - Cardiff University/Research/MPI/KangSukColours/ColourExperiment/analysis/"))
 ```
 
 ```{r echo=F}
-
-setwd("~/Documents/MPI/KangSukColours/ColourExperiment/analysis/")
-
 getMEText = function(r,ef, wald=NULL, showWald=F){
   
   AIC = r[2,]$AIC
@@ -432,7 +449,7 @@ mcr$p = mcr$`Pr(>Chisq)`
 mcr$p = round(mcr$p,2)
 mcr$p[mcr$p<0.001] = "< 0.001"
 
-mcr = mcr[,c("AIC","BIC","logLik","Chisq",'Chi Df','p',"Significance")]
+mcr = mcr[,c("AIC","BIC","logLik","Chisq",'Df','p',"Significance")]
 names(mcr) = c("AIC","BIC","Log likelihood","χ2","Df",'p','')
 mcr[is.na(mcr)] = ""
 
@@ -443,7 +460,7 @@ rownames(mcr) = c("Null model","Frequency","Length",
                   'Try-marking x Frequency')
 write.csv(mcr, 
           "../results/inferential/ModelComparisonResults.csv",
-          row.names = T)
+          row.names = T, fileEncoding = "utf-8")
 ```
 
 
@@ -505,7 +522,36 @@ We can plot the random slopes below:
 dotplot(ranef(finalModel))
 ```
 
-The effect of indexicality is stronger for red and brown, and weaker for pink.
+The effect of indexicality is stronger for red, brown, and black. It is weaker for pink and green.
+
+```{r}
+indxRedBrownBlack = ggplot(variants[variants$colourName %in% c("red","brown","black"),],
+       aes(x=indexical, y = freq_week_4,colour = colourName)) + 
+  geom_point(position = position_jitter(height = 0, width=0.2)) +
+  scale_colour_manual(breaks=c("red","brown","black"), values = c("red","brown","black")) +
+  theme(legend.position = 'none') +
+  xlab("Variant indexicality") +
+  ylab("Final week frequency")+
+  coord_cartesian(ylim=c(0,13))
+
+indxPinkGreen = ggplot(variants[variants$colourName %in% c("pink","green"),],
+       aes(x=indexical, y = freq_week_4,colour = colourName)) + 
+  geom_point(position = position_jitter(height = 0, width=0.2)) +
+  scale_colour_manual(breaks=c("pink","green"), values = c("pink","green")) +
+  theme(legend.position = 'none') +
+  xlab("Variant indexicality") +
+  ylab("Final week frequency") +
+  coord_cartesian(ylim=c(0,13))
+
+indx = ggarrange(indxRedBrownBlack, indxPinkGreen, ncol=2, labels=c("A","B"))
+indx
+pdf("../results/descriptive/graphs/Indexicality_RedBrownBlack_GreenPink.pdf",
+    width = 6,height=3)
+indx
+dev.off()
+
+```
+
 
 Check whether the coefficients are radically different with a full random effects structure:
 
